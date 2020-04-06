@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Principles on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/principles/</link>
+    <description>Recent contentin Principles on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Thu, 23 Jul 2009 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/principles/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>SOLID Principles</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/solid-principles/</link>
+      <pubDate>Thu, 23 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/solid-principles/</guid>
+      <description>Some helpful links to SOLID development information.</description>
+    </item></channel>
+</rss>

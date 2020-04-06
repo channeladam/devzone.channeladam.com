@@ -1,0 +1,211 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChannelAdam .NET Libraries on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/series/channeladam-.net-libraries/</link>
+    <description>Recent contentin ChannelAdam .NET Libraries on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Mon, 16 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/series/channeladam-.net-libraries/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>The ChannelAdam XML Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-xml/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-xml/</guid>
+      <description>About the ChannelAdam XML Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework/</link>
+      <pubDate>Sun, 24 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework/</guid>
+      <description>About the ChannelAdam Test Framework Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework XML Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-xml/</link>
+      <pubDate>Sun, 24 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-xml/</guid>
+      <description>About the ChannelAdam Test Framework XML Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework MSTest V2 Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-mstestv2/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-mstestv2/</guid>
+      <description>About the ChannelAdam Test Framework MSTest V2 Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework NUnit Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-nunit/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-nunit/</guid>
+      <description>About the ChannelAdam Test Framework NUnit Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Text Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-text/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-text/</guid>
+      <description>About the ChannelAdam Test Framework Text Library.</description>
+    </item><item>
+      <title>The ChannelAdam Transient Fault Handling Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-transientfaulthandling/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-transientfaulthandling/</guid>
+      <description>About the ChannelAdam Transient Fault Handling Library.</description>
+    </item><item>
+      <title>The ChannelAdam Weak Events Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-weakevents/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-weakevents/</guid>
+      <description>About the ChannelAdam Weak Events Library.</description>
+    </item><item>
+      <title>The ChannelAdam Commands Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-commands/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-commands/</guid>
+      <description>About the ChannelAdam Commands Library.</description>
+    </item><item>
+      <title>The ChannelAdam Dispatch Proxies Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-dispatchproxies/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-dispatchproxies/</guid>
+      <description>About the ChannelAdam Dispatch Proxies Library.</description>
+    </item><item>
+      <title>The ChannelAdam Disposing Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-disposing/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-disposing/</guid>
+      <description>About the ChannelAdam Disposing Library.</description>
+    </item><item>
+      <title>The ChannelAdam Logging Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-logging/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-logging/</guid>
+      <description>About the ChannelAdam Logging Library.</description>
+    </item><item>
+      <title>The ChannelAdam Primitive Extensions Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-primitiveextensions/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-primitiveextensions/</guid>
+      <description>About the ChannelAdam Primitive Extensions Library.</description>
+    </item><item>
+      <title>The ChannelAdam Reflection Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-reflection/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-reflection/</guid>
+      <description>About the ChannelAdam Reflection Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Moq Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-moq/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-moq/</guid>
+      <description>About the ChannelAdam Test Framework Moq Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework MSTest Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-mstest/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-mstest/</guid>
+      <description>About the ChannelAdam Test Framework MSTest Library.</description>
+    </item><item>
+      <title>The ChannelAdam Nancy Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy/</guid>
+      <description>About the ChannelAdam Nancy Library.</description>
+    </item><item>
+      <title>The ChannelAdam Nancy Self-Hosting Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy-hosting-self/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy-hosting-self/</guid>
+      <description>About the ChannelAdam Nancy Self-Hosting Library.</description>
+    </item><item>
+      <title>The ChannelAdam Nancy SOAP Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy-soap/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy-soap/</guid>
+      <description>Usage of the ChannelAdam Nancy SOAP Library.</description>
+    </item><item>
+      <title>The ChannelAdam SOAP Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-soap/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-soap/</guid>
+      <description>About the ChannelAdam SOAP Library.</description>
+    </item><item>
+      <title>The ChannelAdam Core Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-core/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-core/</guid>
+      <description>About the deprecated full .NET Framework ChannelAdam Core Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Libraries</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframeworks/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframeworks/</guid>
+      <description>About the deprecated full .NET Framework ChannelAdam Test Framework Libraries.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Library for BizTalk</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-biztalk/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-biztalk/</guid>
+      <description>Usage documentation for the ChannelAdam Test Framework Library for BizTalk.</description>
+    </item><item>
+      <title>Background | Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/background/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/background/</guid>
+      <description>Background of the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Background | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/background/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/background/</guid>
+      <description>Background of the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Basic Usage | Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/basic-usage/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/basic-usage/</guid>
+      <description>How to use the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Basic Usage | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/basic-usage/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/basic-usage/</guid>
+      <description>How to use the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Channel Close Trigger Strategies | Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/close-triggers/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/close-triggers/</guid>
+      <description>How to use the service channel close trigger strategies in the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Channel Close Trigger Strategies | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/close-triggers/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/close-triggers/</guid>
+      <description>How to use the service channel close trigger strategies in the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/</guid>
+      <description>Documentation for a .NET code library that handles the subtleties of consuming services using Microsoft&#39;s Windows Communication Foundation (WCF) library - including correctly performing the Close/Abort pattern and preventing memory and server connection leaks.</description>
+    </item><item>
+      <title>Exception Behaviour Strategies | Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/exception-behaviours/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/exception-behaviours/</guid>
+      <description>How to use the exception behaviour strategies in the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Exception Behaviour Strategies | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/exception-behaviours/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/exception-behaviours/</guid>
+      <description>How to use the exception behaviour strategies in the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>IoC | Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/ioc/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/ioc/</guid>
+      <description>How to use the ChannelAdam WCF Library with Inversion of Control (IoC) containers.</description>
+    </item><item>
+      <title>IoC | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/ioc/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/ioc/</guid>
+      <description>How to use the ChannelAdam WCF Library with Inversion of Control (IoC) containers.</description>
+    </item><item>
+      <title>Quick Start | Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/quick-start/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/quick-start/</guid>
+      <description>Quickly start using the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Quick Start | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/quick-start/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/quick-start/</guid>
+      <description>Quickly start using the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Release Notes | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/release-notes/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/release-notes/</guid>
+      <description>Release notes of version 2 of the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Retry for Transient Fault Handling | Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/retry/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/retry/</guid>
+      <description>How to use the retry policy mechanism in the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Retry for Transient Fault Handling | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/retry/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/retry/</guid>
+      <description>How to use the retry policy mechanism in the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/</guid>
+      <description>Version 1 documentation for a .NET code library that handles the subtleties of consuming services using Microsoft&#39;s Windows Communication Foundation (WCF) library - including correctly performing the Close/Abort pattern and preventing memory and server connection leaks.</description>
+    </item><item>
+      <title>Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/</guid>
+      <description>Version 2 documentation for a .NET code library that handles the subtleties of consuming services using Microsoft&#39;s Windows Communication Foundation (WCF) library - including correctly performing the Close/Abort pattern and preventing memory and server connection leaks.</description>
+    </item></channel>
+</rss>

@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SOLID on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/solid/</link>
+    <description>Recent contentin SOLID on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Wed, 21 Apr 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/solid/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Guidance for Using Optional and Named Parameters In C# &amp; .NET 4.0</title>
+      <link>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</guid>
+      <description>Guidance on the use of Optional and Named Parameters in C#.</description>
+    </item><item>
+      <title>Lessons in MSBuild - Applying the Single Responsibility Principle</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-applying-srp/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-applying-srp/</guid>
+      <description>Applying the Single Responsibility Principle to MSBuild projects.</description>
+    </item><item>
+      <title>SOLID Principles</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/solid-principles/</link>
+      <pubDate>Thu, 23 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/solid-principles/</guid>
+      <description>Some helpful links to SOLID development information.</description>
+    </item></channel>
+</rss>

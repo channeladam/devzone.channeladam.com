@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lessons In .NET on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/series/lessons-in-.net/</link>
+    <description>Recent contentin Lessons In .NET on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Tue, 04 Aug 2009 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/series/lessons-in-.net/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Lessons In .NET - Assembly Binding Configuration</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-dot-net-assembly-binding-configuration/</link>
+      <pubDate>Tue, 04 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-dot-net-assembly-binding-configuration/</guid>
+      <description>Tricks with assembly binding configurations in .NET Framework.</description>
+    </item></channel>
+</rss>

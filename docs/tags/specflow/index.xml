@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Specflow on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/specflow/</link>
+    <description>Recent contentin Specflow on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Wed, 09 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/specflow/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Overview Of The Gherkin Language | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-gherkin-overview/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-gherkin-overview/</guid>
+      <description>An overview of the language that is used to specify Behaviour Specifications.</description>
+    </item><item>
+      <title>Thoughts On Gauge | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-gauge/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-gauge/</guid>
+      <description>Thoughts on an alternative language, Gauge, that can be used to specify Behaviour Specifications.</description>
+    </item></channel>
+</rss>

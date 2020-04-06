@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IoC on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/ioc/</link>
+    <description>Recent contentin IoC on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 14 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/ioc/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>IoC | Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/ioc/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/ioc/</guid>
+      <description>How to use the ChannelAdam WCF Library with Inversion of Control (IoC) containers.</description>
+    </item><item>
+      <title>IoC | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/ioc/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/ioc/</guid>
+      <description>How to use the ChannelAdam WCF Library with Inversion of Control (IoC) containers.</description>
+    </item></channel>
+</rss>

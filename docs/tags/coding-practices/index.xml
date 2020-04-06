@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding Practices on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/coding-practices/</link>
+    <description>Recent contentin Coding Practices on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Thu, 26 Aug 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/coding-practices/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Thread-Safe Lazy Singleton Implementation in .NET 4</title>
+      <link>https://devzone.channeladam.com/articles/2010/08/thread-safe-lazy-singleton-dotnet/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/08/thread-safe-lazy-singleton-dotnet/</guid>
+      <description>How to implement a thread-safe lazy singleton in .NET 4.</description>
+    </item><item>
+      <title>Guidance for Using Optional and Named Parameters In C# &amp; .NET 4.0</title>
+      <link>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</guid>
+      <description>Guidance on the use of Optional and Named Parameters in C#.</description>
+    </item><item>
+      <title>Program Specification Through the Mechanism of Automated Tests</title>
+      <link>https://devzone.channeladam.com/articles/2009/12/program-specification-through-mechanism-tests/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/12/program-specification-through-mechanism-tests/</guid>
+      <description>The subtle difference between tests and specifying program behaviour through the mechanism of automated tests.</description>
+    </item></channel>
+</rss>

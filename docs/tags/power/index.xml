@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Power on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/power/</link>
+    <description>Recent contentin Power on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/power/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/linux/nvidia-power-usage/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/linux/nvidia-power-usage/</guid>
+      <description>Notes about Linux and Nvidia graphics card and its subsequent battery power usage.</description>
+    </item><item>
+      <title>Linux Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/linux/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/linux/</guid>
+      <description>Notes about Linux.</description>
+    </item></channel>
+</rss>

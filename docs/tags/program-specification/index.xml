@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Program Specification on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/program-specification/</link>
+    <description>Recent contentin Program Specification on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Mon, 07 Dec 2009 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/program-specification/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Program Specification Through the Mechanism of Automated Tests</title>
+      <link>https://devzone.channeladam.com/articles/2009/12/program-specification-through-mechanism-tests/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/12/program-specification-through-mechanism-tests/</guid>
+      <description>The subtle difference between tests and specifying program behaviour through the mechanism of automated tests.</description>
+    </item></channel>
+</rss>

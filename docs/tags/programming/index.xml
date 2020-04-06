@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/programming/</link>
+    <description>Recent contentin Programming on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Tue, 14 Jul 2009 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/programming/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Towards Behaviour-Driven Programming</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/towards-behaviour-driven-programming/</link>
+      <pubDate>Tue, 14 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/towards-behaviour-driven-programming/</guid>
+      <description>Towards Behaviour-Driven Programming.</description>
+    </item><item>
+      <title>Towards Behaviour-Driven Programming - Part 2</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/towards-behaviour-driven-programming-part-2/</link>
+      <pubDate>Tue, 14 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/towards-behaviour-driven-programming-part-2/</guid>
+      <description>Towards Behaviour-Driven Programming - Part 2.</description>
+    </item></channel>
+</rss>

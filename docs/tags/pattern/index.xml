@@ -1,0 +1,31 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pattern on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/pattern/</link>
+    <description>Recent contentin Pattern on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 23 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/pattern/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>The ChannelAdam Weak Events Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-weakevents/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-weakevents/</guid>
+      <description>About the ChannelAdam Weak Events Library.</description>
+    </item><item>
+      <title>The ChannelAdam Commands Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-commands/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-commands/</guid>
+      <description>About the ChannelAdam Commands Library.</description>
+    </item><item>
+      <title>The ChannelAdam Dispatch Proxies Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-dispatchproxies/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-dispatchproxies/</guid>
+      <description>About the ChannelAdam Dispatch Proxies Library.</description>
+    </item><item>
+      <title>The ChannelAdam Disposing Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-disposing/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-disposing/</guid>
+      <description>About the ChannelAdam Disposing Library.</description>
+    </item><item>
+      <title>The ChannelAdam Core Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-core/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-core/</guid>
+      <description>About the deprecated full .NET Framework ChannelAdam Core Library.</description>
+    </item></channel>
+</rss>

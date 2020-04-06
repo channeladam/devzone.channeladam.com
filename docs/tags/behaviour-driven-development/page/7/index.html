@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en-au">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js"><script async src="https://cdn.ampproject.org/v0.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Libre+Franklin" rel="stylesheet">
+    <style amp-custom>/*
+ * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}[tabindex="-1"]:focus:not(:focus-visible){outline:0 !important}hr{box-sizing:content-box;height:0;overflow:visible}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}abbr[title],abbr[data-original-title]{text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul,dl{margin-top:0;margin-bottom:1rem}ol ol,ul ul,ol ul,ul ol{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#007bff;text-decoration:none;background-color:transparent}a:hover{color:#0056b3;text-decoration:underline}a:not([href]){color:inherit;text-decoration:none}a:not([href]):hover{color:inherit;text-decoration:none}pre,code,kbd,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em}pre{margin-top:0;margin-bottom:1rem;overflow:auto}figure{margin:0 0 1rem}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}table{border-collapse:collapse}caption{padding-top:.75rem;padding-bottom:.75rem;color:#6c757d;text-align:left;caption-side:bottom}th{text-align:inherit}label{display:inline-block;margin-bottom:.5rem}button{border-radius:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}input,button,select,optgroup,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button,select{text-transform:none}select{word-wrap:normal}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button:not(:disabled),[type="button"]:not(:disabled),[type="reset"]:not(:disabled),[type="submit"]:not(:disabled){cursor:pointer}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{padding:0;border-style:none}input[type="radio"],input[type="checkbox"]{box-sizing:border-box;padding:0}input[type="date"],input[type="time"],input[type="datetime-local"],input[type="month"]{-webkit-appearance:listbox}textarea{overflow:auto;resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal}progress{vertical-align:baseline}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{outline-offset:-2px;-webkit-appearance:none}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}summary{display:list-item;cursor:pointer}template{display:none}[hidden]{display:none !important}.max-width-half{max-width:50%}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0{margin-left:0}.mx0{margin-left:0;margin-right:0}.my0{margin-top:0;margin-bottom:0}.m1{margin:.5rem}.mt1{margin-top:.5rem}.mr1{margin-right:.5rem}.mb1{margin-bottom:.5rem}.ml1{margin-left:.5rem}.mx1{margin-left:.5rem;margin-right:.5rem}.my1{margin-top:.5rem;margin-bottom:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.mr2{margin-right:1rem}.mb2{margin-bottom:1rem}.ml2{margin-left:1rem}.mx2{margin-left:1rem;margin-right:1rem}.my2{margin-top:1rem;margin-bottom:1rem}.m3{margin:2rem}.mt3,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-top:2rem}.mr3{margin-right:2rem}.mb3{margin-bottom:2rem}.ml3{margin-left:2rem}.mx3{margin-left:2rem;margin-right:2rem}.my3{margin-top:2rem;margin-bottom:2rem}.m4{margin:4rem}.mt4,#comments{margin-top:4rem}.mr4{margin-right:4rem}.mb4{margin-bottom:4rem}.ml4{margin-left:4rem}.mx4{margin-left:4rem;margin-right:4rem}.my4{margin-top:4rem;margin-bottom:4rem}.mxn1{margin-left:calc(0.5rem * -1);margin-right:calc(0.5rem * -1)}.mxn2{margin-left:calc(1rem * -1);margin-right:calc(1rem * -1)}.mxn3{margin-left:calc(2rem * -1);margin-right:calc(2rem * -1)}.mxn4{margin-left:calc(4rem * -1);margin-right:calc(4rem * -1)}.m-auto{margin:auto}.mt-auto{margin-top:auto}.mr-auto{margin-right:auto}.mb-auto{margin-bottom:auto}.ml-auto{margin-left:auto}.mx-auto,img.center,.page-image-toc-container > div img{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.p0{padding:0}.pt0{padding-top:0}.pr0{padding-right:0}.pb0{padding-bottom:0}.pl0{padding-left:0}.px0{padding-left:0;padding-right:0}.py0{padding-top:0;padding-bottom:0}.p1{padding:.5rem}.pt1{padding-top:.5rem}.pr1{padding-right:.5rem}.pb1{padding-bottom:.5rem}.pl1{padding-left:.5rem}.py1{padding-top:.5rem;padding-bottom:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.pt2{padding-top:1rem}.pr2{padding-right:1rem}.pb2{padding-bottom:1rem}.pl2{padding-left:1rem}.py2{padding-top:1rem;padding-bottom:1rem}.px2{padding-left:1rem;padding-right:1rem}.p3{padding:2rem}.pt3{padding-top:2rem}.pr3{padding-right:2rem}.pb3{padding-bottom:2rem}.pl3{padding-left:2rem}.py3{padding-top:2rem;padding-bottom:2rem}.px3{padding-left:2rem;padding-right:2rem}.p4{padding:4rem}.pt4{padding-top:4rem}.pr4{padding-right:4rem}.pb4{padding-bottom:4rem}.pl4{padding-left:4rem}.py4{padding-top:4rem;padding-bottom:4rem}.px4{padding-left:4rem;padding-right:4rem}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.left-0{left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.max-width-1{max-width:24rem}.max-width-2{max-width:32rem}.max-width-3{max-width:48rem}.max-width-4{max-width:64rem}.border-box{box-sizing:border-box}.align-baseline{vertical-align:baseline}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.align-bottom{vertical-align:bottom}.border-none{border:0}.rounded{border-radius:3px}.circle{border-radius:50%}.not-rounded{border-radius:0}.flex,.header-banner > div,.page-image-toc-container,.table-contents-container{display:-ms-flexbox;display:flex}@media (min-width:40em){.sm-flex{display:-ms-flexbox;display:flex}}@media (min-width:52em){.md-flex{display:-ms-flexbox;display:flex}}@media (min-width:64em){.lg-flex{display:-ms-flexbox;display:flex}}.flex-column{-ms-flex-direction:column;flex-direction:column}.flex-wrap,.page-image-toc-container{-ms-flex-wrap:wrap;flex-wrap:wrap}.items-start{-ms-flex-align:start;align-items:flex-start}.items-end{-ms-flex-align:end;align-items:flex-end}.items-center,.header-banner > div,.page-image-toc-container{-ms-flex-align:center;align-items:center}.items-baseline{-ms-flex-align:baseline;align-items:baseline}.items-stretch{-ms-flex-align:stretch;align-items:stretch}.self-start{-ms-flex-item-align:start;align-self:flex-start}.self-end{-ms-flex-item-align:end;align-self:flex-end}.self-center{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}.self-baseline{-ms-flex-item-align:baseline;align-self:baseline}.self-stretch{-ms-flex-item-align:stretch;-ms-grid-row-align:stretch;align-self:stretch}.justify-start{-ms-flex-pack:start;justify-content:flex-start}.justify-end{-ms-flex-pack:end;justify-content:flex-end}.justify-center,.page-image-toc-container,.table-contents-container{-ms-flex-pack:center;justify-content:center}.justify-between{-ms-flex-pack:justify;justify-content:space-between}.justify-around,.header-banner > div{-ms-flex-pack:distribute;justify-content:space-around}.justify-evenly{-ms-flex-pack:space-evenly;justify-content:space-evenly}.content-start{-ms-flex-line-pack:start;align-content:flex-start}.content-end{-ms-flex-line-pack:end;align-content:flex-end}.content-center{-ms-flex-line-pack:center;align-content:center}.content-between{-ms-flex-line-pack:justify;align-content:space-between}.content-around{-ms-flex-line-pack:distribute;align-content:space-around}.content-stretch{-ms-flex-line-pack:stretch;align-content:stretch}.flex-auto{-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.flex-none{-ms-flex:none;flex:none}.order-0{-ms-flex-order:0;order:0}.order-1{-ms-flex-order:1;order:1}.order-2{-ms-flex-order:2;order:2}.order-3{-ms-flex-order:3;order:3}.order-last{-ms-flex-order:99999;order:99999}.font-family-inherit{font-family:inherit}.font-size-inherit{font-size:inherit}.text-decoration-none{text-decoration:none}.bold{font-weight:bold;font-weight:bold}.regular{font-weight:normal}.italic{font-style:italic}.caps{text-transform:uppercase;letter-spacing:.2em}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.line-height-1{line-height:1}.line-height-2{line-height:1.125}.line-height-3{line-height:1.25}.line-height-4{line-height:1.5}.list-style-none{list-style:none}.underline{text-decoration:underline}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.hide{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}@media (max-width:40em){.xs-hide{display:none !important}}@media (min-width:40em) and (max-width:52em){.sm-hide{display:none !important}}@media (min-width:52em) and (max-width:64em){.md-hide{display:none !important}}@media (min-width:64em){.lg-hide{display:none !important}}.display-none{display:none !important}.h00{font-size:4rem}.h0{font-size:3rem}.h1{font-size:2rem}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.h5{font-size:.875rem}.h6{font-size:.75rem}.page-width,.paper-inner{max-width:1800px}.font-for-content,body{font-family:'Roboto',sans-serif}.font-for-heading,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.header-title,.widget div.h1,.widget div.h2,.navbar nav,.nav-header,.nav-sub-header{font-family:'Libre Franklin',sans-serif;font-weight:bold}body{background-color:#f8f8f8;min-width:400px}ol,ul,dl{padding-left:2rem;padding-right:1rem;margin:0 0 1rem 0}p + ul,p + ol,p + dl{margin-top:-.8rem}p > code,li > code{word-break:break-word}p + div.highlight > pre{margin-top:-.8rem}pre{margin:0 0 2rem 0;padding:1rem .2rem}table{margin-bottom:1rem;display:block;max-width:min-content;overflow-x:auto}table th,table td{padding:0 .5rem}table th{text-align:left;background-color:#f2f2f2}table tr:nth-child(even){background-color:#f2f2f2}table,th,td{border:1px dotted #000}blockquote{margin:1rem 0 1rem 2rem;white-space:normal;overflow-x:auto;font-style:italic}ul li > a:link,ul li > a:visited{background-color:inherit}ul li > a:hover,ul li > a:focus{color:#c03;background-color:inherit;text-decoration:underline}ul li.active{background-color:inherit}ul li.active > a:link,ul li.active > a:visited,ul li.active > a:focus,ul li.active > a:hover{color:#c03;background-color:inherit}ul li.active > a:focus,ul li.active > a:hover{text-decoration:none}a{color:#2476cc}a.active:link,a.active:visited,a.active:focus,a.active:hover{color:#c03}a.active:focus,a.active:hover{text-decoration:none}section{margin-bottom:20px}.content h1,.content .h1{font-size:2.5em}.content h2,.content .h2{font-size:2.1em}.content h3,.content .h3{font-size:1.7em}.content h4,.content .h4{font-size:1.3em}.content h5,.content .h5{font-size:.9em}.content h6,.content .h6{font-size:.6em}.post-content h1,.post-content .h1{font-size:2.1em}.post-content h2,.post-content .h2{font-size:1.7em}.post-content h3,.post-content .h3{font-size:1.3em}.post-content h4,.post-content .h4{font-size:.9em}.post-content h5,.post-content .h5{font-size:.67em}.post-content h6,.post-content .h6{font-size:.5em}.header-banner{height:auto;background-color:#000}.header-banner > div{margin:0 0}.logo-wrapper{float:none;text-align:center}.logo-wrapper a{display:block;line-height:0}.logo-wrapper amp-img{min-width:143px;max-width:143px;min-height:100px}.header-title{font-size:2em;text-align:center;color:#c03;padding:0 25px 0 25px;text-transform:uppercase}.header-title-outer{background-image:url("/img/site/devzone-logo.jpg");background-repeat:no-repeat;background-position:left 0 top 30%;background-size:cover}.header-title{max-height:100px}.header-title span{background-color:#000;padding:0 4px}@media (min-width:930px){.logo-wrapper{float:left;padding-left:10px;padding-right:10px}.logo-wrapper amp-img{max-height:100px}.header-title-outer{margin-left:238px}.header-title-inner{display:table;width:100%;height:100px}.header-title{display:inline-block;display:table-cell;font-size:2.5em;vertical-align:middle;word-spacing:1rem}}.content{margin:0;padding:0;min-width:360px;min-height:800px}.paper-outer{-moz-box-shadow:0 0 40px rgba(0,0,0,0.15);-webkit-box-shadow:0 0 5px rgba(0,0,0,0.15);-goog-ms-box-shadow:0 0 10px #333;box-shadow:0 0 40px rgba(0,0,0,0.15);margin-bottom:1px}.paper-inner{padding:0 .2rem}@media (min-width:930px){.paper-inner{padding:0 2rem}}.page-layout{margin:0 auto 2rem auto;display:grid;grid-row-gap:0;grid-template-areas:"main" "rightpanel"}.page-layout-right-panel{grid-area:rightpanel;min-height:800px;margin-top:2rem;max-width:400px}.page-layout-main{grid-area:main;min-width:400px}.page-layout-main .card-container{height:100%}.page-layout-main .card-container .card{height:100%;min-height:200px}@media (min-width:930px){.page-layout{grid-column-gap:2rem;grid-row-gap:0;grid-auto-rows:1fr;grid-template-columns:6fr 2fr;grid-template-areas:"main rightpanel"}.page-layout-right-panel{margin-top:0}}.page-layout-right-panel .widget .twitter-feed{position:relative;overflow-y:scroll;height:800px;min-height:800px;margin:0 auto;width:350px;height:80vh}.card-container{margin-left:-.5rem;margin-right:-.5rem}.card-container:not(:first-of-type){margin-top:2rem}.card{padding:.5rem;background-color:#fff;box-shadow:0 30px 4rem 0 rgba(1,1,1,0.15)}.widget.card{padding:1.5rem}.widget ul{margin:0;padding:.5rem;text-align:left;background-color:#000}.widget ul li{list-style-type:none}.widget ul li > a:link,.widget ul li > a:visited{color:#81beff}.widget ul li > a:hover,.widget ul li > a:focus{color:#c03}.widget ul li.active > a:link,.widget ul li.active > a:visited,.widget ul li.active > a:focus,.widget ul li.active > a:hover{color:#c03}.widget ul li:nth-child(n){margin-bottom:1rem}.widget ul li:last-child,.widget ul li:only-child{margin-bottom:0}.widget div.h1{margin:0;text-align:center;color:#000;font-size:1.8rem}.widget div.h2{text-align:left;color:#000;font-size:1.5rem;font-weight:bold}.navbar{margin-top:1px;border-left:none;border-right:none;border-bottom:none}.navbar nav{font-weight:400;background-color:#000;margin:0 0 0 0;text-align:center}.navbar nav ul{margin:0;padding:0}.navbar nav li{display:inline;list-style-type:none;padding-right:20px}.navbar nav .btn-link{color:#fff}.navbar nav .btn-link.active{color:#c03}.navbar nav .btn-link:hover,.navbar nav .btn-link:focus{color:#c03}.navbar nav .btn-lg{font-size:1.5em}.nav-header{text-align:left;color:#000;font-size:2em}.nav-sub-header{text-align:left;color:#000;font-size:1.5em;padding:20px 0 0 0}ul.nav-stacked{background-color:#000}@media (min-width:930px){navbar nav .btn-lg{font-size:2em}}.post-content img,.library-page-content img,.notebook-page-content img{display:block;max-width:100%;height:auto}.social-share-buttons ul{padding:0}.social-share-buttons ul li{display:inline;list-style-type:none;margin-right:.5rem;vertical-align:top}.twitter-share-button{margin-top:4px}.tag-cloud a{margin-right:.8rem}ul.pager{padding:0;margin:0 0 4rem 0}ul.pager > li{display:inline;list-style-type:none;margin-right:1rem}ul.pager > li > a,ul.pager > li > span{background-color:#000;border-color:#000;color:#fff;padding:.4rem 1rem}ul.pager > li > a:focus,ul.pager > li > a:hover,ul.pager > li > span:focus,ul.pager > li > span:hover{background-color:#000;border-color:#000;color:#c03;text-decoration:underline}ul.pager > .active > a,ul.pager > .active > a:focus,ul.pager > .active > a:hover,ul.pager > .active > span,ul.pager > .active > span:focus,ul.pager > .active > span:hover{background-color:#000;border-color:#000;color:#c03;text-decoration:none}ul.pager > .disabled > a,ul.pager > .disabled > a:focus,ul.pager > .disabled > a:hover,ul.pager > .disabled > span,ul.pager > .disabled > span:focus,ul.pager > .disabled > span:hover{background-color:#000;border-color:#000;color:#808080}.page-image-toc-container > div{width:100%}.page-image-toc-container > div img{max-width:100%;max-height:100% !important}@media (min-width:1300px){.page-image-toc-container > div{display:inline-block;max-width:50%}}.table-contents-container .table-contents{padding:1em}.table-contents-container .table-contents h2,.table-contents-container .table-contents .h2{margin:0 0 1rem 0}.table-contents-container .table-contents ul{list-style:square inside;padding:0}.table-contents-container .table-contents li ul{list-style:circle inside;margin-left:1em}.post-date{font-weight:bold;font-size:smaller;margin-bottom:1em}.post-comment-count{margin-top:10px}code{color:inherit;background-color:inherit;padding:0 0}article{margin-bottom:60px}.graph-container{height:92vh}footer{background-color:#000;padding:2em 0 2em 0;color:#c03}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <link rel="canonical" href="https://devzone.channeladam.com/tags/behaviour-driven-development/">
+    
+<title>Behaviour-Driven Development</title>    
+
+
+
+
+
+<meta itemprop="name" content="Behaviour-Driven Development">
+<meta itemprop="description" content="The ChannelAdam Software Development Zone">
+<meta property="og:title" content="Behaviour-Driven Development" />
+<meta property="og:description" content="The ChannelAdam Software Development Zone" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://devzone.channeladam.com/tags/behaviour-driven-development/" />
+<meta property="og:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
+<meta property="og:updated_time" content="2015-09-09T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
+
+<meta name="twitter:title" content="Behaviour-Driven Development"/>
+<meta name="twitter:description" content="The ChannelAdam Software Development Zone"/>
+<meta name="twitter:site" content="@ChannelAdam"/>
+
+<meta property="article:author" content="https://www.linkedin.com/in/adamcraven" />
+<meta property="article:author" content="https://github.com/ChannelAdam" />
+<meta property="article:author" content="https://twitter.com/ChannelAdam" />
+<meta name="twitter:creator" content="@ChannelAdam"/>
+<meta property="article:author" content="https://www.facebook.com/ChannelAdam" />
+<meta property="fb:app_id" content="129037487241515" />
+
+    <link rel="icon" href="/img/channeladam/favicon.ico" type="image/ico">
+
+    
+    <link href="/tags/behaviour-driven-development/index.xml" rel="alternate" type="application/rss+xml" title="DevZone.ChannelAdam.com" />
+    <link href="/tags/behaviour-driven-development/index.xml" rel="feed" type="application/rss+xml" title="DevZone.ChannelAdam.com" />
+    
+
+    
+  </head>
+  <body>
+    <amp-analytics type="gtag" data-credentials="include">
+ <script type="application/json">
+ {
+  "vars" : {
+   "gtag_id": "UA-51874696-2",
+   "config" : {
+    "UA-51874696-2": { 
+     "groups": "default"
+    }
+   }
+  }
+ }
+ </script>
+</amp-analytics>
+
+    <div class="content">
+    <div class="paper-outer">
+    <header class="header-banner" role="banner">
+
+    <div class="logo-wrapper">
+        <a href="https://channeladam.com">
+            <amp-img src="/img/channeladam/channeladam-logo.png" alt="ChannelAdam Logo"
+            width="285" height="200" layout="intrinsic"></amp-img>
+        </a>
+    </div>
+
+    <div class="header-title-outer">
+        <div class="header-title-inner">
+            <div class="header-title">
+                <span>Software Development Zone</span>
+            </div>
+        </div>
+    </div>
+        
+</header>
+
+    <section class="navbar">
+    <nav role="navigation">
+        <ul>
+            <li><a class="btn btn-link btn-lg" href="/">News</a></li>
+            <li><a class="btn btn-link btn-lg" href="/library">Library</a></li>
+            <li><a class="btn btn-link btn-lg" href="/notebooks">Notebooks</a></li>
+        </ul>
+    </nav>
+</section>
+
+<section class="mx-auto" style="max-width:728px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="728x90"></div>
+    <br/>
+</section>
+
+<div class="paper-inner mx-auto page-layout">
+    <main aria-role="main" class="page-layout-main">
+        <div class="card-container">
+            <div class="card">
+
+    
+    
+
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2015/08/behaviour-specification-handbook/">
+            <h2 class="post-title">Launch of the BDD Behaviour Specification Handbook!</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p>In the world of Behaviour-Driven Development (BDD), today I am launching <a href="/library/bdd-behaviour-specification-handbook">The Behaviour Specification Handbook</a>!
+Please note that this handbook significantly supercedes the two previous blog articles I wrote on the subject - they were the genesis of this work.</p>
+<p>Contained in this handbook is more than five years of learnings from practising and coaching BDD on enterprise software development projects.
+This handbook is my suggested, prescriptive methodology for writing Behaviour Specifications (also known as &lsquo;scenarios&rsquo; in the Gherkin language), including tips and suggestions that have repeatedly proven to me to be worthwhile practices.</p>
+<p>I hope the handbook helps you and your team to write better Behaviour Specifications and deliver successful solutions!</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/bdd/">BDD</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/behaviour-driven-development/">Behaviour-Driven Development</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/behaviour-specifications/">Behaviour Specifications</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/scenarios/">Scenarios</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/testing/">Testing</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-2/">
+            <h2 class="post-title">Behaviour Specification Writing Methodology - Part 2</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p><strong>Please note, as of August 2015, this article is superseded by the <a href="/library/bdd-behaviour-specification-handbook">The Behaviour Specification Handbook</a></strong>
+<br/><br/></p>
+<p>In <a href="/articles/2015/01/behaviour-spec-writing-part-1">my previous article, Behaviour Specification Writing Methodology - Part 1</a>, I discussed the prerequisites for writing Behaviour Specifications / scenarios.
+This article elaborates on my tips and suggestions for the next stage - actually writing the Behaviour Specifications.</p>
+<h1 id="the-behaviour-specification-writing-meeting">The Behaviour Specification Writing Meeting</h1>
+<p>After all the prerequisites have been satisfied (i.e. core business requirements are known and the initial, low-level technical design has been drafted), it is now time to write the Behaviour Specifications.
+Schedule a Behaviour Specification writing meeting!</p>
+<h2 id="attendees">Attendees</h2>
+<p>The attendees of the Behaviour Specification writing meeting should include a holistic cross-section of the development team, including all the actual people who will be developing and testing the given functionality. I will come back to this point later.</p>
+<p>The types of roles that should attend the meeting include:</p>
+<ul>
+<li>Technical Lead/Architect;</li>
+<li>Business Analysts;</li>
+<li>Test Analysts; and</li>
+<li>Developers.</li>
+</ul>
+<p>Actual business representatives may of course also attend and can be especially useful if the requirements are not as clear as originally thought coming into this meeting.
+Assuming however that the requirements are crystal clear, the business representative would only attend predominantly for their own benefit and understanding, or for team building reasons.</p>
+<h2 id="background-context-and-requirements-overview">Background Context and Requirements Overview</h2>
+<p>Please encourage the meeting attendees to ask questions at any time, and note all relevant feedback.</p>
+<p>Start the Behaviour Specification writing meeting with some background context about the User Story.
+A walk-through of the business process leading into this User Story and other relevant high-level information about the business is always useful to set the scene.</p>
+<p>It is also beneficial at this stage to now explain and walk the attendees through the requirements.</p>
+<h2 id="technical-design-overview">Technical Design Overview</h2>
+<p>Now have a technical representative walk the attendees through the low-level, draft technical design.
+Referencing some of the previously mentioned requirements, the technical representative should highlight the initially proposed systems and components and their relevant interactions.</p>
+<p>This is a fantastic opportunity for the entire team (yes, even the Business Analysts) to understand the technical design and lingo, and initially challenge the technical design.</p>
+<h2 id="checkpoint">Checkpoint</h2>
+<p>At this stage, let the attendees ask any more relevant questions and note all relevant feedback.</p>
+<p>As necessary, evolve the technical design on the spot to cater for any issue that has been identified.</p>
+<p>If there are significant issues with the requirements or technical design, then consider whether it is prudent to postpone the rest of this meeting.</p>
+<h2 id="whats-happening-in-our-minds">What&rsquo;s Happening In Our Minds?</h2>
+<p>Throughout all of the above overviews and discussions, each attendee has now learned valuable implicit knowledge.
+This is the reason why the attendees should be the actual people who will do the development and testing - because throughout this meeting they are being transformed into the experts of this business functionality!</p>
+<p>As the team next proceeds to write the behaviours of each component, multiple team members from different roles and perspectives are mentally testing each behaviour against their understanding of the solution - fantastically optimizing the feedback loop and enabling the team to avoid mistakes and reduce costly, wastful effort!</p>
+<p>The process of writing the Behaviour Specifications is an important time where the attendees actively engage their mind and further collaborate and communicate.
+The result of the attendees actively engaging in the process is the growth of their own tacit knowledge and expertise.
+Again, this is the reason why the attendees should be the developers and testers of this functionality, because they become the experts who can most effectively and efficiently perform the implementation work.</p>
+<h3 id="to-gherkin-or-not-to-gherkin">To Gherkin or Not To Gherkin?</h3>
+<p>The <a href="https://github.com/cucumber/gherkin/wiki" target="_blank">Gherkin language</a> is the most widely used and recognised business-readable domain-specific language (DSL) for specifying behaviours.
+Behaviours are defined within &ldquo;Feature&rdquo; files.
+Each Behaviour Specification is a &ldquo;Scenario&rdquo;, which has a description, and then is further defined as executable steps, with each step beginning with word &ldquo;Given&rdquo;, &ldquo;When&rdquo;, &ldquo;Then&rdquo;, &ldquo;And&rdquo; or &ldquo;But&rdquo;.
+Depending on the platform, there are different tools for parsing and executing the Gherkin.
+For instance, there is Cucumber for Ruby, SpecFlow for .NET, jBehave for Java, Behat for PHP&hellip;</p>
+<p>The new kid on the street is <a href="http://getgauge.io/documentation/user/current/specifications/README.html" target="_blank">Gauge</a>.
+In Gauge, behaviours are defined in &ldquo;Specification&rdquo; files that follow the <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a> syntax.
+Each Behaviour Specification has a heading, description and then is further defined as executable steps.</p>
+<p>The main difference between the syntaxes used in Gauge and Gherkin is that the syntax used in Gauge is completely free and open.
+There is no &ldquo;Given&rdquo;, &ldquo;When&rdquo;, &ldquo;Then&rdquo; restriction like in Gherkin, and this flexibility can be a powerful draw card for some people.</p>
+<p>However, with so much flexibility and power, there is the need for great responsibility and consistency - especially in an enterprise.
+In a medium or larger business or enterprise, consistency in language and style is important.
+If such a business were to use Gauge, the first thing the business should do, in my opinion, is to create a style guide to promote consistency between teams.
+And congratulations - now the syntax is restricted - and that flexibility is tamed.</p>
+<p>In the end, we may as well have just used Gherkin.
+Sure, there are other cross-language features in Gauge that may pique your interest, but for my Behaviour Specification writing methodology, I am sticking with Gherkin.
+The recommendations presented here can apply to the Gauge syntax if you so desire.</p>
+<h2 id="behaviour-specification-writing">Behaviour Specification Writing</h2>
+<p>Now that the requirements are understood by the team and there is general agreement that sufficient requirements are known and the draft technical design is sound enough, the process of writing the Behaviour Specifications can begin.</p>
+<p>This behaviour writing process is best broken down into two phases - indeed, often it is worth working through these phases in different meetings, primarily to allow the attendees to have a rest in between:</p>
+<ol>
+<li>Identify and write all the Behaviour Specification descriptions; and</li>
+<li>Write the steps that would cause the desired behaviour to manifest.</li>
+</ol>
+<p>All members of a software development team, including developers, analysts and stakeholders should be able to understand the Behaviour Specification descriptions and steps - because they should be written in commonly accepted business terminology.
+On a daily basis, the development team normally should be communicating with the rest of the business using accepted business terminology.
+Similarly the behaviours should be written in the same accepted business style of language (as much as possible).
+One result of this approach is the minimisation of the costs to train new staff.</p>
+<p>This approach also promotes more consistent communication within the development and support teams - and even to the wider business itself.
+An example of communicating with a wider part of a business is a project team (the wider part) that engages an internal software development team.
+The project team certainly could be interested in the documented Behaviour Specifications of a system that the internal software development team authored.
+Whether other wider parts of a business would be interested is debatable, and I think it may only apply to businesses with quite a high degree of software development maturity.</p>
+<p>As an overarching style guideline, I highly recommend that all wording used in a Behaviour Specification should only need to change if there is a change to the core business requirement - and specifically the wording should not need to be changed if there is a change to the implementation.</p>
+<p>Finding the right words to use when writing a Behaviour Specification can be thought of sometimes as an &ldquo;art&rdquo; due to the delicate balance between not using language that is too technical or specific, and at the other end of the scale, using language that is too generic that the reader cannot grasp the essence or actual purpose of the behaviour.
+Finding this balance can be a challenge, especially for novices.
+The best advice I can give is to copy the style of existing behaviours that your team agrees are well-written.</p>
+<p>Tip: Take samples of existing well-written Behaviour Specifications into each behaviour writing meeting and refer to them as necessary!
+It is often helpful to review these in the meeting to refresh everyone&rsquo;s memory.</p>
+<h3 id="behaviour-identification-and-descriptions">Behaviour Identification and Descriptions</h3>
+<p>Take each system or component that is represented in the low-level technical design, one by one, and answer the following question:</p>
+<p>&ldquo;Within the context, boundary and responsibility of just that component, what are the behaviours that component should perform in order to fulfil all the requirements?&rdquo;</p>
+<p>Generally, each Behaviour Specification should be focussed individually on a single purpose or business rule.
+By doing this, each behaviour becomes a building block of tested functionality.
+When writing the next behaviour, you now have a &ldquo;line of trust&rdquo; that everything so far is working as specified, and you do not need to re-specify the behaviour or functionality of those building blocks.</p>
+<h3 id="end-to-end-behaviours">End To End Behaviours</h3>
+<p>In addition to specifying the behaviours for an individual subsystem/component, you should also specify a small number of behaviours of end to end functionality (remember the Test Pyramid!).
+I suggest these end to end behaviours would be specified in their own feature file, separate from the feature file for the each component, since these behaviours span multiple subsystems/components.</p>
+<h3 id="start-with-should">Start With &ldquo;Should&rdquo;</h3>
+<p>Describe each behaviour specification / scenario in a sentence, beginning with the word &ldquo;Should&rdquo;.</p>
+<p>&ldquo;Should&rdquo; at the start of a sentence helps to focus both the author and reader clearly on the actual behaviour. Behaviours are described with verbs. The next word after &ldquo;Should&rdquo; is typically a verb&hellip; so this helps everyone reading the scenario description to quickly understand the scenario and how it may differ from others.</p>
+<p>The behaviour specifications are both living, executable documentation as well as being classified as test assets. The behaviours also are the specification that developers should use when they write code. The only code that should be written by developers is code to satisfy a behaviour specification. No behaviour specification - no code. Importantly, behaviour specifications are NOT part of a formal, legal requirements document.</p>
+<p>Each behaviour specification / scenario description is similar to a description of a system&rsquo;s capability. A system&rsquo;s capability is not described in terms of &ldquo;it must/shall/will do XYZ&rdquo; - that is how a &ldquo;requirement&rdquo; might be worded. Behaviour specifications are determined after the business requirements have been identified and agreed upon by stakeholders.</p>
+<p>The scenario description is a specification of a system&rsquo;s expected behaviour - how the system should behave, based on all current knowledge and understanding. Dan North, the originator of BDD, in <a href="http://dannorth.net/introducing-bdd" target="_blank">Introducing BDD</a> eloquently describes more about the usage of the word &ldquo;should&rdquo;:</p>
+<blockquote>
+<p>&ldquo;A more subtle aspect of the word should becomes apparent when compared with the more formal alternatives of will or shall. Should implicitly allows you to challenge the premise of the test: &ldquo;Should it? Really?&rdquo; This makes it easier to decide whether a test is failing due to a bug you have introduced or simply because your previous assumptions about the system&rsquo;s behaviour are now incorrect.&rdquo;</p>
+</blockquote>
+<h3 id="use-present-tense">Use Present Tense</h3>
+<p>The scenario description makes more logical sense when written in the present tense, because it is the describing the most up-to-date, current, at the present time, expected behaviour.</p>
+<h3 id="avoid-generic-verbs">Avoid Generic Verbs</h3>
+<p>Avoid the word &ldquo;handle&rdquo; or any other verb that is generic and hides the actual behaviour.</p>
+<p>For instance, let us pretend that someone wrote the scenario description:
+&ldquo;Should handle the situation when the total amount is not equal to the sum of all item amounts&rdquo;.</p>
+<p>The above scenario description has both positive and negative points. On the positive side, the &ldquo;when&rdquo; part is descriptive and is an easily understandable, differentiating condition for the scenario. On the negative side however, &ldquo;handle&rdquo; is not actually describing the behaviour that occurs under in that situation. What is actually meant by &ldquo;handle&rdquo;?</p>
+<p>A better alternative is to be more specific about the behaviour. For instance, &ldquo;Should error when the total amount is not equal to the sum of all item amounts&rdquo;. Using &ldquo;error&rdquo; as a verb instead of &ldquo;handle&rdquo; clearly describes the actual type of behaviour that should be performed.</p>
+<h3 id="positive-and-negative-behaviours">Positive and Negative Behaviours</h3>
+<p>All good test suites cover both positive / happy path and negative / sad path scenarios. Behaviour specifications are the same.</p>
+<p>In my experience, prefixing the scenario description (even before &ldquo;Should&rdquo;) with &ldquo;Positive - &quot; or &ldquo;Negative - &quot; allows someone reading the behaviour specification or test report to quickly and clearly determine whether the behaviour is focussed on the happy or sad path.</p>
+<h3 id="primary--business-and-secondary--system-behaviours">Primary / Business and Secondary / System Behaviours</h3>
+<p>It can be useful for the purpose of general understanding to distinguish between two different types of behaviours:</p>
+<ul>
+<li>Primary / Business Behaviours; and</li>
+<li>Secondary / System Behaviours.</li>
+</ul>
+<p>A Primary / Business-based Behaviour is a behaviour that has been defined as a direct result of trying to fulfil a core business requirement.</p>
+<p>A Secondary / System-based Behaviour alternatively is a lower-level behaviour needed by a system in order to enable or support the functionality of a Primary / Business Behaviour. A Secondary Behaviour is in no way less important than a Primary Behaviour - in fact, from one perspective, one can think that a Secondary Behaviour is more important because a specific Primary Behaviour is dependent upon and cannot function correctly without the Secondary Behaviour.</p>
+<p>Examples of Secondary / System Behaviours include:</p>
+<ul>
+<li>Exception handling</li>
+<li>Transaction concerns</li>
+<li>Data storage and retrieval</li>
+<li>Performance concerns</li>
+<li>Auditing functionality</li>
+</ul>
+<h3 id="unique-identifiers-for-scenarios">Unique Identifiers for Scenarios</h3>
+<p>When developers write new tests, modify existing tests and/or then need to run tests, it can be very useful to have a mechanism to easily identify and pick a specific scenario/test out of a list of many scenarios/tests. For instance, when developers are using their favourite IDE&rsquo;s Test Runner, if they want to find a specific scenario/test to run (even after using search or filtering on @tags), a unique identifier for each scenario can really help a human to visually find a specific scenario and select it more quickly.</p>
+<p>I recommend including an incrementing number into each scenario description, with the number starting at one in each feature file.</p>
+<p>In addition, prepending the feature name (or a shortened, unique version of it) helps to make a behaviour specification uniquely identifiable across multiple feature files.</p>
+<p>Including all of the above information in each behaviour specification description makes life for all team members significantly easier when someone needs to reference a specific scenario in a communication, or navigate through a list of behaviours outside of the context of a feature file. For the small amount of discipline required, you will be cursing yourself and other team members if it isn&rsquo;t done and if you are the poor soul that now has to find a needle in a haystack. Just do it - it&rsquo;ll be worth it!</p>
+<p>The template I find most useful for a scenario description is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>[FeatureName]-[Primary/Secondary]-01 - [Positive/Negative] - Should blah.
+</code></pre></div><p>I acknowledge that at times this can become wordy, but in my experience the benefits of clarity with this approach have always trumped that small annoyance.</p>
+<h2 id="feature-files">Feature Files</h2>
+<p>Zooming out from scenario descriptions within a feature file, let us now focus on other aspects related to the feature file.</p>
+<h3 id="file-system-folder-structure">File-System Folder Structure</h3>
+<p>I recommend grouping various feature files as appropriate into different file-system folders that follow a logical hierarchy. The top level of the hierarchy could be the name of an architectural capability or domain (a high-level grouping mechanism or category).</p>
+<p>Subfolders could then be used for other logical groupings that make sense, and their names should include a verb (we are after all describing categories of behaviours). The subfolder / behaviour category name may describe the set of processes, actions, behaviour and activities that take place, and should be in business language - not implementation or system specific language.</p>
+<p>Within the lowest-level subfolder are the feature files.</p>
+<p>Below is an example folder structure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>Purchasing (top-level folder, also the name of a domain)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>|
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>|---- ProcessingOrders (subfolder, a general category of behaviours)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>        |
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>        |---- Shopping (subfolder, a general category of behaviours)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>                |---- ManageShoppingCart.feature
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>                |---- CalculateShippingCosts.feature
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>                |---- ProcessPayments.feature
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>                |---- PlaceOrder.feature
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        |
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>        |---- FulfillingOrders (subfolder, a general category of behaviours)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>                |---- PickOrderItems.feature
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>                |---- ShipOrderItems.feature
+</code></pre></div><p>The feature files for different subsystems typically will live in different code branches or projects within your source control repository. For consistency reasons, use the same folder structure for feature files across subsystems.</p>
+<p>I also highly recommend not having whitespace in a folder or feature file name, as this can cause problems depending on the technology or development tools you are using.</p>
+<h3 id="feature-name">Feature Name</h3>
+<p>At the top of a feature file is the feature name. I recommend making the folder hierarchy and grouping names part of the feature file&rsquo;s feature name value.</p>
+<p>Each behaviour specification within a feature file is written from the context of a system, subsystem or component. Including the name of that subsystem or component in the description is also very using information, for the sake of clarity. Trickily, you may find that you have the exact same behaviour description and Gherkin in more than one component (for example, in both the User Interface and the back-end service layer), but the behaviour actually has a slightly different meaning in each because it must be understood and considered from within the context and perspective of that subsystem/component.</p>
+<p>The template I find most useful for the name of a feature at the top of a feature file is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>Feature: [Hierarchy-LogicalGrouping]-[FileName]-[Subsystem/Component]
+</code></pre></div><p>Here is an example feature name, for a User Interface component:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>Feature: Purchasing-ProcessingOrders-Shopping-ManageShoppingCart-UI
+</code></pre></div><p>And here is the same example feature, this time for the corresponding component in the back-end of a system:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>Feature: Purchasing-ProcessingOrders-Shopping-ManageShoppingCart-ServiceLayer
+</code></pre></div><p>In this example above, &ldquo;Purchasing-ProcessingOrders-Shopping-ManageShoppingCart-ServiceLayer&rdquo; is the &ldquo;feature name&rdquo; that you would include at the start of each behaviour specification description.</p>
+<br/>
+<p>In my next article, I will discuss tips for writing the actual Given/When/Then steps of the Gherkin and about implementing the behaviours as automated tests.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/bdd/">BDD</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/behaviour-driven-development/">Behaviour-Driven Development</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/behaviour-specifications/">Behaviour Specifications</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/scenarios/">Scenarios</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/testing/">Testing</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-1/">
+            <h2 class="post-title">Behaviour Specification Writing Methodology - Part 1</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p><strong>Please note, as of August 2015, this article is superseded by the <a href="/library/bdd-behaviour-specification-handbook">The Behaviour Specification Handbook</a></strong>
+<br/><br/></p>
+<p>[Updated in April 2015]</p>
+<h1 id="overview">Overview</h1>
+<p>As a long-time advocate of Behaviour-Driven Development (BDD), and being the technical lead and coach of BDD enterprise software development teams for more than 5 years, I have tried many different variations of the process of BDD and the writing and implementation of scenarios.
+The following is my suggested, prescriptive methodology for writing Behaviour Specifications (also known as Scenarios in the Gherkin language), including tips and suggestions that have repeatedly proven to me to be worthwhile practices.</p>
+<h1 id="why-bdd">Why BDD?</h1>
+<p>There are many articles that discuss the beginnings and benefits of BDD, so instead repeating similar information, here are some good starting materials:</p>
+<ul>
+<li><a href="http://behaviour-driven.org/Introduction" target="_blank">Behaviour Driven - Introduction</a></li>
+<li><a href="http://behaviour-driven.org/GettingTheWordsRight" target="_blank">Behaviour Driven - Getting the words right</a></li>
+<li><a href="http://dannorth.net/introducing-bdd" target="_blank">Dan North - Introducing BDD</a></li>
+</ul>
+<h1 id="prerequisites">Prerequisites</h1>
+<p>There are two important prerequisite inputs to a Behaviour Specification writing session - the requirements and an initial low-level technical design.
+I cannot stress enough how important these prerequisites are to hosting a successful Behaviour Specification writing session!</p>
+<h2 id="requirement-analysis-complete">Requirement Analysis Complete</h2>
+<p>Before your team meets to determine the Behaviour Specifications (typically for a User Story, if your team is following an Agile methodology), ensure that the requirements analysis is as complete as possible.
+The nemesis of a Behaviour Specification writing session is unknown, unclear or incomplete requirements.
+Unclear requirements are the primary cause of elongated discussions, frustration and confusion in a Behaviour Specification writing meeting.</p>
+<p>During the behaviour writing meeting, if missing requirements are identified, I recommend that you simply make a note of them for later and carry on - if possible.
+On the other hand, if there is a critical requirement missing, it is wiser to postpone the meeting until the relevant details of the requirement can be determined.</p>
+<p>If a team ever walks away from a Behaviour Specification writing session exhausted or thinking that the process is difficult, I can almost guarantee that there was a lack of requirements analysis performed before the meeting.
+The requirements gathering, analysis and clarification is the difficult work that requires and causes the most discussion, time, effort and agreement.
+Requirements analysis is thus defined as a prerequisite that should remain a very separate process from behaviour writing.</p>
+<p>I have witnessed many Behaviour Specification writing sessions turn into requirements analysis workshops.
+This in itself is not a bad thing - indeed the Behaviour Specification writing meeting has just succeeded in facilitating, identifying and initiating other important discussions.
+However, if this happens in your meetings, please be careful to clearly communicate to your team that the Behaviour Specifications have been postponed and the team instead is now performing more requirements analysis.
+If your boss thinks the team has been &ldquo;doing Behaviour Specifications&rdquo; for days with none of the expected outputs produced because all the effort has been requirements analysis, then your boss is not receiving accurate information for tracking and planning purposes.
+It is unfair to tarnish the name of and blame the process of BDD due to an unfulfilled prerequisite.
+Additionally, it is counter-productive for stakeholders to start questioning the process of BDD because they incorrectly heard that BDD takes a long time and is difficult - when the culprit really was requirements analysis.</p>
+<h3 id="core-business-requirements">Core Business Requirements</h3>
+<p>There are different types and ways of describing requirements. For the purpose of the Behaviour Specification writing meeting, it is most useful to have the &ldquo;core business requirements&rdquo; understood and documented before the behaviour writing meeting.</p>
+<p>A &ldquo;core business requirement&rdquo; has a clear purpose and business value, and it explicitly does not contain a description or specification of the implementation details.</p>
+<p>If a &ldquo;requirement&rdquo; includes implementation detail, then there is the awkward situation where non-technical business colleagues are effectively dictating the implementation design to the technical experts.
+The technical folk however may think of a better implementation option, if they were empowered and given the opportunity.</p>
+<p>Sometimes the &ldquo;core&rdquo; requirements are already known, but many times the author of a requirement has innocently encoded implementation-specific details within the requirement.
+A common example is with User Interface requirements.
+The User Interface requirement may, for instance, specify the need for a new textbox on a screen.
+That however is not a &ldquo;core business requirement&rdquo; because both &ldquo;textbox&rdquo; and &ldquo;screen&rdquo; are implementation details.</p>
+<p>It is more beneficial to take these implementation-specific requirements and convert them back to &ldquo;core business requirements&rdquo;.
+The <a href="http://en.wikipedia.org/wiki/5_Whys" target="_blank">&ldquo;5 Whys&rdquo; principle</a> can be used to find the &ldquo;core&rdquo; or root requirement.
+By iteratively asking &ldquo;Why?&rdquo; or &ldquo;What is the real underlying business need for doing XYZ?&rdquo; the &ldquo;core business requirement&rdquo; can be uncovered.</p>
+<p>Below is a contrived example.</p>
+<p>Let&rsquo;s assume that the documented requirement is: &ldquo;Display a new textbox on screen XYZ so we can enter data for ABC&rdquo;.</p>
+<p>Why?<br/>
+&ldquo;Because we want to enter data for ABC and screen XYZ has related stuff on it.&rdquo;</p>
+<p>Why do you need the data for ABC?<br/>
+&ldquo;We need that data for ABC to calculate MNOP.&rdquo;</p>
+<p>Why do you need to calculate MNOP?<br/>
+&ldquo;To correctly invoice the customer.&rdquo;</p>
+<p>With this understanding we can now state that the &ldquo;core business requirement&rdquo; is: &ldquo;To receive information about ABC so that the customer can be invoiced correctly&rdquo;.</p>
+<p>It is this type of business language that I highly recommend be used in the Behaviour Specifications / scenarios - not implementation-specific language about a textbox!</p>
+<p>I highly recommend that, as overarching style guideline, all wording that is used in a Behaviour Specification should only need to change if there is a change to the &ldquo;core business requirement&rdquo; - and should not need to be changed if there is a change to the technical implementation.
+If you follow this recommendation, your Behaviour Specifications will live and stand strong through the passage of time.</p>
+<h2 id="draft-low-level-technical-design-complete">Draft Low-Level Technical Design Complete</h2>
+<p>After sufficient requirements have been gathered, the solution/technical architects, designers and gurus in the team should have met, discussed and sketched out an initial, draft version of a low-level technical design that identifies the likely systems and components that will be involved in the story.</p>
+<p>During the Behaviour Specification writing meeting, the team will focus on defining the behaviours of each of the components that were identified in this low-level technical design.</p>
+<br/>
+<p>In <a href="/articles/2015/01/behaviour-spec-writing-part-2">Behaviour Specification Writing Methodology - Part 2</a>, I discuss how to successfully run a Behaviour Specification writing meeting.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/bdd/">BDD</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/behaviour-driven-development/">Behaviour-Driven Development</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/behaviour-specifications/">Behaviour Specifications</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/scenarios/">Scenarios</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/testing/">Testing</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2009/12/program-specification-through-mechanism-tests/">
+            <h2 class="post-title">Program Specification Through the Mechanism of Automated Tests</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p>My previous findings regarding the testing of public methods versus private methods opened the door to allow me to better understand that the mindset of a developer performing unit &ldquo;testing&rdquo; is different from the mindset of a developer &ldquo;specifying program behaviour through the mechanism of automated test methods&rdquo;. The difference is subtle but important.</p>
+<p>In the concept and terminology of Behaviour-Driven Development, Design, Analysis and Programming, the resulting program code is simply an implementation of previously specified behaviours. Those said behaviours are initially defined at the business level via the process of requirements gathering and specification, and can be expressed in the business&rsquo;s language as a set of scenarios and stories. These requirements can then be further analysed and broken down into logical and physical program specifications.</p>
+<p>Regardless of whether a test-first approach to development is taken, by the end of the construction task, there should be a set of test cases (automatic and/or manual) that were successfully executed and that covers all of the logic specified in the program specification. In other words, by the end of the construction task, the developer has verified that the program behaves as specified.</p>
+<p>Typically a program&rsquo;s specification is written in a document somewhere which is divorced from the location of the actual code - so great discipline and effort is required in order to keep the specification and code in synch over time. Depending on the company and financial constraints of the project, this may not be feasible.</p>
+<p>However, what if we could remove this boundary between the document and the code?</p>
+<p>Automated test cases serve a number of useful purposes, including:</p>
+<ul>
+<li>Behaviour verification;</li>
+<li>Acting as a &ldquo;safety net&rdquo; for refactoring code;</li>
+<li>Regression testing;</li>
+<li>Professional evidence that one&rsquo;s own code actually does what one has said it does; and</li>
+<li>Acting as sample code for other developers so they can see how to use one&rsquo;s code.</li>
+</ul>
+<p>What if the automated test assets <em>were</em> the actual living program specification that is verified through the mechanism of test methods?</p>
+<p>This concept has been recognised before, and the libraries JBehave, RSpec, NBehave and NSpec have been the result. While I honour the efforts that have gone into those libraries and the ground-breaking concepts, I do not necessarily like the usage of them.</p>
+<p>In fact, all I want right now is to be able to express my specifications in my MSTest classes without the need for a different test runner or the need for another testing framework. In addition, I want other team members to easily grasp the concept and quickly up-skill without too much disruption.</p>
+<p>While a DSL might be more ideal under these circumstances, I write my automated test assets in the C# language. Working within that constraint, I want to express the program specification in test code. With special note to the agreeable BDD concept that <a href="http://dannorth.net/introducing-bdd" target="_blank">&quot;Test method names should be sentences&quot;</a>, I devised the following structure for expressing program specifications as automated test methods.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#66d9ef">namespace</span> <span style="color:#960050;background-color:#1e0010">[</span>MyCompany].[MyAssembly].BehaviourTests.[MySystemUnderSpecification]Spec
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>{
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> [MyPublicMethodUnderSpecification]Spec
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#a6e22e">        [TestClass]</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Scenario</span>[WithDescriptiveName]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>        {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#a6e22e">            [TestMethod]</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> When[MoreScenarioDetails]Should[Blah]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>            {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>                <span style="color:#75715e">// Test code here
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#75715e"></span>            }
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span style="color:#a6e22e">
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#a6e22e">            [TestMethod]</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> When[AnotherSubScenario]Should[Blah]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>            {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>                <span style="color:#75715e">// Test code here
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span style="color:#75715e"></span>            }
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>        }
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>    }
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>}
+</code></pre></div><p>This structure allows for the naming of the public method that is under specification (the parent class name), a general scenario with a description of the context or given setup required (the nested MSTest class name), followed by the test method names which further narrow the scenario and provide descriptive details of the expected behaviour.</p>
+<p>The test names look neat in the Test View in Visual Studio (when the Full Classname column is visible), and are readable just like their corresponding stories.</p>
+<p>The full class name in this instance would look like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#a6e22e">[MyCompany]</span>.[MyAssembly].BehaviourTests.[MySystemUnderSpecification]Spec.[MyPublicMethodUnderSpecification]Spec+Scenario[WithDescriptiveName]
+</code></pre></div><p>With automated spec/test assets/classes structured in this fashion, instead of developers performing unit &ldquo;testing&rdquo;, developers can instead embrace the mindset of &ldquo;specifying program behaviour through the mechanism of automated test methods&rdquo;. In turn, developers should be more focused on their tasks and it should also lead to higher quality code bases.</p>
+<p>Oh, and I haven&rsquo;t even mentioned how much easier it would be for a developer new to a project to learn and understand the code base by looking at the test view and reading all the scenarios that have been specified and coded&hellip;</p>
+<p>If you wanted an even better way to define your program specifications and test assets, then I  highly recommend <a href="http://www.specflow.org/" target="_blank">SpecFlow</a>.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/bdd/">BDD</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/behaviour-driven-development/">Behaviour-Driven Development</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/behaviour-verification/">Behaviour Verification</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/coding-practices/">Coding Practices</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/program-specification/">Program Specification</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/test-driven-development/">Test-Driven Development</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/testing/">Testing</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/visual-studio/">Visual Studio</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+
+    
+    <ul class="pager main-pager">
+        
+            <li class="previous">
+            <a href="/tags/behaviour-driven-development/page/6/">&larr; more recent</a>
+            </li>
+        
+        
+    </ul>
+    
+
+
+                    <div class="mt2">
+                    <section class="mx-auto" style="max-width:728px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="728x90"></div>
+    <br/>
+</section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="page-layout-right-panel">
+    
+
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Featured Content</div>
+
+        <div class="h2">BDD</div>
+        <ul>
+            <li><a href="/library/bdd-behaviour-specification-handbook">The Behaviour Specification Handbook</a></li>
+        </ul>
+
+        <div class="h2">WCF</div>
+        <ul>
+            <li><a href="/articles/2014/07/how-to-call-wcf-service-properly">How To Call WCF Services Properly</a></li>
+            <li><a href="/articles/2014/09/how-to-easily-call-wcf-service-properly">How To Easily Call WCF Services Properly</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Code Libraries</div>
+
+        <div class="h2">.NET Pattern Implementations</div>
+        <ul>
+            <li><a href="/library/channeladam-commands">ChannelAdam Commands Library</a></li>
+            <li><a href="/library/channeladam-disposing">ChannelAdam Disposing Library</a></li>
+            <li><a href="/library/channeladam-transientfaulthandling">ChannelAdam Transient Fault Handling Library</a></li>
+            <li><a href="/library/channeladam-weakevents">ChannelAdam Weak Events Library</a></li>
+        </ul>
+
+        <div class="h2">.NET Helpers / Utilities</div>
+        <ul>
+            <li><a href="/library/channeladam-dispatchproxies">ChannelAdam Dispatch Proxies Library</a></li>
+            <li><a href="/library/channeladam-logging">ChannelAdam Logging Library</a></li>
+            <li><a href="/library/channeladam-primitiveextensions">ChannelAdam Primitive Extensions Library</a></li>
+            <li><a href="/library/channeladam-reflection">ChannelAdam Reflection Library</a></li>
+            <li><a href="/library/channeladam-xml">ChannelAdam XML Library</a></li>
+        </ul>
+   
+        <div class="h2">Web Services</div>
+        <ul>
+            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
+            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
+            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
+            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
+            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
+        </ul>
+
+        <div class="h2">Testing</div>
+        <ul>
+            <li><a href="/library/channeladam-testframework">ChannelAdam Test Framework Library</a></li>
+            <li><a href="/library/channeladam-testframework-moq">ChannelAdam Test Framework Moq Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstestv2">ChannelAdam Test Framework MSTestV2 Library</a></li>
+            <li><a href="/library/channeladam-testframework-nunit">ChannelAdam Test Framework NUnit Library</a></li>
+            <li><a href="/library/channeladam-testframework-text">ChannelAdam Test Framework Text Library</a></li>
+            <li><a href="/library/channeladam-testframework-xml">ChannelAdam Test Framework XML Library</a></li>
+            <li><a href="/library/channeladam-testframework-biztalk">ChannelAdam Test Framework Library for BizTalk</a></li>
+        </ul>
+
+        <div class="h2">DEPRECATED LIBRARIES</div>
+        <ul>
+            <li><a href="/library/channeladam-core">ChannelAdam Core Library</a></li>
+            <li><a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries (V1)</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Connect</div>
+
+        <div class="h2">
+            
+
+
+
+
+
+    <a class="" href="/about-me">About Me</a>
+
+</li>
+        </div>
+
+        <div class="h2">
+            <a href="https://twitter.com/ChannelAdam" target="_blank">Follow @ChannelAdam</a>
+        </div>
+
+        <section class="twitter-feed">
+<a class="twitter-timeline" 
+    data-width="320" 
+    data-theme="dark" 
+    data-link-color="#2B7BB9" 
+    data-tweet-limit="10"
+    href="https://twitter.com/ChannelAdam?ref_src=twsrc%5Etfw">Tweets by @ChannelAdam</a>
+</section>
+    </div>
+</div>
+
+<section class="mx-auto mt2" style="max-width:300px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="300x250"></div>
+    <br/>
+</section>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Recent Blog Posts</div>
+
+        <ul><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2017/11/announcing-dotnet-notebook/">Announcing the ChannelAdam .NET Notebook</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/articles/2017/11/announcing-notebooks/">Announcing the ChannelAdam Software Development Notebooks</a></li><li><a href="/notebooks/distributed-systems/mesosphere-dcos/">Mesosphere DC/OS Notebook</a></li></ul>
+    </div>
+</div>
+
+<section class="mx-auto mt2" style="max-width:160px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="160x600"></div>
+    <br/>
+</section>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Tag Cloud</div>
+
+        
+    <div class="tag-cloud"><a href="/tags/.net" style="font-size:1.257728077256096rem">.Net</a>
+        &nbsp;<a href="/tags/.net-4.0" style="font-size:1.1626083122716342rem">.Net 4.0</a>
+        &nbsp;<a href="/tags/.net-framework" style="font-size:1.257728077256096rem">.Net Framework</a>
+        &nbsp;<a href="/tags/agile" style="font-size:1rem">Agile</a>
+        &nbsp;<a href="/tags/ajax" style="font-size:1rem">Ajax</a>
+        &nbsp;<a href="/tags/amazon-s3" style="font-size:1rem">Amazon S3</a>
+        &nbsp;<a href="/tags/api-apps" style="font-size:1.3252166245432684rem">Api Apps</a>
+        &nbsp;<a href="/tags/api-management" style="font-size:1rem">Api Management</a>
+        &nbsp;<a href="/tags/app-service" style="font-size:1.3252166245432684rem">App Service</a>
+        &nbsp;<a href="/tags/artificial-intelligence" style="font-size:1rem">Artificial Intelligence</a>
+        &nbsp;<a href="/tags/asp.net" style="font-size:1.257728077256096rem">Asp.net</a>
+        &nbsp;<a href="/tags/asp.net-mvc-3" style="font-size:1.1626083122716342rem">Asp.net Mvc 3</a>
+        &nbsp;<a href="/tags/asp.net-mvc2" style="font-size:1rem">Asp.net Mvc2</a>
+        &nbsp;<a href="/tags/assembly-binding" style="font-size:1.1626083122716342rem">Assembly Binding</a>
+        &nbsp;<a href="/tags/async" style="font-size:1rem">Async</a>
+        &nbsp;<a href="/tags/asynchronous" style="font-size:1rem">Asynchronous</a>
+        &nbsp;<a href="/tags/azure" style="font-size:1.257728077256096rem">Azure</a>
+        &nbsp;<a href="/tags/battery" style="font-size:1.1626083122716342rem">Battery</a>
+        &nbsp;<a href="/tags/bdd" style="font-size:1.9756498736298047rem">Bdd</a>
+        &nbsp;<a href="/tags/behaviour-driven" style="font-size:1.1626083122716342rem">Behaviour Driven</a>
+        &nbsp;<a href="/tags/behaviour-driven-development" style="font-size:1.9756498736298047rem">Behaviour Driven Development</a>
+        &nbsp;<a href="/tags/behaviour-specification-handbook" style="font-size:1.960509510525089rem">Behaviour Specification Handbook</a>
+        &nbsp;<a href="/tags/behaviour-specifications" style="font-size:1.9719554003354438rem">Behaviour Specifications</a>
+        &nbsp;<a href="/tags/behaviour-verification" style="font-size:1rem">Behaviour Verification</a>
+        &nbsp;<a href="/tags/bitbucket" style="font-size:1rem">Bitbucket</a>
+        &nbsp;<a href="/tags/biztalk" style="font-size:1.4203363895277301rem">Biztalk</a>
+        &nbsp;<a href="/tags/biztalk360" style="font-size:1.1626083122716342rem">Biztalk360</a>
+        &nbsp;<a href="/tags/build" style="font-size:1.3252166245432684rem">Build</a>
+        &nbsp;<a href="/tags/business" style="font-size:1rem">Business</a>
+        &nbsp;<a href="/tags/c" style="font-size:1rem">C#</a>
+        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8272637463603703rem">Channeladam .Net Libraries</a>
+        &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
+        &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
+        &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
+        &nbsp;<a href="/tags/code-quality" style="font-size:1rem">Code Quality</a>
+        &nbsp;<a href="/tags/code-reviews" style="font-size:1rem">Code Reviews</a>
+        &nbsp;<a href="/tags/coding-practices" style="font-size:1.257728077256096rem">Coding Practices</a>
+        &nbsp;<a href="/tags/command" style="font-size:1.1626083122716342rem">Command</a>
+        &nbsp;<a href="/tags/container" style="font-size:1.3775648087257248rem">Container</a>
+        &nbsp;<a href="/tags/conventions" style="font-size:1rem">Conventions</a>
+        &nbsp;<a href="/tags/cucumber" style="font-size:1rem">Cucumber</a>
+        &nbsp;<a href="/tags/data-science" style="font-size:1rem">Data Science</a>
+        &nbsp;<a href="/tags/ddd" style="font-size:1rem">Ddd</a>
+        &nbsp;<a href="/tags/diffplex" style="font-size:1rem">Diffplex</a>
+        &nbsp;<a href="/tags/digital-ocean" style="font-size:1rem">Digital Ocean</a>
+        &nbsp;<a href="/tags/dispatch-proxies" style="font-size:1rem">Dispatch Proxies</a>
+        &nbsp;<a href="/tags/disposable" style="font-size:1rem">Disposable</a>
+        &nbsp;<a href="/tags/dispose" style="font-size:1rem">Dispose</a>
+        &nbsp;<a href="/tags/distributed" style="font-size:1.3775648087257248rem">Distributed</a>
+        &nbsp;<a href="/tags/distributed-systems" style="font-size:1rem">Distributed Systems</a>
+        &nbsp;<a href="/tags/docker-swarm" style="font-size:1rem">Docker Swarm</a>
+        &nbsp;<a href="/tags/docpad" style="font-size:1rem">Docpad</a>
+        &nbsp;<a href="/tags/domain-driven-design" style="font-size:1rem">Domain Driven Design</a>
+        &nbsp;<a href="/tags/dynamic" style="font-size:1rem">Dynamic</a>
+        &nbsp;<a href="/tags/embedded-resources" style="font-size:1rem">Embedded Resources</a>
+        &nbsp;<a href="/tags/encoding" style="font-size:1rem">Encoding</a>
+        &nbsp;<a href="/tags/events" style="font-size:1rem">Events</a>
+        &nbsp;<a href="/tags/extensions" style="font-size:1rem">Extensions</a>
+        &nbsp;<a href="/tags/failure" style="font-size:1rem">Failure</a>
+        &nbsp;<a href="/tags/finalize" style="font-size:1rem">Finalize</a>
+        &nbsp;<a href="/tags/fluent" style="font-size:1rem">Fluent</a>
+        &nbsp;<a href="/tags/framework" style="font-size:1.257728077256096rem">Framework</a>
+        &nbsp;<a href="/tags/gauge" style="font-size:1.1626083122716342rem">Gauge</a>
+        &nbsp;<a href="/tags/gherkin" style="font-size:1.1626083122716342rem">Gherkin</a>
+        &nbsp;<a href="/tags/github" style="font-size:1rem">Github</a>
+        &nbsp;<a href="/tags/gondor" style="font-size:1rem">Gondor</a>
+        &nbsp;<a href="/tags/google-app-engine" style="font-size:1rem">Google App Engine</a>
+        &nbsp;<a href="/tags/google-compute-engine" style="font-size:1rem">Google Compute Engine</a>
+        &nbsp;<a href="/tags/graphics" style="font-size:1rem">Graphics</a>
+        &nbsp;<a href="/tags/heroku" style="font-size:1rem">Heroku</a>
+        &nbsp;<a href="/tags/hosting" style="font-size:1rem">Hosting</a>
+        &nbsp;<a href="/tags/hugo" style="font-size:1rem">Hugo</a>
+        &nbsp;<a href="/tags/image-optimisation" style="font-size:1rem">Image Optimisation</a>
+        &nbsp;<a href="/tags/injected" style="font-size:1rem">Injected</a>
+        &nbsp;<a href="/tags/integration" style="font-size:1.1626083122716342rem">Integration</a>
+        &nbsp;<a href="/tags/intellisense" style="font-size:1.257728077256096rem">Intellisense</a>
+        &nbsp;<a href="/tags/ioc" style="font-size:1.1626083122716342rem">Ioc</a>
+        &nbsp;<a href="/tags/javascript" style="font-size:1rem">Javascript</a>
+        &nbsp;<a href="/tags/jpeg" style="font-size:1rem">Jpeg</a>
+        &nbsp;<a href="/tags/jquery" style="font-size:1rem">Jquery</a>
+        &nbsp;<a href="/tags/kestrel" style="font-size:1rem">Kestrel</a>
+        &nbsp;<a href="/tags/kubernetes" style="font-size:1rem">Kubernetes</a>
+        &nbsp;<a href="/tags/languages" style="font-size:1rem">Languages</a>
+        &nbsp;<a href="/tags/library" style="font-size:1.5154561545121918rem">Library</a>
+        &nbsp;<a href="/tags/linux" style="font-size:1.257728077256096rem">Linux</a>
+        &nbsp;<a href="/tags/loaded" style="font-size:1rem">Loaded</a>
+        &nbsp;<a href="/tags/logging" style="font-size:1.1626083122716342rem">Logging</a>
+        &nbsp;<a href="/tags/logic-apps" style="font-size:1.3252166245432684rem">Logic Apps</a>
+        &nbsp;<a href="/tags/machine-learning" style="font-size:1rem">Machine Learning</a>
+        &nbsp;<a href="/tags/mapping" style="font-size:1.1626083122716342rem">Mapping</a>
+        &nbsp;<a href="/tags/maps" style="font-size:1.257728077256096rem">Maps</a>
+        &nbsp;<a href="/tags/mesosphere-dc/os" style="font-size:1rem">Mesosphere Dc/Os</a>
+        &nbsp;<a href="/tags/messaging" style="font-size:1.1626083122716342rem">Messaging</a>
+        &nbsp;<a href="/tags/methodology" style="font-size:1rem">Methodology</a>
+        &nbsp;<a href="/tags/microservices" style="font-size:1rem">Microservices</a>
+        &nbsp;<a href="/tags/microsoft" style="font-size:1.3252166245432684rem">Microsoft</a>
+        &nbsp;<a href="/tags/microsoft-azure" style="font-size:1.3775648087257248rem">Microsoft Azure</a>
+        &nbsp;<a href="/tags/mock4net" style="font-size:1rem">Mock4net</a>
+        &nbsp;<a href="/tags/moq" style="font-size:1.1626083122716342rem">Moq</a>
+        &nbsp;<a href="/tags/msbuild" style="font-size:1.257728077256096rem">Msbuild</a>
+        &nbsp;<a href="/tags/mstest" style="font-size:1.257728077256096rem">Mstest</a>
+        &nbsp;<a href="/tags/mstest-v2" style="font-size:1rem">Mstest V2</a>
+        &nbsp;<a href="/tags/named-parameters" style="font-size:1rem">Named Parameters</a>
+        &nbsp;<a href="/tags/naming" style="font-size:1.1626083122716342rem">Naming</a>
+        &nbsp;<a href="/tags/nancy" style="font-size:1.3775648087257248rem">Nancy</a>
+        &nbsp;<a href="/tags/notebooks" style="font-size:1.3252166245432684rem">Notebooks</a>
+        &nbsp;<a href="/tags/nunit" style="font-size:1.1626083122716342rem">Nunit</a>
+        &nbsp;<a href="/tags/nvidia" style="font-size:1.1626083122716342rem">Nvidia</a>
+        &nbsp;<a href="/tags/open-source" style="font-size:1.1626083122716342rem">Open Source</a>
+        &nbsp;<a href="/tags/operations" style="font-size:1rem">Operations</a>
+        &nbsp;<a href="/tags/optimisation" style="font-size:1rem">Optimisation</a>
+        &nbsp;<a href="/tags/optional-parameters" style="font-size:1rem">Optional Parameters</a>
+        &nbsp;<a href="/tags/orchestration" style="font-size:1.3775648087257248rem">Orchestration</a>
+        &nbsp;<a href="/tags/paas" style="font-size:1rem">Paas</a>
+        &nbsp;<a href="/tags/partial-views" style="font-size:1rem">Partial Views</a>
+        &nbsp;<a href="/tags/pattern" style="font-size:1.3775648087257248rem">Pattern</a>
+        &nbsp;<a href="/tags/patterns" style="font-size:1rem">Patterns</a>
+        &nbsp;<a href="/tags/pci-dss" style="font-size:1rem">Pci Dss</a>
+        &nbsp;<a href="/tags/png" style="font-size:1rem">Png</a>
+        &nbsp;<a href="/tags/power" style="font-size:1.1626083122716342rem">Power</a>
+        &nbsp;<a href="/tags/powershell" style="font-size:1.6017222572298446rem">Powershell</a>
+        &nbsp;<a href="/tags/principles" style="font-size:1rem">Principles</a>
+        &nbsp;<a href="/tags/probing-privatepath" style="font-size:1rem">Probing Privatepath</a>
+        &nbsp;<a href="/tags/productivity" style="font-size:1rem">Productivity</a>
+        &nbsp;<a href="/tags/program-specification" style="font-size:1rem">Program Specification</a>
+        &nbsp;<a href="/tags/programming" style="font-size:1.1626083122716342rem">Programming</a>
+        &nbsp;<a href="/tags/python" style="font-size:1rem">Python</a>
+        &nbsp;<a href="/tags/r" style="font-size:1rem">R</a>
+        &nbsp;<a href="/tags/razor" style="font-size:1.1626083122716342rem">Razor</a>
+        &nbsp;<a href="/tags/real-proxies" style="font-size:1rem">Real Proxies</a>
+        &nbsp;<a href="/tags/redhat-openshift" style="font-size:1rem">Redhat Openshift</a>
+        &nbsp;<a href="/tags/reflection" style="font-size:1rem">Reflection</a>
+        &nbsp;<a href="/tags/retry" style="font-size:1rem">Retry</a>
+        &nbsp;<a href="/tags/reversible" style="font-size:1.1626083122716342rem">Reversible</a>
+        &nbsp;<a href="/tags/scale" style="font-size:1.3775648087257248rem">Scale</a>
+        &nbsp;<a href="/tags/scenarios" style="font-size:1.9719554003354438rem">Scenarios</a>
+        &nbsp;<a href="/tags/script" style="font-size:1rem">Script</a>
+        &nbsp;<a href="/tags/security" style="font-size:1rem">Security</a>
+        &nbsp;<a href="/tags/self" style="font-size:1rem">Self</a>
+        &nbsp;<a href="/tags/serialization" style="font-size:1rem">Serialization</a>
+        &nbsp;<a href="/tags/service" style="font-size:1rem">Service</a>
+        &nbsp;<a href="/tags/service-bus" style="font-size:1rem">Service Bus</a>
+        &nbsp;<a href="/tags/service-bus-connector" style="font-size:1rem">Service Bus Connector</a>
+        &nbsp;<a href="/tags/service-fabric" style="font-size:1.257728077256096rem">Service Fabric</a>
+        &nbsp;<a href="/tags/serviceconsumer" style="font-size:1.1626083122716342rem">Serviceconsumer</a>
+        &nbsp;<a href="/tags/services" style="font-size:1.3775648087257248rem">Services</a>
+        &nbsp;<a href="/tags/single-responsibility-principle" style="font-size:1rem">Single Responsibility Principle</a>
+        &nbsp;<a href="/tags/singleton" style="font-size:1rem">Singleton</a>
+        &nbsp;<a href="/tags/soa" style="font-size:1rem">Soa</a>
+        &nbsp;<a href="/tags/soap-1.1" style="font-size:1.3252166245432684rem">Soap 1.1</a>
+        &nbsp;<a href="/tags/soap-1.2" style="font-size:1.3252166245432684rem">Soap 1.2</a>
+        &nbsp;<a href="/tags/solid" style="font-size:1.257728077256096rem">Solid</a>
+        &nbsp;<a href="/tags/specflow" style="font-size:1.1626083122716342rem">Specflow</a>
+        &nbsp;<a href="/tags/srp" style="font-size:1rem">Srp</a>
+        &nbsp;<a href="/tags/standards" style="font-size:1rem">Standards</a>
+        &nbsp;<a href="/tags/static-site-generator" style="font-size:1rem">Static Site Generator</a>
+        &nbsp;<a href="/tags/teamreview" style="font-size:1rem">Teamreview</a>
+        &nbsp;<a href="/tags/test-driven-development" style="font-size:1rem">Test Driven Development</a>
+        &nbsp;<a href="/tags/test-framework" style="font-size:1.4878249368149024rem">Test Framework</a>
+        &nbsp;<a href="/tags/testing" style="font-size:1.996672366820611rem">Testing</a>
+        &nbsp;<a href="/tags/text" style="font-size:1rem">Text</a>
+        &nbsp;<a href="/tags/tfs" style="font-size:1.1626083122716342rem">Tfs</a>
+        &nbsp;<a href="/tags/thread-safe" style="font-size:1rem">Thread Safe</a>
+        &nbsp;<a href="/tags/transient-fault-handling" style="font-size:1rem">Transient Fault Handling</a>
+        &nbsp;<a href="/tags/validation" style="font-size:1rem">Validation</a>
+        &nbsp;<a href="/tags/vb.net" style="font-size:1rem">Vb.net</a>
+        &nbsp;<a href="/tags/visual-studio" style="font-size:1.456499245823252rem">Visual Studio</a>
+        &nbsp;<a href="/tags/visual-studio-2010" style="font-size:1.3252166245432684rem">Visual Studio 2010</a>
+        &nbsp;<a href="/tags/waterfall" style="font-size:1rem">Waterfall</a>
+        &nbsp;<a href="/tags/wcf" style="font-size:1.7142273230793479rem">Wcf</a>
+        &nbsp;<a href="/tags/weak" style="font-size:1rem">Weak</a>
+        &nbsp;<a href="/tags/weak-events" style="font-size:1rem">Weak Events</a>
+        &nbsp;<a href="/tags/web" style="font-size:1.3252166245432684rem">Web</a>
+        &nbsp;<a href="/tags/web-apps" style="font-size:1.1626083122716342rem">Web Apps</a>
+        &nbsp;<a href="/tags/web-development" style="font-size:1.3252166245432684rem">Web Development</a>
+        &nbsp;<a href="/tags/windows" style="font-size:1.6017222572298446rem">Windows</a>
+        &nbsp;<a href="/tags/windows-communication-foundation" style="font-size:1.678064466783826rem">Windows Communication Foundation</a>
+        &nbsp;<a href="/tags/windows-communication-framework" style="font-size:1.257728077256096rem">Windows Communication Framework</a>
+        &nbsp;<a href="/tags/work-items" style="font-size:1rem">Work Items</a>
+        &nbsp;<a href="/tags/xml" style="font-size:1.257728077256096rem">Xml</a>
+        &nbsp;<a href="/tags/xmlunit" style="font-size:1rem">Xmlunit</a>
+        &nbsp;</div>
+
+    </div>
+</div>
+
+
+
+
+    </aside>
+</div>
+
+    <footer>
+    <div class="page-width mx-auto flex flex-wrap items-center justify-around">
+        <small>
+            Copyright &copy; 2009-2020 by Adam Craven. All rights reserved.
+            <br/><br/>
+        </small>
+
+        <small class="center">
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">
+                <img alt="Creative Commons Licence" src="https://licensebuttons.net/l/by/4.0/88x31.png" style="border-width: 0;" /></a>
+            <br />
+            This work is licensed under a
+            <br />
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+        </small>
+    </div>
+</footer>
+        </div>
+</div>
+    <script>
+    //================================================================
+// Twitter widgets - e.g. follow button
+!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+        js = d.createElement(s); js.id = id; js.async = true; js.defer = true;
+        js.src = 'https://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');
+    (function () {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.defer = true;
+    po.src = 'https://platform.linkedin.com/in.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script>
+window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+    return t;
+}(document, "script", "twitter-wjs"));
+</script>
+<script>
+function _dmBootstrap(file) {
+	var _dma = document.createElement('script');
+	_dma.type = 'text/javascript';
+	_dma.async = true; _dma.defer = true;
+	_dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+}
+function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+(function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+
+  </body>
+</html>

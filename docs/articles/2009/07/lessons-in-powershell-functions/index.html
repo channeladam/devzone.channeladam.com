@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en-au">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js"><script async src="https://cdn.ampproject.org/v0.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Libre+Franklin" rel="stylesheet">
+    <style amp-custom>/*
+ * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}[tabindex="-1"]:focus:not(:focus-visible){outline:0 !important}hr{box-sizing:content-box;height:0;overflow:visible}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}abbr[title],abbr[data-original-title]{text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul,dl{margin-top:0;margin-bottom:1rem}ol ol,ul ul,ol ul,ul ol{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#007bff;text-decoration:none;background-color:transparent}a:hover{color:#0056b3;text-decoration:underline}a:not([href]){color:inherit;text-decoration:none}a:not([href]):hover{color:inherit;text-decoration:none}pre,code,kbd,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em}pre{margin-top:0;margin-bottom:1rem;overflow:auto}figure{margin:0 0 1rem}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}table{border-collapse:collapse}caption{padding-top:.75rem;padding-bottom:.75rem;color:#6c757d;text-align:left;caption-side:bottom}th{text-align:inherit}label{display:inline-block;margin-bottom:.5rem}button{border-radius:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}input,button,select,optgroup,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button,select{text-transform:none}select{word-wrap:normal}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button:not(:disabled),[type="button"]:not(:disabled),[type="reset"]:not(:disabled),[type="submit"]:not(:disabled){cursor:pointer}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{padding:0;border-style:none}input[type="radio"],input[type="checkbox"]{box-sizing:border-box;padding:0}input[type="date"],input[type="time"],input[type="datetime-local"],input[type="month"]{-webkit-appearance:listbox}textarea{overflow:auto;resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal}progress{vertical-align:baseline}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{outline-offset:-2px;-webkit-appearance:none}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}summary{display:list-item;cursor:pointer}template{display:none}[hidden]{display:none !important}.max-width-half{max-width:50%}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0{margin-left:0}.mx0{margin-left:0;margin-right:0}.my0{margin-top:0;margin-bottom:0}.m1{margin:.5rem}.mt1{margin-top:.5rem}.mr1{margin-right:.5rem}.mb1{margin-bottom:.5rem}.ml1{margin-left:.5rem}.mx1{margin-left:.5rem;margin-right:.5rem}.my1{margin-top:.5rem;margin-bottom:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.mr2{margin-right:1rem}.mb2{margin-bottom:1rem}.ml2{margin-left:1rem}.mx2{margin-left:1rem;margin-right:1rem}.my2{margin-top:1rem;margin-bottom:1rem}.m3{margin:2rem}.mt3,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-top:2rem}.mr3{margin-right:2rem}.mb3{margin-bottom:2rem}.ml3{margin-left:2rem}.mx3{margin-left:2rem;margin-right:2rem}.my3{margin-top:2rem;margin-bottom:2rem}.m4{margin:4rem}.mt4,#comments{margin-top:4rem}.mr4{margin-right:4rem}.mb4{margin-bottom:4rem}.ml4{margin-left:4rem}.mx4{margin-left:4rem;margin-right:4rem}.my4{margin-top:4rem;margin-bottom:4rem}.mxn1{margin-left:calc(0.5rem * -1);margin-right:calc(0.5rem * -1)}.mxn2{margin-left:calc(1rem * -1);margin-right:calc(1rem * -1)}.mxn3{margin-left:calc(2rem * -1);margin-right:calc(2rem * -1)}.mxn4{margin-left:calc(4rem * -1);margin-right:calc(4rem * -1)}.m-auto{margin:auto}.mt-auto{margin-top:auto}.mr-auto{margin-right:auto}.mb-auto{margin-bottom:auto}.ml-auto{margin-left:auto}.mx-auto,img.center,.page-image-toc-container > div img{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.p0{padding:0}.pt0{padding-top:0}.pr0{padding-right:0}.pb0{padding-bottom:0}.pl0{padding-left:0}.px0{padding-left:0;padding-right:0}.py0{padding-top:0;padding-bottom:0}.p1{padding:.5rem}.pt1{padding-top:.5rem}.pr1{padding-right:.5rem}.pb1{padding-bottom:.5rem}.pl1{padding-left:.5rem}.py1{padding-top:.5rem;padding-bottom:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.pt2{padding-top:1rem}.pr2{padding-right:1rem}.pb2{padding-bottom:1rem}.pl2{padding-left:1rem}.py2{padding-top:1rem;padding-bottom:1rem}.px2{padding-left:1rem;padding-right:1rem}.p3{padding:2rem}.pt3{padding-top:2rem}.pr3{padding-right:2rem}.pb3{padding-bottom:2rem}.pl3{padding-left:2rem}.py3{padding-top:2rem;padding-bottom:2rem}.px3{padding-left:2rem;padding-right:2rem}.p4{padding:4rem}.pt4{padding-top:4rem}.pr4{padding-right:4rem}.pb4{padding-bottom:4rem}.pl4{padding-left:4rem}.py4{padding-top:4rem;padding-bottom:4rem}.px4{padding-left:4rem;padding-right:4rem}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.left-0{left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.max-width-1{max-width:24rem}.max-width-2{max-width:32rem}.max-width-3{max-width:48rem}.max-width-4{max-width:64rem}.border-box{box-sizing:border-box}.align-baseline{vertical-align:baseline}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.align-bottom{vertical-align:bottom}.border-none{border:0}.rounded{border-radius:3px}.circle{border-radius:50%}.not-rounded{border-radius:0}.flex,.header-banner > div,.page-image-toc-container,.table-contents-container{display:-ms-flexbox;display:flex}@media (min-width:40em){.sm-flex{display:-ms-flexbox;display:flex}}@media (min-width:52em){.md-flex{display:-ms-flexbox;display:flex}}@media (min-width:64em){.lg-flex{display:-ms-flexbox;display:flex}}.flex-column{-ms-flex-direction:column;flex-direction:column}.flex-wrap,.page-image-toc-container{-ms-flex-wrap:wrap;flex-wrap:wrap}.items-start{-ms-flex-align:start;align-items:flex-start}.items-end{-ms-flex-align:end;align-items:flex-end}.items-center,.header-banner > div,.page-image-toc-container{-ms-flex-align:center;align-items:center}.items-baseline{-ms-flex-align:baseline;align-items:baseline}.items-stretch{-ms-flex-align:stretch;align-items:stretch}.self-start{-ms-flex-item-align:start;align-self:flex-start}.self-end{-ms-flex-item-align:end;align-self:flex-end}.self-center{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}.self-baseline{-ms-flex-item-align:baseline;align-self:baseline}.self-stretch{-ms-flex-item-align:stretch;-ms-grid-row-align:stretch;align-self:stretch}.justify-start{-ms-flex-pack:start;justify-content:flex-start}.justify-end{-ms-flex-pack:end;justify-content:flex-end}.justify-center,.page-image-toc-container,.table-contents-container{-ms-flex-pack:center;justify-content:center}.justify-between{-ms-flex-pack:justify;justify-content:space-between}.justify-around,.header-banner > div{-ms-flex-pack:distribute;justify-content:space-around}.justify-evenly{-ms-flex-pack:space-evenly;justify-content:space-evenly}.content-start{-ms-flex-line-pack:start;align-content:flex-start}.content-end{-ms-flex-line-pack:end;align-content:flex-end}.content-center{-ms-flex-line-pack:center;align-content:center}.content-between{-ms-flex-line-pack:justify;align-content:space-between}.content-around{-ms-flex-line-pack:distribute;align-content:space-around}.content-stretch{-ms-flex-line-pack:stretch;align-content:stretch}.flex-auto{-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.flex-none{-ms-flex:none;flex:none}.order-0{-ms-flex-order:0;order:0}.order-1{-ms-flex-order:1;order:1}.order-2{-ms-flex-order:2;order:2}.order-3{-ms-flex-order:3;order:3}.order-last{-ms-flex-order:99999;order:99999}.font-family-inherit{font-family:inherit}.font-size-inherit{font-size:inherit}.text-decoration-none{text-decoration:none}.bold{font-weight:bold;font-weight:bold}.regular{font-weight:normal}.italic{font-style:italic}.caps{text-transform:uppercase;letter-spacing:.2em}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.line-height-1{line-height:1}.line-height-2{line-height:1.125}.line-height-3{line-height:1.25}.line-height-4{line-height:1.5}.list-style-none{list-style:none}.underline{text-decoration:underline}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.hide{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}@media (max-width:40em){.xs-hide{display:none !important}}@media (min-width:40em) and (max-width:52em){.sm-hide{display:none !important}}@media (min-width:52em) and (max-width:64em){.md-hide{display:none !important}}@media (min-width:64em){.lg-hide{display:none !important}}.display-none{display:none !important}.h00{font-size:4rem}.h0{font-size:3rem}.h1{font-size:2rem}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.h5{font-size:.875rem}.h6{font-size:.75rem}.page-width,.paper-inner{max-width:1800px}.font-for-content,body{font-family:'Roboto',sans-serif}.font-for-heading,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.header-title,.widget div.h1,.widget div.h2,.navbar nav,.nav-header,.nav-sub-header{font-family:'Libre Franklin',sans-serif;font-weight:bold}body{background-color:#f8f8f8;min-width:400px}ol,ul,dl{padding-left:2rem;padding-right:1rem;margin:0 0 1rem 0}p + ul,p + ol,p + dl{margin-top:-.8rem}p > code,li > code{word-break:break-word}p + div.highlight > pre{margin-top:-.8rem}pre{margin:0 0 2rem 0;padding:1rem .2rem}table{margin-bottom:1rem;display:block;max-width:min-content;overflow-x:auto}table th,table td{padding:0 .5rem}table th{text-align:left;background-color:#f2f2f2}table tr:nth-child(even){background-color:#f2f2f2}table,th,td{border:1px dotted #000}blockquote{margin:1rem 0 1rem 2rem;white-space:normal;overflow-x:auto;font-style:italic}ul li > a:link,ul li > a:visited{background-color:inherit}ul li > a:hover,ul li > a:focus{color:#c03;background-color:inherit;text-decoration:underline}ul li.active{background-color:inherit}ul li.active > a:link,ul li.active > a:visited,ul li.active > a:focus,ul li.active > a:hover{color:#c03;background-color:inherit}ul li.active > a:focus,ul li.active > a:hover{text-decoration:none}a{color:#2476cc}a.active:link,a.active:visited,a.active:focus,a.active:hover{color:#c03}a.active:focus,a.active:hover{text-decoration:none}section{margin-bottom:20px}.content h1,.content .h1{font-size:2.5em}.content h2,.content .h2{font-size:2.1em}.content h3,.content .h3{font-size:1.7em}.content h4,.content .h4{font-size:1.3em}.content h5,.content .h5{font-size:.9em}.content h6,.content .h6{font-size:.6em}.post-content h1,.post-content .h1{font-size:2.1em}.post-content h2,.post-content .h2{font-size:1.7em}.post-content h3,.post-content .h3{font-size:1.3em}.post-content h4,.post-content .h4{font-size:.9em}.post-content h5,.post-content .h5{font-size:.67em}.post-content h6,.post-content .h6{font-size:.5em}.header-banner{height:auto;background-color:#000}.header-banner > div{margin:0 0}.logo-wrapper{float:none;text-align:center}.logo-wrapper a{display:block;line-height:0}.logo-wrapper amp-img{min-width:143px;max-width:143px;min-height:100px}.header-title{font-size:2em;text-align:center;color:#c03;padding:0 25px 0 25px;text-transform:uppercase}.header-title-outer{background-image:url("/img/site/devzone-logo.jpg");background-repeat:no-repeat;background-position:left 0 top 30%;background-size:cover}.header-title{max-height:100px}.header-title span{background-color:#000;padding:0 4px}@media (min-width:930px){.logo-wrapper{float:left;padding-left:10px;padding-right:10px}.logo-wrapper amp-img{max-height:100px}.header-title-outer{margin-left:238px}.header-title-inner{display:table;width:100%;height:100px}.header-title{display:inline-block;display:table-cell;font-size:2.5em;vertical-align:middle;word-spacing:1rem}}.content{margin:0;padding:0;min-width:360px;min-height:800px}.paper-outer{-moz-box-shadow:0 0 40px rgba(0,0,0,0.15);-webkit-box-shadow:0 0 5px rgba(0,0,0,0.15);-goog-ms-box-shadow:0 0 10px #333;box-shadow:0 0 40px rgba(0,0,0,0.15);margin-bottom:1px}.paper-inner{padding:0 .2rem}@media (min-width:930px){.paper-inner{padding:0 2rem}}.page-layout{margin:0 auto 2rem auto;display:grid;grid-row-gap:0;grid-template-areas:"main" "rightpanel"}.page-layout-right-panel{grid-area:rightpanel;min-height:800px;margin-top:2rem;max-width:400px}.page-layout-main{grid-area:main;min-width:400px}.page-layout-main .card-container{height:100%}.page-layout-main .card-container .card{height:100%;min-height:200px}@media (min-width:930px){.page-layout{grid-column-gap:2rem;grid-row-gap:0;grid-auto-rows:1fr;grid-template-columns:6fr 2fr;grid-template-areas:"main rightpanel"}.page-layout-right-panel{margin-top:0}}.page-layout-right-panel .widget .twitter-feed{position:relative;overflow-y:scroll;height:800px;min-height:800px;margin:0 auto;width:350px;height:80vh}.card-container{margin-left:-.5rem;margin-right:-.5rem}.card-container:not(:first-of-type){margin-top:2rem}.card{padding:.5rem;background-color:#fff;box-shadow:0 30px 4rem 0 rgba(1,1,1,0.15)}.widget.card{padding:1.5rem}.widget ul{margin:0;padding:.5rem;text-align:left;background-color:#000}.widget ul li{list-style-type:none}.widget ul li > a:link,.widget ul li > a:visited{color:#81beff}.widget ul li > a:hover,.widget ul li > a:focus{color:#c03}.widget ul li.active > a:link,.widget ul li.active > a:visited,.widget ul li.active > a:focus,.widget ul li.active > a:hover{color:#c03}.widget ul li:nth-child(n){margin-bottom:1rem}.widget ul li:last-child,.widget ul li:only-child{margin-bottom:0}.widget div.h1{margin:0;text-align:center;color:#000;font-size:1.8rem}.widget div.h2{text-align:left;color:#000;font-size:1.5rem;font-weight:bold}.navbar{margin-top:1px;border-left:none;border-right:none;border-bottom:none}.navbar nav{font-weight:400;background-color:#000;margin:0 0 0 0;text-align:center}.navbar nav ul{margin:0;padding:0}.navbar nav li{display:inline;list-style-type:none;padding-right:20px}.navbar nav .btn-link{color:#fff}.navbar nav .btn-link.active{color:#c03}.navbar nav .btn-link:hover,.navbar nav .btn-link:focus{color:#c03}.navbar nav .btn-lg{font-size:1.5em}.nav-header{text-align:left;color:#000;font-size:2em}.nav-sub-header{text-align:left;color:#000;font-size:1.5em;padding:20px 0 0 0}ul.nav-stacked{background-color:#000}@media (min-width:930px){navbar nav .btn-lg{font-size:2em}}.post-content img,.library-page-content img,.notebook-page-content img{display:block;max-width:100%;height:auto}.social-share-buttons ul{padding:0}.social-share-buttons ul li{display:inline;list-style-type:none;margin-right:.5rem;vertical-align:top}.twitter-share-button{margin-top:4px}.tag-cloud a{margin-right:.8rem}ul.pager{padding:0;margin:0 0 4rem 0}ul.pager > li{display:inline;list-style-type:none;margin-right:1rem}ul.pager > li > a,ul.pager > li > span{background-color:#000;border-color:#000;color:#fff;padding:.4rem 1rem}ul.pager > li > a:focus,ul.pager > li > a:hover,ul.pager > li > span:focus,ul.pager > li > span:hover{background-color:#000;border-color:#000;color:#c03;text-decoration:underline}ul.pager > .active > a,ul.pager > .active > a:focus,ul.pager > .active > a:hover,ul.pager > .active > span,ul.pager > .active > span:focus,ul.pager > .active > span:hover{background-color:#000;border-color:#000;color:#c03;text-decoration:none}ul.pager > .disabled > a,ul.pager > .disabled > a:focus,ul.pager > .disabled > a:hover,ul.pager > .disabled > span,ul.pager > .disabled > span:focus,ul.pager > .disabled > span:hover{background-color:#000;border-color:#000;color:#808080}.page-image-toc-container > div{width:100%}.page-image-toc-container > div img{max-width:100%;max-height:100% !important}@media (min-width:1300px){.page-image-toc-container > div{display:inline-block;max-width:50%}}.table-contents-container .table-contents{padding:1em}.table-contents-container .table-contents h2,.table-contents-container .table-contents .h2{margin:0 0 1rem 0}.table-contents-container .table-contents ul{list-style:square inside;padding:0}.table-contents-container .table-contents li ul{list-style:circle inside;margin-left:1em}.post-date{font-weight:bold;font-size:smaller;margin-bottom:1em}.post-comment-count{margin-top:10px}code{color:inherit;background-color:inherit;padding:0 0}article{margin-bottom:60px}.graph-container{height:92vh}footer{background-color:#000;padding:2em 0 2em 0;color:#c03}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <link rel="canonical" href="https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/">
+    
+<title>Lessons in PowerShell - Functions</title>    
+
+<meta name="description" content="Functions in Windows PowerShell."/>
+
+
+
+<meta itemprop="name" content="Lessons in PowerShell - Functions">
+<meta itemprop="description" content="Functions in Windows PowerShell.">
+<meta itemprop="datePublished" content="2009-07-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2009-07-27T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="36">
+<meta itemprop="image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
+
+
+
+<meta itemprop="keywords" content="Windows,PowerShell," />
+<meta property="og:title" content="Lessons in PowerShell - Functions" />
+<meta property="og:description" content="Functions in Windows PowerShell." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/" />
+<meta property="og:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
+<meta property="article:published_time" content="2009-07-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2009-07-27T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
+
+<meta name="twitter:title" content="Lessons in PowerShell - Functions"/>
+<meta name="twitter:description" content="Functions in Windows PowerShell."/>
+<meta name="twitter:site" content="@ChannelAdam"/>
+
+<meta property="article:author" content="https://www.linkedin.com/in/adamcraven" />
+<meta property="article:author" content="https://github.com/ChannelAdam" />
+<meta property="article:author" content="https://twitter.com/ChannelAdam" />
+<meta name="twitter:creator" content="@ChannelAdam"/>
+<meta property="article:author" content="https://www.facebook.com/ChannelAdam" />
+<meta property="fb:app_id" content="129037487241515" />
+
+    <link rel="icon" href="/img/channeladam/favicon.ico" type="image/ico">
+
+    
+
+    
+  </head>
+  <body>
+    <amp-analytics type="gtag" data-credentials="include">
+ <script type="application/json">
+ {
+  "vars" : {
+   "gtag_id": "UA-51874696-2",
+   "config" : {
+    "UA-51874696-2": { 
+     "groups": "default"
+    }
+   }
+  }
+ }
+ </script>
+</amp-analytics>
+
+    <div class="content">
+    <div class="paper-outer">
+    <header class="header-banner" role="banner">
+
+    <div class="logo-wrapper">
+        <a href="https://channeladam.com">
+            <amp-img src="/img/channeladam/channeladam-logo.png" alt="ChannelAdam Logo"
+            width="285" height="200" layout="intrinsic"></amp-img>
+        </a>
+    </div>
+
+    <div class="header-title-outer">
+        <div class="header-title-inner">
+            <div class="header-title">
+                <span>Software Development Zone</span>
+            </div>
+        </div>
+    </div>
+        
+</header>
+
+    <section class="navbar">
+    <nav role="navigation">
+        <ul>
+            <li><a class="btn btn-link btn-lg" href="/">News</a></li>
+            <li><a class="btn btn-link btn-lg" href="/library">Library</a></li>
+            <li><a class="btn btn-link btn-lg" href="/notebooks">Notebooks</a></li>
+        </ul>
+    </nav>
+</section>
+
+<section class="mx-auto" style="max-width:728px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="728x90"></div>
+    <br/>
+</section>
+
+<div class="paper-inner mx-auto page-layout">
+    <main aria-role="main" class="page-layout-main">
+        <div class="card-container">
+            <div class="card">
+
+    
+<article>
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Lessons in PowerShell - Functions",
+        "datePublished": "27 July 2009",
+        "description": "Functions in Windows PowerShell.",
+        "url": "https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/",
+        "discussionUrl": "https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions#comments",
+        "author": {
+            "@type": "Person",
+            "name": "@ChannelAdam",
+            "alternateName": "Adam M Craven",
+            "url" : "https://twitter.com/ChannelAdam",
+            "sameAs" : [ "https://www.facebook.com/ChannelAdam",
+                "https://github.com/ChannelAdam"                               
+                "http://www.linkedin.com/in/adamcraven"] 
+            }
+    }
+    </script>
+
+    <section>
+        <h1>
+            <a class="active" href="/articles/2009/07/lessons-in-powershell-functions/">Lessons in PowerShell - Functions</a>
+        </h1>
+
+        
+        <div class="post-date">
+            27 July 2009
+        </div>
+        
+    </section>
+
+    
+<section class="social-share-buttons">
+    <ul>
+        <li><script type="IN/Share" data-url="https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/"></script></li>
+        <li><a data-url="https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/" data-text="Lessons in PowerShell - Functions" data-count="none" data-via="ChannelAdam" data-related="recommend" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></li>
+        <li><a href="//www.reddit.com/submit" onclick="(function(){var d=document,l=d.location,f='http://www.reddit.com/submit?title='+encodeURIComponent('Lessons in PowerShell - Functions')+'&url='+encodeURIComponent('https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/'),a=function(){if(!window.open(f,'Reddit','width=850,height=700,toolbar=0,location=0,status=0,chrome=yes,centerscreen=1,scrollbars=yes')){l.href=f;}};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0);}else{a();}})(); return false" style="margin-top:20px"> 
+<span style="display:inline-block;margin-top:-20px">
+    <svg xmlns="http://www.w3.org/2000/svg" style="width:16px; height:16px;" viewBox="0 0 20 20"><g><circle fill="#FF4500" cx="10" cy="10" r="10"></circle><path fill="#FFF" d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"></path></g></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="height:16px" viewBox="0 0 57 18"><g fill="#1c1c1c"><path d="M54.63,16.52V7.68h1a1,1,0,0,0,1.09-1V6.65a1,1,0,0,0-.93-1.12H54.63V3.88a1.23,1.23,0,0,0-1.12-1.23,1.2,1.2,0,0,0-1.27,1.11V5.55h-1a1,1,0,0,0-1.09,1v.07a1,1,0,0,0,.93,1.12h1.13v8.81a1.19,1.19,0,0,0,1.19,1.19h0a1.19,1.19,0,0,0,1.25-1.12A.17.17,0,0,0,54.63,16.52Z"></path><circle fill="#FF4500" cx="47.26" cy="3.44" r="2.12"></circle><path d="M48.44,7.81a1.19,1.19,0,1,0-2.38,0h0v8.71a1.19,1.19,0,0,0,2.38,0Z"></path><path d="M30.84,1.19A1.19,1.19,0,0,0,29.65,0h0a1.19,1.19,0,0,0-1.19,1.19V6.51a4.11,4.11,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S22.28,18,25.42,18a4.26,4.26,0,0,0,3.1-1.23,1.17,1.17,0,0,0,1.47.8,1.2,1.2,0,0,0,.85-1.05ZM25.41,15.64c-1.83,0-3.32-1.77-3.32-4s1.48-4,3.32-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z"></path><path d="M43.28,1.19A1.19,1.19,0,0,0,42.09,0h0a1.18,1.18,0,0,0-1.18,1.19h0V6.51a4.15,4.15,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S34.72,18,37.86,18A4.26,4.26,0,0,0,41,16.77a1.17,1.17,0,0,0,1.47.8,1.19,1.19,0,0,0,.85-1.05ZM37.85,15.64c-1.83,0-3.31-1.77-3.31-4s1.47-4,3.31-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z"></path><path d="M17.27,12.44a1.49,1.49,0,0,0,1.59-1.38v-.15a4.81,4.81,0,0,0-.1-.85A5.83,5.83,0,0,0,13.25,5.3c-3.1,0-5.69,2.85-5.69,6.35S10.11,18,13.25,18a5.66,5.66,0,0,0,4.39-1.84,1.23,1.23,0,0,0-.08-1.74l-.11-.09a1.29,1.29,0,0,0-1.58.17,3.91,3.91,0,0,1-2.62,1.12A3.54,3.54,0,0,1,10,12.44h7.27Zm-4-4.76a3.41,3.41,0,0,1,3.09,2.64H10.14A3.41,3.41,0,0,1,13.24,7.68Z"></path><path d="M7.68,6.53a1.19,1.19,0,0,0-1-1.18A4.56,4.56,0,0,0,2.39,6.91V6.75A1.2,1.2,0,0,0,0,6.75v9.77a1.23,1.23,0,0,0,1.12,1.24,1.19,1.19,0,0,0,1.26-1.1.66.66,0,0,0,0-.14v-5A3.62,3.62,0,0,1,5.81,7.7a4.87,4.87,0,0,1,.54,0h.24A1.18,1.18,0,0,0,7.68,6.53Z"></path></g></svg>
+</span>
+</a>
+</li>
+    </ul>
+</section>
+
+
+    <div class="post-content">
+
+        <p>The following useful information is primarily taken from the Windows PowerShell Language Quick Reference (QuadFold.rtf) documentation.</p>
+<h1 id="functions">Functions</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#66d9ef">function</span> MyFunction 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>{
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    write-object $args[0]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span style="color:#66d9ef">function</span> test (<span style="color:#66d9ef">[string]</span> $label=<span style="color:#e6db74">&#34;default label&#34;</span>, <span style="color:#66d9ef">[int]</span> $start=0)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>{ 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span>    ...
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span>}
+</code></pre></div>
+
+        <div id="comments">
+            <em>Please leave below any comments, feedback or suggestions, or alternatively contact me on a social network.</em>
+            <br /><br />            
+            <script>
+                
+                var disqus_identifier = '2009/07/lessons-in-powershell-functions';
+            </script>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'channeladamdevzone';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; dsq.defer = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        </div>
+    </div>
+</article>
+
+                    <div class="mt2">
+                    <section class="mx-auto" style="max-width:728px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="728x90"></div>
+    <br/>
+</section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="page-layout-right-panel">
+    
+
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Featured Content</div>
+
+        <div class="h2">BDD</div>
+        <ul>
+            <li><a href="/library/bdd-behaviour-specification-handbook">The Behaviour Specification Handbook</a></li>
+        </ul>
+
+        <div class="h2">WCF</div>
+        <ul>
+            <li><a href="/articles/2014/07/how-to-call-wcf-service-properly">How To Call WCF Services Properly</a></li>
+            <li><a href="/articles/2014/09/how-to-easily-call-wcf-service-properly">How To Easily Call WCF Services Properly</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Code Libraries</div>
+
+        <div class="h2">.NET Pattern Implementations</div>
+        <ul>
+            <li><a href="/library/channeladam-commands">ChannelAdam Commands Library</a></li>
+            <li><a href="/library/channeladam-disposing">ChannelAdam Disposing Library</a></li>
+            <li><a href="/library/channeladam-transientfaulthandling">ChannelAdam Transient Fault Handling Library</a></li>
+            <li><a href="/library/channeladam-weakevents">ChannelAdam Weak Events Library</a></li>
+        </ul>
+
+        <div class="h2">.NET Helpers / Utilities</div>
+        <ul>
+            <li><a href="/library/channeladam-dispatchproxies">ChannelAdam Dispatch Proxies Library</a></li>
+            <li><a href="/library/channeladam-logging">ChannelAdam Logging Library</a></li>
+            <li><a href="/library/channeladam-primitiveextensions">ChannelAdam Primitive Extensions Library</a></li>
+            <li><a href="/library/channeladam-reflection">ChannelAdam Reflection Library</a></li>
+            <li><a href="/library/channeladam-xml">ChannelAdam XML Library</a></li>
+        </ul>
+   
+        <div class="h2">Web Services</div>
+        <ul>
+            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
+            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
+            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
+            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
+            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
+        </ul>
+
+        <div class="h2">Testing</div>
+        <ul>
+            <li><a href="/library/channeladam-testframework">ChannelAdam Test Framework Library</a></li>
+            <li><a href="/library/channeladam-testframework-moq">ChannelAdam Test Framework Moq Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstestv2">ChannelAdam Test Framework MSTestV2 Library</a></li>
+            <li><a href="/library/channeladam-testframework-nunit">ChannelAdam Test Framework NUnit Library</a></li>
+            <li><a href="/library/channeladam-testframework-text">ChannelAdam Test Framework Text Library</a></li>
+            <li><a href="/library/channeladam-testframework-xml">ChannelAdam Test Framework XML Library</a></li>
+            <li><a href="/library/channeladam-testframework-biztalk">ChannelAdam Test Framework Library for BizTalk</a></li>
+        </ul>
+
+        <div class="h2">DEPRECATED LIBRARIES</div>
+        <ul>
+            <li><a href="/library/channeladam-core">ChannelAdam Core Library</a></li>
+            <li><a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries (V1)</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Connect</div>
+
+        <div class="h2">
+            
+
+
+
+
+
+    <a class="" href="/about-me">About Me</a>
+
+</li>
+        </div>
+
+        <div class="h2">
+            <a href="https://twitter.com/ChannelAdam" target="_blank">Follow @ChannelAdam</a>
+        </div>
+
+        <section class="twitter-feed">
+<a class="twitter-timeline" 
+    data-width="320" 
+    data-theme="dark" 
+    data-link-color="#2B7BB9" 
+    data-tweet-limit="10"
+    href="https://twitter.com/ChannelAdam?ref_src=twsrc%5Etfw">Tweets by @ChannelAdam</a>
+</section>
+    </div>
+</div>
+
+<section class="mx-auto mt2" style="max-width:300px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="300x250"></div>
+    <br/>
+</section>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Recent Blog Posts</div>
+
+        <ul><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2017/11/announcing-dotnet-notebook/">Announcing the ChannelAdam .NET Notebook</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/articles/2017/11/announcing-notebooks/">Announcing the ChannelAdam Software Development Notebooks</a></li><li><a href="/notebooks/distributed-systems/mesosphere-dcos/">Mesosphere DC/OS Notebook</a></li></ul>
+    </div>
+</div>
+
+<section class="mx-auto mt2" style="max-width:160px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="160x600"></div>
+    <br/>
+</section>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Tag Cloud</div>
+
+        
+    <div class="tag-cloud"><a href="/tags/.net" style="font-size:1.257728077256096rem">.Net</a>
+        &nbsp;<a href="/tags/.net-4.0" style="font-size:1.1626083122716342rem">.Net 4.0</a>
+        &nbsp;<a href="/tags/.net-framework" style="font-size:1.257728077256096rem">.Net Framework</a>
+        &nbsp;<a href="/tags/agile" style="font-size:1rem">Agile</a>
+        &nbsp;<a href="/tags/ajax" style="font-size:1rem">Ajax</a>
+        &nbsp;<a href="/tags/amazon-s3" style="font-size:1rem">Amazon S3</a>
+        &nbsp;<a href="/tags/api-apps" style="font-size:1.3252166245432684rem">Api Apps</a>
+        &nbsp;<a href="/tags/api-management" style="font-size:1rem">Api Management</a>
+        &nbsp;<a href="/tags/app-service" style="font-size:1.3252166245432684rem">App Service</a>
+        &nbsp;<a href="/tags/artificial-intelligence" style="font-size:1rem">Artificial Intelligence</a>
+        &nbsp;<a href="/tags/asp.net" style="font-size:1.257728077256096rem">Asp.net</a>
+        &nbsp;<a href="/tags/asp.net-mvc-3" style="font-size:1.1626083122716342rem">Asp.net Mvc 3</a>
+        &nbsp;<a href="/tags/asp.net-mvc2" style="font-size:1rem">Asp.net Mvc2</a>
+        &nbsp;<a href="/tags/assembly-binding" style="font-size:1.1626083122716342rem">Assembly Binding</a>
+        &nbsp;<a href="/tags/async" style="font-size:1rem">Async</a>
+        &nbsp;<a href="/tags/asynchronous" style="font-size:1rem">Asynchronous</a>
+        &nbsp;<a href="/tags/azure" style="font-size:1.257728077256096rem">Azure</a>
+        &nbsp;<a href="/tags/battery" style="font-size:1.1626083122716342rem">Battery</a>
+        &nbsp;<a href="/tags/bdd" style="font-size:1.9756498736298047rem">Bdd</a>
+        &nbsp;<a href="/tags/behaviour-driven" style="font-size:1.1626083122716342rem">Behaviour Driven</a>
+        &nbsp;<a href="/tags/behaviour-driven-development" style="font-size:1.9756498736298047rem">Behaviour Driven Development</a>
+        &nbsp;<a href="/tags/behaviour-specification-handbook" style="font-size:1.960509510525089rem">Behaviour Specification Handbook</a>
+        &nbsp;<a href="/tags/behaviour-specifications" style="font-size:1.9719554003354438rem">Behaviour Specifications</a>
+        &nbsp;<a href="/tags/behaviour-verification" style="font-size:1rem">Behaviour Verification</a>
+        &nbsp;<a href="/tags/bitbucket" style="font-size:1rem">Bitbucket</a>
+        &nbsp;<a href="/tags/biztalk" style="font-size:1.4203363895277301rem">Biztalk</a>
+        &nbsp;<a href="/tags/biztalk360" style="font-size:1.1626083122716342rem">Biztalk360</a>
+        &nbsp;<a href="/tags/build" style="font-size:1.3252166245432684rem">Build</a>
+        &nbsp;<a href="/tags/business" style="font-size:1rem">Business</a>
+        &nbsp;<a href="/tags/c" style="font-size:1rem">C#</a>
+        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8272637463603703rem">Channeladam .Net Libraries</a>
+        &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
+        &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
+        &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
+        &nbsp;<a href="/tags/code-quality" style="font-size:1rem">Code Quality</a>
+        &nbsp;<a href="/tags/code-reviews" style="font-size:1rem">Code Reviews</a>
+        &nbsp;<a href="/tags/coding-practices" style="font-size:1.257728077256096rem">Coding Practices</a>
+        &nbsp;<a href="/tags/command" style="font-size:1.1626083122716342rem">Command</a>
+        &nbsp;<a href="/tags/container" style="font-size:1.3775648087257248rem">Container</a>
+        &nbsp;<a href="/tags/conventions" style="font-size:1rem">Conventions</a>
+        &nbsp;<a href="/tags/cucumber" style="font-size:1rem">Cucumber</a>
+        &nbsp;<a href="/tags/data-science" style="font-size:1rem">Data Science</a>
+        &nbsp;<a href="/tags/ddd" style="font-size:1rem">Ddd</a>
+        &nbsp;<a href="/tags/diffplex" style="font-size:1rem">Diffplex</a>
+        &nbsp;<a href="/tags/digital-ocean" style="font-size:1rem">Digital Ocean</a>
+        &nbsp;<a href="/tags/dispatch-proxies" style="font-size:1rem">Dispatch Proxies</a>
+        &nbsp;<a href="/tags/disposable" style="font-size:1rem">Disposable</a>
+        &nbsp;<a href="/tags/dispose" style="font-size:1rem">Dispose</a>
+        &nbsp;<a href="/tags/distributed" style="font-size:1.3775648087257248rem">Distributed</a>
+        &nbsp;<a href="/tags/distributed-systems" style="font-size:1rem">Distributed Systems</a>
+        &nbsp;<a href="/tags/docker-swarm" style="font-size:1rem">Docker Swarm</a>
+        &nbsp;<a href="/tags/docpad" style="font-size:1rem">Docpad</a>
+        &nbsp;<a href="/tags/domain-driven-design" style="font-size:1rem">Domain Driven Design</a>
+        &nbsp;<a href="/tags/dynamic" style="font-size:1rem">Dynamic</a>
+        &nbsp;<a href="/tags/embedded-resources" style="font-size:1rem">Embedded Resources</a>
+        &nbsp;<a href="/tags/encoding" style="font-size:1rem">Encoding</a>
+        &nbsp;<a href="/tags/events" style="font-size:1rem">Events</a>
+        &nbsp;<a href="/tags/extensions" style="font-size:1rem">Extensions</a>
+        &nbsp;<a href="/tags/failure" style="font-size:1rem">Failure</a>
+        &nbsp;<a href="/tags/finalize" style="font-size:1rem">Finalize</a>
+        &nbsp;<a href="/tags/fluent" style="font-size:1rem">Fluent</a>
+        &nbsp;<a href="/tags/framework" style="font-size:1.257728077256096rem">Framework</a>
+        &nbsp;<a href="/tags/gauge" style="font-size:1.1626083122716342rem">Gauge</a>
+        &nbsp;<a href="/tags/gherkin" style="font-size:1.1626083122716342rem">Gherkin</a>
+        &nbsp;<a href="/tags/github" style="font-size:1rem">Github</a>
+        &nbsp;<a href="/tags/gondor" style="font-size:1rem">Gondor</a>
+        &nbsp;<a href="/tags/google-app-engine" style="font-size:1rem">Google App Engine</a>
+        &nbsp;<a href="/tags/google-compute-engine" style="font-size:1rem">Google Compute Engine</a>
+        &nbsp;<a href="/tags/graphics" style="font-size:1rem">Graphics</a>
+        &nbsp;<a href="/tags/heroku" style="font-size:1rem">Heroku</a>
+        &nbsp;<a href="/tags/hosting" style="font-size:1rem">Hosting</a>
+        &nbsp;<a href="/tags/hugo" style="font-size:1rem">Hugo</a>
+        &nbsp;<a href="/tags/image-optimisation" style="font-size:1rem">Image Optimisation</a>
+        &nbsp;<a href="/tags/injected" style="font-size:1rem">Injected</a>
+        &nbsp;<a href="/tags/integration" style="font-size:1.1626083122716342rem">Integration</a>
+        &nbsp;<a href="/tags/intellisense" style="font-size:1.257728077256096rem">Intellisense</a>
+        &nbsp;<a href="/tags/ioc" style="font-size:1.1626083122716342rem">Ioc</a>
+        &nbsp;<a href="/tags/javascript" style="font-size:1rem">Javascript</a>
+        &nbsp;<a href="/tags/jpeg" style="font-size:1rem">Jpeg</a>
+        &nbsp;<a href="/tags/jquery" style="font-size:1rem">Jquery</a>
+        &nbsp;<a href="/tags/kestrel" style="font-size:1rem">Kestrel</a>
+        &nbsp;<a href="/tags/kubernetes" style="font-size:1rem">Kubernetes</a>
+        &nbsp;<a href="/tags/languages" style="font-size:1rem">Languages</a>
+        &nbsp;<a href="/tags/library" style="font-size:1.5154561545121918rem">Library</a>
+        &nbsp;<a href="/tags/linux" style="font-size:1.257728077256096rem">Linux</a>
+        &nbsp;<a href="/tags/loaded" style="font-size:1rem">Loaded</a>
+        &nbsp;<a href="/tags/logging" style="font-size:1.1626083122716342rem">Logging</a>
+        &nbsp;<a href="/tags/logic-apps" style="font-size:1.3252166245432684rem">Logic Apps</a>
+        &nbsp;<a href="/tags/machine-learning" style="font-size:1rem">Machine Learning</a>
+        &nbsp;<a href="/tags/mapping" style="font-size:1.1626083122716342rem">Mapping</a>
+        &nbsp;<a href="/tags/maps" style="font-size:1.257728077256096rem">Maps</a>
+        &nbsp;<a href="/tags/mesosphere-dc/os" style="font-size:1rem">Mesosphere Dc/Os</a>
+        &nbsp;<a href="/tags/messaging" style="font-size:1.1626083122716342rem">Messaging</a>
+        &nbsp;<a href="/tags/methodology" style="font-size:1rem">Methodology</a>
+        &nbsp;<a href="/tags/microservices" style="font-size:1rem">Microservices</a>
+        &nbsp;<a href="/tags/microsoft" style="font-size:1.3252166245432684rem">Microsoft</a>
+        &nbsp;<a href="/tags/microsoft-azure" style="font-size:1.3775648087257248rem">Microsoft Azure</a>
+        &nbsp;<a href="/tags/mock4net" style="font-size:1rem">Mock4net</a>
+        &nbsp;<a href="/tags/moq" style="font-size:1.1626083122716342rem">Moq</a>
+        &nbsp;<a href="/tags/msbuild" style="font-size:1.257728077256096rem">Msbuild</a>
+        &nbsp;<a href="/tags/mstest" style="font-size:1.257728077256096rem">Mstest</a>
+        &nbsp;<a href="/tags/mstest-v2" style="font-size:1rem">Mstest V2</a>
+        &nbsp;<a href="/tags/named-parameters" style="font-size:1rem">Named Parameters</a>
+        &nbsp;<a href="/tags/naming" style="font-size:1.1626083122716342rem">Naming</a>
+        &nbsp;<a href="/tags/nancy" style="font-size:1.3775648087257248rem">Nancy</a>
+        &nbsp;<a href="/tags/notebooks" style="font-size:1.3252166245432684rem">Notebooks</a>
+        &nbsp;<a href="/tags/nunit" style="font-size:1.1626083122716342rem">Nunit</a>
+        &nbsp;<a href="/tags/nvidia" style="font-size:1.1626083122716342rem">Nvidia</a>
+        &nbsp;<a href="/tags/open-source" style="font-size:1.1626083122716342rem">Open Source</a>
+        &nbsp;<a href="/tags/operations" style="font-size:1rem">Operations</a>
+        &nbsp;<a href="/tags/optimisation" style="font-size:1rem">Optimisation</a>
+        &nbsp;<a href="/tags/optional-parameters" style="font-size:1rem">Optional Parameters</a>
+        &nbsp;<a href="/tags/orchestration" style="font-size:1.3775648087257248rem">Orchestration</a>
+        &nbsp;<a href="/tags/paas" style="font-size:1rem">Paas</a>
+        &nbsp;<a href="/tags/partial-views" style="font-size:1rem">Partial Views</a>
+        &nbsp;<a href="/tags/pattern" style="font-size:1.3775648087257248rem">Pattern</a>
+        &nbsp;<a href="/tags/patterns" style="font-size:1rem">Patterns</a>
+        &nbsp;<a href="/tags/pci-dss" style="font-size:1rem">Pci Dss</a>
+        &nbsp;<a href="/tags/png" style="font-size:1rem">Png</a>
+        &nbsp;<a href="/tags/power" style="font-size:1.1626083122716342rem">Power</a>
+        &nbsp;<a href="/tags/powershell" style="font-size:1.6017222572298446rem">Powershell</a>
+        &nbsp;<a href="/tags/principles" style="font-size:1rem">Principles</a>
+        &nbsp;<a href="/tags/probing-privatepath" style="font-size:1rem">Probing Privatepath</a>
+        &nbsp;<a href="/tags/productivity" style="font-size:1rem">Productivity</a>
+        &nbsp;<a href="/tags/program-specification" style="font-size:1rem">Program Specification</a>
+        &nbsp;<a href="/tags/programming" style="font-size:1.1626083122716342rem">Programming</a>
+        &nbsp;<a href="/tags/python" style="font-size:1rem">Python</a>
+        &nbsp;<a href="/tags/r" style="font-size:1rem">R</a>
+        &nbsp;<a href="/tags/razor" style="font-size:1.1626083122716342rem">Razor</a>
+        &nbsp;<a href="/tags/real-proxies" style="font-size:1rem">Real Proxies</a>
+        &nbsp;<a href="/tags/redhat-openshift" style="font-size:1rem">Redhat Openshift</a>
+        &nbsp;<a href="/tags/reflection" style="font-size:1rem">Reflection</a>
+        &nbsp;<a href="/tags/retry" style="font-size:1rem">Retry</a>
+        &nbsp;<a href="/tags/reversible" style="font-size:1.1626083122716342rem">Reversible</a>
+        &nbsp;<a href="/tags/scale" style="font-size:1.3775648087257248rem">Scale</a>
+        &nbsp;<a href="/tags/scenarios" style="font-size:1.9719554003354438rem">Scenarios</a>
+        &nbsp;<a href="/tags/script" style="font-size:1rem">Script</a>
+        &nbsp;<a href="/tags/security" style="font-size:1rem">Security</a>
+        &nbsp;<a href="/tags/self" style="font-size:1rem">Self</a>
+        &nbsp;<a href="/tags/serialization" style="font-size:1rem">Serialization</a>
+        &nbsp;<a href="/tags/service" style="font-size:1rem">Service</a>
+        &nbsp;<a href="/tags/service-bus" style="font-size:1rem">Service Bus</a>
+        &nbsp;<a href="/tags/service-bus-connector" style="font-size:1rem">Service Bus Connector</a>
+        &nbsp;<a href="/tags/service-fabric" style="font-size:1.257728077256096rem">Service Fabric</a>
+        &nbsp;<a href="/tags/serviceconsumer" style="font-size:1.1626083122716342rem">Serviceconsumer</a>
+        &nbsp;<a href="/tags/services" style="font-size:1.3775648087257248rem">Services</a>
+        &nbsp;<a href="/tags/single-responsibility-principle" style="font-size:1rem">Single Responsibility Principle</a>
+        &nbsp;<a href="/tags/singleton" style="font-size:1rem">Singleton</a>
+        &nbsp;<a href="/tags/soa" style="font-size:1rem">Soa</a>
+        &nbsp;<a href="/tags/soap-1.1" style="font-size:1.3252166245432684rem">Soap 1.1</a>
+        &nbsp;<a href="/tags/soap-1.2" style="font-size:1.3252166245432684rem">Soap 1.2</a>
+        &nbsp;<a href="/tags/solid" style="font-size:1.257728077256096rem">Solid</a>
+        &nbsp;<a href="/tags/specflow" style="font-size:1.1626083122716342rem">Specflow</a>
+        &nbsp;<a href="/tags/srp" style="font-size:1rem">Srp</a>
+        &nbsp;<a href="/tags/standards" style="font-size:1rem">Standards</a>
+        &nbsp;<a href="/tags/static-site-generator" style="font-size:1rem">Static Site Generator</a>
+        &nbsp;<a href="/tags/teamreview" style="font-size:1rem">Teamreview</a>
+        &nbsp;<a href="/tags/test-driven-development" style="font-size:1rem">Test Driven Development</a>
+        &nbsp;<a href="/tags/test-framework" style="font-size:1.4878249368149024rem">Test Framework</a>
+        &nbsp;<a href="/tags/testing" style="font-size:1.996672366820611rem">Testing</a>
+        &nbsp;<a href="/tags/text" style="font-size:1rem">Text</a>
+        &nbsp;<a href="/tags/tfs" style="font-size:1.1626083122716342rem">Tfs</a>
+        &nbsp;<a href="/tags/thread-safe" style="font-size:1rem">Thread Safe</a>
+        &nbsp;<a href="/tags/transient-fault-handling" style="font-size:1rem">Transient Fault Handling</a>
+        &nbsp;<a href="/tags/validation" style="font-size:1rem">Validation</a>
+        &nbsp;<a href="/tags/vb.net" style="font-size:1rem">Vb.net</a>
+        &nbsp;<a href="/tags/visual-studio" style="font-size:1.456499245823252rem">Visual Studio</a>
+        &nbsp;<a href="/tags/visual-studio-2010" style="font-size:1.3252166245432684rem">Visual Studio 2010</a>
+        &nbsp;<a href="/tags/waterfall" style="font-size:1rem">Waterfall</a>
+        &nbsp;<a href="/tags/wcf" style="font-size:1.7142273230793479rem">Wcf</a>
+        &nbsp;<a href="/tags/weak" style="font-size:1rem">Weak</a>
+        &nbsp;<a href="/tags/weak-events" style="font-size:1rem">Weak Events</a>
+        &nbsp;<a href="/tags/web" style="font-size:1.3252166245432684rem">Web</a>
+        &nbsp;<a href="/tags/web-apps" style="font-size:1.1626083122716342rem">Web Apps</a>
+        &nbsp;<a href="/tags/web-development" style="font-size:1.3252166245432684rem">Web Development</a>
+        &nbsp;<a href="/tags/windows" style="font-size:1.6017222572298446rem">Windows</a>
+        &nbsp;<a href="/tags/windows-communication-foundation" style="font-size:1.678064466783826rem">Windows Communication Foundation</a>
+        &nbsp;<a href="/tags/windows-communication-framework" style="font-size:1.257728077256096rem">Windows Communication Framework</a>
+        &nbsp;<a href="/tags/work-items" style="font-size:1rem">Work Items</a>
+        &nbsp;<a href="/tags/xml" style="font-size:1.257728077256096rem">Xml</a>
+        &nbsp;<a href="/tags/xmlunit" style="font-size:1rem">Xmlunit</a>
+        &nbsp;</div>
+
+    </div>
+</div>
+
+
+
+
+    </aside>
+</div>
+
+    <footer>
+    <div class="page-width mx-auto flex flex-wrap items-center justify-around">
+        <small>
+            Copyright &copy; 2009-2020 by Adam Craven. All rights reserved.
+            <br/><br/>
+        </small>
+
+        <small class="center">
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">
+                <img alt="Creative Commons Licence" src="https://licensebuttons.net/l/by/4.0/88x31.png" style="border-width: 0;" /></a>
+            <br />
+            This work is licensed under a
+            <br />
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+        </small>
+    </div>
+</footer>
+        </div>
+</div>
+    
+<script>
+var disqus_shortname = 'channeladamdevzone';
+(function () {
+    var s = document.createElement('script'); s.async = true; s.defer = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<script>
+    //================================================================
+// Twitter widgets - e.g. follow button
+!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+        js = d.createElement(s); js.id = id; js.async = true; js.defer = true;
+        js.src = 'https://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');
+    (function () {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.defer = true;
+    po.src = 'https://platform.linkedin.com/in.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script>
+window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+    return t;
+}(document, "script", "twitter-wjs"));
+</script>
+<script>
+function _dmBootstrap(file) {
+	var _dma = document.createElement('script');
+	_dma.type = 'text/javascript';
+	_dma.async = true; _dma.defer = true;
+	_dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+}
+function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+(function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+
+
+  </body>
+</html>

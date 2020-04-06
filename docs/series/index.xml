@@ -1,0 +1,61 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/series/</link>
+    <description>Recent contentin Series on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Mon, 16 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/series/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>ChannelAdam .NET Libraries</title>
+      <link>https://devzone.channeladam.com/series/channeladam-.net-libraries/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/channeladam-.net-libraries/</guid>
+      <description></description>
+    </item><item>
+      <title>ChannelAdam WCF Library - Version 1</title>
+      <link>https://devzone.channeladam.com/series/channeladam-wcf-library-version-1/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/channeladam-wcf-library-version-1/</guid>
+      <description></description>
+    </item><item>
+      <title>ChannelAdam WCF Library - Version 2</title>
+      <link>https://devzone.channeladam.com/series/channeladam-wcf-library-version-2/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/channeladam-wcf-library-version-2/</guid>
+      <description></description>
+    </item><item>
+      <title>The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/series/the-behaviour-specification-handbook/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/the-behaviour-specification-handbook/</guid>
+      <description></description>
+    </item><item>
+      <title>Behaviour Specification</title>
+      <link>https://devzone.channeladam.com/series/behaviour-specification/</link>
+      <pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/behaviour-specification/</guid>
+      <description></description>
+    </item><item>
+      <title>Behaviour-Driven Development</title>
+      <link>https://devzone.channeladam.com/series/behaviour-driven-development/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/behaviour-driven-development/</guid>
+      <description></description>
+    </item><item>
+      <title>Lessons in Domain-Driven Design</title>
+      <link>https://devzone.channeladam.com/series/lessons-in-domain-driven-design/</link>
+      <pubDate>Wed, 26 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/lessons-in-domain-driven-design/</guid>
+      <description></description>
+    </item><item>
+      <title>Lessons in MSBuild</title>
+      <link>https://devzone.channeladam.com/series/lessons-in-msbuild/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/lessons-in-msbuild/</guid>
+      <description></description>
+    </item><item>
+      <title>Lessons in TFS</title>
+      <link>https://devzone.channeladam.com/series/lessons-in-tfs/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/lessons-in-tfs/</guid>
+      <description></description>
+    </item><item>
+      <title>Lessons In .NET</title>
+      <link>https://devzone.channeladam.com/series/lessons-in-.net/</link>
+      <pubDate>Tue, 04 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/lessons-in-.net/</guid>
+      <description></description>
+    </item><item>
+      <title>Lessons in PowerShell</title>
+      <link>https://devzone.channeladam.com/series/lessons-in-powershell/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/series/lessons-in-powershell/</guid>
+      <description></description>
+    </item></channel>
+</rss>

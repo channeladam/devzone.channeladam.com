@@ -1,0 +1,41 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Studio on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/visual-studio/</link>
+    <description>Recent contentin Visual Studio on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 07 May 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>&#34;Quick Find&#34; Feature in the Productivity Power Tool Extension in Visual Studio 2010</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/quick-find-extension-visual-studio-2010/</link>
+      <pubDate>Sat, 07 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/quick-find-extension-visual-studio-2010/</guid>
+      <description>How to turn off the Quick Find feature in the Visual Studio 2010 Productivity Power Tool extension.</description>
+    </item><item>
+      <title>Intellisense in Razor for Custom Types and Helpers</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/intellisense-razor-custom-types-helpers/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/intellisense-razor-custom-types-helpers/</guid>
+      <description>Intellisense for your Razor custom types and helpers.</description>
+    </item><item>
+      <title>Minimal Configuration Required for Razor Intellisense in ASP.NET MVC 3 RTM</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/minimal-config-razor-intellisense-mvc3/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/minimal-config-razor-intellisense-mvc3/</guid>
+      <description>The minimal configuration that is required for Razor Intellisense to work in ASP.NET MVC 3 RTM.</description>
+    </item><item>
+      <title>Guidance for Using Optional and Named Parameters In C# &amp; .NET 4.0</title>
+      <link>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</guid>
+      <description>Guidance on the use of Optional and Named Parameters in C#.</description>
+    </item><item>
+      <title>Program Specification Through the Mechanism of Automated Tests</title>
+      <link>https://devzone.channeladam.com/articles/2009/12/program-specification-through-mechanism-tests/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/12/program-specification-through-mechanism-tests/</guid>
+      <description>The subtle difference between tests and specifying program behaviour through the mechanism of automated tests.</description>
+    </item><item>
+      <title>TeamReview 2010 Installation Problem</title>
+      <link>https://devzone.channeladam.com/articles/2009/11/teamreview-2010-installation-problem/</link>
+      <pubDate>Thu, 05 Nov 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/11/teamreview-2010-installation-problem/</guid>
+      <description>How to fix a &#39;System.InvalidOperationException: Method failed&#39; exception with TeamReview 2010.</description>
+    </item><item>
+      <title>Intellisense for ASP.NET Markup Not Appearing In Visual Studio 2008</title>
+      <link>https://devzone.channeladam.com/articles/2009/06/intellisense-for-asp-markup-not-working/</link>
+      <pubDate>Tue, 23 Jun 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/06/intellisense-for-asp-markup-not-working/</guid>
+      <description>Intellisense for ASP.NET markup not appearing in Visual Studio 2008.</description>
+    </item></channel>
+</rss>

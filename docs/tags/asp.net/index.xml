@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ASP.NET on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/asp.net/</link>
+    <description>Recent contentin ASP.NET on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Wed, 04 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/asp.net/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Web Development Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/web-development/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/web-development/</guid>
+      <description>Notes about Web Development.</description>
+    </item><item>
+      <title>ASP.NET MVC2 AJAX: Executing Dynamically Loaded JavaScript</title>
+      <link>https://devzone.channeladam.com/articles/2010/06/aspnet-mvc2-ajax-excuting-dynamically-loaded-javascript/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/06/aspnet-mvc2-ajax-excuting-dynamically-loaded-javascript/</guid>
+      <description>How to execute dynamically loaded JavaScript in ASP.NET MVC 2.</description>
+    </item><item>
+      <title>Intellisense for ASP.NET Markup Not Appearing In Visual Studio 2008</title>
+      <link>https://devzone.channeladam.com/articles/2009/06/intellisense-for-asp-markup-not-working/</link>
+      <pubDate>Tue, 23 Jun 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/06/intellisense-for-asp-markup-not-working/</guid>
+      <description>Intellisense for ASP.NET markup not appearing in Visual Studio 2008.</description>
+    </item></channel>
+</rss>

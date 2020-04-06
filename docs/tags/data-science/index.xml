@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/data-science/</link>
+    <description>Recent contentin Data Science on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 18 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/data-science/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Data Science Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/data-science/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/data-science/</guid>
+      <description>Notes about data science - machine learning (ML), artificial intelligence (AI) etc.</description>
+    </item></channel>
+</rss>

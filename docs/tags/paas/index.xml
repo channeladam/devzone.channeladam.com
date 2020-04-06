@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PaaS on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/paas/</link>
+    <description>Recent contentin PaaS on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Tue, 08 Jul 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/paas/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>A Comparison of Website Hosting Solutions</title>
+      <link>https://devzone.channeladam.com/articles/2014/07/comparison-hosting-solutions/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2014/07/comparison-hosting-solutions/</guid>
+      <description>A brief comparison of web hosting solutions for blog, hobby and small websites.</description>
+    </item></channel>
+</rss>

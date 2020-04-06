@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service Bus Connector on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/service-bus-connector/</link>
+    <description>Recent contentin Service Bus Connector on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Fri, 18 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/service-bus-connector/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Logic Apps and the Service Bus Connector - The Case of the Incomplete Message!</title>
+      <link>https://devzone.channeladam.com/articles/2015/09/logic-apps-and-service-bus-connector/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/09/logic-apps-and-service-bus-connector/</guid>
+      <description>When an Azure App Service Logic App Service Bus Connector trigger does not complete the Service Bus message...</description>
+    </item></channel>
+</rss>

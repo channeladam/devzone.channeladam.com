@@ -1,0 +1,51 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Library on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/library/</link>
+    <description>Recent contentin Library on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 20 Nov 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/library/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Announcing the ChannelAdam Nancy SOAP Library</title>
+      <link>https://devzone.channeladam.com/articles/2016/11/nancy-soap-library-released/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2016/11/nancy-soap-library-released/</guid>
+      <description>Announcing the ChannelAdam Nancy SOAP Library.</description>
+    </item><item>
+      <title>The ChannelAdam Nancy Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy/</guid>
+      <description>About the ChannelAdam Nancy Library.</description>
+    </item><item>
+      <title>The ChannelAdam Nancy Self-Hosting Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy-hosting-self/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy-hosting-self/</guid>
+      <description>About the ChannelAdam Nancy Self-Hosting Library.</description>
+    </item><item>
+      <title>The ChannelAdam Nancy SOAP Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy-soap/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy-soap/</guid>
+      <description>Usage of the ChannelAdam Nancy SOAP Library.</description>
+    </item><item>
+      <title>Announcing the ChannelAdam SOAP Library</title>
+      <link>https://devzone.channeladam.com/articles/2016/11/soap-library-released/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2016/11/soap-library-released/</guid>
+      <description>Announcing the ChannelAdam SOAP Library.</description>
+    </item><item>
+      <title>The ChannelAdam SOAP Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-soap/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-soap/</guid>
+      <description>About the ChannelAdam SOAP Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Libraries</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframeworks/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframeworks/</guid>
+      <description>About the deprecated full .NET Framework ChannelAdam Test Framework Libraries.</description>
+    </item><item>
+      <title>Modern Testing of BizTalk Maps</title>
+      <link>https://devzone.channeladam.com/articles/2016/10/modern-testing-of-biztalk-maps/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2016/10/modern-testing-of-biztalk-maps/</guid>
+      <description>How to bring your BizTalk Map testing into the modern era.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Library for BizTalk</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-biztalk/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-biztalk/</guid>
+      <description>Usage documentation for the ChannelAdam Test Framework Library for BizTalk.</description>
+    </item></channel>
+</rss>

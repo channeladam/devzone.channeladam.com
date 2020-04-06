@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Version 2 Documentation | ChannelAdam WCF Library on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/</link>
+    <description>Recent contentin Version 2 Documentation | ChannelAdam WCF Library on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 14 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/library/channeladam-wcf/v2/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Background | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/background/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/background/</guid>
+      <description>Background of the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Basic Usage | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/basic-usage/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/basic-usage/</guid>
+      <description>How to use the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Channel Close Trigger Strategies | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/close-triggers/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/close-triggers/</guid>
+      <description>How to use the service channel close trigger strategies in the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Exception Behaviour Strategies | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/exception-behaviours/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/exception-behaviours/</guid>
+      <description>How to use the exception behaviour strategies in the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>IoC | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/ioc/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/ioc/</guid>
+      <description>How to use the ChannelAdam WCF Library with Inversion of Control (IoC) containers.</description>
+    </item><item>
+      <title>Quick Start | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/quick-start/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/quick-start/</guid>
+      <description>Quickly start using the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Release Notes | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/release-notes/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/release-notes/</guid>
+      <description>Release notes of version 2 of the ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Retry for Transient Fault Handling | Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/retry/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/retry/</guid>
+      <description>How to use the retry policy mechanism in the ChannelAdam WCF Library.</description>
+    </item></channel>
+</rss>

@@ -1,0 +1,911 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/</link>
+    <description>Recent contentin Tags on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>DocPad</title>
+      <link>https://devzone.channeladam.com/tags/docpad/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/docpad/</guid>
+      <description></description>
+    </item><item>
+      <title>Hugo</title>
+      <link>https://devzone.channeladam.com/tags/hugo/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/hugo/</guid>
+      <description></description>
+    </item><item>
+      <title>Static Site Generator</title>
+      <link>https://devzone.channeladam.com/tags/static-site-generator/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/static-site-generator/</guid>
+      <description></description>
+    </item><item>
+      <title>ChannelAdam .NET Libraries</title>
+      <link>https://devzone.channeladam.com/tags/channeladam-.net-libraries/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/channeladam-.net-libraries/</guid>
+      <description></description>
+    </item><item>
+      <title>XML</title>
+      <link>https://devzone.channeladam.com/tags/xml/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/xml/</guid>
+      <description></description>
+    </item><item>
+      <title>Test Framework</title>
+      <link>https://devzone.channeladam.com/tags/test-framework/</link>
+      <pubDate>Sun, 24 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/test-framework/</guid>
+      <description></description>
+    </item><item>
+      <title>XMLUnit</title>
+      <link>https://devzone.channeladam.com/tags/xmlunit/</link>
+      <pubDate>Sun, 24 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/xmlunit/</guid>
+      <description></description>
+    </item><item>
+      <title>DiffPlex</title>
+      <link>https://devzone.channeladam.com/tags/diffplex/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/diffplex/</guid>
+      <description></description>
+    </item><item>
+      <title>MSTest</title>
+      <link>https://devzone.channeladam.com/tags/mstest/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/mstest/</guid>
+      <description></description>
+    </item><item>
+      <title>MSTest V2</title>
+      <link>https://devzone.channeladam.com/tags/mstest-v2/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/mstest-v2/</guid>
+      <description></description>
+    </item><item>
+      <title>NUnit</title>
+      <link>https://devzone.channeladam.com/tags/nunit/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/nunit/</guid>
+      <description></description>
+    </item><item>
+      <title>Pattern</title>
+      <link>https://devzone.channeladam.com/tags/pattern/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/pattern/</guid>
+      <description></description>
+    </item><item>
+      <title>Text</title>
+      <link>https://devzone.channeladam.com/tags/text/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/text/</guid>
+      <description></description>
+    </item><item>
+      <title>Transient Fault Handling</title>
+      <link>https://devzone.channeladam.com/tags/transient-fault-handling/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/transient-fault-handling/</guid>
+      <description></description>
+    </item><item>
+      <title>Weak</title>
+      <link>https://devzone.channeladam.com/tags/weak/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/weak/</guid>
+      <description></description>
+    </item><item>
+      <title>Weak Events</title>
+      <link>https://devzone.channeladam.com/tags/weak-events/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/weak-events/</guid>
+      <description></description>
+    </item><item>
+      <title>Command</title>
+      <link>https://devzone.channeladam.com/tags/command/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/command/</guid>
+      <description></description>
+    </item><item>
+      <title>Dispatch Proxies</title>
+      <link>https://devzone.channeladam.com/tags/dispatch-proxies/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/dispatch-proxies/</guid>
+      <description></description>
+    </item><item>
+      <title>Dispose</title>
+      <link>https://devzone.channeladam.com/tags/dispose/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/dispose/</guid>
+      <description></description>
+    </item><item>
+      <title>Finalize</title>
+      <link>https://devzone.channeladam.com/tags/finalize/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/finalize/</guid>
+      <description></description>
+    </item><item>
+      <title>Logging</title>
+      <link>https://devzone.channeladam.com/tags/logging/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/logging/</guid>
+      <description></description>
+    </item><item>
+      <title>R</title>
+      <link>https://devzone.channeladam.com/tags/r/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/r/</guid>
+      <description></description>
+    </item><item>
+      <title>Reflection</title>
+      <link>https://devzone.channeladam.com/tags/reflection/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/reflection/</guid>
+      <description></description>
+    </item><item>
+      <title>Reversible</title>
+      <link>https://devzone.channeladam.com/tags/reversible/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/reversible/</guid>
+      <description></description>
+    </item><item>
+      <title>Moq</title>
+      <link>https://devzone.channeladam.com/tags/moq/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/moq/</guid>
+      <description></description>
+    </item><item>
+      <title>Container</title>
+      <link>https://devzone.channeladam.com/tags/container/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/container/</guid>
+      <description></description>
+    </item><item>
+      <title>Distributed</title>
+      <link>https://devzone.channeladam.com/tags/distributed/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/distributed/</guid>
+      <description></description>
+    </item><item>
+      <title>Kestrel</title>
+      <link>https://devzone.channeladam.com/tags/kestrel/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/kestrel/</guid>
+      <description></description>
+    </item><item>
+      <title>Notebooks</title>
+      <link>https://devzone.channeladam.com/tags/notebooks/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/notebooks/</guid>
+      <description></description>
+    </item><item>
+      <title>Orchestration</title>
+      <link>https://devzone.channeladam.com/tags/orchestration/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/orchestration/</guid>
+      <description></description>
+    </item><item>
+      <title>Scale</title>
+      <link>https://devzone.channeladam.com/tags/scale/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/scale/</guid>
+      <description></description>
+    </item><item>
+      <title>Service</title>
+      <link>https://devzone.channeladam.com/tags/service/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/service/</guid>
+      <description></description>
+    </item><item>
+      <title>Service Fabric</title>
+      <link>https://devzone.channeladam.com/tags/service-fabric/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/service-fabric/</guid>
+      <description></description>
+    </item><item>
+      <title>Services</title>
+      <link>https://devzone.channeladam.com/tags/services/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/services/</guid>
+      <description></description>
+    </item><item>
+      <title>Azure</title>
+      <link>https://devzone.channeladam.com/tags/azure/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/azure/</guid>
+      <description></description>
+    </item><item>
+      <title>Distributed Systems</title>
+      <link>https://devzone.channeladam.com/tags/distributed-systems/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/distributed-systems/</guid>
+      <description></description>
+    </item><item>
+      <title>Microservices</title>
+      <link>https://devzone.channeladam.com/tags/microservices/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/microservices/</guid>
+      <description></description>
+    </item><item>
+      <title>ASP.NET</title>
+      <link>https://devzone.channeladam.com/tags/asp.net/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/asp.net/</guid>
+      <description></description>
+    </item><item>
+      <title>Encoding</title>
+      <link>https://devzone.channeladam.com/tags/encoding/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/encoding/</guid>
+      <description></description>
+    </item><item>
+      <title>Image Optimisation</title>
+      <link>https://devzone.channeladam.com/tags/image-optimisation/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/image-optimisation/</guid>
+      <description></description>
+    </item><item>
+      <title>JPEG</title>
+      <link>https://devzone.channeladam.com/tags/jpeg/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/jpeg/</guid>
+      <description></description>
+    </item><item>
+      <title>Optimisation</title>
+      <link>https://devzone.channeladam.com/tags/optimisation/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/optimisation/</guid>
+      <description></description>
+    </item><item>
+      <title>PNG</title>
+      <link>https://devzone.channeladam.com/tags/png/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/png/</guid>
+      <description></description>
+    </item><item>
+      <title>Web</title>
+      <link>https://devzone.channeladam.com/tags/web/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/web/</guid>
+      <description></description>
+    </item><item>
+      <title>PCI DSS</title>
+      <link>https://devzone.channeladam.com/tags/pci-dss/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/pci-dss/</guid>
+      <description></description>
+    </item><item>
+      <title>Battery</title>
+      <link>https://devzone.channeladam.com/tags/battery/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/battery/</guid>
+      <description></description>
+    </item><item>
+      <title>Linux</title>
+      <link>https://devzone.channeladam.com/tags/linux/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/linux/</guid>
+      <description></description>
+    </item><item>
+      <title>Nvidia</title>
+      <link>https://devzone.channeladam.com/tags/nvidia/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/nvidia/</guid>
+      <description></description>
+    </item><item>
+      <title>Power</title>
+      <link>https://devzone.channeladam.com/tags/power/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/power/</guid>
+      <description></description>
+    </item><item>
+      <title>Artificial Intelligence</title>
+      <link>https://devzone.channeladam.com/tags/artificial-intelligence/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item><item>
+      <title>Data Science</title>
+      <link>https://devzone.channeladam.com/tags/data-science/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/data-science/</guid>
+      <description></description>
+    </item><item>
+      <title>Machine Learning</title>
+      <link>https://devzone.channeladam.com/tags/machine-learning/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/machine-learning/</guid>
+      <description></description>
+    </item><item>
+      <title>Python</title>
+      <link>https://devzone.channeladam.com/tags/python/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/python/</guid>
+      <description></description>
+    </item><item>
+      <title>.NET</title>
+      <link>https://devzone.channeladam.com/tags/.net/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net/</guid>
+      <description></description>
+    </item><item>
+      <title>Graphics</title>
+      <link>https://devzone.channeladam.com/tags/graphics/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/graphics/</guid>
+      <description></description>
+    </item><item>
+      <title>Languages</title>
+      <link>https://devzone.channeladam.com/tags/languages/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/languages/</guid>
+      <description></description>
+    </item><item>
+      <title>Security</title>
+      <link>https://devzone.channeladam.com/tags/security/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/security/</guid>
+      <description></description>
+    </item><item>
+      <title>Docker Swarm</title>
+      <link>https://devzone.channeladam.com/tags/docker-swarm/</link>
+      <pubDate>Sat, 04 Nov 2017 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/docker-swarm/</guid>
+      <description></description>
+    </item><item>
+      <title>Kubernetes</title>
+      <link>https://devzone.channeladam.com/tags/kubernetes/</link>
+      <pubDate>Sat, 04 Nov 2017 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/kubernetes/</guid>
+      <description></description>
+    </item><item>
+      <title>BizTalk</title>
+      <link>https://devzone.channeladam.com/tags/biztalk/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/biztalk/</guid>
+      <description></description>
+    </item><item>
+      <title>Framework</title>
+      <link>https://devzone.channeladam.com/tags/framework/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/framework/</guid>
+      <description></description>
+    </item><item>
+      <title>Hosting</title>
+      <link>https://devzone.channeladam.com/tags/hosting/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/hosting/</guid>
+      <description></description>
+    </item><item>
+      <title>Library</title>
+      <link>https://devzone.channeladam.com/tags/library/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/library/</guid>
+      <description></description>
+    </item><item>
+      <title>Nancy</title>
+      <link>https://devzone.channeladam.com/tags/nancy/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/nancy/</guid>
+      <description></description>
+    </item><item>
+      <title>Self</title>
+      <link>https://devzone.channeladam.com/tags/self/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/self/</guid>
+      <description></description>
+    </item><item>
+      <title>SOA</title>
+      <link>https://devzone.channeladam.com/tags/soa/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/soa/</guid>
+      <description></description>
+    </item><item>
+      <title>SOAP 1.1</title>
+      <link>https://devzone.channeladam.com/tags/soap-1.1/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/soap-1.1/</guid>
+      <description></description>
+    </item><item>
+      <title>SOAP 1.2</title>
+      <link>https://devzone.channeladam.com/tags/soap-1.2/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/soap-1.2/</guid>
+      <description></description>
+    </item><item>
+      <title>Testing</title>
+      <link>https://devzone.channeladam.com/tags/testing/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/testing/</guid>
+      <description></description>
+    </item><item>
+      <title>API Management</title>
+      <link>https://devzone.channeladam.com/tags/api-management/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/api-management/</guid>
+      <description></description>
+    </item><item>
+      <title>Fluent</title>
+      <link>https://devzone.channeladam.com/tags/fluent/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/fluent/</guid>
+      <description></description>
+    </item><item>
+      <title>Mock4Net</title>
+      <link>https://devzone.channeladam.com/tags/mock4net/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/mock4net/</guid>
+      <description></description>
+    </item><item>
+      <title>Disposable</title>
+      <link>https://devzone.channeladam.com/tags/disposable/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/disposable/</guid>
+      <description></description>
+    </item><item>
+      <title>Embedded Resources</title>
+      <link>https://devzone.channeladam.com/tags/embedded-resources/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/embedded-resources/</guid>
+      <description></description>
+    </item><item>
+      <title>Events</title>
+      <link>https://devzone.channeladam.com/tags/events/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/events/</guid>
+      <description></description>
+    </item><item>
+      <title>Mapping</title>
+      <link>https://devzone.channeladam.com/tags/mapping/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/mapping/</guid>
+      <description></description>
+    </item><item>
+      <title>Maps</title>
+      <link>https://devzone.channeladam.com/tags/maps/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/maps/</guid>
+      <description></description>
+    </item><item>
+      <title>Real Proxies</title>
+      <link>https://devzone.channeladam.com/tags/real-proxies/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/real-proxies/</guid>
+      <description></description>
+    </item><item>
+      <title>Retry</title>
+      <link>https://devzone.channeladam.com/tags/retry/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/retry/</guid>
+      <description></description>
+    </item><item>
+      <title>Serialization</title>
+      <link>https://devzone.channeladam.com/tags/serialization/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/serialization/</guid>
+      <description></description>
+    </item><item>
+      <title>Validation</title>
+      <link>https://devzone.channeladam.com/tags/validation/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/validation/</guid>
+      <description></description>
+    </item><item>
+      <title>ChannelAdam.Wcf</title>
+      <link>https://devzone.channeladam.com/tags/channeladam.wcf/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/channeladam.wcf/</guid>
+      <description></description>
+    </item><item>
+      <title>IoC</title>
+      <link>https://devzone.channeladam.com/tags/ioc/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/ioc/</guid>
+      <description></description>
+    </item><item>
+      <title>Open Source</title>
+      <link>https://devzone.channeladam.com/tags/open-source/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/open-source/</guid>
+      <description></description>
+    </item><item>
+      <title>ServiceConsumer</title>
+      <link>https://devzone.channeladam.com/tags/serviceconsumer/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/serviceconsumer/</guid>
+      <description></description>
+    </item><item>
+      <title>WCF</title>
+      <link>https://devzone.channeladam.com/tags/wcf/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/wcf/</guid>
+      <description></description>
+    </item><item>
+      <title>Windows</title>
+      <link>https://devzone.channeladam.com/tags/windows/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/windows/</guid>
+      <description></description>
+    </item><item>
+      <title>Windows Communication Foundation</title>
+      <link>https://devzone.channeladam.com/tags/windows-communication-foundation/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/windows-communication-foundation/</guid>
+      <description></description>
+    </item><item>
+      <title>Windows Communication Framework</title>
+      <link>https://devzone.channeladam.com/tags/windows-communication-framework/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/windows-communication-framework/</guid>
+      <description></description>
+    </item><item>
+      <title>API Apps</title>
+      <link>https://devzone.channeladam.com/tags/api-apps/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/api-apps/</guid>
+      <description></description>
+    </item><item>
+      <title>App Service</title>
+      <link>https://devzone.channeladam.com/tags/app-service/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/app-service/</guid>
+      <description></description>
+    </item><item>
+      <title>Logic Apps</title>
+      <link>https://devzone.channeladam.com/tags/logic-apps/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/logic-apps/</guid>
+      <description></description>
+    </item><item>
+      <title>Messaging</title>
+      <link>https://devzone.channeladam.com/tags/messaging/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/messaging/</guid>
+      <description></description>
+    </item><item>
+      <title>Microsoft</title>
+      <link>https://devzone.channeladam.com/tags/microsoft/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/microsoft/</guid>
+      <description></description>
+    </item><item>
+      <title>Microsoft Azure</title>
+      <link>https://devzone.channeladam.com/tags/microsoft-azure/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/microsoft-azure/</guid>
+      <description></description>
+    </item><item>
+      <title>Service Bus</title>
+      <link>https://devzone.channeladam.com/tags/service-bus/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/service-bus/</guid>
+      <description></description>
+    </item><item>
+      <title>Service Bus Connector</title>
+      <link>https://devzone.channeladam.com/tags/service-bus-connector/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/service-bus-connector/</guid>
+      <description></description>
+    </item><item>
+      <title>BDD</title>
+      <link>https://devzone.channeladam.com/tags/bdd/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/bdd/</guid>
+      <description></description>
+    </item><item>
+      <title>Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/tags/behaviour-specification-handbook/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/behaviour-specification-handbook/</guid>
+      <description></description>
+    </item><item>
+      <title>Behaviour Specifications</title>
+      <link>https://devzone.channeladam.com/tags/behaviour-specifications/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/behaviour-specifications/</guid>
+      <description></description>
+    </item><item>
+      <title>Behaviour-Driven</title>
+      <link>https://devzone.channeladam.com/tags/behaviour-driven/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/behaviour-driven/</guid>
+      <description></description>
+    </item><item>
+      <title>Behaviour-Driven Development</title>
+      <link>https://devzone.channeladam.com/tags/behaviour-driven-development/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/behaviour-driven-development/</guid>
+      <description></description>
+    </item><item>
+      <title>Cucumber</title>
+      <link>https://devzone.channeladam.com/tags/cucumber/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/cucumber/</guid>
+      <description></description>
+    </item><item>
+      <title>Gauge</title>
+      <link>https://devzone.channeladam.com/tags/gauge/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/gauge/</guid>
+      <description></description>
+    </item><item>
+      <title>Gherkin</title>
+      <link>https://devzone.channeladam.com/tags/gherkin/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/gherkin/</guid>
+      <description></description>
+    </item><item>
+      <title>Scenarios</title>
+      <link>https://devzone.channeladam.com/tags/scenarios/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/scenarios/</guid>
+      <description></description>
+    </item><item>
+      <title>Specflow</title>
+      <link>https://devzone.channeladam.com/tags/specflow/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/specflow/</guid>
+      <description></description>
+    </item><item>
+      <title>BizTalk360</title>
+      <link>https://devzone.channeladam.com/tags/biztalk360/</link>
+      <pubDate>Wed, 15 Apr 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/biztalk360/</guid>
+      <description></description>
+    </item><item>
+      <title>Integration</title>
+      <link>https://devzone.channeladam.com/tags/integration/</link>
+      <pubDate>Wed, 15 Apr 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/integration/</guid>
+      <description></description>
+    </item><item>
+      <title>Web Apps</title>
+      <link>https://devzone.channeladam.com/tags/web-apps/</link>
+      <pubDate>Wed, 15 Apr 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/web-apps/</guid>
+      <description></description>
+    </item><item>
+      <title>Async</title>
+      <link>https://devzone.channeladam.com/tags/async/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/async/</guid>
+      <description></description>
+    </item><item>
+      <title>Asynchronous</title>
+      <link>https://devzone.channeladam.com/tags/asynchronous/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/asynchronous/</guid>
+      <description></description>
+    </item><item>
+      <title>Naming</title>
+      <link>https://devzone.channeladam.com/tags/naming/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/naming/</guid>
+      <description></description>
+    </item><item>
+      <title>Patterns</title>
+      <link>https://devzone.channeladam.com/tags/patterns/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/patterns/</guid>
+      <description></description>
+    </item><item>
+      <title>Agile</title>
+      <link>https://devzone.channeladam.com/tags/agile/</link>
+      <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/agile/</guid>
+      <description></description>
+    </item><item>
+      <title>Business</title>
+      <link>https://devzone.channeladam.com/tags/business/</link>
+      <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/business/</guid>
+      <description></description>
+    </item><item>
+      <title>Failure</title>
+      <link>https://devzone.channeladam.com/tags/failure/</link>
+      <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/failure/</guid>
+      <description></description>
+    </item><item>
+      <title>Methodology</title>
+      <link>https://devzone.channeladam.com/tags/methodology/</link>
+      <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/methodology/</guid>
+      <description></description>
+    </item><item>
+      <title>Waterfall</title>
+      <link>https://devzone.channeladam.com/tags/waterfall/</link>
+      <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/waterfall/</guid>
+      <description></description>
+    </item><item>
+      <title>Conventions</title>
+      <link>https://devzone.channeladam.com/tags/conventions/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/conventions/</guid>
+      <description></description>
+    </item><item>
+      <title>Operations</title>
+      <link>https://devzone.channeladam.com/tags/operations/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/operations/</guid>
+      <description></description>
+    </item><item>
+      <title>Standards</title>
+      <link>https://devzone.channeladam.com/tags/standards/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/standards/</guid>
+      <description></description>
+    </item><item>
+      <title>Amazon S3</title>
+      <link>https://devzone.channeladam.com/tags/amazon-s3/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/amazon-s3/</guid>
+      <description></description>
+    </item><item>
+      <title>BitBucket</title>
+      <link>https://devzone.channeladam.com/tags/bitbucket/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/bitbucket/</guid>
+      <description></description>
+    </item><item>
+      <title>Digital Ocean</title>
+      <link>https://devzone.channeladam.com/tags/digital-ocean/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/digital-ocean/</guid>
+      <description></description>
+    </item><item>
+      <title>GitHub</title>
+      <link>https://devzone.channeladam.com/tags/github/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/github/</guid>
+      <description></description>
+    </item><item>
+      <title>Gondor</title>
+      <link>https://devzone.channeladam.com/tags/gondor/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/gondor/</guid>
+      <description></description>
+    </item><item>
+      <title>Google App Engine</title>
+      <link>https://devzone.channeladam.com/tags/google-app-engine/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/google-app-engine/</guid>
+      <description></description>
+    </item><item>
+      <title>Google Compute Engine</title>
+      <link>https://devzone.channeladam.com/tags/google-compute-engine/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/google-compute-engine/</guid>
+      <description></description>
+    </item><item>
+      <title>Heroku</title>
+      <link>https://devzone.channeladam.com/tags/heroku/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/heroku/</guid>
+      <description></description>
+    </item><item>
+      <title>PaaS</title>
+      <link>https://devzone.channeladam.com/tags/paas/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/paas/</guid>
+      <description></description>
+    </item><item>
+      <title>RedHat OpenShift</title>
+      <link>https://devzone.channeladam.com/tags/redhat-openshift/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/redhat-openshift/</guid>
+      <description></description>
+    </item><item>
+      <title>Extensions</title>
+      <link>https://devzone.channeladam.com/tags/extensions/</link>
+      <pubDate>Sat, 07 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/extensions/</guid>
+      <description></description>
+    </item><item>
+      <title>Productivity</title>
+      <link>https://devzone.channeladam.com/tags/productivity/</link>
+      <pubDate>Sat, 07 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/productivity/</guid>
+      <description></description>
+    </item><item>
+      <title>Visual Studio</title>
+      <link>https://devzone.channeladam.com/tags/visual-studio/</link>
+      <pubDate>Sat, 07 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/visual-studio/</guid>
+      <description></description>
+    </item><item>
+      <title>Visual Studio 2010</title>
+      <link>https://devzone.channeladam.com/tags/visual-studio-2010/</link>
+      <pubDate>Sat, 07 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/visual-studio-2010/</guid>
+      <description></description>
+    </item><item>
+      <title>ASP.NET MVC 3</title>
+      <link>https://devzone.channeladam.com/tags/asp.net-mvc-3/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/asp.net-mvc-3/</guid>
+      <description></description>
+    </item><item>
+      <title>Assembly Binding</title>
+      <link>https://devzone.channeladam.com/tags/assembly-binding/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/assembly-binding/</guid>
+      <description></description>
+    </item><item>
+      <title>Intellisense</title>
+      <link>https://devzone.channeladam.com/tags/intellisense/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/intellisense/</guid>
+      <description></description>
+    </item><item>
+      <title>Probing privatePath</title>
+      <link>https://devzone.channeladam.com/tags/probing-privatepath/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/probing-privatepath/</guid>
+      <description></description>
+    </item><item>
+      <title>Razor</title>
+      <link>https://devzone.channeladam.com/tags/razor/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/razor/</guid>
+      <description></description>
+    </item><item>
+      <title>Web Development</title>
+      <link>https://devzone.channeladam.com/tags/web-development/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/web-development/</guid>
+      <description></description>
+    </item><item>
+      <title>.NET 4.0</title>
+      <link>https://devzone.channeladam.com/tags/.net-4.0/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net-4.0/</guid>
+      <description></description>
+    </item><item>
+      <title>.NET Framework</title>
+      <link>https://devzone.channeladam.com/tags/.net-framework/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net-framework/</guid>
+      <description></description>
+    </item><item>
+      <title>Coding Practices</title>
+      <link>https://devzone.channeladam.com/tags/coding-practices/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/coding-practices/</guid>
+      <description></description>
+    </item><item>
+      <title>Singleton</title>
+      <link>https://devzone.channeladam.com/tags/singleton/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/singleton/</guid>
+      <description></description>
+    </item><item>
+      <title>Thread-Safe</title>
+      <link>https://devzone.channeladam.com/tags/thread-safe/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/thread-safe/</guid>
+      <description></description>
+    </item><item>
+      <title>VB.NET</title>
+      <link>https://devzone.channeladam.com/tags/vb.net/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/vb.net/</guid>
+      <description></description>
+    </item><item>
+      <title>AJAX</title>
+      <link>https://devzone.channeladam.com/tags/ajax/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/ajax/</guid>
+      <description></description>
+    </item><item>
+      <title>ASP.NET MVC2</title>
+      <link>https://devzone.channeladam.com/tags/asp.net-mvc2/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/asp.net-mvc2/</guid>
+      <description></description>
+    </item><item>
+      <title>Client Validation</title>
+      <link>https://devzone.channeladam.com/tags/client-validation/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/client-validation/</guid>
+      <description></description>
+    </item><item>
+      <title>Dynamic</title>
+      <link>https://devzone.channeladam.com/tags/dynamic/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/dynamic/</guid>
+      <description></description>
+    </item><item>
+      <title>Injected</title>
+      <link>https://devzone.channeladam.com/tags/injected/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/injected/</guid>
+      <description></description>
+    </item><item>
+      <title>JavaScript</title>
+      <link>https://devzone.channeladam.com/tags/javascript/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/javascript/</guid>
+      <description></description>
+    </item><item>
+      <title>jQuery</title>
+      <link>https://devzone.channeladam.com/tags/jquery/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/jquery/</guid>
+      <description></description>
+    </item><item>
+      <title>Loaded</title>
+      <link>https://devzone.channeladam.com/tags/loaded/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/loaded/</guid>
+      <description></description>
+    </item><item>
+      <title>Partial Views</title>
+      <link>https://devzone.channeladam.com/tags/partial-views/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/partial-views/</guid>
+      <description></description>
+    </item><item>
+      <title>Script</title>
+      <link>https://devzone.channeladam.com/tags/script/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/script/</guid>
+      <description></description>
+    </item><item>
+      <title>C#</title>
+      <link>https://devzone.channeladam.com/tags/c#/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/c#/</guid>
+      <description></description>
+    </item><item>
+      <title>Clean Code</title>
+      <link>https://devzone.channeladam.com/tags/clean-code/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/clean-code/</guid>
+      <description></description>
+    </item><item>
+      <title>Code Quality</title>
+      <link>https://devzone.channeladam.com/tags/code-quality/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/code-quality/</guid>
+      <description></description>
+    </item><item>
+      <title>Named Parameters</title>
+      <link>https://devzone.channeladam.com/tags/named-parameters/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/named-parameters/</guid>
+      <description></description>
+    </item><item>
+      <title>Optional Parameters</title>
+      <link>https://devzone.channeladam.com/tags/optional-parameters/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/optional-parameters/</guid>
+      <description></description>
+    </item><item>
+      <title>SOLID</title>
+      <link>https://devzone.channeladam.com/tags/solid/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/solid/</guid>
+      <description></description>
+    </item><item>
+      <title>Behaviour Verification</title>
+      <link>https://devzone.channeladam.com/tags/behaviour-verification/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/behaviour-verification/</guid>
+      <description></description>
+    </item><item>
+      <title>Program Specification</title>
+      <link>https://devzone.channeladam.com/tags/program-specification/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/program-specification/</guid>
+      <description></description>
+    </item><item>
+      <title>Test-Driven Development</title>
+      <link>https://devzone.channeladam.com/tags/test-driven-development/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/test-driven-development/</guid>
+      <description></description>
+    </item><item>
+      <title>TeamReview</title>
+      <link>https://devzone.channeladam.com/tags/teamreview/</link>
+      <pubDate>Thu, 05 Nov 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/teamreview/</guid>
+      <description></description>
+    </item><item>
+      <title>DDD</title>
+      <link>https://devzone.channeladam.com/tags/ddd/</link>
+      <pubDate>Wed, 26 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/ddd/</guid>
+      <description></description>
+    </item><item>
+      <title>Domain-Driven Design</title>
+      <link>https://devzone.channeladam.com/tags/domain-driven-design/</link>
+      <pubDate>Wed, 26 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/domain-driven-design/</guid>
+      <description></description>
+    </item><item>
+      <title>Build</title>
+      <link>https://devzone.channeladam.com/tags/build/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/build/</guid>
+      <description></description>
+    </item><item>
+      <title>MSBuild</title>
+      <link>https://devzone.channeladam.com/tags/msbuild/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/msbuild/</guid>
+      <description></description>
+    </item><item>
+      <title>Single Responsibility Principle</title>
+      <link>https://devzone.channeladam.com/tags/single-responsibility-principle/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/single-responsibility-principle/</guid>
+      <description></description>
+    </item><item>
+      <title>SRP</title>
+      <link>https://devzone.channeladam.com/tags/srp/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/srp/</guid>
+      <description></description>
+    </item><item>
+      <title>TFS</title>
+      <link>https://devzone.channeladam.com/tags/tfs/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/tfs/</guid>
+      <description></description>
+    </item><item>
+      <title>Work Items</title>
+      <link>https://devzone.channeladam.com/tags/work-items/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/work-items/</guid>
+      <description></description>
+    </item><item>
+      <title>PowerShell</title>
+      <link>https://devzone.channeladam.com/tags/powershell/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/powershell/</guid>
+      <description></description>
+    </item><item>
+      <title>Principles</title>
+      <link>https://devzone.channeladam.com/tags/principles/</link>
+      <pubDate>Thu, 23 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/principles/</guid>
+      <description></description>
+    </item><item>
+      <title>Programming</title>
+      <link>https://devzone.channeladam.com/tags/programming/</link>
+      <pubDate>Tue, 14 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/programming/</guid>
+      <description></description>
+    </item><item>
+      <title>Code Reviews</title>
+      <link>https://devzone.channeladam.com/tags/code-reviews/</link>
+      <pubDate>Thu, 18 Jun 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/code-reviews/</guid>
+      <description></description>
+    </item><item>
+      <title>Mesosphere DC/OS</title>
+      <link>https://devzone.channeladam.com/tags/mesosphere-dc/os/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/mesosphere-dc/os/</guid>
+      <description></description>
+    </item></channel>
+</rss>

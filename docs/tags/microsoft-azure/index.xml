@@ -1,0 +1,31 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft Azure on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/microsoft-azure/</link>
+    <description>Recent contentin Microsoft Azure on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Fri, 18 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/microsoft-azure/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Logic Apps and the Service Bus Connector - The Case of the Incomplete Message!</title>
+      <link>https://devzone.channeladam.com/articles/2015/09/logic-apps-and-service-bus-connector/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/09/logic-apps-and-service-bus-connector/</guid>
+      <description>When an Azure App Service Logic App Service Bus Connector trigger does not complete the Service Bus message...</description>
+    </item><item>
+      <title>How To Configure A Logic App To Use An Internal API App</title>
+      <link>https://devzone.channeladam.com/articles/2015/08/how-logic-app-use-internal-api-app/</link>
+      <pubDate>Sat, 15 Aug 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/08/how-logic-app-use-internal-api-app/</guid>
+      <description>How to configure a Microsoft Azure App Service Logic App to use an API App with an Internal access level.</description>
+    </item><item>
+      <title>BizTalk Summit 2015 in London - Part 2 - Turning of the Tide?</title>
+      <link>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-2-turning-of-tide/</link>
+      <pubDate>Wed, 15 Apr 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-2-turning-of-tide/</guid>
+      <description>From the BizTalk Summit 2015 in London - Microsoft now appears to have a solid architecture for Modern Integration, and we now may be witnessing the start of the turning of the tide.</description>
+    </item><item>
+      <title>BizTalk Summit 2015 in London - Part 1 - Microsoft&#39;s Roadmap for Integration</title>
+      <link>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-1-microsoft-integration-roadmap/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-1-microsoft-integration-roadmap/</guid>
+      <description>From the BizTalk Summit 2015 in London - a summary of Microsoft&#39;s roadmap for integration.</description>
+    </item><item>
+      <title>A Comparison of Website Hosting Solutions</title>
+      <link>https://devzone.channeladam.com/articles/2014/07/comparison-hosting-solutions/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2014/07/comparison-hosting-solutions/</guid>
+      <description>A brief comparison of web hosting solutions for blog, hobby and small websites.</description>
+    </item></channel>
+</rss>

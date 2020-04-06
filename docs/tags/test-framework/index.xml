@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test Framework on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/test-framework/</link>
+    <description>Recent contentin Test Framework on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 24 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/test-framework/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>The ChannelAdam Test Framework Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework/</link>
+      <pubDate>Sun, 24 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework/</guid>
+      <description>About the ChannelAdam Test Framework Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework XML Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-xml/</link>
+      <pubDate>Sun, 24 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-xml/</guid>
+      <description>About the ChannelAdam Test Framework XML Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework MSTest V2 Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-mstestv2/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-mstestv2/</guid>
+      <description>About the ChannelAdam Test Framework MSTest V2 Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework NUnit Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-nunit/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-nunit/</guid>
+      <description>About the ChannelAdam Test Framework NUnit Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Text Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-text/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-text/</guid>
+      <description>About the ChannelAdam Test Framework Text Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Moq Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-moq/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-moq/</guid>
+      <description>About the ChannelAdam Test Framework Moq Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework MSTest Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-mstest/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-mstest/</guid>
+      <description>About the ChannelAdam Test Framework MSTest Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Library for BizTalk</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-biztalk/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-biztalk/</guid>
+      <description>Usage documentation for the ChannelAdam Test Framework Library for BizTalk.</description>
+    </item></channel>
+</rss>

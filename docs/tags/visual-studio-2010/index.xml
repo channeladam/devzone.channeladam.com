@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Studio 2010 on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/visual-studio-2010/</link>
+    <description>Recent contentin Visual Studio 2010 on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 07 May 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/visual-studio-2010/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>&#34;Quick Find&#34; Feature in the Productivity Power Tool Extension in Visual Studio 2010</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/quick-find-extension-visual-studio-2010/</link>
+      <pubDate>Sat, 07 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/quick-find-extension-visual-studio-2010/</guid>
+      <description>How to turn off the Quick Find feature in the Visual Studio 2010 Productivity Power Tool extension.</description>
+    </item><item>
+      <title>Intellisense in Razor for Custom Types and Helpers</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/intellisense-razor-custom-types-helpers/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/intellisense-razor-custom-types-helpers/</guid>
+      <description>Intellisense for your Razor custom types and helpers.</description>
+    </item><item>
+      <title>Minimal Configuration Required for Razor Intellisense in ASP.NET MVC 3 RTM</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/minimal-config-razor-intellisense-mvc3/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/minimal-config-razor-intellisense-mvc3/</guid>
+      <description>The minimal configuration that is required for Razor Intellisense to work in ASP.NET MVC 3 RTM.</description>
+    </item><item>
+      <title>Guidance for Using Optional and Named Parameters In C# &amp; .NET 4.0</title>
+      <link>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</guid>
+      <description>Guidance on the use of Optional and Named Parameters in C#.</description>
+    </item></channel>
+</rss>

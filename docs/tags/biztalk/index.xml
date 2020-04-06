@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BizTalk on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/biztalk/</link>
+    <description>Recent contentin BizTalk on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 20 Nov 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/biztalk/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Announcing the ChannelAdam Nancy SOAP Library</title>
+      <link>https://devzone.channeladam.com/articles/2016/11/nancy-soap-library-released/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2016/11/nancy-soap-library-released/</guid>
+      <description>Announcing the ChannelAdam Nancy SOAP Library.</description>
+    </item><item>
+      <title>Announcing the ChannelAdam SOAP Library</title>
+      <link>https://devzone.channeladam.com/articles/2016/11/soap-library-released/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2016/11/soap-library-released/</guid>
+      <description>Announcing the ChannelAdam SOAP Library.</description>
+    </item><item>
+      <title>Modern Testing of BizTalk Maps</title>
+      <link>https://devzone.channeladam.com/articles/2016/10/modern-testing-of-biztalk-maps/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2016/10/modern-testing-of-biztalk-maps/</guid>
+      <description>How to bring your BizTalk Map testing into the modern era.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Library for BizTalk</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-biztalk/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-biztalk/</guid>
+      <description>Usage documentation for the ChannelAdam Test Framework Library for BizTalk.</description>
+    </item><item>
+      <title>BizTalk Summit 2015 in London - Part 2 - Turning of the Tide?</title>
+      <link>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-2-turning-of-tide/</link>
+      <pubDate>Wed, 15 Apr 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-2-turning-of-tide/</guid>
+      <description>From the BizTalk Summit 2015 in London - Microsoft now appears to have a solid architecture for Modern Integration, and we now may be witnessing the start of the turning of the tide.</description>
+    </item><item>
+      <title>BizTalk Summit 2015 in London - Part 1 - Microsoft&#39;s Roadmap for Integration</title>
+      <link>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-1-microsoft-integration-roadmap/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-1-microsoft-integration-roadmap/</guid>
+      <description>From the BizTalk Summit 2015 in London - a summary of Microsoft&#39;s roadmap for integration.</description>
+    </item></channel>
+</rss>

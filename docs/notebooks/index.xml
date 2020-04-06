@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChannelAdam Software Development Notebooks on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/notebooks/</link>
+    <description>Recent contentin ChannelAdam Software Development Notebooks on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/notebooks/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Distributed Systems Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/distributed-systems/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/distributed-systems/</guid>
+      <description>Notes about highly scalable distributed systems, microservices, service platforms, containers and orchestration.</description>
+    </item><item>
+      <title>Web Development Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/web-development/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/web-development/</guid>
+      <description>Notes about Web Development.</description>
+    </item><item>
+      <title>Data Science Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/data-science/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/data-science/</guid>
+      <description>Notes about data science - machine learning (ML), artificial intelligence (AI) etc.</description>
+    </item><item>
+      <title>Languages Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/languages/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/</guid>
+      <description>Notes about computer programming languages.</description>
+    </item><item>
+      <title>Linux Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/linux/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/linux/</guid>
+      <description>Notes about Linux.</description>
+    </item><item>
+      <title>Security Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/security/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/security/</guid>
+      <description>Notes about Security.</description>
+    </item></channel>
+</rss>

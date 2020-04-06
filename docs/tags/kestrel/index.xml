@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kestrel on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/kestrel/</link>
+    <description>Recent contentin Kestrel on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/kestrel/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Service Fabric Notebook Update</title>
+      <link>https://devzone.channeladam.com/articles/2018/05/service-fabric-notes-update/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2018/05/service-fabric-notes-update/</guid>
+      <description>The Service Fabric Notebook has been updated to include critical information about configuring Kestrel listener IP addresses.</description>
+    </item></channel>
+</rss>

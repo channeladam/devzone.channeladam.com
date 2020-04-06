@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moq on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/moq/</link>
+    <description>Recent contentin Moq on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/moq/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>The ChannelAdam Test Framework Moq Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-moq/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-moq/</guid>
+      <description>About the ChannelAdam Test Framework Moq Library.</description>
+    </item><item>
+      <title>The ChannelAdam Test Framework Libraries</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframeworks/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframeworks/</guid>
+      <description>About the deprecated full .NET Framework ChannelAdam Test Framework Libraries.</description>
+    </item></channel>
+</rss>

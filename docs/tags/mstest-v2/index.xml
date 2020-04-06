@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MSTest V2 on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/mstest-v2/</link>
+    <description>Recent contentin MSTest V2 on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 23 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/mstest-v2/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>The ChannelAdam Test Framework MSTest V2 Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-mstestv2/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-mstestv2/</guid>
+      <description>About the ChannelAdam Test Framework MSTest V2 Library.</description>
+    </item></channel>
+</rss>

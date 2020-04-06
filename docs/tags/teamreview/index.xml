@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TeamReview on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/teamreview/</link>
+    <description>Recent contentin TeamReview on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Thu, 05 Nov 2009 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/teamreview/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>TeamReview 2010 Installation Problem</title>
+      <link>https://devzone.channeladam.com/articles/2009/11/teamreview-2010-installation-problem/</link>
+      <pubDate>Thu, 05 Nov 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/11/teamreview-2010-installation-problem/</guid>
+      <description>How to fix a &#39;System.InvalidOperationException: Method failed&#39; exception with TeamReview 2010.</description>
+    </item></channel>
+</rss>

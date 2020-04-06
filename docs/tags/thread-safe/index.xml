@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thread-Safe on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/thread-safe/</link>
+    <description>Recent contentin Thread-Safe on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Thu, 26 Aug 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/thread-safe/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Thread-Safe Lazy Singleton Implementation in .NET 4</title>
+      <link>https://devzone.channeladam.com/articles/2010/08/thread-safe-lazy-singleton-dotnet/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/08/thread-safe-lazy-singleton-dotnet/</guid>
+      <description>How to implement a thread-safe lazy singleton in .NET 4.</description>
+    </item></channel>
+</rss>

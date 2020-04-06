@@ -1,0 +1,321 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Behaviour Specifications on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/behaviour-specifications/</link>
+    <description>Recent contentin Behaviour Specifications on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Wed, 09 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/behaviour-specifications/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>About End-To-End Behaviours | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-about-end-to-ends/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-about-end-to-ends/</guid>
+      <description>About end-to-end Behaviour Specifications.</description>
+    </item><item>
+      <title>About Outsourcing Delivery | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-about-outsourcing/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-about-outsourcing/</guid>
+      <description>About outsourcing solution delivery and how that affects the process of writing Behaviour Specifications.</description>
+    </item><item>
+      <title>Avoid &#34;I&#34; | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-avoid-i/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-avoid-i/</guid>
+      <description>Avoid the word &#34;I&#34; - a tip for writing effective Behaviour Specification steps.</description>
+    </item><item>
+      <title>Avoid Generic Verbs | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-avoid-generic-verbs/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-avoid-generic-verbs/</guid>
+      <description>Avoid the use of generic verbs - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Avoid Specifying Internal Technical Implementation Details | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-avoid-implementation/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-avoid-implementation/</guid>
+      <description>Avoid specifying internal technical implementation details - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Background | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/background/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/background/</guid>
+      <description>This chapter provides background information about The Behaviour Specification Handbook.</description>
+    </item><item>
+      <title>Behaviour Specifications Before Implementation | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-behaviours-before/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-behaviours-before/</guid>
+      <description>Write the Behaviour Specifications before doing the implementation - a tip for implementing the Behaviour Specifications.</description>
+    </item><item>
+      <title>Behaviour Specifications | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs/</guid>
+      <description>This chapter provides a definition of Behaviour Specifications, and an overview of the Gherkin language and feature files.</description>
+    </item><item>
+      <title>Behaviour-Driven Development (BDD) Overview | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/background-bdd-overview/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/background-bdd-overview/</guid>
+      <description>An overview of Behaviour-Driven Development (BDD).</description>
+    </item><item>
+      <title>Code! | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-code/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-code/</guid>
+      <description>A tip for coding the Behaviour Specifications.</description>
+    </item><item>
+      <title>Developers: No Other Automated Tests! | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-developers-no-other-automated-tests/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-developers-no-other-automated-tests/</guid>
+      <description>No other automated tests coded by developers are necessary when Behaviour Specifications are written and implemented properly.</description>
+    </item><item>
+      <title>Effective Behaviour Specification Descriptions | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions/</guid>
+      <description>This chapter provides tips and recommendations on how to write effective Behaviour Specification Descriptions for maximum understanding and maintainability.</description>
+    </item><item>
+      <title>Effective Behaviour Specification Steps | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps/</guid>
+      <description>This chapter provides tips and recommendations on how to write effective Behaviour Specification steps.</description>
+    </item><item>
+      <title>Feature Files | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-feature-files/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-feature-files/</guid>
+      <description>A suggested hierarchical structure for Gherkin feature files.</description>
+    </item><item>
+      <title>Feature Names | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-feature-names/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-feature-names/</guid>
+      <description>Recommendations for the name or title of a Gherkin feature.</description>
+    </item><item>
+      <title>Follow This Template | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-template/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-template/</guid>
+      <description>Follow this format template - a tip for writing an effective Behaviour Specification Description.</description>
+    </item><item>
+      <title>General Tips | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips/</guid>
+      <description>This chapter provides general tips for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Guidelines For Examples and Data Tables | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-example-guidelines/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-example-guidelines/</guid>
+      <description>Guidelines for examples and data tables - a tip for writing effective Behaviour Specification steps.</description>
+    </item><item>
+      <title>Have Different Feature Files For Different User Interfaces | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-different-feature-each-interface/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-different-feature-each-interface/</guid>
+      <description>Have different feature files for different User Interfaces - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Identify Which Developers Will Code Each Behaviour | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-identify-developers/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-identify-developers/</guid>
+      <description>Identify which developers will code each behaviour - a tip for implementing the Behaviour Specifications.</description>
+    </item><item>
+      <title>Identify Who Will Code The Automation Or Manually Perform Each Test | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-identify-tester/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-identify-tester/</guid>
+      <description>Identify who will code the automation or manually perform each test - a tip for implementing the Behaviour Specifications.</description>
+    </item><item>
+      <title>Indicate Positive or Negative Behaviour | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-positive-negative/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-positive-negative/</guid>
+      <description>Indicate positive or negative behaviour - a tip for writing an effective Behaviour Specification Description.</description>
+    </item><item>
+      <title>Indicate Primary or Secondary Behaviour | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-primary-secondary/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-primary-secondary/</guid>
+      <description>Indicate primary or secondary behaviour - a tip for writing an effective Behaviour Specification Description.</description>
+    </item><item>
+      <title>Meeting Milestone 1 - Background Context and Requirements Overview | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-context/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-context/</guid>
+      <description>The first milestone of the Behaviour Specification writing meeting - explaining the background context and an overview of the requirements.</description>
+    </item><item>
+      <title>Meeting Milestone 2 - Technical Design Overview | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-technical-overview/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-technical-overview/</guid>
+      <description>The second milestone of the Behaviour Specification writing meeting - explaining the low-level technical design.</description>
+    </item><item>
+      <title>Meeting Milestone 3 - Checkpoint | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-checkpoint/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-checkpoint/</guid>
+      <description>The third milestone of the Behaviour Specification writing meeting - a checkpoint before proceeding.</description>
+    </item><item>
+      <title>Meeting Milestone 4 - Behaviour Identification | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-behaviour-identification/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-behaviour-identification/</guid>
+      <description>The procedure for identifying Behaviour Specifications for software components.</description>
+    </item><item>
+      <title>Meeting Milestone 5 - Step Writing | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-step-writing/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-step-writing/</guid>
+      <description>About writing the steps for Behaviour Specifications.</description>
+    </item><item>
+      <title>Meeting Milestone 6 - Determine Test Types | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-test-types/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-test-types/</guid>
+      <description>Determining the type of test for each Behaviour Specification.</description>
+    </item><item>
+      <title>No Other Test Cases Are Necessary! | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-no-other-test-cases-necessary/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-no-other-test-cases-necessary/</guid>
+      <description>No other test cases are necessary when Behaviour Specifications are written and implemented properly.</description>
+    </item><item>
+      <title>Overview Of The Gherkin Language | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-gherkin-overview/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-gherkin-overview/</guid>
+      <description>An overview of the language that is used to specify Behaviour Specifications.</description>
+    </item><item>
+      <title>Prerequisites | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-prerequisites/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-prerequisites/</guid>
+      <description>The important prerequisites for writing Behaviour-Driven Development (BDD) Behaviour Specifications.</description>
+    </item><item>
+      <title>Re-use Steps, If Possible | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-reuse/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-reuse/</guid>
+      <description>Re-use steps, if possible - a tip for writing effective Behaviour Specification steps.</description>
+    </item><item>
+      <title>Review Test Outputs | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-review-test-outputs/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-review-test-outputs/</guid>
+      <description>Review the test outputs - a tip for implementing the Behaviour Specifications.</description>
+    </item><item>
+      <title>Scaling BDD To Large Solutions | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/background-scaling-to-large-solutions/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/background-scaling-to-large-solutions/</guid>
+      <description>I needed an approach that scaled - that is how and why I arrived at most of my recommendations for this Behaviour Specification Handbook.</description>
+    </item><item>
+      <title>Separate Implementation Of Unit Test Steps From Integration Test Steps | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-separate-unit-steps/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-separate-unit-steps/</guid>
+      <description>Separate the implementation of Unit Test steps from Integration Test steps - a tip for implementing the Behaviour Specifications.</description>
+    </item><item>
+      <title>Single When | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-single-when/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-single-when/</guid>
+      <description>Have a single when statement - a tip for writing effective Behaviour Specification steps.</description>
+    </item><item>
+      <title>Software Component Context Is King | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-context-king/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-context-king/</guid>
+      <description>The context of the software component is king - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Specify Component Interaction Behaviours | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-specify-interactions/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-specify-interactions/</guid>
+      <description>Specify the public knowledge ways in which other components can interact with the component being specified - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Specify Relevant Business Capabilities | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-specify-capabilities/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-specify-capabilities/</guid>
+      <description>Specify the usage of relevant business capabilities - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Start With Should | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-start-should/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-start-should/</guid>
+      <description>Start with the word &#34;Should&#34; - a tip for writing an effective Behaviour Specification Description.</description>
+    </item><item>
+      <title>Terminology Guidelines | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-terminology-guidelines/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-terminology-guidelines/</guid>
+      <description>Terminology guidelines for writing effective Behaviour Specification steps.</description>
+    </item><item>
+      <title>The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/</guid>
+      <description>A practical, prescriptive methodology for performing Behaviour-Driven Development and specifically writing Behaviour Specifications, including tips and suggestions that have repeatedly proven to be worthwhile practices.</description>
+    </item><item>
+      <title>The Behaviour Specification Writing Meeting | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting/</guid>
+      <description>Recommendations on who to invite to the Behaviour Specification writing meeting, in order to facilitate the identification and writing of the Behaviour Specifications.</description>
+    </item><item>
+      <title>The Behaviour Specification Writing Process | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process/</guid>
+      <description>This chapter describes the prerequisites and procedure involved in identifying and writing Behaviour Specifications.</description>
+    </item><item>
+      <title>The Implementation Process | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation/</guid>
+      <description>This chapter discusses various tips for implementing the Behaviour Specifications.</description>
+    </item><item>
+      <title>The Roles Of Developers And Test Analysts | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-roles/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/implementation-roles/</guid>
+      <description>The roles of developers and test analysts - when implementing the Behaviour Specifications.</description>
+    </item><item>
+      <title>Thoughts On Gauge | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-gauge/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-gauge/</guid>
+      <description>Thoughts on an alternative language, Gauge, that can be used to specify Behaviour Specifications.</description>
+    </item><item>
+      <title>Understand Technical Tool Constraints | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-understand-tool-constraints/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-understand-tool-constraints/</guid>
+      <description>Understand the contraints of your technical tools - a tip for writing effective Behaviour Specification steps.</description>
+    </item><item>
+      <title>Unique Within Their Feature File | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-unique-within/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-unique-within/</guid>
+      <description>Make each description uniquely identifiable within the feature file - a tip for writing an effective Behaviour Specification Description.</description>
+    </item><item>
+      <title>Unique Without Their Feature File | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-unique-without/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/descriptions-style-unique-without/</guid>
+      <description>Make each description uniquely identifiable without the feature file - a tip for writing an effective Behaviour Specification Description.</description>
+    </item><item>
+      <title>Use Present Tense | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-present-tense/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-present-tense/</guid>
+      <description>Use present tense - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>What Are Behaviour Specifications? | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-what-are-specifications/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-what-are-specifications/</guid>
+      <description>A definition of Behaviour Specifications and how they fulfil multiple purposes.</description>
+    </item><item>
+      <title>What Is A Behaviour Specification Description? | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-what-is-description/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/specs-what-is-description/</guid>
+      <description>The definition of a Behaviour Specification Definition with examples.</description>
+    </item><item>
+      <title>What Is A Software Component? | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/background-what-is-software-component/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/background-what-is-software-component/</guid>
+      <description>Defines a software component.</description>
+    </item><item>
+      <title>What&#39;s Happening In Our Minds? | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-mind/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/writing-process-meeting-mind/</guid>
+      <description>Find out what is happening in our minds during the Behaviour Specification writing meeting.</description>
+    </item><item>
+      <title>Work Backwards: Then-When-Given | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-work-backwards/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/steps-work-backwards/</guid>
+      <description>Work backwards and write Then-When-Given - a tip for writing effective Behaviour Specification steps.</description>
+    </item><item>
+      <title>Write In Business Language | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-specflow-tool-name-only/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-specflow-tool-name-only/</guid>
+      <description>Write in everyday, common business language - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Write In Everyday Business Language | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-business-language/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-business-language/</guid>
+      <description>Write in everyday, common business language - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Write One Specification For One Behaviour | The Behaviour Specification Handbook</title>
+      <link>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-one-for-one/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/bdd-behaviour-specification-handbook/tips-one-for-one/</guid>
+      <description>Write one specification for one behaviour - a general tip for writing effective Behaviour Specifications.</description>
+    </item><item>
+      <title>Launch of the BDD Behaviour Specification Handbook!</title>
+      <link>https://devzone.channeladam.com/articles/2015/08/behaviour-specification-handbook/</link>
+      <pubDate>Thu, 13 Aug 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/08/behaviour-specification-handbook/</guid>
+      <description>The launch of the Behaviour-Driven Development (BDD) Behaviour Specification Handbook!</description>
+    </item><item>
+      <title>Behaviour Specification Writing Methodology - Part 2</title>
+      <link>https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-2/</link>
+      <pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-2/</guid>
+      <description>Part 2 of my suggested methodology for writing Behaviour Specifications / scenarios, including tips and suggestions that have repeatedly proven to me to be worthwhile practices.</description>
+    </item><item>
+      <title>Behaviour Specification Writing Methodology - Part 1</title>
+      <link>https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-1/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-1/</guid>
+      <description>A suggested methodology for writing Behaviour Specifications / scenarios, including tips and suggestions that have repeatedly proven to me to be worthwhile practices.</description>
+    </item></channel>
+</rss>

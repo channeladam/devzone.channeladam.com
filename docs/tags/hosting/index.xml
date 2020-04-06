@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hosting on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/hosting/</link>
+    <description>Recent contentin Hosting on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 20 Nov 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/hosting/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>The ChannelAdam Nancy Self-Hosting Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy-hosting-self/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy-hosting-self/</guid>
+      <description>About the ChannelAdam Nancy Self-Hosting Library.</description>
+    </item></channel>
+</rss>

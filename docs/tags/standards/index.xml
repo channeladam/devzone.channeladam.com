@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Standards on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/standards/</link>
+    <description>Recent contentin Standards on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Thu, 10 Jul 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/standards/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Thoughts on the Naming of SOA Services and Operations</title>
+      <link>https://devzone.channeladam.com/articles/2014/07/thoughts-on-naming-soa-services/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2014/07/thoughts-on-naming-soa-services/</guid>
+      <description>Some thoughts on naming SOA services and their operations.</description>
+    </item></channel>
+</rss>

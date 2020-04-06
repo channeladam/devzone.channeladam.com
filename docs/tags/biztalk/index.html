@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en-au">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js"><script async src="https://cdn.ampproject.org/v0.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Libre+Franklin" rel="stylesheet">
+    <style amp-custom>/*
+ * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}[tabindex="-1"]:focus:not(:focus-visible){outline:0 !important}hr{box-sizing:content-box;height:0;overflow:visible}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}abbr[title],abbr[data-original-title]{text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul,dl{margin-top:0;margin-bottom:1rem}ol ol,ul ul,ol ul,ul ol{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#007bff;text-decoration:none;background-color:transparent}a:hover{color:#0056b3;text-decoration:underline}a:not([href]){color:inherit;text-decoration:none}a:not([href]):hover{color:inherit;text-decoration:none}pre,code,kbd,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em}pre{margin-top:0;margin-bottom:1rem;overflow:auto}figure{margin:0 0 1rem}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}table{border-collapse:collapse}caption{padding-top:.75rem;padding-bottom:.75rem;color:#6c757d;text-align:left;caption-side:bottom}th{text-align:inherit}label{display:inline-block;margin-bottom:.5rem}button{border-radius:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}input,button,select,optgroup,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button,select{text-transform:none}select{word-wrap:normal}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button:not(:disabled),[type="button"]:not(:disabled),[type="reset"]:not(:disabled),[type="submit"]:not(:disabled){cursor:pointer}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{padding:0;border-style:none}input[type="radio"],input[type="checkbox"]{box-sizing:border-box;padding:0}input[type="date"],input[type="time"],input[type="datetime-local"],input[type="month"]{-webkit-appearance:listbox}textarea{overflow:auto;resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal}progress{vertical-align:baseline}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{outline-offset:-2px;-webkit-appearance:none}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}summary{display:list-item;cursor:pointer}template{display:none}[hidden]{display:none !important}.max-width-half{max-width:50%}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0{margin-left:0}.mx0{margin-left:0;margin-right:0}.my0{margin-top:0;margin-bottom:0}.m1{margin:.5rem}.mt1{margin-top:.5rem}.mr1{margin-right:.5rem}.mb1{margin-bottom:.5rem}.ml1{margin-left:.5rem}.mx1{margin-left:.5rem;margin-right:.5rem}.my1{margin-top:.5rem;margin-bottom:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.mr2{margin-right:1rem}.mb2{margin-bottom:1rem}.ml2{margin-left:1rem}.mx2{margin-left:1rem;margin-right:1rem}.my2{margin-top:1rem;margin-bottom:1rem}.m3{margin:2rem}.mt3,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-top:2rem}.mr3{margin-right:2rem}.mb3{margin-bottom:2rem}.ml3{margin-left:2rem}.mx3{margin-left:2rem;margin-right:2rem}.my3{margin-top:2rem;margin-bottom:2rem}.m4{margin:4rem}.mt4,#comments{margin-top:4rem}.mr4{margin-right:4rem}.mb4{margin-bottom:4rem}.ml4{margin-left:4rem}.mx4{margin-left:4rem;margin-right:4rem}.my4{margin-top:4rem;margin-bottom:4rem}.mxn1{margin-left:calc(0.5rem * -1);margin-right:calc(0.5rem * -1)}.mxn2{margin-left:calc(1rem * -1);margin-right:calc(1rem * -1)}.mxn3{margin-left:calc(2rem * -1);margin-right:calc(2rem * -1)}.mxn4{margin-left:calc(4rem * -1);margin-right:calc(4rem * -1)}.m-auto{margin:auto}.mt-auto{margin-top:auto}.mr-auto{margin-right:auto}.mb-auto{margin-bottom:auto}.ml-auto{margin-left:auto}.mx-auto,img.center,.page-image-toc-container > div img{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.p0{padding:0}.pt0{padding-top:0}.pr0{padding-right:0}.pb0{padding-bottom:0}.pl0{padding-left:0}.px0{padding-left:0;padding-right:0}.py0{padding-top:0;padding-bottom:0}.p1{padding:.5rem}.pt1{padding-top:.5rem}.pr1{padding-right:.5rem}.pb1{padding-bottom:.5rem}.pl1{padding-left:.5rem}.py1{padding-top:.5rem;padding-bottom:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.pt2{padding-top:1rem}.pr2{padding-right:1rem}.pb2{padding-bottom:1rem}.pl2{padding-left:1rem}.py2{padding-top:1rem;padding-bottom:1rem}.px2{padding-left:1rem;padding-right:1rem}.p3{padding:2rem}.pt3{padding-top:2rem}.pr3{padding-right:2rem}.pb3{padding-bottom:2rem}.pl3{padding-left:2rem}.py3{padding-top:2rem;padding-bottom:2rem}.px3{padding-left:2rem;padding-right:2rem}.p4{padding:4rem}.pt4{padding-top:4rem}.pr4{padding-right:4rem}.pb4{padding-bottom:4rem}.pl4{padding-left:4rem}.py4{padding-top:4rem;padding-bottom:4rem}.px4{padding-left:4rem;padding-right:4rem}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.left-0{left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.max-width-1{max-width:24rem}.max-width-2{max-width:32rem}.max-width-3{max-width:48rem}.max-width-4{max-width:64rem}.border-box{box-sizing:border-box}.align-baseline{vertical-align:baseline}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.align-bottom{vertical-align:bottom}.border-none{border:0}.rounded{border-radius:3px}.circle{border-radius:50%}.not-rounded{border-radius:0}.flex,.header-banner > div,.page-image-toc-container,.table-contents-container{display:-ms-flexbox;display:flex}@media (min-width:40em){.sm-flex{display:-ms-flexbox;display:flex}}@media (min-width:52em){.md-flex{display:-ms-flexbox;display:flex}}@media (min-width:64em){.lg-flex{display:-ms-flexbox;display:flex}}.flex-column{-ms-flex-direction:column;flex-direction:column}.flex-wrap,.page-image-toc-container{-ms-flex-wrap:wrap;flex-wrap:wrap}.items-start{-ms-flex-align:start;align-items:flex-start}.items-end{-ms-flex-align:end;align-items:flex-end}.items-center,.header-banner > div,.page-image-toc-container{-ms-flex-align:center;align-items:center}.items-baseline{-ms-flex-align:baseline;align-items:baseline}.items-stretch{-ms-flex-align:stretch;align-items:stretch}.self-start{-ms-flex-item-align:start;align-self:flex-start}.self-end{-ms-flex-item-align:end;align-self:flex-end}.self-center{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}.self-baseline{-ms-flex-item-align:baseline;align-self:baseline}.self-stretch{-ms-flex-item-align:stretch;-ms-grid-row-align:stretch;align-self:stretch}.justify-start{-ms-flex-pack:start;justify-content:flex-start}.justify-end{-ms-flex-pack:end;justify-content:flex-end}.justify-center,.page-image-toc-container,.table-contents-container{-ms-flex-pack:center;justify-content:center}.justify-between{-ms-flex-pack:justify;justify-content:space-between}.justify-around,.header-banner > div{-ms-flex-pack:distribute;justify-content:space-around}.justify-evenly{-ms-flex-pack:space-evenly;justify-content:space-evenly}.content-start{-ms-flex-line-pack:start;align-content:flex-start}.content-end{-ms-flex-line-pack:end;align-content:flex-end}.content-center{-ms-flex-line-pack:center;align-content:center}.content-between{-ms-flex-line-pack:justify;align-content:space-between}.content-around{-ms-flex-line-pack:distribute;align-content:space-around}.content-stretch{-ms-flex-line-pack:stretch;align-content:stretch}.flex-auto{-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.flex-none{-ms-flex:none;flex:none}.order-0{-ms-flex-order:0;order:0}.order-1{-ms-flex-order:1;order:1}.order-2{-ms-flex-order:2;order:2}.order-3{-ms-flex-order:3;order:3}.order-last{-ms-flex-order:99999;order:99999}.font-family-inherit{font-family:inherit}.font-size-inherit{font-size:inherit}.text-decoration-none{text-decoration:none}.bold{font-weight:bold;font-weight:bold}.regular{font-weight:normal}.italic{font-style:italic}.caps{text-transform:uppercase;letter-spacing:.2em}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.line-height-1{line-height:1}.line-height-2{line-height:1.125}.line-height-3{line-height:1.25}.line-height-4{line-height:1.5}.list-style-none{list-style:none}.underline{text-decoration:underline}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.hide{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}@media (max-width:40em){.xs-hide{display:none !important}}@media (min-width:40em) and (max-width:52em){.sm-hide{display:none !important}}@media (min-width:52em) and (max-width:64em){.md-hide{display:none !important}}@media (min-width:64em){.lg-hide{display:none !important}}.display-none{display:none !important}.h00{font-size:4rem}.h0{font-size:3rem}.h1{font-size:2rem}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.h5{font-size:.875rem}.h6{font-size:.75rem}.page-width,.paper-inner{max-width:1800px}.font-for-content,body{font-family:'Roboto',sans-serif}.font-for-heading,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.header-title,.widget div.h1,.widget div.h2,.navbar nav,.nav-header,.nav-sub-header{font-family:'Libre Franklin',sans-serif;font-weight:bold}body{background-color:#f8f8f8;min-width:400px}ol,ul,dl{padding-left:2rem;padding-right:1rem;margin:0 0 1rem 0}p + ul,p + ol,p + dl{margin-top:-.8rem}p > code,li > code{word-break:break-word}p + div.highlight > pre{margin-top:-.8rem}pre{margin:0 0 2rem 0;padding:1rem .2rem}table{margin-bottom:1rem;display:block;max-width:min-content;overflow-x:auto}table th,table td{padding:0 .5rem}table th{text-align:left;background-color:#f2f2f2}table tr:nth-child(even){background-color:#f2f2f2}table,th,td{border:1px dotted #000}blockquote{margin:1rem 0 1rem 2rem;white-space:normal;overflow-x:auto;font-style:italic}ul li > a:link,ul li > a:visited{background-color:inherit}ul li > a:hover,ul li > a:focus{color:#c03;background-color:inherit;text-decoration:underline}ul li.active{background-color:inherit}ul li.active > a:link,ul li.active > a:visited,ul li.active > a:focus,ul li.active > a:hover{color:#c03;background-color:inherit}ul li.active > a:focus,ul li.active > a:hover{text-decoration:none}a{color:#2476cc}a.active:link,a.active:visited,a.active:focus,a.active:hover{color:#c03}a.active:focus,a.active:hover{text-decoration:none}section{margin-bottom:20px}.content h1,.content .h1{font-size:2.5em}.content h2,.content .h2{font-size:2.1em}.content h3,.content .h3{font-size:1.7em}.content h4,.content .h4{font-size:1.3em}.content h5,.content .h5{font-size:.9em}.content h6,.content .h6{font-size:.6em}.post-content h1,.post-content .h1{font-size:2.1em}.post-content h2,.post-content .h2{font-size:1.7em}.post-content h3,.post-content .h3{font-size:1.3em}.post-content h4,.post-content .h4{font-size:.9em}.post-content h5,.post-content .h5{font-size:.67em}.post-content h6,.post-content .h6{font-size:.5em}.header-banner{height:auto;background-color:#000}.header-banner > div{margin:0 0}.logo-wrapper{float:none;text-align:center}.logo-wrapper a{display:block;line-height:0}.logo-wrapper amp-img{min-width:143px;max-width:143px;min-height:100px}.header-title{font-size:2em;text-align:center;color:#c03;padding:0 25px 0 25px;text-transform:uppercase}.header-title-outer{background-image:url("/img/site/devzone-logo.jpg");background-repeat:no-repeat;background-position:left 0 top 30%;background-size:cover}.header-title{max-height:100px}.header-title span{background-color:#000;padding:0 4px}@media (min-width:930px){.logo-wrapper{float:left;padding-left:10px;padding-right:10px}.logo-wrapper amp-img{max-height:100px}.header-title-outer{margin-left:238px}.header-title-inner{display:table;width:100%;height:100px}.header-title{display:inline-block;display:table-cell;font-size:2.5em;vertical-align:middle;word-spacing:1rem}}.content{margin:0;padding:0;min-width:360px;min-height:800px}.paper-outer{-moz-box-shadow:0 0 40px rgba(0,0,0,0.15);-webkit-box-shadow:0 0 5px rgba(0,0,0,0.15);-goog-ms-box-shadow:0 0 10px #333;box-shadow:0 0 40px rgba(0,0,0,0.15);margin-bottom:1px}.paper-inner{padding:0 .2rem}@media (min-width:930px){.paper-inner{padding:0 2rem}}.page-layout{margin:0 auto 2rem auto;display:grid;grid-row-gap:0;grid-template-areas:"main" "rightpanel"}.page-layout-right-panel{grid-area:rightpanel;min-height:800px;margin-top:2rem;max-width:400px}.page-layout-main{grid-area:main;min-width:400px}.page-layout-main .card-container{height:100%}.page-layout-main .card-container .card{height:100%;min-height:200px}@media (min-width:930px){.page-layout{grid-column-gap:2rem;grid-row-gap:0;grid-auto-rows:1fr;grid-template-columns:6fr 2fr;grid-template-areas:"main rightpanel"}.page-layout-right-panel{margin-top:0}}.page-layout-right-panel .widget .twitter-feed{position:relative;overflow-y:scroll;height:800px;min-height:800px;margin:0 auto;width:350px;height:80vh}.card-container{margin-left:-.5rem;margin-right:-.5rem}.card-container:not(:first-of-type){margin-top:2rem}.card{padding:.5rem;background-color:#fff;box-shadow:0 30px 4rem 0 rgba(1,1,1,0.15)}.widget.card{padding:1.5rem}.widget ul{margin:0;padding:.5rem;text-align:left;background-color:#000}.widget ul li{list-style-type:none}.widget ul li > a:link,.widget ul li > a:visited{color:#81beff}.widget ul li > a:hover,.widget ul li > a:focus{color:#c03}.widget ul li.active > a:link,.widget ul li.active > a:visited,.widget ul li.active > a:focus,.widget ul li.active > a:hover{color:#c03}.widget ul li:nth-child(n){margin-bottom:1rem}.widget ul li:last-child,.widget ul li:only-child{margin-bottom:0}.widget div.h1{margin:0;text-align:center;color:#000;font-size:1.8rem}.widget div.h2{text-align:left;color:#000;font-size:1.5rem;font-weight:bold}.navbar{margin-top:1px;border-left:none;border-right:none;border-bottom:none}.navbar nav{font-weight:400;background-color:#000;margin:0 0 0 0;text-align:center}.navbar nav ul{margin:0;padding:0}.navbar nav li{display:inline;list-style-type:none;padding-right:20px}.navbar nav .btn-link{color:#fff}.navbar nav .btn-link.active{color:#c03}.navbar nav .btn-link:hover,.navbar nav .btn-link:focus{color:#c03}.navbar nav .btn-lg{font-size:1.5em}.nav-header{text-align:left;color:#000;font-size:2em}.nav-sub-header{text-align:left;color:#000;font-size:1.5em;padding:20px 0 0 0}ul.nav-stacked{background-color:#000}@media (min-width:930px){navbar nav .btn-lg{font-size:2em}}.post-content img,.library-page-content img,.notebook-page-content img{display:block;max-width:100%;height:auto}.social-share-buttons ul{padding:0}.social-share-buttons ul li{display:inline;list-style-type:none;margin-right:.5rem;vertical-align:top}.twitter-share-button{margin-top:4px}.tag-cloud a{margin-right:.8rem}ul.pager{padding:0;margin:0 0 4rem 0}ul.pager > li{display:inline;list-style-type:none;margin-right:1rem}ul.pager > li > a,ul.pager > li > span{background-color:#000;border-color:#000;color:#fff;padding:.4rem 1rem}ul.pager > li > a:focus,ul.pager > li > a:hover,ul.pager > li > span:focus,ul.pager > li > span:hover{background-color:#000;border-color:#000;color:#c03;text-decoration:underline}ul.pager > .active > a,ul.pager > .active > a:focus,ul.pager > .active > a:hover,ul.pager > .active > span,ul.pager > .active > span:focus,ul.pager > .active > span:hover{background-color:#000;border-color:#000;color:#c03;text-decoration:none}ul.pager > .disabled > a,ul.pager > .disabled > a:focus,ul.pager > .disabled > a:hover,ul.pager > .disabled > span,ul.pager > .disabled > span:focus,ul.pager > .disabled > span:hover{background-color:#000;border-color:#000;color:#808080}.page-image-toc-container > div{width:100%}.page-image-toc-container > div img{max-width:100%;max-height:100% !important}@media (min-width:1300px){.page-image-toc-container > div{display:inline-block;max-width:50%}}.table-contents-container .table-contents{padding:1em}.table-contents-container .table-contents h2,.table-contents-container .table-contents .h2{margin:0 0 1rem 0}.table-contents-container .table-contents ul{list-style:square inside;padding:0}.table-contents-container .table-contents li ul{list-style:circle inside;margin-left:1em}.post-date{font-weight:bold;font-size:smaller;margin-bottom:1em}.post-comment-count{margin-top:10px}code{color:inherit;background-color:inherit;padding:0 0}article{margin-bottom:60px}.graph-container{height:92vh}footer{background-color:#000;padding:2em 0 2em 0;color:#c03}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <link rel="canonical" href="https://devzone.channeladam.com/tags/biztalk/">
+    
+<title>BizTalk</title>    
+
+
+
+
+
+<meta itemprop="name" content="BizTalk">
+<meta itemprop="description" content="The ChannelAdam Software Development Zone">
+<meta property="og:title" content="BizTalk" />
+<meta property="og:description" content="The ChannelAdam Software Development Zone" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://devzone.channeladam.com/tags/biztalk/" />
+<meta property="og:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
+<meta property="og:updated_time" content="2016-11-20T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
+
+<meta name="twitter:title" content="BizTalk"/>
+<meta name="twitter:description" content="The ChannelAdam Software Development Zone"/>
+<meta name="twitter:site" content="@ChannelAdam"/>
+
+<meta property="article:author" content="https://www.linkedin.com/in/adamcraven" />
+<meta property="article:author" content="https://github.com/ChannelAdam" />
+<meta property="article:author" content="https://twitter.com/ChannelAdam" />
+<meta name="twitter:creator" content="@ChannelAdam"/>
+<meta property="article:author" content="https://www.facebook.com/ChannelAdam" />
+<meta property="fb:app_id" content="129037487241515" />
+
+    <link rel="icon" href="/img/channeladam/favicon.ico" type="image/ico">
+
+    
+    <link href="/tags/biztalk/index.xml" rel="alternate" type="application/rss+xml" title="DevZone.ChannelAdam.com" />
+    <link href="/tags/biztalk/index.xml" rel="feed" type="application/rss+xml" title="DevZone.ChannelAdam.com" />
+    
+
+    
+  </head>
+  <body>
+    <amp-analytics type="gtag" data-credentials="include">
+ <script type="application/json">
+ {
+  "vars" : {
+   "gtag_id": "UA-51874696-2",
+   "config" : {
+    "UA-51874696-2": { 
+     "groups": "default"
+    }
+   }
+  }
+ }
+ </script>
+</amp-analytics>
+
+    <div class="content">
+    <div class="paper-outer">
+    <header class="header-banner" role="banner">
+
+    <div class="logo-wrapper">
+        <a href="https://channeladam.com">
+            <amp-img src="/img/channeladam/channeladam-logo.png" alt="ChannelAdam Logo"
+            width="285" height="200" layout="intrinsic"></amp-img>
+        </a>
+    </div>
+
+    <div class="header-title-outer">
+        <div class="header-title-inner">
+            <div class="header-title">
+                <span>Software Development Zone</span>
+            </div>
+        </div>
+    </div>
+        
+</header>
+
+    <section class="navbar">
+    <nav role="navigation">
+        <ul>
+            <li><a class="btn btn-link btn-lg" href="/">News</a></li>
+            <li><a class="btn btn-link btn-lg" href="/library">Library</a></li>
+            <li><a class="btn btn-link btn-lg" href="/notebooks">Notebooks</a></li>
+        </ul>
+    </nav>
+</section>
+
+<section class="mx-auto" style="max-width:728px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="728x90"></div>
+    <br/>
+</section>
+
+<div class="paper-inner mx-auto page-layout">
+    <main aria-role="main" class="page-layout-main">
+        <div class="card-container">
+            <div class="card">
+
+    
+    
+
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2016/11/nancy-soap-library-released/">
+            <h2 class="post-title">Announcing the ChannelAdam Nancy SOAP Library</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p>My <a href="/articles/2016/11/soap-library-released">last article</a> introduced the <a href="/library/channeladam-soap">ChannelAdam SOAP Library</a> to make it as easy as possible to create a SOAP 1.1 or SOAP 1.2 payload.</p>
+<p>Also as mentioned in that last article, the .NET library <a href="http://nancyfx.org/" target="_blank">Nancy</a> is an excellent lightweight web framework for building HTTP-based web services.
+While <a href="https://groups.google.com/d/msg/nancy-web-framework/dlSz8A9Vwmc/bjKXrnXJqMYJ" target="_blank">Nancy will not itself ship support for SOAP</a>
+it still can be used for hosting SOAP web services, if you can create the SOAP payload - and that is exactly what the <a href="/library/channeladam-soap">ChannelAdam SOAP Library</a> helps you do.</p>
+<p>However, even after you use the ChannelAdam SOAP Library to build your SOAP payloads, there are still a few hurdles to jump over in order configure Nancy to work with SOAP HTTP requests&hellip; until now!</p>
+<p>Announcing the release of the open source <a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a> which provides an adapter that makes it as easy as possible to work with SOAP 1.1 and SOAP 1.2 payloads in Nancy.</p>
+<p>For information on how to get started, please see the <a href="/library/channeladam-nancy-soap">usage documentation</a>.</p>
+<p>Enjoy!</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/nancy/">Nancy</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/soap-1.1/">SOAP 1.1</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/soap-1.2/">SOAP 1.2</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/library/">Library</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/testing/">Testing</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/biztalk/">BizTalk</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/nancy/">Nancy</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2016/11/soap-library-released/">
+            <h2 class="post-title">Announcing the ChannelAdam SOAP Library</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p>The Simple Object Access Protocol (SOAP) has been around for more than a decade.
+While HTTP-based API&rsquo;s and RESTful services are the current trend, SOAP web services are still the rock bed of most businesses and contemporary systems.</p>
+<p>On-premises API gateways such as the <a href="https://docops.ca.com/ca-api-gateway/9-1/en/publish-services-and-configure-policies/tasks-manage-menu-publish-services-and-apis/publish-soap-web-service" target="_blank">CA API Gateway</a>
+has had support for publishing SOAP web services for quite a while.</p>
+<p>In fact, there is still such demand in the industry for integration with SOAP services that Microsoft&rsquo;s newer cloud-based
+<a href="https://azure.microsoft.com/en-us/services/api-management" target="_blank">Azure API Management</a> service also now has the capability to
+<a href="https://blogs.msdn.microsoft.com/apimanagement/2016/10/13/soap-pass-through/" target="_blank">publish SOAP API&rsquo;s</a>.</p>
+<p>The .NET library <a href="http://nancyfx.org/" target="_blank">Nancy</a> is an excellent lightweight web framework for building HTTP-based web services.
+While <a href="https://groups.google.com/d/msg/nancy-web-framework/dlSz8A9Vwmc/bjKXrnXJqMYJ" target="_blank">Nancy will not itself ship support for SOAP</a>
+it still can be used for hosting SOAP web services, if you can create the SOAP payload.</p>
+<p>Libraries such as Nancy or <a href="https://github.com/alexvictoor/mock4net" target="_blank">Mock4Net</a> (a tiny mock HTTP server for .NET) can be used in
+automated Unit Tests to dynamically create mock web services that return the exact response required for each specific test case.
+In fact, I personally use this specific technique to perform advanced Unit Testing of black-box code artefacts such as BizTalk orchestrations.</p>
+<p>However, creating and composing a SOAP envelope, header, and body or fault has always been a tricky undertaking,
+and unless you have studied the SOAP specifications in detail and use them daily,
+it is easy to either forget or confuse the differences between <a href="https://www.w3.org/TR/2000/NOTE-SOAP-20000508/" target="_blank">SOAP 1.1</a> and <a href="https://www.w3.org/TR/soap12-part1/" target="_blank">SOAP 1.2</a> - that is, until now!</p>
+<p>Introducing the <a href="/library/channeladam-soap">ChannelAdam SOAP Library</a> – a fluent .NET API to make it as easy as possible
+to create a SOAP 1.1 or SOAP 1.2 payload.</p>
+<p>For information on how to get started, please see the <a href="/library/channeladam-soap">usage documentation</a>.</p>
+<p>You might also be interested in the <a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a> which makes using SOAP with Nancy even easier.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/soap-1.1/">SOAP 1.1</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/soap-1.2/">SOAP 1.2</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/library/">Library</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/testing/">Testing</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/biztalk/">BizTalk</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/nancy/">Nancy</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/mock4net/">Mock4Net</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/api-management/">API Management</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2016/10/modern-testing-of-biztalk-maps/">
+            <h2 class="post-title">Modern Testing of BizTalk Maps</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="overview">Overview</h1>
+<p>In today&rsquo;s modern world of software development with continuous integration as a standard industry practice,
+what do you think would happen if you told a developer that they need to set a special Visual Studio project property
+in their build configuration in order for their code to &ldquo;support unit testing&rdquo;?</p>
+<p>They would laugh at you in disbelief!
+Why does code need to be built in a special way in order to be testable?!
+This laughing typically would be followed by heart-ache,
+maybe a little quiet sobbing and an uncontrollable eye twitch as they realise that decade-old standard
+industry software development practices are crashing down all around them and they start
+reconsidering their life choices.</p>
+<p>Sadly, the only thing that you can do is agree and try to console them by saying it is &ldquo;just because it&rsquo;s [technology xyz]&quot;.</p>
+<p>This is the unfortunate world for a typical BizTalk developer using the out-of-the-box functionality.</p>
+<p>And this embarrassing situation has other negative implications:</p>
+<ul>
+<li>
+<p>As described in <a href="https://msdn.microsoft.com/en-us/library/dd257907.aspx" target="_blank">Unit Testing with BizTalk Server Projects</a> and
+<a href="https://msdn.microsoft.com/en-us/library/dd224279.aspx" target="_blank">Using the Unit Testing Feature with Schemas and Maps</a>,
+BizTalk developers must set the Visual Studio project property &ldquo;Enable Unit Testing&rdquo; (under the Deployment tab) to &ldquo;True&rdquo;.
+This magically changes the base class of each BizTalk Map to &ldquo;Microsoft.BizTalk.TestTools.Mapper.TestableMapBase&rdquo;
+in order to &ldquo;support unit testing&rdquo;. Yes, an artefact&rsquo;s base class is actually changed for that build –
+so what is being tested is not entirely the actual code that will be deployed into production.
+The difference between a Debug build and a Release build becomes more significant.
+(Admittedly for a BizTalk Map, this is less of a concern since the actual mapping is performed via XSLT under the covers and not
+directly by the base class, but the point is valid nevertheless – this approach is taken for other types of artefacts as well,
+and you really do not want to deploy Debug builds of any of those into a production environment&hellip;)</p>
+</li>
+<li>
+<p>If you are like me and some teams I work with, you may want to develop and test the code off-premises (perhaps in your favourite cloud)
+and then deploy the release/deployment package to an on-premises test environment – where we also want to execute all the tests and
+have the test results recorded in the on-premises test and release management tools for all team members to access.
+However, a release/deployment package should never have that special project property set – and this prevents unit tests from
+compiling and executing against it.</p>
+</li>
+<li>
+<p>When developing a BizTalk Map that uses a Scripting Functoid configured to execute a specified method of a class in an &lsquo;External Assembly&rsquo;,
+then &ldquo;any assembly that you choose a script from &hellip; must also be in the global assembly cache (GAC) for Test Map to function correctly&rdquo;.
+You need to GAC your external assemblies before running the unit tests. GAC —&gt; Yuck!</p>
+</li>
+</ul>
+<p><a href="https://www.microsoft.com/en-us/download/details.aspx?id=50408" target="_blank">Microsoft&rsquo;s Integration Roadmap</a> clearly shows a measured commitment to and
+place for BizTalk in the future, alongside their Azure Platform as a Service (PaaS) technologies.
+With the pending release of BizTalk 2016 as a drop-in replacement for BizTalk 2013 R2 (with no code recompilation required!),
+I thought it was time to refresh the practice of unit testing BizTalk Maps.</p>
+<h1 id="the-solution">The Solution</h1>
+<p>The open source <a href="/library/channeladam-testframework-biztalk">ChannelAdam Test Framework Library for BizTalk</a>
+addresses all of these issues and provides the following benefits and features:</p>
+<ul>
+<li>Works with BizTalk 2010 / 2013 / 2016</li>
+<li>Never again set the project property &ldquo;Enable Unit Testing&rdquo; to &ldquo;True&rdquo;!</li>
+<li>BizTalk Map unit tests can be executed against a release build</li>
+<li>The provided map tester classes allow you to easily unit test both XML and flat file BizTalk Maps</li>
+<li>The design of tester classes follow the clean <a href="http://xp123.com/articles/3a-arrange-act-assert" target="_blank">Arrange-Act-Assert (AAA)</a> testing pattern</li>
+<li>Support for arranging the input and expected output from a string, XElement, an XML serialisable object or loading from an embedded resource</li>
+<li>Performs schema validation of both the input and output by default (easily overridable)</li>
+<li>Support for mocking External Assembly class methods</li>
+<li>Support for filtering assertions of the expected output to allow for dynamic data (such as timestamps or GUIDs)</li>
+<li>Detailed information is provided allowing you to see the differences between the expected output and the actual output of the map.</li>
+</ul>
+<p>With this library you now have the tools needed to easily unit test you BizTalk Maps using modern testing practices.
+No excuses!</p>
+<p>For information on how to get started, please see the <a href="/library/channeladam-testframework-biztalk">usage documentation</a>.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/biztalk/">BizTalk</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/maps/">Maps</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/testing/">Testing</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/library/">Library</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/library/channeladam-testframework-biztalk/">
+            <h2 class="post-title">The ChannelAdam Test Framework Library for BizTalk</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="overview">Overview</h1>
+<p>This is an <a href="https://github.com/channeladam/ChannelAdam.TestFramework.BizTalk" target="_blank">open source</a> .NET Framework 4.0, 4.5, 4.6 library providing functionality for the automated testing of BizTalk 2010/2013/2016 artifacts.</p>
+<p>It provides you with an enhanced ability to use modern standard industry testing practices to test BizTalk Maps.</p>
+<p>This library is compatible with the legacy, full .NET Framework 4.0 <a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries</a> (version 1) only.</p>
+<p>Please see the article <a href="/articles/2016/10/modern-testing-of-biztalk-maps">Modern Testing of BizTalk Maps</a>
+for background information on the issues with using Microsoft&rsquo;s out-of-the-box functionality for testing Microsoft BizTalk Maps.</p>
+<p>This library provides the following benefits and features:</p>
+<ul>
+<li>Works with BizTalk 2010 / 2013 / 2016</li>
+<li>Never again set the project property &ldquo;Enable Unit Testing&rdquo; to &ldquo;True&rdquo;!</li>
+<li>BizTalk Map unit tests can be executed against a release build</li>
+<li>The provided map tester classes allow you to easily unit test both XML and flat file BizTalk Maps</li>
+<li>The design of tester classes follow the clean <a href="http://xp123.com/articles/3a-arrange-act-assert" target="_blank">Arrange-Act-Assert (AAA)</a> testing pattern</li>
+<li>Support for arranging the input and expected output from a string, XElement, an XML serialisable object or loading from an embedded resource</li>
+<li>Performs schema validation of both the input and output by default (easily overridable)</li>
+<li>Support for mocking External Assembly class methods</li>
+<li>Support for filtering assertions of the expected output to allow for dynamic data (such as timestamps or GUIDs)</li>
+<li>Detailed information is provided allowing you to see the differences between the expected output and the actual output of the map.</li>
+</ul>
+<p>The ChannelAdam Test Framework Libraries are fully compatible with MSTest (v1) and .NET Framework 4.0, 4.5, 4.6.</p>
+<p>Note: I highly recommend using <a href="/library/bdd-behaviour-specification-handbook">Behaviour-Driven Development</a> practices and the usage of <a href="http://www.specflow.org" target="_blank">SpecFlow</a> in conjunction with this library.</p>
+<h1 id="getting-started">Getting Started</h1>
+<h2 id="nuget-package-installation">NuGet Package Installation</h2>
+<p>To install the <a href="https://www.nuget.org/packages/ChannelAdam.TestFramework.BizTalk" target="_blank">ChannelAdam.TestFramework.BizTalk NuGet package</a>
+run the following command in the Package Manager Console:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>PM&gt; Install-Package ChannelAdam.TestFramework.BizTalk
+</code></pre></div><h1 id="usage">Usage</h1>
+<h2 id="the-basics">The Basics</h2>
+<p>There are 4 map tester classes to be used depending on the type of input and output of your map:</p>
+<ul>
+<li><code>BizTalkXmlToXmlMapTester</code> - for testing a map that maps from XML to XML</li>
+<li><code>BizTalkXmlToFlatFileMapTester</code> - for testing a map that maps from XML to a flat file</li>
+<li><code>BizTalkFlatFileToFlatFileMapTester</code> - for testing a map that maps from a flat file to a flat file</li>
+<li><code>BizTalkFlatFileToXmlMapTester</code> - for testing a map that maps from a flat file to XML</li>
+</ul>
+<p>Below is some sample MSTest test method code (in a very raw form) for testing a map that maps from XML to XML.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#75715e">// ==================
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#75715e">// Variables
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#75715e">// ==================
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#75715e"></span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#75715e">// Define some helpful variables for our testing artifacts
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#75715e"></span><span style="color:#66d9ef">static</span> Assembly thisAssembly = <span style="color:#66d9ef">this</span>.GetType().Assembly;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">string</span> inputXmlTestDataEmbeddedResourceName          = thisAssembly.GetName().Name + <span style="color:#e6db74">&#34;.InputXmlTestDataEmbeddedResource.xml&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">string</span> expectedOutputXmlTestDataEmbeddedResourceName = thisAssembly.GetName().Name + <span style="color:#e6db74">&#34;.ExpectedOutputXmlTestDataEmbeddedResource.xml&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#75715e">// Create the MSTest compatible logging assertion class
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> logAssert = <span style="color:#66d9ef">new</span> ChannelAdam.TestFramework.MSTest.LogAssert();
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span style="color:#75715e">// Create the map tester - in this case for a map from XML to XML
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> xmlToXmlMapTester = <span style="color:#66d9ef">new</span> BizTalkXmlToXmlMapTester(logAssert);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span style="color:#75715e">// ==================
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#75715e">// Arrange
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span style="color:#75715e">// ==================
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span style="color:#75715e"></span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span style="color:#75715e">// Arrange the input XML and expected output XML from embedded resources
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span style="color:#75715e"></span>xmlToXmlMapTester.ArrangeInputXml(thisAssembly, inputXmlTestDataEmbeddedResourceName);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>xmlToXmlMapTester.ArrangeExpectedOutputXml(thisAssembly, expectedOutputXmlTestDataEmbeddedResourceName);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span style="color:#75715e">// ==================
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span style="color:#75715e">// Act
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span style="color:#75715e">// ==================
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span style="color:#75715e"></span>xmlToXmlMapTester.TestMap(<span style="color:#66d9ef">new</span> MySpiffyMapFromXmlToXml());
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span style="color:#75715e">// ==================
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span style="color:#75715e">// Assert
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span style="color:#75715e">// ==================
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span style="color:#75715e"></span>xmlToXmlMapTester.AssertActualOutputXmlEqualsExpectedOutputXml();
+</code></pre></div><p>Note: I highly recommend using the <a href="https://github.com/channeladam/ChannelAdam.TestFrameworks/blob/master/src/ChannelAdam.TestFramework.MSTest/MoqTestFixture.cs" target="_blank">MoqTestFixture</a> as a base class to your test class as it removes the need for you to be concerned with instantiating the LogAssert class and provdes a number of base methods to make testing easier.
+Please see the <a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries</a> documentation for more information.</p>
+<p>The test code above results in the following test output.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>10/10/16 10:00:00 PM - The input XML for the map is: 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>&lt;ns0:Request xmlns:ns0=&#34;http://SampleBizTalkMaps.Schemas.XmlRequest&#34;&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>  &lt;Key&gt;Key_0&lt;/Key&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>  &lt;StringValue&gt;StringValue_0&lt;/StringValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>  &lt;DateTimeValue&gt;1999-05-31T13:20:00.000-05:00&lt;/DateTimeValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>  &lt;IntegerValue&gt;100&lt;/IntegerValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>  &lt;DecimalValue&gt;10.4&lt;/DecimalValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>&lt;/ns0:Request&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>10/10/16 10:00:00 PM - The expected output XML of the map is: 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>&lt;ns0:Response xmlns:ns0=&#34;http://SampleBizTalkMaps.Schemas.XmlResponse&#34;&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>  &lt;Key&gt;Key_0&lt;/Key&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>  &lt;StringValue&gt;StringValue_0FAKE_GUID&lt;/StringValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>  &lt;DateTimeValue&gt;1999-05-31T13:20:00.000-05:00&lt;/DateTimeValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>  &lt;IntegerValue&gt;100&lt;/IntegerValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>  &lt;DecimalValue&gt;10.4&lt;/DecimalValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>&lt;/ns0:Response&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>10/10/16 10:00:00 PM - Validating the input XML for the BizTalk map
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>10/10/16 10:00:00 PM - Executing the BizTalk map (XML to XML) MySpiffyMapFromXmlToXml
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>10/10/16 10:00:00 PM - Asserting XML output from the BizTalk map exists is True
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span>10/10/16 10:00:00 PM - BizTalk map (XML to XML) execution completed
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span>10/10/16 10:00:00 PM - The actual output XML from the map is: 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span>&lt;ns0:Response xmlns:ns0=&#34;http://SampleBizTalkMaps.Schemas.XmlResponse&#34;&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span>  &lt;Key&gt;Key_0&lt;/Key&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span>  &lt;StringValue&gt;StringValue_0FAKE_GUID&lt;/StringValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span>  &lt;DateTimeValue&gt;1999-05-31T13:20:00.000-05:00&lt;/DateTimeValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span>  &lt;IntegerValue&gt;100&lt;/IntegerValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span>  &lt;DecimalValue&gt;10.4&lt;/DecimalValue&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span>&lt;/ns0:Response&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span>10/10/16 10:00:00 PM - Validating the output XML from the BizTalk map
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span>10/10/16 10:00:00 PM - Asserting actual and expected XML are equal
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span>10/10/16 10:00:00 PM - Asserting The XML is as expected is True
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span>10/10/16 10:00:00 PM - The XML is as expected
+</code></pre></div><p>And the test passed successfully!</p>
+<h2 id="advanced-usage">Advanced Usage</h2>
+<p>More advanced functionality can be performed with the overloads on the methods used in the above test code.</p>
+<h3 id="arrange---input-and-expected-output">Arrange - Input and Expected Output</h3>
+<p>The <a href="https://github.com/channeladam/ChannelAdam.TestFramework.BizTalk/blob/master/src/ChannelAdam.TestFramework.BizTalk/BizTalkXmlToXmlMapTester.cs" target="_blank">BizTalkXmlToXmlMapTester</a>
+has the following method overrides for arranging the input XML.</p>
+<ul>
+<li><code>void ArrangeInputXml(Assembly assembly, string resourceName)</code> - to arrange the input XML from an embedded resource in the given assembly</li>
+<li><code>void ArrangeInputXml(XElement xmlElement)</code> - to arrange the input XML from a given XElement</li>
+<li><code>void ArrangeInputXml(object valueToSerialise)</code> - to arrange the input XML by serialising the given object</li>
+<li><code>void ArrangeInputXml(object valueToSerialise, XmlRootAttribute xmlRootAttribute)</code> - to arrange the input XML by serialising the given object and applying the given <code>XmlRootAttribute</code> during the serialisation</li>
+<li><code>void ArrangeInputXml(object valueToSerialise, XmlAttributeOverrides xmlAttributeOverrides)</code> - to arrange the input XML by serialising the given object and applying the given <code>XmlAttributeOverrides</code> during the serialisation</li>
+<li><code>void ArrangeInputXml(string xmlValue)</code> - to arrange the input XML from the given XML string</li>
+</ul>
+<p>Input can be arranged from an embedded resource, XElement, object that is XML serialisable (for which you can also override the root XML namespace when serialised) or simply a string.</p>
+<p>This same pattern is followed for arranging the expected output of the map, and for arranging the contents of flat files with the other map tester classes.</p>
+<h3 id="act---test-the-map">Act - Test the Map</h3>
+<p>The <a href="https://github.com/channeladam/ChannelAdam.TestFramework.BizTalk/blob/master/src/ChannelAdam.TestFramework.BizTalk/BizTalkXmlToXmlMapTester.cs" target="_blank">BizTalkXmlToXmlMapTester</a>
+has the following method overrides for testing your BizTalk Map.</p>
+<ul>
+<li><code>void TestMap(TransformBase map)</code></li>
+<li><code>void TestMap(TransformBase map, IEnumerable&lt;XsltExtensionObjectDescriptor&gt; xsltExtensionObjectOverrides)</code> (see below - Mocking External Assemblies)</li>
+<li><code>void TestMap(TransformBase map, bool validateInputXml, bool validateOutputXml)</code></li>
+<li><code>void TestMap(TransformBase map, IEnumerable&lt;XsltExtensionObjectDescriptor&gt; xsltExtensionObjectOverrides, bool validateInput, bool validateOutputXml)</code></li>
+</ul>
+<p>The validateInputXml and validateOutputXml parameters are self-explanatory.</p>
+<h4 id="mocking-external-assemblies">Mocking External Assemblies</h4>
+<p>The xsltExtensionObjectOverrides enumerable is the secret to mocking External Assembly class methods.
+To mock a class, create an Interface that define the method used in the map, and then create and set up a mock object from the Interface.
+Then use the following code to create the xsltExtensionObjectOverrides, populated with the mock object.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#75715e">// Mock the external assembly &#39;MyExternalAssemblyClassUsedInTheMap&#39; class used in the map ;)
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> mocksOfExternalAssemblyClassesUsedInMap = <span style="color:#66d9ef">new</span> List&lt;XsltExtensionObjectDescriptor&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>{
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#66d9ef">new</span> XsltExtensionObjectDescriptor(<span style="color:#66d9ef">typeof</span>(MyExternalAssemblyClassUsedInTheMap), myMoqMockForThatClass.Object)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>};  
+</code></pre></div><p>And test the map, providing the <code>xsltExtensionObjectOverrides</code> parameter.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#75715e">// Test the map which will execute methods on the mock objects
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#75715e"></span>xmlToXmlMapTester.TestMap(<span style="color:#66d9ef">new</span> MySpiffyMapFromXmlToXml(), mocksOfExternalAssemblyClassesUsedInMap);
+</code></pre></div><p>For Other examples, including how to mock an External Assembly, please refer to this example
+<a href="https://github.com/channeladam/ChannelAdam.TestFramework.BizTalk/blob/master/src/ChannelAdam.TestFramework.BizTalk.BehaviourSpecs/BehaviourSpecs/BizTalkMapping.feature" target="_blank">BDD feature file</a>
+and the <a href="https://github.com/channeladam/ChannelAdam.TestFramework.BizTalk/blob/master/src/ChannelAdam.TestFramework.BizTalk.BehaviourSpecs/BehaviourSpecs/BizTalkMappingUnitSteps.cs" target="_blank">implementation of the scenario steps</a>.</p>
+<h3 id="assert---compare-the-actual-output-against-the-expected-output">Assert - Compare the Actual Output Against the Expected Output</h3>
+<p>The <a href="https://github.com/channeladam/ChannelAdam.TestFramework.BizTalk/blob/master/src/ChannelAdam.TestFramework.BizTalk/BizTalkXmlToXmlMapTester.cs" target="_blank">BizTalkXmlToXmlMapTester</a>
+has the following method overrides for asserting the actual output from the map against the expected output that was arranged.</p>
+<ul>
+<li><code>void AssertActualOutputXmlEqualsExpectedOutputXml()</code></li>
+<li><code>AssertActualOutputXmlEqualsExpectedOutputXml(IXmlFilter xmlFilter)</code></li>
+</ul>
+<p>All the comparison and logging and formatting of any differences is done for you. Easy!</p>
+<h4 id="ignoring--filtering-xml-elements">Ignoring / Filtering XML Elements</h4>
+<p>The override allows you to specify an <a href="https://github.com/channeladam/ChannelAdam.TestFrameworks/blob/master/src/ChannelAdam.TestFramework/Xml/Abstractions/IXmlFilter.cs" target="_blank"><code>IXmlFilter</code></a>
+which allows you to specify a list of the local names of XML elements to ignore in comparisons, and/or a list of XPath expressions to ignore in comparisons.</p>
+<p>Two constructor methods on <a href="https://github.com/channeladam/ChannelAdam.TestFrameworks/blob/master/src/ChannelAdam.TestFramework/Xml/XmlFilter.cs" target="_blank"><code>XmlFilter</code></a>
+allow you to easily specify these lists.</p>
+<ul>
+<li><code>XmlFilter(IList&lt;string&gt; elementLocalNamesToIgnore)</code></li>
+<li><code>XmlFilter(IList&lt;string&gt; elementLocalNamesToIgnore, IList&lt;string&gt; xpathsToIgnore)</code></li>
+</ul>
+<h4 id="ignoring--filtering-flat-file-differences">Ignoring / Filtering Flat File Differences</h4>
+<p>Ignoring differences in flat files is a little more tricky, but not too difficult.
+The ChannelAdam library uses the <a href="https://github.com/mmanela/diffplex" target="_blank">DiffPlex</a> library for performing text differences.</p>
+<p>3 mechanisms on the flat file tester classes are provided for hooking into the <a href="https://github.com/mmanela/diffplex/blob/master/DiffPlex/DiffBuilder/Model/DiffPaneModel.cs" target="_blank"><code>DiffPaneModel</code></a>
+difference result and manipulating it before a final decision is made as
+to whether or not the actual output is similar enough to the expected output.</p>
+<ul>
+<li>An event that is raised with the differences</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>    <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// Occurs when a text difference is detected, allowing a listener to filter the differences and
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// change the Line[x].Type to ChangeType.UnChanged so that the difference is no longer treated as a difference.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;remarks&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// This event or the TextDifferenceFilter property can be used for this purpose.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;/remarks&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">event</span> EventHandler&lt;TextDifferenceDetectedEventArgs&gt; TextDifferenceDetectedEvent;
+</code></pre></div><ul>
+<li>An action delegate method that is called with the differences</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>    <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// Gets or sets the Action delegate to be invoked when a text difference is detected, allowing differences to be filtered out by
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// changing the Line[x].Type to ChangeType.UnChanged - so that a difference is no longer treated as a difference.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;value&gt;The Action delegate.&lt;/value&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;remarks&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// This property or TextDifferenceDetectedEvent can be used for this purpose.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;/remarks&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> Action&lt;DiffPaneModel&gt; TextDifferenceFilter { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</code></pre></div><ul>
+<li>A virtual method that allows you to inherit from the tester class and override the differences when they are detected.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> OnTextDifferenceDetected(DiffPaneModel differences)
+</code></pre></div>
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/biztalk/">BizTalk</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/maps/">Maps</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/mapping/">Mapping</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/testing/">Testing</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/test-framework/">Test Framework</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/library/">Library</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2015/04/biztalk-summit-2-turning-of-tide/">
+            <h2 class="post-title">BizTalk Summit 2015 in London - Part 2 - Turning of the Tide?</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p>In the previous article, <a href="/articles/2015/04/biztalk-summit-1-microsoft-integration-roadmap">BizTalk Summit 2015 in London - Part 1 - Microsoft&rsquo;s Roadmap for Integration</a>, we recapped how App Service is key in Microsoft&rsquo;s roadmap and strategy for Integration and that Microsoft announced App Service will be available on-premises as part of the Microsoft Azure Pack.
+Microsoft also confirmed that the BizTalk brand is important and is here to stay.</p>
+<p>Microsoft&rsquo;s vision is to democratise integration (simplify so that developers not require specialist expert skills), be the iPaaS leader for enterprise, and build a rich ecosystem for the community and business partners.</p>
+<p>This article shines light on various other jigsaw puzzle pieces that were presented at the BizTalk Summit 2015, to further help you understand the wider picture of where &ldquo;Modern Integration&rdquo; appears to be heading.</p>
+<h2 id="enterprise-focus---connecting-with-ibm-systems">Enterprise Focus - Connecting with IBM Systems</h2>
+<p>In line with Microsoft&rsquo;s vision for the enterprise and integrating with existing line of business systems, Paul Larsen, Principle Program Manager at Microsoft, presented the IBM MQ, DB2 and Informix Connectors.
+These connectors have been developed to allow Azure solutions to communicate with on-premises IBM systems.</p>
+<p>An integration solution connecting to an IBM system could be deployed as a hybrid solution when using Azure in the cloud, or deployed completely on-premises solution using App Service on-premises with the Microsoft Azure Pack.</p>
+<p>The MQ Connector currently only supports MQ version 8.
+In contrast, MQ version 8 is actually not supported by BizTalk Server 2013 R2.
+There was no information on whether version 8 would be supported in BizTalk Server 2016.</p>
+<p>The DB2 Connector communicates to DB2 using the Distributed Relational Database Architecture (DRDA) database interoperability standard that DB2 supports.
+This connector also has support for custom SQL and the Open Data Protocol (OData).
+To achieve all of this, Microsoft have developed a new ADO.NET provider for DRDA - which also is utilised by the Informix Connector.</p>
+<h2 id="democratisation-focus---the-durable-task-framework">Democratisation Focus - The Durable Task Framework</h2>
+<p>Dan Rosanova, Senior Program Manager at Microsoft, presented a recently open-sourced library for durable, scalable, reliable, traceable and manageable .NET code-based workflows with eventual consistency.</p>
+<p>The <a href="https://github.com/affandar/durabletask" target="_blank">Durable Task Framework</a> allows developers to write long-running persistent workflows in code using the async/await capabilities.</p>
+<p>Interestingly, this framework originally was released as a preview in June 2013 - apparently without much fan-fare or wide reach in the community, because many people thought it was brand new.</p>
+<p>The framework provides automatic persistence and check-pointing of program state, versioning of orchestrations and activities, error handling, compensation, automatic retries, asynchronous timers, and diagnostics.</p>
+<p>Microsoft internally uses it to reliably orchestrate long-running provisioning, monitoring and management operations.
+The orchestrations can scale out horizontally by adding more worker machines.</p>
+<p>The concepts of logic, state and the runtime are separated.
+State management currently happens in Azure Service Bus, optionally with an Azure Storage account.
+Your custom code is the orchestration logic.</p>
+<p>Please refer to the <a href="https://github.com/affandar/durabletask/wiki" target="_blank">Durable Task Framework Wiki</a> for usage documentation.</p>
+<p>One example use case for the use of this framework is the situation where distributed transactions or two-phase commit protocols typically would be required - and where the services being consumed do not support locking or transactions.</p>
+<p>In the above scenario, it is common for a developer to create a BizTalk orchestration to robustly orchestrate the calling of those multiple services.
+Now however, there is another viable, reliable, durable and robust implementation option.
+Depending on the full scope of requirements, this scenario can be implemented in .NET with the Durable Task Framework and Service Bus - instead of within a BizTalk orchestration.</p>
+<p>Imagine that part of your custom solution for a customer might be starting an orchestration task from within a Web App or an API App.</p>
+<p>To summarise - robust, durable, traceable and manageable orchestration logic in pure .NET without the need for specialist, expert developer skills.</p>
+<h2 id="democratisation-focus---logic-apps">Democratisation Focus - Logic Apps</h2>
+<p>Stephen Siciliano, Senior Program Manager at Microsoft, presented an in-depth look at Logic Apps.</p>
+<p>Stephen first demonstrated how to develop an application that archives Twitter tweets to a DropBox account.</p>
+<p>The barrier of entry for developing Logic Apps is low, which means that specialised expert developer skills (such as those required for BizTalk development) are not required.</p>
+<p>Some notable features of Logic Apps are that they are resilient against failure with an &ldquo;at least once&rdquo; guarantee, and they can directly call any REST endpoint without the need for an API App.
+There is also the ability to use parameters to separate configuration from the definitions (a good story for deployments to different environments), the support for large messages (less than 100mb), and support for binary blobs by externalising the state to storage or Base64 encoding it into the JSON message.</p>
+<h2 id="enterprise-focus---microsoft-azure-biztalk-services-mabs-10-features-in-app-service">Enterprise Focus - Microsoft Azure BizTalk Services (MABS) 1.0 Features in App Service</h2>
+<p>Back to the enterprise vision, Stephen Siciliano also demonstrated an Enterprise Application Integration scenario with the usage of the BizTalk XML Validator, BizTalk Transform API App and BizTalk XPath Extractor in a Logic App.</p>
+<p>Prashant Kumar, Senior Program Manager at Microsoft, discussed how the functionality of the Microsoft Azure BizTalk Services (MABS) 1.0 is available in App Service, including the XML Validator, Transform Service, and the Flat File Encoder etc.</p>
+<h2 id="enterprise-focus---biztalk-b2b-in-app-service">Enterprise Focus - BizTalk B2B in App Service</h2>
+<p>Prashant Kumar also discussed and demonstrated some of the BizTalk B2B API Apps - TPM (for managing trading partners, agreements and artefacts), AS2, EDIFACT and X12.</p>
+<p>Of note, there was discussion about how the features within the BizTalk platform are bit-by-bit being &ldquo;broken out&rdquo; into individual apps.
+One could almost describe that as a re-architecture.</p>
+<p>Many more BizTalk features also now are becoming available in App Service, including: OAuth, JSON support, monetisation in the marketplace, pre-baked integration Logic App recipes, long running workflows and the BizTalk Rules API App.</p>
+<h2 id="enterprise-focus---biztalk-rules-api-app">Enterprise Focus - BizTalk Rules API App</h2>
+<p>The new BizTalk Rules API App can be used to help decouple business logic from application code.
+It retains many of the familiar concepts from the BizTalk Rules Engine (BRE) - such as Vocabulary, Policies and of course the Rules.</p>
+<p>It was interesting and concerning to hear Microsoft talking in terms of enabling business users to make changes to business rules - for instance, on the fly, in production.
+It would be helpful if Microsoft addressed more real world concerns about a change workflow or lifecycle and the testing of business rule changes before they are deployed into production.</p>
+<h2 id="enterprise-focus---api-management">Enterprise Focus - API Management</h2>
+<p>Sameer Chabungbam, Principal Program Manager at Microsoft, presented how the API Apps are a powerful platform for building and managing API&rsquo;s - something that is increasingly more important in the enterprise.</p>
+<p>&ldquo;Connector&rdquo; API Apps let you build functionality to communicate with other systems - similar to the role of an adapter to another system.</p>
+<p>Sameer demonstrated how to configure an API App with Swagger and optimise the API App for usage within a Logic App.</p>
+<h2 id="migration-of-biztalk-artefacts-to-app-service">Migration of BizTalk Artefacts to App Service</h2>
+<p>Jon Fancey, Integration MVP, and Dan Probert, introduced a new company, <a href="http://www.themigrationfactory.eu" target="_blank">The Migration Factory</a> that in the near future, for a fee, aims to automate the migration of BizTalk artefacts to App Service for cloud deployment or on-premises hosting with the Azure Pack.</p>
+<p>Due to technical complexities with some orchestration implementations, all solutions may not be 100% automated, but a very high percentage automated conversion rate is possible.</p>
+<p>This is a rather a telling tale about the direction of Modern Integration implementations.</p>
+<h2 id="biztalk-server-is-here-to-stay">BizTalk Server Is Here to Stay</h2>
+<p>General consensus though is that BizTalk Server still has a niche in the market and will be around for many more years than some people can imagine. There are many on-premises systems that for various business reasons will never be deployed to the cloud.</p>
+<p>BizTalk Server&rsquo;s features are rich and powerful.
+As Michael Stephenson, Integration MVP coined it, BizTalk Server is the &ldquo;Integration Swiss Army Knife&rdquo; - it can do it all.</p>
+<p>Steef-Jan Wiggers, Integration MVP, presented some strong cases for BizTalk Server playing a role in data enrichment and distribution, from deep integration with line of business systems such as SAP to consumer applications.
+Mission critical applications also are likely to remain on-premises and could be too difficult or not cost effective to redesign.</p>
+<p>Further emphasising BizTalk Server&rsquo;s relevance and interoperability in Modern Integration world, Steef-Jan also demonstrated BizTalk Server 2013 R2&rsquo;s capability to communicate with REST endpoints and also convert between SOAP and REST payloads with JSON encoding and decoding.</p>
+<p>Kent Weare, Integration MVP, also demonstrated how Azure <a href="http://azure.microsoft.com/en-gb/services/api-management/" target="_blank">API Management</a> can be used to create a REST API endpoint that acts as a facade to an existing SOAP endpoint on an on-premises BizTalk Server.</p>
+<h2 id="business-activity-monitoring-bam-in-power-bi">Business Activity Monitoring (BAM) in Power BI</h2>
+<p>Todd Glad Nordahl, Technology Solution Professional at Microsoft, presented the Power BI Designer and Dashboard, and discussed how it can be used on top of BizTalk Server to connect to BizTalk&rsquo;s Business Activity Monitoring (BAM) data and augment that with other data sources to help make business decisions.</p>
+<h2 id="windows-communication-foundation-wcf">Windows Communication Foundation (WCF)</h2>
+<p>There was little discussion about the future of WCF, which appears at odds with Modern Integration and the Web and API Apps. WCF seems to be fading into the background and becoming a Legacy Integration technology.</p>
+<p>It would be interesting to see an official statement from Microsoft about the future of WCF.</p>
+<h2 id="reflections">Reflections</h2>
+<p>Reading between all these lines, the BizTalk platform is being re-architected for the Modern Integration world, into App Service, which can be used in the cloud or on-premises.</p>
+<p>The deployment, versioning and dependency issues that plague many BizTalk Server solutions due to its dependency on the Global Assembly Cache (GAC) will finally be resolved by moving to the App Service architecture.</p>
+<p>There however are still many unanswered questions and many unknowns.</p>
+<ol>
+<li>Within the world of Microservices and new container technologies, there will need to be a brand new set of guidelines and better practices to understand and apply.</li>
+<li>Of course, there may be a bunch of new challenges waiting to be discovered and solved, and avoiding deployment issues in a Microservice world is one of them.</li>
+<li>Logic Apps have tracking and archiving of content (does anyone have concerns about privacy with this?), and Azure API Management provides analytics.
+I am not sure how this will translate into equivalent and improved functionality of BAM.</li>
+</ol>
+<p>All the pieces on the chess board are being lined up, and Microsoft now appears to have a solid architecture for Modern Integration.
+We now may be witnessing the start of the turning of the tide.</p>
+<p>Architects and enterprises now will have the choice to use App Service functionality (in the cloud or on-premises) in addition to the option of implementing a solution using the equivalent functionality in BizTalk Server.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/microsoft/">Microsoft</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/microsoft-azure/">Microsoft Azure</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/app-service/">App Service</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/biztalk/">BizTalk</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/web-apps/">Web Apps</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/logic-apps/">Logic Apps</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/api-apps/">API Apps</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/biztalk360/">BizTalk360</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/integration/">Integration</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2015/04/biztalk-summit-1-microsoft-integration-roadmap/">
+            <h2 class="post-title">BizTalk Summit 2015 in London - Part 1 - Microsoft&#39;s Roadmap for Integration</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p>I think everyone agrees that the BizTalk Summit 2015 in London was a smashing success.
+Saravana Kumar&rsquo;s BizTalk360 team have once again done a fantastic job at uniting the world of Integration.
+This year saw 330 people from 20 countries, with all the speakers being either Microsoft employees or Integration MVP&rsquo;s.</p>
+<p>The first day primarily was filled with the presentations from Microsoft on their new App Service functionality, and in the second day the Integration MVP&rsquo;s were allowed to shine.</p>
+<p>This first article concentrates on the roadmap and strategy that Microsoft has for Integration.</p>
+<h2 id="important-on-premises-announcements">Important On-Premises Announcements</h2>
+<p>Before we dive into the roadmap, there were two important announcements for the community in the area of on-premises integration.</p>
+<p>Firstly, there will be a new major version of BizTalk Server released in 2016 to align with and provide support for the new releases of Windows platform products - such as the next version of Windows Server, SQL Server and Visual Studio.</p>
+<p>Secondly, the App Service functionality will be available on-premises with the next release of the Windows Azure Pack.
+The release date however was not specified, but from a few discussions I have the impression that it will be months away, not weeks.</p>
+<h2 id="microsofts-roadmap-and-strategy-for-integration">Microsoft&rsquo;s Roadmap and Strategy for Integration</h2>
+<p>Josh Twist, Principal Program Manager on the Microsoft Azure team, originally was the keynote speaker but unfortunately was unable to attend.
+The audience nevertheless warmly received the keynote presentation by Karandeep Anand, Partner Director of Program Management at Microsoft.</p>
+<p>Karandeep&rsquo;s keynote articulately explained Microsoft&rsquo;s roadmap and strategy for integration.
+He spoke of Microsoft&rsquo;s journey to the cloud so far and the many learnings they have gained.</p>
+<h3 id="learnings-from-azure-websites">Learnings from Azure Websites</h3>
+<p>Azure Websites (now Web Apps) is by far, significantly the largest service currently used in Azure.
+The explanation, according to Karandeep, is the simple, low-complexity barrier of entry, with rich features and tooling, automatic load balancing, scaling and geo-redundancy.</p>
+<p>The identified gaps with Websites however are a lack of integration with business logic, rules, triggers or workflow.</p>
+<h3 id="learnings-from-biztalk-services">Learnings from BizTalk Services</h3>
+<p>There were many learnings from Microsoft&rsquo;s BizTalk Services offering as well.
+Importantly for many customers, BizTalk as a brand name has been recognised officially by Microsoft as being important.
+Karandeep confirmed that the BizTalk name is here to stay.
+The BizTalk Services offering also validated various cloud design patterns, and hybrid connectivity was identified as critical and one of their differentiators in the market.</p>
+<p>The identified gaps with BizTalk Services include the need for more out-of-the-box sources and destinations, pipeline templates, custom code support, long-running workflows and parallel execution.</p>
+<p>All in all, Microsoft identified the need to significantly invest in this space to approach the same value and functionality as BizTalk Server.</p>
+<h3 id="learnings-from-biztalk-server">Learnings from BizTalk Server</h3>
+<p>The learnings from BizTalk Server also were quite interesting.
+It was no surprise however when Karandeep mentioned that there is a high-complexity barrier of entry into the world of BizTalk.
+This unfortunately encourages a proliferation of the &ldquo;hack zone&rdquo; where developers hack together applications in an effort to develop a quick solution, but these applications or scripts don&rsquo;t necessarily have the robustness, scalability or desired level of support and maintainability.</p>
+<h3 id="microsofts-vision">Microsoft&rsquo;s Vision</h3>
+<p>Microsoft&rsquo;s subsequent vision that addresses all of these learnings is three-fold.</p>
+<ol>
+<li>Firstly, Microsoft wants to fill the gap between the high-complexity barrier of entry of BizTalk Server and the low-complexity barrier of entry of Web Apps (Azure Websites). The idea is to democratise integration - by making it simple, easy, and approachable by the masses of developers, not just specialised experts.</li>
+<li>Next, Microsoft importantly will complement this ease of use with a heavy focus on the enterprise, aiming to be the Integration Platform-as-a-Service (iPaaS) leader, providing 24/7, robust, resilient services with all the solid functionality of BizTalk Server.</li>
+<li>Lastly, Microsoft realise that their offering should provide an extensible foundation that the community and partners can enrich, by creating a public marketplace that supports plugins and monetisation.</li>
+</ol>
+<h3 id="microsofts-roadmap">Microsoft&rsquo;s Roadmap</h3>
+<p>Microsoft has a holistic roadmap that aims to:</p>
+<ul>
+<li>Empower business employees with insights (analytics and statistics) to help make solid decisions,</li>
+<li>Enable the transformation of businesses with the agility to develop solutions faster; and</li>
+<li>Enable businesses to engage their customers by connecting with any device at Internet scale.
+Hence, the App Service cometh.</li>
+</ul>
+<h3 id="the-app-service">The App Service</h3>
+<p>App Service is the resulting integrated offering from Microsoft that enables the development of rich, engaging and intelligent applications that scale as your business grows.</p>
+<p>For more information about App Service, please see <a href="http://azure.microsoft.com/en-us/services/app-service/" target="_blank"><a href="http://azure.microsoft.com/en-us/services/app-service/">http://azure.microsoft.com/en-us/services/app-service/</a></a>.</p>
+<br/>
+<p><a href="/articles/2015/04/biztalk-summit-2-turning-of-tide">Continued in Part 2 &raquo; BizTalk Summit 2015 in London - Part 2 - Turning of the Tide?</a></p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/microsoft/">Microsoft</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/microsoft-azure/">Microsoft Azure</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/app-service/">App Service</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/biztalk/">BizTalk</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/web-apps/">Web Apps</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/logic-apps/">Logic Apps</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/api-apps/">API Apps</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/biztalk360/">BizTalk360</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/integration/">Integration</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+
+    
+
+
+                    <div class="mt2">
+                    <section class="mx-auto" style="max-width:728px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="728x90"></div>
+    <br/>
+</section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="page-layout-right-panel">
+    
+
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Featured Content</div>
+
+        <div class="h2">BDD</div>
+        <ul>
+            <li><a href="/library/bdd-behaviour-specification-handbook">The Behaviour Specification Handbook</a></li>
+        </ul>
+
+        <div class="h2">WCF</div>
+        <ul>
+            <li><a href="/articles/2014/07/how-to-call-wcf-service-properly">How To Call WCF Services Properly</a></li>
+            <li><a href="/articles/2014/09/how-to-easily-call-wcf-service-properly">How To Easily Call WCF Services Properly</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Code Libraries</div>
+
+        <div class="h2">.NET Pattern Implementations</div>
+        <ul>
+            <li><a href="/library/channeladam-commands">ChannelAdam Commands Library</a></li>
+            <li><a href="/library/channeladam-disposing">ChannelAdam Disposing Library</a></li>
+            <li><a href="/library/channeladam-transientfaulthandling">ChannelAdam Transient Fault Handling Library</a></li>
+            <li><a href="/library/channeladam-weakevents">ChannelAdam Weak Events Library</a></li>
+        </ul>
+
+        <div class="h2">.NET Helpers / Utilities</div>
+        <ul>
+            <li><a href="/library/channeladam-dispatchproxies">ChannelAdam Dispatch Proxies Library</a></li>
+            <li><a href="/library/channeladam-logging">ChannelAdam Logging Library</a></li>
+            <li><a href="/library/channeladam-primitiveextensions">ChannelAdam Primitive Extensions Library</a></li>
+            <li><a href="/library/channeladam-reflection">ChannelAdam Reflection Library</a></li>
+            <li><a href="/library/channeladam-xml">ChannelAdam XML Library</a></li>
+        </ul>
+   
+        <div class="h2">Web Services</div>
+        <ul>
+            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
+            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
+            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
+            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
+            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
+        </ul>
+
+        <div class="h2">Testing</div>
+        <ul>
+            <li><a href="/library/channeladam-testframework">ChannelAdam Test Framework Library</a></li>
+            <li><a href="/library/channeladam-testframework-moq">ChannelAdam Test Framework Moq Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstestv2">ChannelAdam Test Framework MSTestV2 Library</a></li>
+            <li><a href="/library/channeladam-testframework-nunit">ChannelAdam Test Framework NUnit Library</a></li>
+            <li><a href="/library/channeladam-testframework-text">ChannelAdam Test Framework Text Library</a></li>
+            <li><a href="/library/channeladam-testframework-xml">ChannelAdam Test Framework XML Library</a></li>
+            <li><a href="/library/channeladam-testframework-biztalk">ChannelAdam Test Framework Library for BizTalk</a></li>
+        </ul>
+
+        <div class="h2">DEPRECATED LIBRARIES</div>
+        <ul>
+            <li><a href="/library/channeladam-core">ChannelAdam Core Library</a></li>
+            <li><a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries (V1)</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Connect</div>
+
+        <div class="h2">
+            
+
+
+
+
+
+    <a class="" href="/about-me">About Me</a>
+
+</li>
+        </div>
+
+        <div class="h2">
+            <a href="https://twitter.com/ChannelAdam" target="_blank">Follow @ChannelAdam</a>
+        </div>
+
+        <section class="twitter-feed">
+<a class="twitter-timeline" 
+    data-width="320" 
+    data-theme="dark" 
+    data-link-color="#2B7BB9" 
+    data-tweet-limit="10"
+    href="https://twitter.com/ChannelAdam?ref_src=twsrc%5Etfw">Tweets by @ChannelAdam</a>
+</section>
+    </div>
+</div>
+
+<section class="mx-auto mt2" style="max-width:300px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="300x250"></div>
+    <br/>
+</section>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Recent Blog Posts</div>
+
+        <ul><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2017/11/announcing-dotnet-notebook/">Announcing the ChannelAdam .NET Notebook</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/articles/2017/11/announcing-notebooks/">Announcing the ChannelAdam Software Development Notebooks</a></li><li><a href="/notebooks/distributed-systems/mesosphere-dcos/">Mesosphere DC/OS Notebook</a></li></ul>
+    </div>
+</div>
+
+<section class="mx-auto mt2" style="max-width:160px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="160x600"></div>
+    <br/>
+</section>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Tag Cloud</div>
+
+        
+    <div class="tag-cloud"><a href="/tags/.net" style="font-size:1.257728077256096rem">.Net</a>
+        &nbsp;<a href="/tags/.net-4.0" style="font-size:1.1626083122716342rem">.Net 4.0</a>
+        &nbsp;<a href="/tags/.net-framework" style="font-size:1.257728077256096rem">.Net Framework</a>
+        &nbsp;<a href="/tags/agile" style="font-size:1rem">Agile</a>
+        &nbsp;<a href="/tags/ajax" style="font-size:1rem">Ajax</a>
+        &nbsp;<a href="/tags/amazon-s3" style="font-size:1rem">Amazon S3</a>
+        &nbsp;<a href="/tags/api-apps" style="font-size:1.3252166245432684rem">Api Apps</a>
+        &nbsp;<a href="/tags/api-management" style="font-size:1rem">Api Management</a>
+        &nbsp;<a href="/tags/app-service" style="font-size:1.3252166245432684rem">App Service</a>
+        &nbsp;<a href="/tags/artificial-intelligence" style="font-size:1rem">Artificial Intelligence</a>
+        &nbsp;<a href="/tags/asp.net" style="font-size:1.257728077256096rem">Asp.net</a>
+        &nbsp;<a href="/tags/asp.net-mvc-3" style="font-size:1.1626083122716342rem">Asp.net Mvc 3</a>
+        &nbsp;<a href="/tags/asp.net-mvc2" style="font-size:1rem">Asp.net Mvc2</a>
+        &nbsp;<a href="/tags/assembly-binding" style="font-size:1.1626083122716342rem">Assembly Binding</a>
+        &nbsp;<a href="/tags/async" style="font-size:1rem">Async</a>
+        &nbsp;<a href="/tags/asynchronous" style="font-size:1rem">Asynchronous</a>
+        &nbsp;<a href="/tags/azure" style="font-size:1.257728077256096rem">Azure</a>
+        &nbsp;<a href="/tags/battery" style="font-size:1.1626083122716342rem">Battery</a>
+        &nbsp;<a href="/tags/bdd" style="font-size:1.9756498736298047rem">Bdd</a>
+        &nbsp;<a href="/tags/behaviour-driven" style="font-size:1.1626083122716342rem">Behaviour Driven</a>
+        &nbsp;<a href="/tags/behaviour-driven-development" style="font-size:1.9756498736298047rem">Behaviour Driven Development</a>
+        &nbsp;<a href="/tags/behaviour-specification-handbook" style="font-size:1.960509510525089rem">Behaviour Specification Handbook</a>
+        &nbsp;<a href="/tags/behaviour-specifications" style="font-size:1.9719554003354438rem">Behaviour Specifications</a>
+        &nbsp;<a href="/tags/behaviour-verification" style="font-size:1rem">Behaviour Verification</a>
+        &nbsp;<a href="/tags/bitbucket" style="font-size:1rem">Bitbucket</a>
+        &nbsp;<a href="/tags/biztalk" style="font-size:1.4203363895277301rem">Biztalk</a>
+        &nbsp;<a href="/tags/biztalk360" style="font-size:1.1626083122716342rem">Biztalk360</a>
+        &nbsp;<a href="/tags/build" style="font-size:1.3252166245432684rem">Build</a>
+        &nbsp;<a href="/tags/business" style="font-size:1rem">Business</a>
+        &nbsp;<a href="/tags/c" style="font-size:1rem">C#</a>
+        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8272637463603703rem">Channeladam .Net Libraries</a>
+        &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
+        &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
+        &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
+        &nbsp;<a href="/tags/code-quality" style="font-size:1rem">Code Quality</a>
+        &nbsp;<a href="/tags/code-reviews" style="font-size:1rem">Code Reviews</a>
+        &nbsp;<a href="/tags/coding-practices" style="font-size:1.257728077256096rem">Coding Practices</a>
+        &nbsp;<a href="/tags/command" style="font-size:1.1626083122716342rem">Command</a>
+        &nbsp;<a href="/tags/container" style="font-size:1.3775648087257248rem">Container</a>
+        &nbsp;<a href="/tags/conventions" style="font-size:1rem">Conventions</a>
+        &nbsp;<a href="/tags/cucumber" style="font-size:1rem">Cucumber</a>
+        &nbsp;<a href="/tags/data-science" style="font-size:1rem">Data Science</a>
+        &nbsp;<a href="/tags/ddd" style="font-size:1rem">Ddd</a>
+        &nbsp;<a href="/tags/diffplex" style="font-size:1rem">Diffplex</a>
+        &nbsp;<a href="/tags/digital-ocean" style="font-size:1rem">Digital Ocean</a>
+        &nbsp;<a href="/tags/dispatch-proxies" style="font-size:1rem">Dispatch Proxies</a>
+        &nbsp;<a href="/tags/disposable" style="font-size:1rem">Disposable</a>
+        &nbsp;<a href="/tags/dispose" style="font-size:1rem">Dispose</a>
+        &nbsp;<a href="/tags/distributed" style="font-size:1.3775648087257248rem">Distributed</a>
+        &nbsp;<a href="/tags/distributed-systems" style="font-size:1rem">Distributed Systems</a>
+        &nbsp;<a href="/tags/docker-swarm" style="font-size:1rem">Docker Swarm</a>
+        &nbsp;<a href="/tags/docpad" style="font-size:1rem">Docpad</a>
+        &nbsp;<a href="/tags/domain-driven-design" style="font-size:1rem">Domain Driven Design</a>
+        &nbsp;<a href="/tags/dynamic" style="font-size:1rem">Dynamic</a>
+        &nbsp;<a href="/tags/embedded-resources" style="font-size:1rem">Embedded Resources</a>
+        &nbsp;<a href="/tags/encoding" style="font-size:1rem">Encoding</a>
+        &nbsp;<a href="/tags/events" style="font-size:1rem">Events</a>
+        &nbsp;<a href="/tags/extensions" style="font-size:1rem">Extensions</a>
+        &nbsp;<a href="/tags/failure" style="font-size:1rem">Failure</a>
+        &nbsp;<a href="/tags/finalize" style="font-size:1rem">Finalize</a>
+        &nbsp;<a href="/tags/fluent" style="font-size:1rem">Fluent</a>
+        &nbsp;<a href="/tags/framework" style="font-size:1.257728077256096rem">Framework</a>
+        &nbsp;<a href="/tags/gauge" style="font-size:1.1626083122716342rem">Gauge</a>
+        &nbsp;<a href="/tags/gherkin" style="font-size:1.1626083122716342rem">Gherkin</a>
+        &nbsp;<a href="/tags/github" style="font-size:1rem">Github</a>
+        &nbsp;<a href="/tags/gondor" style="font-size:1rem">Gondor</a>
+        &nbsp;<a href="/tags/google-app-engine" style="font-size:1rem">Google App Engine</a>
+        &nbsp;<a href="/tags/google-compute-engine" style="font-size:1rem">Google Compute Engine</a>
+        &nbsp;<a href="/tags/graphics" style="font-size:1rem">Graphics</a>
+        &nbsp;<a href="/tags/heroku" style="font-size:1rem">Heroku</a>
+        &nbsp;<a href="/tags/hosting" style="font-size:1rem">Hosting</a>
+        &nbsp;<a href="/tags/hugo" style="font-size:1rem">Hugo</a>
+        &nbsp;<a href="/tags/image-optimisation" style="font-size:1rem">Image Optimisation</a>
+        &nbsp;<a href="/tags/injected" style="font-size:1rem">Injected</a>
+        &nbsp;<a href="/tags/integration" style="font-size:1.1626083122716342rem">Integration</a>
+        &nbsp;<a href="/tags/intellisense" style="font-size:1.257728077256096rem">Intellisense</a>
+        &nbsp;<a href="/tags/ioc" style="font-size:1.1626083122716342rem">Ioc</a>
+        &nbsp;<a href="/tags/javascript" style="font-size:1rem">Javascript</a>
+        &nbsp;<a href="/tags/jpeg" style="font-size:1rem">Jpeg</a>
+        &nbsp;<a href="/tags/jquery" style="font-size:1rem">Jquery</a>
+        &nbsp;<a href="/tags/kestrel" style="font-size:1rem">Kestrel</a>
+        &nbsp;<a href="/tags/kubernetes" style="font-size:1rem">Kubernetes</a>
+        &nbsp;<a href="/tags/languages" style="font-size:1rem">Languages</a>
+        &nbsp;<a href="/tags/library" style="font-size:1.5154561545121918rem">Library</a>
+        &nbsp;<a href="/tags/linux" style="font-size:1.257728077256096rem">Linux</a>
+        &nbsp;<a href="/tags/loaded" style="font-size:1rem">Loaded</a>
+        &nbsp;<a href="/tags/logging" style="font-size:1.1626083122716342rem">Logging</a>
+        &nbsp;<a href="/tags/logic-apps" style="font-size:1.3252166245432684rem">Logic Apps</a>
+        &nbsp;<a href="/tags/machine-learning" style="font-size:1rem">Machine Learning</a>
+        &nbsp;<a href="/tags/mapping" style="font-size:1.1626083122716342rem">Mapping</a>
+        &nbsp;<a href="/tags/maps" style="font-size:1.257728077256096rem">Maps</a>
+        &nbsp;<a href="/tags/mesosphere-dc/os" style="font-size:1rem">Mesosphere Dc/Os</a>
+        &nbsp;<a href="/tags/messaging" style="font-size:1.1626083122716342rem">Messaging</a>
+        &nbsp;<a href="/tags/methodology" style="font-size:1rem">Methodology</a>
+        &nbsp;<a href="/tags/microservices" style="font-size:1rem">Microservices</a>
+        &nbsp;<a href="/tags/microsoft" style="font-size:1.3252166245432684rem">Microsoft</a>
+        &nbsp;<a href="/tags/microsoft-azure" style="font-size:1.3775648087257248rem">Microsoft Azure</a>
+        &nbsp;<a href="/tags/mock4net" style="font-size:1rem">Mock4net</a>
+        &nbsp;<a href="/tags/moq" style="font-size:1.1626083122716342rem">Moq</a>
+        &nbsp;<a href="/tags/msbuild" style="font-size:1.257728077256096rem">Msbuild</a>
+        &nbsp;<a href="/tags/mstest" style="font-size:1.257728077256096rem">Mstest</a>
+        &nbsp;<a href="/tags/mstest-v2" style="font-size:1rem">Mstest V2</a>
+        &nbsp;<a href="/tags/named-parameters" style="font-size:1rem">Named Parameters</a>
+        &nbsp;<a href="/tags/naming" style="font-size:1.1626083122716342rem">Naming</a>
+        &nbsp;<a href="/tags/nancy" style="font-size:1.3775648087257248rem">Nancy</a>
+        &nbsp;<a href="/tags/notebooks" style="font-size:1.3252166245432684rem">Notebooks</a>
+        &nbsp;<a href="/tags/nunit" style="font-size:1.1626083122716342rem">Nunit</a>
+        &nbsp;<a href="/tags/nvidia" style="font-size:1.1626083122716342rem">Nvidia</a>
+        &nbsp;<a href="/tags/open-source" style="font-size:1.1626083122716342rem">Open Source</a>
+        &nbsp;<a href="/tags/operations" style="font-size:1rem">Operations</a>
+        &nbsp;<a href="/tags/optimisation" style="font-size:1rem">Optimisation</a>
+        &nbsp;<a href="/tags/optional-parameters" style="font-size:1rem">Optional Parameters</a>
+        &nbsp;<a href="/tags/orchestration" style="font-size:1.3775648087257248rem">Orchestration</a>
+        &nbsp;<a href="/tags/paas" style="font-size:1rem">Paas</a>
+        &nbsp;<a href="/tags/partial-views" style="font-size:1rem">Partial Views</a>
+        &nbsp;<a href="/tags/pattern" style="font-size:1.3775648087257248rem">Pattern</a>
+        &nbsp;<a href="/tags/patterns" style="font-size:1rem">Patterns</a>
+        &nbsp;<a href="/tags/pci-dss" style="font-size:1rem">Pci Dss</a>
+        &nbsp;<a href="/tags/png" style="font-size:1rem">Png</a>
+        &nbsp;<a href="/tags/power" style="font-size:1.1626083122716342rem">Power</a>
+        &nbsp;<a href="/tags/powershell" style="font-size:1.6017222572298446rem">Powershell</a>
+        &nbsp;<a href="/tags/principles" style="font-size:1rem">Principles</a>
+        &nbsp;<a href="/tags/probing-privatepath" style="font-size:1rem">Probing Privatepath</a>
+        &nbsp;<a href="/tags/productivity" style="font-size:1rem">Productivity</a>
+        &nbsp;<a href="/tags/program-specification" style="font-size:1rem">Program Specification</a>
+        &nbsp;<a href="/tags/programming" style="font-size:1.1626083122716342rem">Programming</a>
+        &nbsp;<a href="/tags/python" style="font-size:1rem">Python</a>
+        &nbsp;<a href="/tags/r" style="font-size:1rem">R</a>
+        &nbsp;<a href="/tags/razor" style="font-size:1.1626083122716342rem">Razor</a>
+        &nbsp;<a href="/tags/real-proxies" style="font-size:1rem">Real Proxies</a>
+        &nbsp;<a href="/tags/redhat-openshift" style="font-size:1rem">Redhat Openshift</a>
+        &nbsp;<a href="/tags/reflection" style="font-size:1rem">Reflection</a>
+        &nbsp;<a href="/tags/retry" style="font-size:1rem">Retry</a>
+        &nbsp;<a href="/tags/reversible" style="font-size:1.1626083122716342rem">Reversible</a>
+        &nbsp;<a href="/tags/scale" style="font-size:1.3775648087257248rem">Scale</a>
+        &nbsp;<a href="/tags/scenarios" style="font-size:1.9719554003354438rem">Scenarios</a>
+        &nbsp;<a href="/tags/script" style="font-size:1rem">Script</a>
+        &nbsp;<a href="/tags/security" style="font-size:1rem">Security</a>
+        &nbsp;<a href="/tags/self" style="font-size:1rem">Self</a>
+        &nbsp;<a href="/tags/serialization" style="font-size:1rem">Serialization</a>
+        &nbsp;<a href="/tags/service" style="font-size:1rem">Service</a>
+        &nbsp;<a href="/tags/service-bus" style="font-size:1rem">Service Bus</a>
+        &nbsp;<a href="/tags/service-bus-connector" style="font-size:1rem">Service Bus Connector</a>
+        &nbsp;<a href="/tags/service-fabric" style="font-size:1.257728077256096rem">Service Fabric</a>
+        &nbsp;<a href="/tags/serviceconsumer" style="font-size:1.1626083122716342rem">Serviceconsumer</a>
+        &nbsp;<a href="/tags/services" style="font-size:1.3775648087257248rem">Services</a>
+        &nbsp;<a href="/tags/single-responsibility-principle" style="font-size:1rem">Single Responsibility Principle</a>
+        &nbsp;<a href="/tags/singleton" style="font-size:1rem">Singleton</a>
+        &nbsp;<a href="/tags/soa" style="font-size:1rem">Soa</a>
+        &nbsp;<a href="/tags/soap-1.1" style="font-size:1.3252166245432684rem">Soap 1.1</a>
+        &nbsp;<a href="/tags/soap-1.2" style="font-size:1.3252166245432684rem">Soap 1.2</a>
+        &nbsp;<a href="/tags/solid" style="font-size:1.257728077256096rem">Solid</a>
+        &nbsp;<a href="/tags/specflow" style="font-size:1.1626083122716342rem">Specflow</a>
+        &nbsp;<a href="/tags/srp" style="font-size:1rem">Srp</a>
+        &nbsp;<a href="/tags/standards" style="font-size:1rem">Standards</a>
+        &nbsp;<a href="/tags/static-site-generator" style="font-size:1rem">Static Site Generator</a>
+        &nbsp;<a href="/tags/teamreview" style="font-size:1rem">Teamreview</a>
+        &nbsp;<a href="/tags/test-driven-development" style="font-size:1rem">Test Driven Development</a>
+        &nbsp;<a href="/tags/test-framework" style="font-size:1.4878249368149024rem">Test Framework</a>
+        &nbsp;<a href="/tags/testing" style="font-size:1.996672366820611rem">Testing</a>
+        &nbsp;<a href="/tags/text" style="font-size:1rem">Text</a>
+        &nbsp;<a href="/tags/tfs" style="font-size:1.1626083122716342rem">Tfs</a>
+        &nbsp;<a href="/tags/thread-safe" style="font-size:1rem">Thread Safe</a>
+        &nbsp;<a href="/tags/transient-fault-handling" style="font-size:1rem">Transient Fault Handling</a>
+        &nbsp;<a href="/tags/validation" style="font-size:1rem">Validation</a>
+        &nbsp;<a href="/tags/vb.net" style="font-size:1rem">Vb.net</a>
+        &nbsp;<a href="/tags/visual-studio" style="font-size:1.456499245823252rem">Visual Studio</a>
+        &nbsp;<a href="/tags/visual-studio-2010" style="font-size:1.3252166245432684rem">Visual Studio 2010</a>
+        &nbsp;<a href="/tags/waterfall" style="font-size:1rem">Waterfall</a>
+        &nbsp;<a href="/tags/wcf" style="font-size:1.7142273230793479rem">Wcf</a>
+        &nbsp;<a href="/tags/weak" style="font-size:1rem">Weak</a>
+        &nbsp;<a href="/tags/weak-events" style="font-size:1rem">Weak Events</a>
+        &nbsp;<a href="/tags/web" style="font-size:1.3252166245432684rem">Web</a>
+        &nbsp;<a href="/tags/web-apps" style="font-size:1.1626083122716342rem">Web Apps</a>
+        &nbsp;<a href="/tags/web-development" style="font-size:1.3252166245432684rem">Web Development</a>
+        &nbsp;<a href="/tags/windows" style="font-size:1.6017222572298446rem">Windows</a>
+        &nbsp;<a href="/tags/windows-communication-foundation" style="font-size:1.678064466783826rem">Windows Communication Foundation</a>
+        &nbsp;<a href="/tags/windows-communication-framework" style="font-size:1.257728077256096rem">Windows Communication Framework</a>
+        &nbsp;<a href="/tags/work-items" style="font-size:1rem">Work Items</a>
+        &nbsp;<a href="/tags/xml" style="font-size:1.257728077256096rem">Xml</a>
+        &nbsp;<a href="/tags/xmlunit" style="font-size:1rem">Xmlunit</a>
+        &nbsp;</div>
+
+    </div>
+</div>
+
+
+
+
+    </aside>
+</div>
+
+    <footer>
+    <div class="page-width mx-auto flex flex-wrap items-center justify-around">
+        <small>
+            Copyright &copy; 2009-2020 by Adam Craven. All rights reserved.
+            <br/><br/>
+        </small>
+
+        <small class="center">
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">
+                <img alt="Creative Commons Licence" src="https://licensebuttons.net/l/by/4.0/88x31.png" style="border-width: 0;" /></a>
+            <br />
+            This work is licensed under a
+            <br />
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+        </small>
+    </div>
+</footer>
+        </div>
+</div>
+    <script>
+    //================================================================
+// Twitter widgets - e.g. follow button
+!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+        js = d.createElement(s); js.id = id; js.async = true; js.defer = true;
+        js.src = 'https://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');
+    (function () {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.defer = true;
+    po.src = 'https://platform.linkedin.com/in.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script>
+window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+    return t;
+}(document, "script", "twitter-wjs"));
+</script>
+<script>
+function _dmBootstrap(file) {
+	var _dma = document.createElement('script');
+	_dma.type = 'text/javascript';
+	_dma.async = true; _dma.defer = true;
+	_dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+}
+function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+(function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+
+  </body>
+</html>

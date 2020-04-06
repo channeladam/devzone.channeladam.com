@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asynchronous on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/asynchronous/</link>
+    <description>Recent contentin Asynchronous on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Thu, 12 Mar 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/asynchronous/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Asynchronous Message Exchange Pattern Terminology</title>
+      <link>https://devzone.channeladam.com/articles/2015/03/async-message-pattern-terminology/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/03/async-message-pattern-terminology/</guid>
+      <description>The word &#34;asynchronous&#34; is insufficient to clearly describe and differentiate between the various types of asynchronous message exchange patterns. Read further to understand some of the patterns and how you can more clearly discuss and communicate them.</description>
+    </item></channel>
+</rss>

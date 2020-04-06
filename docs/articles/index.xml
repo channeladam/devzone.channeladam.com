@@ -1,0 +1,301 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/articles/</link>
+    <description>Recent contentin Articles on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/articles/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Changed to Hugo Static Site Generator</title>
+      <link>https://devzone.channeladam.com/articles/2020/04/changed-to-hugo/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2020/04/changed-to-hugo/</guid>
+      <description>This website is now being generated with Hugo, and the Code Library documentation has been updated.</description>
+    </item><item>
+      <title>Service Fabric Notebook Update</title>
+      <link>https://devzone.channeladam.com/articles/2018/05/service-fabric-notes-update/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2018/05/service-fabric-notes-update/</guid>
+      <description>The Service Fabric Notebook has been updated to include critical information about configuring Kestrel listener IP addresses.</description>
+    </item><item>
+      <title>Announcing New ChannelAdam Notebooks</title>
+      <link>https://devzone.channeladam.com/articles/2018/03/announcing-new-notebooks/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2018/03/announcing-new-notebooks/</guid>
+      <description>Announcing new ChannelAdam Notebooks - Linux, Data Science, Security PCI DSS, Web Development, HTML5, CSS, JavaScript, Feature Detection, Graphics, Optimisation.</description>
+    </item><item>
+      <title>Announcing the ChannelAdam .NET Notebook</title>
+      <link>https://devzone.channeladam.com/articles/2017/11/announcing-dotnet-notebook/</link>
+      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2017/11/announcing-dotnet-notebook/</guid>
+      <description>Announcing the ChannelAdam .NET Notebook.</description>
+    </item><item>
+      <title>Announcing the ChannelAdam Software Development Notebooks</title>
+      <link>https://devzone.channeladam.com/articles/2017/11/announcing-notebooks/</link>
+      <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2017/11/announcing-notebooks/</guid>
+      <description>Announcing the ChannelAdam Software Development Notebooks.</description>
+    </item><item>
+      <title>Announcing the ChannelAdam Nancy SOAP Library</title>
+      <link>https://devzone.channeladam.com/articles/2016/11/nancy-soap-library-released/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2016/11/nancy-soap-library-released/</guid>
+      <description>Announcing the ChannelAdam Nancy SOAP Library.</description>
+    </item><item>
+      <title>Announcing the ChannelAdam SOAP Library</title>
+      <link>https://devzone.channeladam.com/articles/2016/11/soap-library-released/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2016/11/soap-library-released/</guid>
+      <description>Announcing the ChannelAdam SOAP Library.</description>
+    </item><item>
+      <title>Modern Testing of BizTalk Maps</title>
+      <link>https://devzone.channeladam.com/articles/2016/10/modern-testing-of-biztalk-maps/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2016/10/modern-testing-of-biztalk-maps/</guid>
+      <description>How to bring your BizTalk Map testing into the modern era.</description>
+    </item><item>
+      <title>ChannelAdam WCF Library - Version 2 Released</title>
+      <link>https://devzone.channeladam.com/articles/2015/11/channeladam-wcf-library-v2-released/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/11/channeladam-wcf-library-v2-released/</guid>
+      <description>Announcing the release of version 2 of the open source ChannelAdam WCF Library.</description>
+    </item><item>
+      <title>Logic Apps and the Service Bus Connector - The Case of the Incomplete Message!</title>
+      <link>https://devzone.channeladam.com/articles/2015/09/logic-apps-and-service-bus-connector/</link>
+      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/09/logic-apps-and-service-bus-connector/</guid>
+      <description>When an Azure App Service Logic App Service Bus Connector trigger does not complete the Service Bus message...</description>
+    </item><item>
+      <title>How To Configure A Logic App To Use An Internal API App</title>
+      <link>https://devzone.channeladam.com/articles/2015/08/how-logic-app-use-internal-api-app/</link>
+      <pubDate>Sat, 15 Aug 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/08/how-logic-app-use-internal-api-app/</guid>
+      <description>How to configure a Microsoft Azure App Service Logic App to use an API App with an Internal access level.</description>
+    </item><item>
+      <title>Launch of the BDD Behaviour Specification Handbook!</title>
+      <link>https://devzone.channeladam.com/articles/2015/08/behaviour-specification-handbook/</link>
+      <pubDate>Thu, 13 Aug 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/08/behaviour-specification-handbook/</guid>
+      <description>The launch of the Behaviour-Driven Development (BDD) Behaviour Specification Handbook!</description>
+    </item><item>
+      <title>BizTalk Summit 2015 in London - Part 2 - Turning of the Tide?</title>
+      <link>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-2-turning-of-tide/</link>
+      <pubDate>Wed, 15 Apr 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-2-turning-of-tide/</guid>
+      <description>From the BizTalk Summit 2015 in London - Microsoft now appears to have a solid architecture for Modern Integration, and we now may be witnessing the start of the turning of the tide.</description>
+    </item><item>
+      <title>BizTalk Summit 2015 in London - Part 1 - Microsoft&#39;s Roadmap for Integration</title>
+      <link>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-1-microsoft-integration-roadmap/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/04/biztalk-summit-1-microsoft-integration-roadmap/</guid>
+      <description>From the BizTalk Summit 2015 in London - a summary of Microsoft&#39;s roadmap for integration.</description>
+    </item><item>
+      <title>Asynchronous Message Exchange Pattern Terminology</title>
+      <link>https://devzone.channeladam.com/articles/2015/03/async-message-pattern-terminology/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/03/async-message-pattern-terminology/</guid>
+      <description>The word &#34;asynchronous&#34; is insufficient to clearly describe and differentiate between the various types of asynchronous message exchange patterns. Read further to understand some of the patterns and how you can more clearly discuss and communicate them.</description>
+    </item><item>
+      <title>The &#34;Reverse Waterfall&#34; Software Development Methodology</title>
+      <link>https://devzone.channeladam.com/articles/2015/02/reverse-waterfall/</link>
+      <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/02/reverse-waterfall/</guid>
+      <description>&#34;Reverse Waterfall&#34; describes software development practices that begin the Implementation phase before sufficient requirements gathering, business analysis and design are performed. And then all hell breaks loose...</description>
+    </item><item>
+      <title>Behaviour Specification Writing Methodology - Part 2</title>
+      <link>https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-2/</link>
+      <pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-2/</guid>
+      <description>Part 2 of my suggested methodology for writing Behaviour Specifications / scenarios, including tips and suggestions that have repeatedly proven to me to be worthwhile practices.</description>
+    </item><item>
+      <title>Behaviour Specification Writing Methodology - Part 1</title>
+      <link>https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-1/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2015/01/behaviour-spec-writing-part-1/</guid>
+      <description>A suggested methodology for writing Behaviour Specifications / scenarios, including tips and suggestions that have repeatedly proven to me to be worthwhile practices.</description>
+    </item><item>
+      <title>How To Easily Call WCF Services Properly</title>
+      <link>https://devzone.channeladam.com/articles/2014/09/how-to-easily-call-wcf-service-properly/</link>
+      <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2014/09/how-to-easily-call-wcf-service-properly/</guid>
+      <description>How to easily call Windows Communication Framework (WCF) services properly.</description>
+    </item><item>
+      <title>How To Call WCF Services Properly</title>
+      <link>https://devzone.channeladam.com/articles/2014/07/how-to-call-wcf-service-properly/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2014/07/how-to-call-wcf-service-properly/</guid>
+      <description>How to call Windows Communication Framework (WCF) services properly.</description>
+    </item><item>
+      <title>Thoughts on the Naming of SOA Services and Operations</title>
+      <link>https://devzone.channeladam.com/articles/2014/07/thoughts-on-naming-soa-services/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2014/07/thoughts-on-naming-soa-services/</guid>
+      <description>Some thoughts on naming SOA services and their operations.</description>
+    </item><item>
+      <title>A Comparison of Website Hosting Solutions</title>
+      <link>https://devzone.channeladam.com/articles/2014/07/comparison-hosting-solutions/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2014/07/comparison-hosting-solutions/</guid>
+      <description>A brief comparison of web hosting solutions for blog, hobby and small websites.</description>
+    </item><item>
+      <title>Coming Soon!</title>
+      <link>https://devzone.channeladam.com/articles/2014/06/coming-soon/</link>
+      <pubDate>Fri, 13 Jun 2014 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2014/06/coming-soon/</guid>
+      <description>This Software Development Zone has just been reconstructed and more articles are coming soon!</description>
+    </item><item>
+      <title>&#34;Quick Find&#34; Feature in the Productivity Power Tool Extension in Visual Studio 2010</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/quick-find-extension-visual-studio-2010/</link>
+      <pubDate>Sat, 07 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/quick-find-extension-visual-studio-2010/</guid>
+      <description>How to turn off the Quick Find feature in the Visual Studio 2010 Productivity Power Tool extension.</description>
+    </item><item>
+      <title>Intellisense in Razor for Custom Types and Helpers</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/intellisense-razor-custom-types-helpers/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/intellisense-razor-custom-types-helpers/</guid>
+      <description>Intellisense for your Razor custom types and helpers.</description>
+    </item><item>
+      <title>Minimal Configuration Required for Razor Intellisense in ASP.NET MVC 3 RTM</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/minimal-config-razor-intellisense-mvc3/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/minimal-config-razor-intellisense-mvc3/</guid>
+      <description>The minimal configuration that is required for Razor Intellisense to work in ASP.NET MVC 3 RTM.</description>
+    </item><item>
+      <title>Thread-Safe Lazy Singleton Implementation in .NET 4</title>
+      <link>https://devzone.channeladam.com/articles/2010/08/thread-safe-lazy-singleton-dotnet/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/08/thread-safe-lazy-singleton-dotnet/</guid>
+      <description>How to implement a thread-safe lazy singleton in .NET 4.</description>
+    </item><item>
+      <title>ASP.NET MVC2 AJAX: Executing Dynamically Loaded JavaScript</title>
+      <link>https://devzone.channeladam.com/articles/2010/06/aspnet-mvc2-ajax-excuting-dynamically-loaded-javascript/</link>
+      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/06/aspnet-mvc2-ajax-excuting-dynamically-loaded-javascript/</guid>
+      <description>How to execute dynamically loaded JavaScript in ASP.NET MVC 2.</description>
+    </item><item>
+      <title>Guidance for Using Optional and Named Parameters In C# &amp; .NET 4.0</title>
+      <link>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/04/guidance-optional-parameters/</guid>
+      <description>Guidance on the use of Optional and Named Parameters in C#.</description>
+    </item><item>
+      <title>Web Development Links</title>
+      <link>https://devzone.channeladam.com/articles/2010/01/web-dev-links/</link>
+      <pubDate>Tue, 16 Feb 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2010/01/web-dev-links/</guid>
+      <description>Some handy web development links.</description>
+    </item><item>
+      <title>Program Specification Through the Mechanism of Automated Tests</title>
+      <link>https://devzone.channeladam.com/articles/2009/12/program-specification-through-mechanism-tests/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/12/program-specification-through-mechanism-tests/</guid>
+      <description>The subtle difference between tests and specifying program behaviour through the mechanism of automated tests.</description>
+    </item><item>
+      <title>Showdown: Testing Private Methods vs Public Methods</title>
+      <link>https://devzone.channeladam.com/articles/2009/12/showdown-testing-private-vs-public-methods/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/12/showdown-testing-private-vs-public-methods/</guid>
+      <description>The debate over testing private methods versus public methods.</description>
+    </item><item>
+      <title>TeamReview 2010 Installation Problem</title>
+      <link>https://devzone.channeladam.com/articles/2009/11/teamreview-2010-installation-problem/</link>
+      <pubDate>Thu, 05 Nov 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/11/teamreview-2010-installation-problem/</guid>
+      <description>How to fix a &#39;System.InvalidOperationException: Method failed&#39; exception with TeamReview 2010.</description>
+    </item><item>
+      <title>Lessons In Domain-Driven Design - Basic Overview</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-ddd-overview/</link>
+      <pubDate>Wed, 26 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-ddd-overview/</guid>
+      <description>A basic overview of Domain-Driven Design.</description>
+    </item><item>
+      <title>Lessons in MSBuild - Applying the Single Responsibility Principle</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-applying-srp/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-applying-srp/</guid>
+      <description>Applying the Single Responsibility Principle to MSBuild projects.</description>
+    </item><item>
+      <title>Lessons In MSBuild - Targets Are Called Only Once</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-targets-called-only-once/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-targets-called-only-once/</guid>
+      <description>Understanding that MSBuild targets are only called once.</description>
+    </item><item>
+      <title>Lessons In TFS Work Item Customisation - System.State Is Special</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-tfs-work-item-customisation-system-state-special/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-tfs-work-item-customisation-system-state-special/</guid>
+      <description>When customising TFS Work Items, beware that the field System.State is special.</description>
+    </item><item>
+      <title>Lessons in TFS Build - BuildShadowTask Failed</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-tfs-build-buildshadowtask-failed/</link>
+      <pubDate>Thu, 06 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-tfs-build-buildshadowtask-failed/</guid>
+      <description>How to fix a &#34;BuildShadowTask Failed&#34; error in TFS Build.</description>
+    </item><item>
+      <title>Lessons In .NET - Assembly Binding Configuration</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-dot-net-assembly-binding-configuration/</link>
+      <pubDate>Tue, 04 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-dot-net-assembly-binding-configuration/</guid>
+      <description>Tricks with assembly binding configurations in .NET Framework.</description>
+    </item><item>
+      <title>Lessons in MSBuild - Introduction</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-msbuild-introduction/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-msbuild-introduction/</guid>
+      <description>An introduction to this blog series on MSBuild.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Calling A Static / Shared Method</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-calling-static-methods/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-calling-static-methods/</guid>
+      <description>How to call a static / shared .NET method from Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Conditions and Operators</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-conditions-operators/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-conditions-operators/</guid>
+      <description>Conditions and operators in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Escape Sequences</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-escape-sequences/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-escape-sequences/</guid>
+      <description>Escape sequences in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Exception Handling</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-exception-handling/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-exception-handling/</guid>
+      <description>Exception handling in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Functions</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/</guid>
+      <description>Functions in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Logging From A Script Running Via Windows Task Scheduler</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-logging-from-task-scheduler/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-logging-from-task-scheduler/</guid>
+      <description>How to log from a PowerShell script running via Windows Task Scheduler.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Looping Through File Folders</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-looping-through-folders/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-looping-through-folders/</guid>
+      <description>How to loop through file folders in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Loops</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-loops/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-loops/</guid>
+      <description>Loops in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Running a PowerShell Script Via Windows Task Scheduler</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-running-script-via-task-scheduler/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-running-script-via-task-scheduler/</guid>
+      <description>How to run A Windows PowerShell Script via Windows Task Scheduler.</description>
+    </item><item>
+      <title>SOLID Principles</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/solid-principles/</link>
+      <pubDate>Thu, 23 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/solid-principles/</guid>
+      <description>Some helpful links to SOLID development information.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Documentation</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-documentation/</link>
+      <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-documentation/</guid>
+      <description>Windows PowerShell&#39;s documentation.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Variables and Declarations</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-variables-declarations/</link>
+      <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-variables-declarations/</guid>
+      <description>Variables and declarations in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in Windows PowerShell - Hello World</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-hello-world/</link>
+      <pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-hello-world/</guid>
+      <description>A Hello World script in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in Windows PowerShell - Introduction</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-introduction/</link>
+      <pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-introduction/</guid>
+      <description>An introduction to the multi-part blog series on Windows PowerShell.</description>
+    </item><item>
+      <title>Towards Behaviour-Driven Programming</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/towards-behaviour-driven-programming/</link>
+      <pubDate>Tue, 14 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/towards-behaviour-driven-programming/</guid>
+      <description>Towards Behaviour-Driven Programming.</description>
+    </item><item>
+      <title>Towards Behaviour-Driven Programming - Part 2</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/towards-behaviour-driven-programming-part-2/</link>
+      <pubDate>Tue, 14 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/towards-behaviour-driven-programming-part-2/</guid>
+      <description>Towards Behaviour-Driven Programming - Part 2.</description>
+    </item><item>
+      <title>Intellisense for ASP.NET Markup Not Appearing In Visual Studio 2008</title>
+      <link>https://devzone.channeladam.com/articles/2009/06/intellisense-for-asp-markup-not-working/</link>
+      <pubDate>Tue, 23 Jun 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/06/intellisense-for-asp-markup-not-working/</guid>
+      <description>Intellisense for ASP.NET markup not appearing in Visual Studio 2008.</description>
+    </item><item>
+      <title>Code Reviews are Important!</title>
+      <link>https://devzone.channeladam.com/articles/2009/06/code-reviews-important/</link>
+      <pubDate>Thu, 18 Jun 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/06/code-reviews-important/</guid>
+      <description>Why code reviews are important.</description>
+    </item><item>
+      <title>Introduction</title>
+      <link>https://devzone.channeladam.com/articles/2009/06/introduction/</link>
+      <pubDate>Wed, 17 Jun 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/06/introduction/</guid>
+      <description>Introduction to this software development blog.</description>
+    </item></channel>
+</rss>

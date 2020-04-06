@@ -1,0 +1,71 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/windows/</link>
+    <description>Recent contentin Windows on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 14 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/windows/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Lessons in PowerShell - Calling A Static / Shared Method</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-calling-static-methods/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-calling-static-methods/</guid>
+      <description>How to call a static / shared .NET method from Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Conditions and Operators</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-conditions-operators/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-conditions-operators/</guid>
+      <description>Conditions and operators in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Escape Sequences</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-escape-sequences/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-escape-sequences/</guid>
+      <description>Escape sequences in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Exception Handling</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-exception-handling/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-exception-handling/</guid>
+      <description>Exception handling in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Functions</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-functions/</guid>
+      <description>Functions in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Logging From A Script Running Via Windows Task Scheduler</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-logging-from-task-scheduler/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-logging-from-task-scheduler/</guid>
+      <description>How to log from a PowerShell script running via Windows Task Scheduler.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Looping Through File Folders</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-looping-through-folders/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-looping-through-folders/</guid>
+      <description>How to loop through file folders in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Loops</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-loops/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-loops/</guid>
+      <description>Loops in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Running a PowerShell Script Via Windows Task Scheduler</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-running-script-via-task-scheduler/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-running-script-via-task-scheduler/</guid>
+      <description>How to run A Windows PowerShell Script via Windows Task Scheduler.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Documentation</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-documentation/</link>
+      <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-documentation/</guid>
+      <description>Windows PowerShell&#39;s documentation.</description>
+    </item><item>
+      <title>Lessons in PowerShell - Variables and Declarations</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-variables-declarations/</link>
+      <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-variables-declarations/</guid>
+      <description>Variables and declarations in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in Windows PowerShell - Hello World</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-hello-world/</link>
+      <pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-hello-world/</guid>
+      <description>A Hello World script in Windows PowerShell.</description>
+    </item><item>
+      <title>Lessons in Windows PowerShell - Introduction</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-introduction/</link>
+      <pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-powershell-introduction/</guid>
+      <description>An introduction to the multi-part blog series on Windows PowerShell.</description>
+    </item></channel>
+</rss>

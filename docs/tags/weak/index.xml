@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weak on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/weak/</link>
+    <description>Recent contentin Weak on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 23 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/weak/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>The ChannelAdam Core Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-core/</link>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-core/</guid>
+      <description>About the deprecated full .NET Framework ChannelAdam Core Library.</description>
+    </item></channel>
+</rss>

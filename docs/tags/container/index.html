@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en-au">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js"><script async src="https://cdn.ampproject.org/v0.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Libre+Franklin" rel="stylesheet">
+    <style amp-custom>/*
+ * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}[tabindex="-1"]:focus:not(:focus-visible){outline:0 !important}hr{box-sizing:content-box;height:0;overflow:visible}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}abbr[title],abbr[data-original-title]{text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul,dl{margin-top:0;margin-bottom:1rem}ol ol,ul ul,ol ul,ul ol{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#007bff;text-decoration:none;background-color:transparent}a:hover{color:#0056b3;text-decoration:underline}a:not([href]){color:inherit;text-decoration:none}a:not([href]):hover{color:inherit;text-decoration:none}pre,code,kbd,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em}pre{margin-top:0;margin-bottom:1rem;overflow:auto}figure{margin:0 0 1rem}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}table{border-collapse:collapse}caption{padding-top:.75rem;padding-bottom:.75rem;color:#6c757d;text-align:left;caption-side:bottom}th{text-align:inherit}label{display:inline-block;margin-bottom:.5rem}button{border-radius:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}input,button,select,optgroup,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button,select{text-transform:none}select{word-wrap:normal}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button:not(:disabled),[type="button"]:not(:disabled),[type="reset"]:not(:disabled),[type="submit"]:not(:disabled){cursor:pointer}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{padding:0;border-style:none}input[type="radio"],input[type="checkbox"]{box-sizing:border-box;padding:0}input[type="date"],input[type="time"],input[type="datetime-local"],input[type="month"]{-webkit-appearance:listbox}textarea{overflow:auto;resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal}progress{vertical-align:baseline}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{outline-offset:-2px;-webkit-appearance:none}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}summary{display:list-item;cursor:pointer}template{display:none}[hidden]{display:none !important}.max-width-half{max-width:50%}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0{margin-left:0}.mx0{margin-left:0;margin-right:0}.my0{margin-top:0;margin-bottom:0}.m1{margin:.5rem}.mt1{margin-top:.5rem}.mr1{margin-right:.5rem}.mb1{margin-bottom:.5rem}.ml1{margin-left:.5rem}.mx1{margin-left:.5rem;margin-right:.5rem}.my1{margin-top:.5rem;margin-bottom:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.mr2{margin-right:1rem}.mb2{margin-bottom:1rem}.ml2{margin-left:1rem}.mx2{margin-left:1rem;margin-right:1rem}.my2{margin-top:1rem;margin-bottom:1rem}.m3{margin:2rem}.mt3,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-top:2rem}.mr3{margin-right:2rem}.mb3{margin-bottom:2rem}.ml3{margin-left:2rem}.mx3{margin-left:2rem;margin-right:2rem}.my3{margin-top:2rem;margin-bottom:2rem}.m4{margin:4rem}.mt4,#comments{margin-top:4rem}.mr4{margin-right:4rem}.mb4{margin-bottom:4rem}.ml4{margin-left:4rem}.mx4{margin-left:4rem;margin-right:4rem}.my4{margin-top:4rem;margin-bottom:4rem}.mxn1{margin-left:calc(0.5rem * -1);margin-right:calc(0.5rem * -1)}.mxn2{margin-left:calc(1rem * -1);margin-right:calc(1rem * -1)}.mxn3{margin-left:calc(2rem * -1);margin-right:calc(2rem * -1)}.mxn4{margin-left:calc(4rem * -1);margin-right:calc(4rem * -1)}.m-auto{margin:auto}.mt-auto{margin-top:auto}.mr-auto{margin-right:auto}.mb-auto{margin-bottom:auto}.ml-auto{margin-left:auto}.mx-auto,img.center,.page-image-toc-container > div img{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.p0{padding:0}.pt0{padding-top:0}.pr0{padding-right:0}.pb0{padding-bottom:0}.pl0{padding-left:0}.px0{padding-left:0;padding-right:0}.py0{padding-top:0;padding-bottom:0}.p1{padding:.5rem}.pt1{padding-top:.5rem}.pr1{padding-right:.5rem}.pb1{padding-bottom:.5rem}.pl1{padding-left:.5rem}.py1{padding-top:.5rem;padding-bottom:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.pt2{padding-top:1rem}.pr2{padding-right:1rem}.pb2{padding-bottom:1rem}.pl2{padding-left:1rem}.py2{padding-top:1rem;padding-bottom:1rem}.px2{padding-left:1rem;padding-right:1rem}.p3{padding:2rem}.pt3{padding-top:2rem}.pr3{padding-right:2rem}.pb3{padding-bottom:2rem}.pl3{padding-left:2rem}.py3{padding-top:2rem;padding-bottom:2rem}.px3{padding-left:2rem;padding-right:2rem}.p4{padding:4rem}.pt4{padding-top:4rem}.pr4{padding-right:4rem}.pb4{padding-bottom:4rem}.pl4{padding-left:4rem}.py4{padding-top:4rem;padding-bottom:4rem}.px4{padding-left:4rem;padding-right:4rem}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.left-0{left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.max-width-1{max-width:24rem}.max-width-2{max-width:32rem}.max-width-3{max-width:48rem}.max-width-4{max-width:64rem}.border-box{box-sizing:border-box}.align-baseline{vertical-align:baseline}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.align-bottom{vertical-align:bottom}.border-none{border:0}.rounded{border-radius:3px}.circle{border-radius:50%}.not-rounded{border-radius:0}.flex,.header-banner > div,.page-image-toc-container,.table-contents-container{display:-ms-flexbox;display:flex}@media (min-width:40em){.sm-flex{display:-ms-flexbox;display:flex}}@media (min-width:52em){.md-flex{display:-ms-flexbox;display:flex}}@media (min-width:64em){.lg-flex{display:-ms-flexbox;display:flex}}.flex-column{-ms-flex-direction:column;flex-direction:column}.flex-wrap,.page-image-toc-container{-ms-flex-wrap:wrap;flex-wrap:wrap}.items-start{-ms-flex-align:start;align-items:flex-start}.items-end{-ms-flex-align:end;align-items:flex-end}.items-center,.header-banner > div,.page-image-toc-container{-ms-flex-align:center;align-items:center}.items-baseline{-ms-flex-align:baseline;align-items:baseline}.items-stretch{-ms-flex-align:stretch;align-items:stretch}.self-start{-ms-flex-item-align:start;align-self:flex-start}.self-end{-ms-flex-item-align:end;align-self:flex-end}.self-center{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}.self-baseline{-ms-flex-item-align:baseline;align-self:baseline}.self-stretch{-ms-flex-item-align:stretch;-ms-grid-row-align:stretch;align-self:stretch}.justify-start{-ms-flex-pack:start;justify-content:flex-start}.justify-end{-ms-flex-pack:end;justify-content:flex-end}.justify-center,.page-image-toc-container,.table-contents-container{-ms-flex-pack:center;justify-content:center}.justify-between{-ms-flex-pack:justify;justify-content:space-between}.justify-around,.header-banner > div{-ms-flex-pack:distribute;justify-content:space-around}.justify-evenly{-ms-flex-pack:space-evenly;justify-content:space-evenly}.content-start{-ms-flex-line-pack:start;align-content:flex-start}.content-end{-ms-flex-line-pack:end;align-content:flex-end}.content-center{-ms-flex-line-pack:center;align-content:center}.content-between{-ms-flex-line-pack:justify;align-content:space-between}.content-around{-ms-flex-line-pack:distribute;align-content:space-around}.content-stretch{-ms-flex-line-pack:stretch;align-content:stretch}.flex-auto{-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.flex-none{-ms-flex:none;flex:none}.order-0{-ms-flex-order:0;order:0}.order-1{-ms-flex-order:1;order:1}.order-2{-ms-flex-order:2;order:2}.order-3{-ms-flex-order:3;order:3}.order-last{-ms-flex-order:99999;order:99999}.font-family-inherit{font-family:inherit}.font-size-inherit{font-size:inherit}.text-decoration-none{text-decoration:none}.bold{font-weight:bold;font-weight:bold}.regular{font-weight:normal}.italic{font-style:italic}.caps{text-transform:uppercase;letter-spacing:.2em}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.line-height-1{line-height:1}.line-height-2{line-height:1.125}.line-height-3{line-height:1.25}.line-height-4{line-height:1.5}.list-style-none{list-style:none}.underline{text-decoration:underline}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.hide{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}@media (max-width:40em){.xs-hide{display:none !important}}@media (min-width:40em) and (max-width:52em){.sm-hide{display:none !important}}@media (min-width:52em) and (max-width:64em){.md-hide{display:none !important}}@media (min-width:64em){.lg-hide{display:none !important}}.display-none{display:none !important}.h00{font-size:4rem}.h0{font-size:3rem}.h1{font-size:2rem}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.h5{font-size:.875rem}.h6{font-size:.75rem}.page-width,.paper-inner{max-width:1800px}.font-for-content,body{font-family:'Roboto',sans-serif}.font-for-heading,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.header-title,.widget div.h1,.widget div.h2,.navbar nav,.nav-header,.nav-sub-header{font-family:'Libre Franklin',sans-serif;font-weight:bold}body{background-color:#f8f8f8;min-width:400px}ol,ul,dl{padding-left:2rem;padding-right:1rem;margin:0 0 1rem 0}p + ul,p + ol,p + dl{margin-top:-.8rem}p > code,li > code{word-break:break-word}p + div.highlight > pre{margin-top:-.8rem}pre{margin:0 0 2rem 0;padding:1rem .2rem}table{margin-bottom:1rem;display:block;max-width:min-content;overflow-x:auto}table th,table td{padding:0 .5rem}table th{text-align:left;background-color:#f2f2f2}table tr:nth-child(even){background-color:#f2f2f2}table,th,td{border:1px dotted #000}blockquote{margin:1rem 0 1rem 2rem;white-space:normal;overflow-x:auto;font-style:italic}ul li > a:link,ul li > a:visited{background-color:inherit}ul li > a:hover,ul li > a:focus{color:#c03;background-color:inherit;text-decoration:underline}ul li.active{background-color:inherit}ul li.active > a:link,ul li.active > a:visited,ul li.active > a:focus,ul li.active > a:hover{color:#c03;background-color:inherit}ul li.active > a:focus,ul li.active > a:hover{text-decoration:none}a{color:#2476cc}a.active:link,a.active:visited,a.active:focus,a.active:hover{color:#c03}a.active:focus,a.active:hover{text-decoration:none}section{margin-bottom:20px}.content h1,.content .h1{font-size:2.5em}.content h2,.content .h2{font-size:2.1em}.content h3,.content .h3{font-size:1.7em}.content h4,.content .h4{font-size:1.3em}.content h5,.content .h5{font-size:.9em}.content h6,.content .h6{font-size:.6em}.post-content h1,.post-content .h1{font-size:2.1em}.post-content h2,.post-content .h2{font-size:1.7em}.post-content h3,.post-content .h3{font-size:1.3em}.post-content h4,.post-content .h4{font-size:.9em}.post-content h5,.post-content .h5{font-size:.67em}.post-content h6,.post-content .h6{font-size:.5em}.header-banner{height:auto;background-color:#000}.header-banner > div{margin:0 0}.logo-wrapper{float:none;text-align:center}.logo-wrapper a{display:block;line-height:0}.logo-wrapper amp-img{min-width:143px;max-width:143px;min-height:100px}.header-title{font-size:2em;text-align:center;color:#c03;padding:0 25px 0 25px;text-transform:uppercase}.header-title-outer{background-image:url("/img/site/devzone-logo.jpg");background-repeat:no-repeat;background-position:left 0 top 30%;background-size:cover}.header-title{max-height:100px}.header-title span{background-color:#000;padding:0 4px}@media (min-width:930px){.logo-wrapper{float:left;padding-left:10px;padding-right:10px}.logo-wrapper amp-img{max-height:100px}.header-title-outer{margin-left:238px}.header-title-inner{display:table;width:100%;height:100px}.header-title{display:inline-block;display:table-cell;font-size:2.5em;vertical-align:middle;word-spacing:1rem}}.content{margin:0;padding:0;min-width:360px;min-height:800px}.paper-outer{-moz-box-shadow:0 0 40px rgba(0,0,0,0.15);-webkit-box-shadow:0 0 5px rgba(0,0,0,0.15);-goog-ms-box-shadow:0 0 10px #333;box-shadow:0 0 40px rgba(0,0,0,0.15);margin-bottom:1px}.paper-inner{padding:0 .2rem}@media (min-width:930px){.paper-inner{padding:0 2rem}}.page-layout{margin:0 auto 2rem auto;display:grid;grid-row-gap:0;grid-template-areas:"main" "rightpanel"}.page-layout-right-panel{grid-area:rightpanel;min-height:800px;margin-top:2rem;max-width:400px}.page-layout-main{grid-area:main;min-width:400px}.page-layout-main .card-container{height:100%}.page-layout-main .card-container .card{height:100%;min-height:200px}@media (min-width:930px){.page-layout{grid-column-gap:2rem;grid-row-gap:0;grid-auto-rows:1fr;grid-template-columns:6fr 2fr;grid-template-areas:"main rightpanel"}.page-layout-right-panel{margin-top:0}}.page-layout-right-panel .widget .twitter-feed{position:relative;overflow-y:scroll;height:800px;min-height:800px;margin:0 auto;width:350px;height:80vh}.card-container{margin-left:-.5rem;margin-right:-.5rem}.card-container:not(:first-of-type){margin-top:2rem}.card{padding:.5rem;background-color:#fff;box-shadow:0 30px 4rem 0 rgba(1,1,1,0.15)}.widget.card{padding:1.5rem}.widget ul{margin:0;padding:.5rem;text-align:left;background-color:#000}.widget ul li{list-style-type:none}.widget ul li > a:link,.widget ul li > a:visited{color:#81beff}.widget ul li > a:hover,.widget ul li > a:focus{color:#c03}.widget ul li.active > a:link,.widget ul li.active > a:visited,.widget ul li.active > a:focus,.widget ul li.active > a:hover{color:#c03}.widget ul li:nth-child(n){margin-bottom:1rem}.widget ul li:last-child,.widget ul li:only-child{margin-bottom:0}.widget div.h1{margin:0;text-align:center;color:#000;font-size:1.8rem}.widget div.h2{text-align:left;color:#000;font-size:1.5rem;font-weight:bold}.navbar{margin-top:1px;border-left:none;border-right:none;border-bottom:none}.navbar nav{font-weight:400;background-color:#000;margin:0 0 0 0;text-align:center}.navbar nav ul{margin:0;padding:0}.navbar nav li{display:inline;list-style-type:none;padding-right:20px}.navbar nav .btn-link{color:#fff}.navbar nav .btn-link.active{color:#c03}.navbar nav .btn-link:hover,.navbar nav .btn-link:focus{color:#c03}.navbar nav .btn-lg{font-size:1.5em}.nav-header{text-align:left;color:#000;font-size:2em}.nav-sub-header{text-align:left;color:#000;font-size:1.5em;padding:20px 0 0 0}ul.nav-stacked{background-color:#000}@media (min-width:930px){navbar nav .btn-lg{font-size:2em}}.post-content img,.library-page-content img,.notebook-page-content img{display:block;max-width:100%;height:auto}.social-share-buttons ul{padding:0}.social-share-buttons ul li{display:inline;list-style-type:none;margin-right:.5rem;vertical-align:top}.twitter-share-button{margin-top:4px}.tag-cloud a{margin-right:.8rem}ul.pager{padding:0;margin:0 0 4rem 0}ul.pager > li{display:inline;list-style-type:none;margin-right:1rem}ul.pager > li > a,ul.pager > li > span{background-color:#000;border-color:#000;color:#fff;padding:.4rem 1rem}ul.pager > li > a:focus,ul.pager > li > a:hover,ul.pager > li > span:focus,ul.pager > li > span:hover{background-color:#000;border-color:#000;color:#c03;text-decoration:underline}ul.pager > .active > a,ul.pager > .active > a:focus,ul.pager > .active > a:hover,ul.pager > .active > span,ul.pager > .active > span:focus,ul.pager > .active > span:hover{background-color:#000;border-color:#000;color:#c03;text-decoration:none}ul.pager > .disabled > a,ul.pager > .disabled > a:focus,ul.pager > .disabled > a:hover,ul.pager > .disabled > span,ul.pager > .disabled > span:focus,ul.pager > .disabled > span:hover{background-color:#000;border-color:#000;color:#808080}.page-image-toc-container > div{width:100%}.page-image-toc-container > div img{max-width:100%;max-height:100% !important}@media (min-width:1300px){.page-image-toc-container > div{display:inline-block;max-width:50%}}.table-contents-container .table-contents{padding:1em}.table-contents-container .table-contents h2,.table-contents-container .table-contents .h2{margin:0 0 1rem 0}.table-contents-container .table-contents ul{list-style:square inside;padding:0}.table-contents-container .table-contents li ul{list-style:circle inside;margin-left:1em}.post-date{font-weight:bold;font-size:smaller;margin-bottom:1em}.post-comment-count{margin-top:10px}code{color:inherit;background-color:inherit;padding:0 0}article{margin-bottom:60px}.graph-container{height:92vh}footer{background-color:#000;padding:2em 0 2em 0;color:#c03}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <link rel="canonical" href="https://devzone.channeladam.com/tags/container/">
+    
+<title>Container</title>    
+
+
+
+
+
+<meta itemprop="name" content="Container">
+<meta itemprop="description" content="The ChannelAdam Software Development Zone">
+<meta property="og:title" content="Container" />
+<meta property="og:description" content="The ChannelAdam Software Development Zone" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://devzone.channeladam.com/tags/container/" />
+<meta property="og:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
+<meta property="og:updated_time" content="2018-05-01T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
+
+<meta name="twitter:title" content="Container"/>
+<meta name="twitter:description" content="The ChannelAdam Software Development Zone"/>
+<meta name="twitter:site" content="@ChannelAdam"/>
+
+<meta property="article:author" content="https://www.linkedin.com/in/adamcraven" />
+<meta property="article:author" content="https://github.com/ChannelAdam" />
+<meta property="article:author" content="https://twitter.com/ChannelAdam" />
+<meta name="twitter:creator" content="@ChannelAdam"/>
+<meta property="article:author" content="https://www.facebook.com/ChannelAdam" />
+<meta property="fb:app_id" content="129037487241515" />
+
+    <link rel="icon" href="/img/channeladam/favicon.ico" type="image/ico">
+
+    
+    <link href="/tags/container/index.xml" rel="alternate" type="application/rss+xml" title="DevZone.ChannelAdam.com" />
+    <link href="/tags/container/index.xml" rel="feed" type="application/rss+xml" title="DevZone.ChannelAdam.com" />
+    
+
+    
+  </head>
+  <body>
+    <amp-analytics type="gtag" data-credentials="include">
+ <script type="application/json">
+ {
+  "vars" : {
+   "gtag_id": "UA-51874696-2",
+   "config" : {
+    "UA-51874696-2": { 
+     "groups": "default"
+    }
+   }
+  }
+ }
+ </script>
+</amp-analytics>
+
+    <div class="content">
+    <div class="paper-outer">
+    <header class="header-banner" role="banner">
+
+    <div class="logo-wrapper">
+        <a href="https://channeladam.com">
+            <amp-img src="/img/channeladam/channeladam-logo.png" alt="ChannelAdam Logo"
+            width="285" height="200" layout="intrinsic"></amp-img>
+        </a>
+    </div>
+
+    <div class="header-title-outer">
+        <div class="header-title-inner">
+            <div class="header-title">
+                <span>Software Development Zone</span>
+            </div>
+        </div>
+    </div>
+        
+</header>
+
+    <section class="navbar">
+    <nav role="navigation">
+        <ul>
+            <li><a class="btn btn-link btn-lg" href="/">News</a></li>
+            <li><a class="btn btn-link btn-lg" href="/library">Library</a></li>
+            <li><a class="btn btn-link btn-lg" href="/notebooks">Notebooks</a></li>
+        </ul>
+    </nav>
+</section>
+
+<section class="mx-auto" style="max-width:728px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="728x90"></div>
+    <br/>
+</section>
+
+<div class="paper-inner mx-auto page-layout">
+    <main aria-role="main" class="page-layout-main">
+        <div class="card-container">
+            <div class="card">
+
+    
+    
+
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/notebooks/distributed-systems/service-fabric/">
+            <h2 class="post-title">Microsoft Service Fabric Notebook</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <div class="page-image-toc-container">
+<div>
+<img alt="Microsoft Service Fabric Notebook" title="Microsoft Service Fabric Notebook" src="/notebooks/distributed-systems/service-fabric/notebook-title.jpg"/>
+</div>
+<div class="table-contents-container">
+    <div class="table-contents">
+        <div class="h2 center">Table of Contents</div>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#attaching-the-debugger">Attaching the Debugger</a></li>
+    <li><a href="#windows-principal--identity">Windows Principal / Identity</a></li>
+    <li><a href="#target-net-version">Target .NET Version</a></li>
+    <li><a href="#naming--max-path-limitations">Naming &amp; Max Path Limitations</a></li>
+    <li><a href="#how-to-create-a-service-hosted-with-kestrel">How to Create a Service Hosted with Kestrel</a>
+      <ul>
+        <li><a href="#nuget-packages-to-install">NuGet Packages To Install</a></li>
+        <li><a href="#configure-kestrel-options-for-https--dynamic-ports">Configure Kestrel Options for HTTPS &amp; Dynamic Ports</a>
+          <ul>
+            <li><a href="#choose-a-service-fabric-reverse-proxy-compatible-ip-address">Choose a Service Fabric Reverse Proxy Compatible IP Address</a></li>
+            <li><a href="#choose-a-dynamic-port">Choose a Dynamic Port</a></li>
+            <li><a href="#example-kestrel-configuration">Example Kestrel Configuration</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#configuration--deployment">Configuration &amp; Deployment</a></li>
+    <li><a href="#runas-policy-https-url-reservation--elevated-privilege-requirement">RunAs Policy, HTTP/S URL Reservation &amp; Elevated Privilege Requirement</a></li>
+    <li><a href="#who-reserved-the-url--who-is-the-service-running-as">Who Reserved the URL &amp; Who is the Service Running As?</a></li>
+    <li><a href="#endpoint-configuration--https-url-reservation">Endpoint Configuration &amp; HTTPS URL Reservation</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+    <li><a href="#bookmarks">Bookmarks</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+</div>
+<h1 id="overview">Overview</h1>
+<p>The following information relates to Service Fabric SDK version 6.</p>
+<h1 id="attaching-the-debugger">Attaching the Debugger</h1>
+<p>If a service is running as a domain user, the debugger in Visual Studio (running as Administrator) will not be able to break into the <code>CreateServiceInstanceListeners()</code> method on your <code>StatelessService</code> or <code>CreateServiceReplicaListeners()</code> method on your <code>StatefulService</code> UNLESS the domain user is also a member of the local Administrators group.</p>
+<h1 id="windows-principal--identity">Windows Principal / Identity</h1>
+<p>When a Service Fabric service is running:</p>
+<ul>
+<li><code>System.Threading.Thread.CurrentPrincipal.Identity</code> is an instance of <code>System.Security.Principal.GenericIdentity</code> - with a <strong>blank</strong> <code>Name</code>!</li>
+<li><code>System.Security.Principal.WindowsIdentity.GetCurrent()</code> returns an instance of <code>System.Security.Principal.WindowsIdentity</code> with correct details of the account the service is running under.</li>
+</ul>
+<h1 id="target-net-version">Target .NET Version</h1>
+<ul>
+<li>Service Fabric 6 SDK (and the 2.8 NuGet packages) still require the full .NET Framework (on Windows).</li>
+<li><strong>Recommendation</strong>: When you create a new service in your fabric application, at least target .NET Framework 4.7.1.</li>
+<li>Support for running on .NET Core 2.0 (instead of the full .NET Framework) is coming soon - with the 3.0 Service Fabric NuGet libraries.</li>
+<li>See my <a href="/notebooks/languages/dotnet/">.NET Notebook</a></li>
+</ul>
+<h1 id="naming--max-path-limitations">Naming &amp; Max Path Limitations</h1>
+<ul>
+<li>Windows Server 2012 R2 has a <a href="https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx?f=255&amp;MSPPError=-2147217396#maxpath" target="_blank">max path</a> limitation of 260 characters.</li>
+<li>Windows Server 2016 has a Group Policy setting allowing that limitation to be removed to support long paths - at <code>Computer Configuration &gt; Administrative Templates &gt; System &gt; Filesystem &gt; Enable NTFS long paths</code></li>
+<li>The default Service Fabric data root (<code>FabricDataRoot</code> specified in the <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-manifest#cluster-properties" target="_blank">cluster configuration</a>) is <code>D:\ProgramData\SF</code></li>
+<li>Service Fabric deploys service binaries to:
+<ul>
+<li><code>[FabricDataRoot]\[NodeName]\Fabric\work\Applications\[ApplicationTypeName]_App??\[ServiceName]Pkg.Code.[Version]\</code></li>
+<li>e.g. <code>D:\ProgramData\SF\myserver-vm0\Fabric\work\Applications\MyCompany.MyDomain.MySubDomain.FabricAppType_App23\MyAwesomeServicePkg.Code.1.0.10\MyCompany.MyDomain.MySubDomain.MyAwesomeService.Logic.dll.config</code></li>
+<li>The example above is 206 characters and is well within the max path limit.</li>
+</ul>
+</li>
+<li>Naming Recommendation:
+<ul>
+<li>Ensure that the package name (service name + &ldquo;Pkg&rdquo;) does not contain the full namespace - as that could easily cause the max path limit to be exceeded</li>
+<li>e.g. set the package name to &ldquo;MyAwesomeServicePkg&rdquo; instead of &ldquo;MyCompany.MyDomain.MySubDomain.MyAwesomeServicePkg&rdquo;</li>
+<li>In the ServiceManifest.xml, set the package name in the XML attribute <code>//ServiceManifest@Name</code> - to e.g. &ldquo;MyAwesomeServicePkg&rdquo;</li>
+<li>In the ApplicationManifest.xml, set the same package name in the XML attribute <code>//ServiceManifestImport/ServiceManifestRef@ServiceManifestName</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="how-to-create-a-service-hosted-with-kestrel">How to Create a Service Hosted with Kestrel</h1>
+<h2 id="nuget-packages-to-install">NuGet Packages To Install</h2>
+<p>When you first create a Kestrel service (and of course you selected .NET 4.7.1 or later), perform the following NuGet library installations in order so that a bunch of .NET Standard 1.x System libraries are not installed:</p>
+<p>Install:</p>
+<ul>
+<li>Microsoft.AspNetCore.Server.Kestrel (version &gt; 2.0)</li>
+<li>Microsoft.AspNetCore.Server.Kestrel.Https</li>
+</ul>
+<p>Update:</p>
+<ul>
+<li>Microsoft.NETCore.Platforms</li>
+</ul>
+<p>Install:</p>
+<ul>
+<li>Microsoft.ServiceFabric.AspNetCore.Kestrel (which depends on Microsoft.AspNetCore.Server.Kestrel version &gt;1.0)</li>
+</ul>
+<h2 id="configure-kestrel-options-for-https--dynamic-ports">Configure Kestrel Options for HTTPS &amp; Dynamic Ports</h2>
+<p>In order to configure HTTPS, you will need to use the <code>KestrelServerOptions.Listen()</code> method.
+However, <code>KestrelServerOptions.Listen()</code> requires an <code>IPEndpoint</code> or <code>IPAddress</code> and <code>Port</code> to be specified.</p>
+<h3 id="choose-a-service-fabric-reverse-proxy-compatible-ip-address">Choose a Service Fabric Reverse Proxy Compatible IP Address</h3>
+<p>Note that:</p>
+<ul>
+<li><code>IPAddress.Loopback</code> will cause the IP address &ldquo;127.0.0.1&rdquo; to be resolved by the Service Fabric Reverse Proxy</li>
+<li><code>IPAddress.Any</code> will cause the IP address &ldquo;0.0.0.0&rdquo; to be resolved by the Service Fabric Reverse Proxy.</li>
+</ul>
+<p>In both of these cases, and depending on the number of instances of a given service, a multi-server cluster will experience delays and even failures when an API call is performed via the Service Fabric Reverse Proxy.</p>
+<p><code>IPAddress.IPv6Any</code> is the only IP Address that is compatible with the Service Fabric Reverse Proxy.
+This will cause the server&rsquo;s fully qualified domain name to be registered correctly and resolved by the Service Fabric Reverse Proxy.</p>
+<h3 id="choose-a-dynamic-port">Choose a Dynamic Port</h3>
+<p>As per the Kestrel documentation, port number <code>0</code> will cause a port to be allocated dynamically.</p>
+<h3 id="example-kestrel-configuration">Example Kestrel Configuration</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSharp" data-lang="CSharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#75715e">/// Optional override to create listeners (e.g., TCP, HTTP) for this service replica to handle client or user requests.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#75715e">/// &lt;returns&gt;A collection of listeners.&lt;/returns&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#75715e"></span><span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> IEnumerable&lt;ServiceInstanceListener&gt; CreateServiceInstanceListeners()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>{
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> ServiceInstanceListener[]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>        <span style="color:#66d9ef">new</span> ServiceInstanceListener(serviceContext =&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>            <span style="color:#66d9ef">new</span> KestrelCommunicationListener(serviceContext, (url, listener) =&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>                <span style="color:#66d9ef">new</span> WebHostBuilder()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>                    .UseKestrel(ConfigureKestrelServerOptions)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>                    .ConfigureServices(services =&gt; services.AddSingleton&lt;StatelessServiceContext&gt;(serviceContext))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>                    .UseContentRoot(Directory.GetCurrentDirectory())
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>                    .UseServiceFabricIntegration(listener, ServiceFabricIntegrationOptions.UseReverseProxyIntegration | ServiceFabricIntegrationOptions.UseUniqueServiceUrl)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>                    .UseStartup&lt;Startup&gt;()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>                    .UseUrls(url)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>                    .Build()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>            ))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>    };
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> ConfigureKestrelServerOptions(KestrelServerOptions options)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>{
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span>    options.AddServerHeader = <span style="color:#66d9ef">false</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span>    <span style="color:#75715e">// options.Limits.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span style="color:#75715e"></span>    <span style="color:#75715e">// options.ApplicationServices
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span style="color:#75715e"></span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span>    IPAddress serviceFabricReverseProxyCompatibleIPAddress = IPAddress.IPv6Any;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> dynamicPort = <span style="color:#ae81ff">0</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span>    options.Listen(serviceFabricReverseProxyCompatibleIPAddress, dynamicPort);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span>    
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span>    <span style="color:#75715e">// FOR HTTPS, DO THIS INSTEAD:
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span><span style="color:#75715e"></span>    <span style="color:#75715e">//options.Listen(
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span><span style="color:#75715e"></span>    <span style="color:#75715e">//    serviceFabricReverseProxyCompatibleIPAddress,
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span><span style="color:#75715e"></span>    <span style="color:#75715e">//    dynamicPort,
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span><span style="color:#75715e"></span>    <span style="color:#75715e">//    listenOptions =&gt; listenOptions.UseHttps(new HttpsConnectionAdapterOptions
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span><span style="color:#75715e"></span>    <span style="color:#75715e">//    {
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span><span style="color:#75715e"></span>    <span style="color:#75715e">//        CheckCertificateRevocation = true,
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41</span><span style="color:#75715e"></span>    <span style="color:#75715e">//        ClientCertificateMode = ClientCertificateMode.NoCertificate,
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span><span style="color:#75715e"></span>    <span style="color:#75715e">//        //ClientCertificateValidation = myAdditionalClientCertificateValidationCallback
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span><span style="color:#75715e"></span>    <span style="color:#75715e">//        //ServerCertificate = TODO get an X509Certificate2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span><span style="color:#75715e"></span>    <span style="color:#75715e">//        SslProtocols = System.Security.Authentication.SslProtocols.Tls12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span><span style="color:#75715e"></span>    <span style="color:#75715e">//    })
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46</span><span style="color:#75715e"></span>    <span style="color:#75715e">//);
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47</span><span style="color:#75715e"></span>}
+</code></pre></div><h1 id="configuration--deployment">Configuration &amp; Deployment</h1>
+<ul>
+<li>
+<p>When deployment is performed, Service Fabric will update and reformat your ApplicationManifest.xml and other configuration files. For instance, attributes with default values will be removed.</p>
+</li>
+<li>
+<p>Deployment completely fails when a <code>&lt;SecurityAccessPolicy&gt;</code> is defined within <code>&lt;Policies&gt;&lt;SecurityAccessPolicies&gt;</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">&lt;Principals&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    <span style="color:#f92672">&lt;Users&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>        <span style="color:#f92672">&lt;User</span> <span style="color:#a6e22e">Name=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#a6e22e">AccountType=</span><span style="color:#e6db74">&#34;DomainUser&#34;</span> <span style="color:#a6e22e">AccountName=</span><span style="color:#e6db74">&#34;mydomain\myaccount&#34;</span> <span style="color:#a6e22e">Password=</span><span style="color:#e6db74">&#34;encrypted=&#34;</span> <span style="color:#a6e22e">PasswordEncrypted=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#f92672">&lt;/Users&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#f92672">&lt;/Principals&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#f92672">&lt;Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>    <span style="color:#f92672">&lt;SecurityAccessPolicies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>        <span style="color:#f92672">&lt;SecurityAccessPolicy</span> <span style="color:#a6e22e">ResourceRef=</span><span style="color:#e6db74">&#34;ServiceEndpoint&#34;</span> <span style="color:#a6e22e">PrincipalRef=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#a6e22e">GrantRights=</span><span style="color:#e6db74">&#34;Full&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>    <span style="color:#f92672">&lt;/SecurityAccessPolicies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#f92672">&lt;/Policies&gt;</span>
+</code></pre></div><p>The deployment error is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>2&gt;Upload to Image Store succeeded
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>2&gt;Registering application type...
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>2&gt;Register-ServiceFabricApplicationType : Object reference not set to an instance of an object.
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>2&gt;At C:\Program Files\Microsoft SDKs\Service
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>2&gt;Fabric\Tools\PSModule\ServiceFabricSDK\Publish-NewServiceFabricApplication.ps1:251 char:9
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>2&gt;+         Register-ServiceFabricApplicationType -ApplicationPathInImageStore $appl ...
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>2&gt;+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span>2&gt;    + CategoryInfo          : InvalidOperation: (Microsoft.Servi...usterConnection:ClusterConnection) [Register-ServiceFabricApplicationType], FabricException
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span>2&gt;    + FullyQualifiedErrorId : RegisterApplicationTypeErrorId,Microsoft.ServiceFabric.Powershell.RegisterApplicationType
+</code></pre></div></li>
+</ul>
+<h1 id="runas-policy-https-url-reservation--elevated-privilege-requirement">RunAs Policy, HTTP/S URL Reservation &amp; Elevated Privilege Requirement</h1>
+<p>This section is only relevant when needing to reserve a URL for HTTP or HTTPS - such as when writing WCF services within Service Fabric (using the <code>WcfCommunicationListener</code>).
+That requirement is described in <a href="https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/configuring-http-and-https" target="_blank">this WCF documentation</a> due to WCF&rsquo;s usage of Http.sys.</p>
+<p>The information below pertains to running Service Fabric services under a domain user account - using the various types of <code>RunAs</code> policy configuration options in the ApplicationManifest.xml file.</p>
+<p>The user that attempts to reserve the URL requires elevated privileges - such as being a local Administrator.
+URL reservation can be achieved in a few ways:</p>
+<ul>
+<li>Manually login in as an administrator and run <code>netsh</code> as per <a href="https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/configuring-http-and-https" target="_blank">this WCF documentation</a> - but that would require static ports to be defined (an approach that is <strong>not really suitable</strong> in a modern, distributed services orchestration platform such as Service Fabric);</li>
+<li>Actually grant the <code>RunAs</code> user membership of the local Administrator group (which is <strong>not a good idea</strong> because the service will be running as a local administrator and not abiding by the Principle of Least Privilege);</li>
+<li>Use <code>&lt;DefaultRunaAsPolicy&gt;</code> instead of an explicit <code>RunAsPolicy</code> specified in <code>&lt;ServiceManifestImport&gt;</code>;</li>
+<li>When using an explicit <code>RunAsPolicy</code> in in <code>&lt;ServiceManifestImport&gt;</code>, specify a <code>&lt;SecurityAccessPolicy&gt;</code> <a href="https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/service-fabric/service-fabric-application-runas-security.md#assign-a-security-access-policy-for-http-and-https-endpoints" target="_blank">as per this documentation</a>.</li>
+</ul>
+<p>The following scenarios are true for a domain user account that is NOT a member of the local Administrators group.</p>
+<p>(a) <strong>THIS WORKS</strong> -&gt; configuring a <code>&lt;DefaultRunaAsPolicy&gt;</code> with a domain user (without a sibling <code>SecurityAccessPolicy</code>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;Principals&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    <span style="color:#f92672">&lt;Users&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>        <span style="color:#f92672">&lt;User</span> <span style="color:#a6e22e">Name=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#a6e22e">AccountType=</span><span style="color:#e6db74">&#34;DomainUser&#34;</span> <span style="color:#a6e22e">AccountName=</span><span style="color:#e6db74">&#34;mydomain\myaccount&#34;</span> <span style="color:#a6e22e">Password=</span><span style="color:#e6db74">&#34;encrypted=&#34;</span> <span style="color:#a6e22e">PasswordEncrypted=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#f92672">&lt;/Users&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span style="color:#f92672">&lt;/Principals&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span style="color:#f92672">&lt;Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>    <span style="color:#f92672">&lt;DefaultRunAsPolicy</span> <span style="color:#a6e22e">UserRef=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#f92672">&lt;/Policies&gt;</span>
+</code></pre></div><p>(b) <strong>THIS DOES NOT WORK</strong> -&gt; configuring a <code>RunAsPolicy</code> in the <code>&lt;ServiceManifestImport&gt;</code> section (without a sibling <code>SecurityAccessPolicy</code>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;ServiceManifestImport&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    <span style="color:#f92672">&lt;ServiceManifestRef</span> <span style="color:#a6e22e">ServiceManifestName=</span><span style="color:#e6db74">&#34;Stateful1Pkg&#34;</span> <span style="color:#a6e22e">ServiceManifestVersion=</span><span style="color:#e6db74">&#34;1.0.0&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#f92672">&lt;ConfigOverrides</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#f92672">&lt;Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>        <span style="color:#f92672">&lt;RunAsPolicy</span> <span style="color:#a6e22e">CodePackageRef=</span><span style="color:#e6db74">&#34;Code&#34;</span> <span style="color:#a6e22e">EntryPointType=</span><span style="color:#e6db74">&#34;Main&#34;</span> <span style="color:#a6e22e">UserRef=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>    <span style="color:#f92672">&lt;/Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span style="color:#f92672">&lt;/ServiceManifestImport&gt;</span>
+</code></pre></div><p>Regardless of whether <code>EntryPointType</code> is set to <code>All</code> or <code>Main</code>, the following <code>AddressAccessDeniedException</code> exception occurs:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>Unhealthy event: SourceId=&#39;System.RA&#39;, Property=&#39;ReplicaOpenStatus&#39;, HealthState=&#39;Warning&#39;, ConsiderWarningAsError=false.
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>Replica had multiple failures during open on _Node_0. API call: IStatefulServiceReplica.ChangeRole(P); Error = System.ServiceModel.AddressAccessDeniedException (-2146233087)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>HTTP could not register URL http://+:30004/. Your process does not have access rights to this namespace (see http://go.microsoft.com/fwlink/?LinkId=70353 for details).
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>   at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>   at Microsoft.ServiceFabric.Services.Communication.Wcf.Runtime.WcfCommunicationListener`1.b__10_0(IAsyncResult ar)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>--- End of stack trace from previous location where exception was thrown ---
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>   at Microsoft.ServiceFabric.Services.Runtime.StatefulServiceReplicaAdapter.d__26.MoveNext()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>--- End of stack trace from previous location where exception was thrown ---
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>   at Microsoft.ServiceFabric.Services.Runtime.StatefulServiceReplicaAdapter.d__18.MoveNext()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>For more information see: http://aka.ms/sfhealth
+</code></pre></div><p>When this occurs, Service Fabric reports the service as unhealthy and repeatedly calls the <code>CreateServiceInstanceListeners()</code> method on your <code>StatelessService</code> or <code>CreateServiceReplicaListeners()</code> method on your <code>StatefulService</code> - hoping that one day it will work.</p>
+<p>(c) <strong>THIS WORKS</strong> -&gt; configuring a <code>RunAsPolicy</code> in the <code>&lt;ServiceManifestImport&gt;</code> section - with a sibling <code>SecurityAccessPolicy</code> <a href="https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/service-fabric/service-fabric-application-runas-security.md#assign-a-security-access-policy-for-http-and-https-endpoints" target="_blank">as per this documentation</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;ServiceManifestImport&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    <span style="color:#f92672">&lt;ServiceManifestRef</span> <span style="color:#a6e22e">ServiceManifestName=</span><span style="color:#e6db74">&#34;Stateful1Pkg&#34;</span> <span style="color:#a6e22e">ServiceManifestVersion=</span><span style="color:#e6db74">&#34;1.0.0&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#f92672">&lt;ConfigOverrides</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#f92672">&lt;Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>        <span style="color:#f92672">&lt;RunAsPolicy</span> <span style="color:#a6e22e">CodePackageRef=</span><span style="color:#e6db74">&#34;Code&#34;</span> <span style="color:#a6e22e">UserRef=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>        <span style="color:#f92672">&lt;SecurityAccessPolicy</span> <span style="color:#a6e22e">ResourceRef=</span><span style="color:#e6db74">&#34;ServiceEndpoint&#34;</span> <span style="color:#a6e22e">PrincipalRef=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#a6e22e">GrantRights=</span><span style="color:#e6db74">&#34;Full&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>    <span style="color:#f92672">&lt;/Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#f92672">&lt;/ServiceManifestImport&gt;</span>
+</code></pre></div><h1 id="who-reserved-the-url--who-is-the-service-running-as">Who Reserved the URL &amp; Who is the Service Running As?</h1>
+<p>The command <code>netsh http show urlacl</code> can be run to show the current HTTP/S URL reservations.</p>
+<p>(a) When running without an explicit RunAs policy in the ApplicationManifest.xml (which means the Network Service local account will be used by default), the Network Service account reserves the HTTP URLs:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>Reserved URL            : http://+:30012/
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    User: NT AUTHORITY\NETWORK SERVICE
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>        Listen: Yes
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>        Delegate: No
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>        SDDL: D:(A;;GX;;;NS)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>Reserved URL            : http://localhost:30012/
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    User: NT AUTHORITY\NETWORK SERVICE
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>        Listen: Yes
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        Delegate: No
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>        SDDL: D:(A;;GX;;;NS)
+</code></pre></div><p>and:</p>
+<ul>
+<li>User name from process in Task Manager: &ldquo;NETWORK SERVICE&rdquo;</li>
+<li>System.Threading.Thread.CurrentPrincipal.Identity: &quot;&rdquo;</li>
+<li>System.Security.Principal.WindowsIdentity.GetCurrent(): &ldquo;NT AUTHORITY\NETWORK SERVICE&rdquo;</li>
+</ul>
+<p>(b) When using a <code>&lt;DefaultRunaAsPolicy&gt;</code> with a domain user:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;Principals&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    <span style="color:#f92672">&lt;Users&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>        <span style="color:#f92672">&lt;User</span> <span style="color:#a6e22e">Name=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#a6e22e">AccountType=</span><span style="color:#e6db74">&#34;DomainUser&#34;</span> <span style="color:#a6e22e">AccountName=</span><span style="color:#e6db74">&#34;mydomain\myaccount&#34;</span> <span style="color:#a6e22e">Password=</span><span style="color:#e6db74">&#34;encrypted=&#34;</span> <span style="color:#a6e22e">PasswordEncrypted=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#f92672">&lt;/Users&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span style="color:#f92672">&lt;/Principals&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span style="color:#f92672">&lt;Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>    <span style="color:#f92672">&lt;DefaultRunAsPolicy</span> <span style="color:#a6e22e">UserRef=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#f92672">&lt;/Policies&gt;</span>
+</code></pre></div><p>as expected, the domain user account reserves the HTTP URLs:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>Reserved URL            : http://+:30035/
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    User: mydomain\myaccount
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>        Listen: Yes
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>        Delegate: No
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>        SDDL: D:(A;;GX;;;S-1-5-21-2197669547-3912936102-3481227320-25699)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>Reserved URL            : http://localhost:30035/
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    User: mydomain\myaccount
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>        Listen: Yes
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        Delegate: No
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>        SDDL: D:(A;;GX;;;S-1-5-21-2197669547-3912936102-3481227320-25699)
+</code></pre></div><p>and:</p>
+<ul>
+<li>User name from process in Task Manager: &ldquo;myaccount&rdquo;</li>
+<li>System.Threading.Thread.CurrentPrincipal.Identity: &quot;&rdquo;</li>
+<li>System.Security.Principal.WindowsIdentity.GetCurrent(): &ldquo;mydomain\myaccount&rdquo;</li>
+</ul>
+<p>(c) When configuring a <code>RunAsPolicy</code> in the <code>&lt;ServiceManifestImport&gt;</code> section - with a sibling <code>SecurityAccessPolicy</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;ServiceManifestImport&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    <span style="color:#f92672">&lt;ServiceManifestRef</span> <span style="color:#a6e22e">ServiceManifestName=</span><span style="color:#e6db74">&#34;Stateful1Pkg&#34;</span> <span style="color:#a6e22e">ServiceManifestVersion=</span><span style="color:#e6db74">&#34;1.0.0&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#f92672">&lt;ConfigOverrides</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#f92672">&lt;Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>        <span style="color:#f92672">&lt;RunAsPolicy</span> <span style="color:#a6e22e">CodePackageRef=</span><span style="color:#e6db74">&#34;Code&#34;</span> <span style="color:#a6e22e">UserRef=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>        <span style="color:#f92672">&lt;SecurityAccessPolicy</span> <span style="color:#a6e22e">ResourceRef=</span><span style="color:#e6db74">&#34;ServiceEndpoint&#34;</span> <span style="color:#a6e22e">PrincipalRef=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#a6e22e">GrantRights=</span><span style="color:#e6db74">&#34;Full&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>    <span style="color:#f92672">&lt;/Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#f92672">&lt;/ServiceManifestImport&gt;</span>
+</code></pre></div><p>as expected, the domain user account reserves the HTTP URLs:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>Reserved URL            : http://+:30018/
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    User: mydomain\myaccount
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>        Listen: Yes
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>        Delegate: No
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>        SDDL: D:(A;;GX;;;S-1-5-21-2197669547-3912936102-3481227320-25699)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>Reserved URL            : http://localhost:30018/
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    User: mydomain\myaccount
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>        Listen: Yes
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        Delegate: No
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>        SDDL: D:(A;;GX;;;S-1-5-21-2197669547-3912936102-3481227320-25699)
+</code></pre></div><p>and:</p>
+<ul>
+<li>User name from process in Task Manager: &ldquo;myaccount&rdquo;</li>
+<li>System.Threading.Thread.CurrentPrincipal.Identity: &quot;&rdquo;</li>
+<li>System.Security.Principal.WindowsIdentity.GetCurrent(): &ldquo;mydomain\myaccount&rdquo;</li>
+</ul>
+<p>(d) When the RunAs policy is specified in <code>&lt;ServiceManifestImport&gt;</code> (AND the domain user account is a member of the local Administrators group):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;ServiceManifestImport&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    <span style="color:#f92672">&lt;ServiceManifestRef</span> <span style="color:#a6e22e">ServiceManifestName=</span><span style="color:#e6db74">&#34;Stateful1Pkg&#34;</span> <span style="color:#a6e22e">ServiceManifestVersion=</span><span style="color:#e6db74">&#34;1.0.0&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#f92672">&lt;ConfigOverrides</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#f92672">&lt;Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>        <span style="color:#f92672">&lt;RunAsPolicy</span> <span style="color:#a6e22e">CodePackageRef=</span><span style="color:#e6db74">&#34;Code&#34;</span> <span style="color:#a6e22e">EntryPointType=</span><span style="color:#e6db74">&#34;All&#34;</span> <span style="color:#a6e22e">UserRef=</span><span style="color:#e6db74">&#34;ServiceAccount&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>    <span style="color:#f92672">&lt;/Policies&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span style="color:#f92672">&lt;/ServiceManifestImport&gt;</span>
+</code></pre></div><p>However, the Network Service account reserves the HTTP URLs:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>Reserved URL            : http://+:30037/
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    User: NT AUTHORITY\NETWORK SERVICE
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>        Listen: Yes
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>        Delegate: No
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>        SDDL: D:(A;;GX;;;NS)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>Reserved URL            : http://localhost:30037/
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    User: NT AUTHORITY\NETWORK SERVICE
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>        Listen: Yes
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        Delegate: No
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>        SDDL: D:(A;;GX;;;NS)
+</code></pre></div><p>even though the identity is still the domain account:</p>
+<ul>
+<li>User name from process in Task Manager: &ldquo;myaccount&rdquo;</li>
+<li>System.Threading.Thread.CurrentPrincipal.Identity: &quot;&rdquo;</li>
+<li>System.Security.Principal.WindowsIdentity.GetCurrent(): &ldquo;mydomain\myaccount&rdquo;</li>
+</ul>
+<h1 id="endpoint-configuration--https-url-reservation">Endpoint Configuration &amp; HTTPS URL Reservation</h1>
+<ul>
+<li>Endpoints must be setup via configuration in the ServiceManifest.xml.</li>
+<li>I haven&rsquo;t discovered how to configure an endpoint in code - especially one that uses a dynamic port and has Service Fabric perform the URL reservation. Wish I knew how&hellip;</li>
+<li>Specifying the <code>Protocol</code> attribute in the <code>&lt;Endpoint&gt;</code> in the ServiceManifest.xml file is important - otherwise the URL reservation does not work.</li>
+<li>The endpoint configuration (such as the <code>Protocol</code> attribute) can be overridden in the <code>&lt;ResourceOverrides&gt;</code> section of the ApplicationManifest.xml.</li>
+<li>Even if you retrieve and change the endpoint configuration from/in the <code>ServiceContext</code>, URL reservation does not take place on your changed values.</li>
+</ul>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<ul>
+<li>
+<p>If a service does not start, there could be multiple reasons:</p>
+<ul>
+<li>The listener is failing to initialise:
+<ul>
+<li>RunAs issues with a service account - incorrect credentials, group membership, disabled account</li>
+<li>HTTPS URL reservation is failing because the endpoints are not configured correctly
+<ul>
+<li>Issue with the endpoint configuration - see above regarding RunAsPolicy, DefaultRunAsPolicy, SecurityAccessPolicy</li>
+<li>EndpointBindingPolicy for binding a certificate as part of the HTTPS URL reservation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Max path issue (see above)</li>
+<li>Replicator failures:
+<ul>
+<li>Do not add your own custom parameters into the <code>&lt;ReplicatorConfig&gt;</code> section - if you do, your services will not start - a replica error</li>
+<li>Replicator security configuration - issues with the certificate not being found or being invalid</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Diagnosis techniques:</p>
+<ul>
+<li>RDP to the node and attempt to execute the service executable - to determine if it fails due to a max path error</li>
+<li>Turn on <code>&lt;ConsoleRedirection&gt;</code> in your ServiceManifest.xml and inspect the log files - if they are created
+<ul>
+<li>On a local developer cluster, the logs are in <code>C:\SfDevCluster\Data\_App\[Node.x]\[ApplicationType]\log</code></li>
+<li>On a default installation in Azure, the logs are in <code>D:\SvcFab\_App\[ApplicationType]\log</code></li>
+</ul>
+</li>
+<li>Inspect the Windows Event Log
+<ul>
+<li>The Application log</li>
+<li>The Service Fabric Admin and Ops logs</li>
+</ul>
+</li>
+<li>Use <a href="https://github.com/Microsoft/perfview" target="_blank">PerfView</a> to monitor Event Tracing for Windows (ETW) events</li>
+<li>Use <a href="https://technet.microsoft.com/en-us/library/jj649776.aspx" target="_blank">Microsoft Message Analyzer</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="bookmarks">Bookmarks</h1>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/service-fabric/" target="_blank">Service Fabric</a></li>
+<li><a href="https://github.com/Azure/service-fabric-issues/issues" target="_blank">Service Fabric Issues on Github</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-service-manifest-resources" target="_blank">Specifying Resources in a Service Manifest</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-configuration#service-specific-configuration" target="_blank">Configure Stateful Reliable Services</a></li>
+<li><a href="https://blogs.msdn.microsoft.com/mvpawardprogram/2015/10/13/understanding-service-fabric-partitions/" target="_blank">Understanding Service Fabric Partitions</a></li>
+<li><a href="https://azure.microsoft.com/en-us/resources/build-and-deploy-a-multi-container-application-in-azure-service-fabric/en-us/" target="_blank">Build and deploy a multi-container application in Azure Service Fabric</a></li>
+</ul>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/service-fabric/">Service Fabric</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/container/">Container</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/orchestration/">Orchestration</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/distributed/">Distributed</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/services/">Services</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/scale/">Scale</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/notebooks/distributed-systems/azure-container-service/">
+            <h2 class="post-title">Azure Container Service Notebook</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="bookmarks">Bookmarks</h1>
+<ul>
+<li><a href="https://azure.microsoft.com/en-us/resources/build-and-deploy-a-multi-container-application-in-azure-container-service/en-us/" target="_blank">Build and deploy a multi-container application in Azure Container Service</a></li>
+</ul>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/azure/">Azure</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/container/">Container</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/orchestration/">Orchestration</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/distributed/">Distributed</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/services/">Services</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/scale/">Scale</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/notebooks/distributed-systems/docker-swarm/">
+            <h2 class="post-title">Docker Swarm Notebook</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="bookmarks">Bookmarks</h1>
+<ul>
+<li><a href="https://docs.docker.com/engine/swarm/" target="_blank">Docker Swarm</a></li>
+</ul>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/docker-swarm/">Docker Swarm</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/container/">Container</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/orchestration/">Orchestration</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/distributed/">Distributed</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/services/">Services</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/scale/">Scale</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/notebooks/distributed-systems/kubernetes/">
+            <h2 class="post-title">Kubernetes Notebook</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="bookmarks">Bookmarks</h1>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/aks/" target="_blank">Azure Container Service (AKS) - managed Kubernetes hosting</a></li>
+</ul>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/kubernetes/">Kubernetes</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/container/">Container</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/orchestration/">Orchestration</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/distributed/">Distributed</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/services/">Services</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/scale/">Scale</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/notebooks/distributed-systems/mesosphere-dcos/">
+            <h2 class="post-title">Mesosphere DC/OS Notebook</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="bookmarks">Bookmarks</h1>
+<ul>
+<li><a href="https://mesosphere.com/" target="_blank">Mesosphere DC/OS</a></li>
+</ul>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/mesosphere-dc/os/">Mesosphere DC/OS</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/container/">Container</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/orchestration/">Orchestration</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/distributed/">Distributed</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/services/">Services</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/scale/">Scale</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+
+    
+
+
+                    <div class="mt2">
+                    <section class="mx-auto" style="max-width:728px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="728x90"></div>
+    <br/>
+</section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="page-layout-right-panel">
+    
+
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Featured Content</div>
+
+        <div class="h2">BDD</div>
+        <ul>
+            <li><a href="/library/bdd-behaviour-specification-handbook">The Behaviour Specification Handbook</a></li>
+        </ul>
+
+        <div class="h2">WCF</div>
+        <ul>
+            <li><a href="/articles/2014/07/how-to-call-wcf-service-properly">How To Call WCF Services Properly</a></li>
+            <li><a href="/articles/2014/09/how-to-easily-call-wcf-service-properly">How To Easily Call WCF Services Properly</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Code Libraries</div>
+
+        <div class="h2">.NET Pattern Implementations</div>
+        <ul>
+            <li><a href="/library/channeladam-commands">ChannelAdam Commands Library</a></li>
+            <li><a href="/library/channeladam-disposing">ChannelAdam Disposing Library</a></li>
+            <li><a href="/library/channeladam-transientfaulthandling">ChannelAdam Transient Fault Handling Library</a></li>
+            <li><a href="/library/channeladam-weakevents">ChannelAdam Weak Events Library</a></li>
+        </ul>
+
+        <div class="h2">.NET Helpers / Utilities</div>
+        <ul>
+            <li><a href="/library/channeladam-dispatchproxies">ChannelAdam Dispatch Proxies Library</a></li>
+            <li><a href="/library/channeladam-logging">ChannelAdam Logging Library</a></li>
+            <li><a href="/library/channeladam-primitiveextensions">ChannelAdam Primitive Extensions Library</a></li>
+            <li><a href="/library/channeladam-reflection">ChannelAdam Reflection Library</a></li>
+            <li><a href="/library/channeladam-xml">ChannelAdam XML Library</a></li>
+        </ul>
+   
+        <div class="h2">Web Services</div>
+        <ul>
+            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
+            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
+            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
+            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
+            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
+        </ul>
+
+        <div class="h2">Testing</div>
+        <ul>
+            <li><a href="/library/channeladam-testframework">ChannelAdam Test Framework Library</a></li>
+            <li><a href="/library/channeladam-testframework-moq">ChannelAdam Test Framework Moq Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstestv2">ChannelAdam Test Framework MSTestV2 Library</a></li>
+            <li><a href="/library/channeladam-testframework-nunit">ChannelAdam Test Framework NUnit Library</a></li>
+            <li><a href="/library/channeladam-testframework-text">ChannelAdam Test Framework Text Library</a></li>
+            <li><a href="/library/channeladam-testframework-xml">ChannelAdam Test Framework XML Library</a></li>
+            <li><a href="/library/channeladam-testframework-biztalk">ChannelAdam Test Framework Library for BizTalk</a></li>
+        </ul>
+
+        <div class="h2">DEPRECATED LIBRARIES</div>
+        <ul>
+            <li><a href="/library/channeladam-core">ChannelAdam Core Library</a></li>
+            <li><a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries (V1)</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Connect</div>
+
+        <div class="h2">
+            
+
+
+
+
+
+    <a class="" href="/about-me">About Me</a>
+
+</li>
+        </div>
+
+        <div class="h2">
+            <a href="https://twitter.com/ChannelAdam" target="_blank">Follow @ChannelAdam</a>
+        </div>
+
+        <section class="twitter-feed">
+<a class="twitter-timeline" 
+    data-width="320" 
+    data-theme="dark" 
+    data-link-color="#2B7BB9" 
+    data-tweet-limit="10"
+    href="https://twitter.com/ChannelAdam?ref_src=twsrc%5Etfw">Tweets by @ChannelAdam</a>
+</section>
+    </div>
+</div>
+
+<section class="mx-auto mt2" style="max-width:300px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="300x250"></div>
+    <br/>
+</section>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Recent Blog Posts</div>
+
+        <ul><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2017/11/announcing-dotnet-notebook/">Announcing the ChannelAdam .NET Notebook</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/articles/2017/11/announcing-notebooks/">Announcing the ChannelAdam Software Development Notebooks</a></li><li><a href="/notebooks/distributed-systems/mesosphere-dcos/">Mesosphere DC/OS Notebook</a></li></ul>
+    </div>
+</div>
+
+<section class="mx-auto mt2" style="max-width:160px">
+    <br/>
+    <div data-type="ad" data-publisher="devzone.channeladam.com" data-zone="ron" data-format="160x600"></div>
+    <br/>
+</section>
+
+<div class="card-container">
+    <div class="widget card">
+        <div class="h1">Tag Cloud</div>
+
+        
+    <div class="tag-cloud"><a href="/tags/.net" style="font-size:1.257728077256096rem">.Net</a>
+        &nbsp;<a href="/tags/.net-4.0" style="font-size:1.1626083122716342rem">.Net 4.0</a>
+        &nbsp;<a href="/tags/.net-framework" style="font-size:1.257728077256096rem">.Net Framework</a>
+        &nbsp;<a href="/tags/agile" style="font-size:1rem">Agile</a>
+        &nbsp;<a href="/tags/ajax" style="font-size:1rem">Ajax</a>
+        &nbsp;<a href="/tags/amazon-s3" style="font-size:1rem">Amazon S3</a>
+        &nbsp;<a href="/tags/api-apps" style="font-size:1.3252166245432684rem">Api Apps</a>
+        &nbsp;<a href="/tags/api-management" style="font-size:1rem">Api Management</a>
+        &nbsp;<a href="/tags/app-service" style="font-size:1.3252166245432684rem">App Service</a>
+        &nbsp;<a href="/tags/artificial-intelligence" style="font-size:1rem">Artificial Intelligence</a>
+        &nbsp;<a href="/tags/asp.net" style="font-size:1.257728077256096rem">Asp.net</a>
+        &nbsp;<a href="/tags/asp.net-mvc-3" style="font-size:1.1626083122716342rem">Asp.net Mvc 3</a>
+        &nbsp;<a href="/tags/asp.net-mvc2" style="font-size:1rem">Asp.net Mvc2</a>
+        &nbsp;<a href="/tags/assembly-binding" style="font-size:1.1626083122716342rem">Assembly Binding</a>
+        &nbsp;<a href="/tags/async" style="font-size:1rem">Async</a>
+        &nbsp;<a href="/tags/asynchronous" style="font-size:1rem">Asynchronous</a>
+        &nbsp;<a href="/tags/azure" style="font-size:1.257728077256096rem">Azure</a>
+        &nbsp;<a href="/tags/battery" style="font-size:1.1626083122716342rem">Battery</a>
+        &nbsp;<a href="/tags/bdd" style="font-size:1.9756498736298047rem">Bdd</a>
+        &nbsp;<a href="/tags/behaviour-driven" style="font-size:1.1626083122716342rem">Behaviour Driven</a>
+        &nbsp;<a href="/tags/behaviour-driven-development" style="font-size:1.9756498736298047rem">Behaviour Driven Development</a>
+        &nbsp;<a href="/tags/behaviour-specification-handbook" style="font-size:1.960509510525089rem">Behaviour Specification Handbook</a>
+        &nbsp;<a href="/tags/behaviour-specifications" style="font-size:1.9719554003354438rem">Behaviour Specifications</a>
+        &nbsp;<a href="/tags/behaviour-verification" style="font-size:1rem">Behaviour Verification</a>
+        &nbsp;<a href="/tags/bitbucket" style="font-size:1rem">Bitbucket</a>
+        &nbsp;<a href="/tags/biztalk" style="font-size:1.4203363895277301rem">Biztalk</a>
+        &nbsp;<a href="/tags/biztalk360" style="font-size:1.1626083122716342rem">Biztalk360</a>
+        &nbsp;<a href="/tags/build" style="font-size:1.3252166245432684rem">Build</a>
+        &nbsp;<a href="/tags/business" style="font-size:1rem">Business</a>
+        &nbsp;<a href="/tags/c" style="font-size:1rem">C#</a>
+        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8272637463603703rem">Channeladam .Net Libraries</a>
+        &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
+        &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
+        &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
+        &nbsp;<a href="/tags/code-quality" style="font-size:1rem">Code Quality</a>
+        &nbsp;<a href="/tags/code-reviews" style="font-size:1rem">Code Reviews</a>
+        &nbsp;<a href="/tags/coding-practices" style="font-size:1.257728077256096rem">Coding Practices</a>
+        &nbsp;<a href="/tags/command" style="font-size:1.1626083122716342rem">Command</a>
+        &nbsp;<a href="/tags/container" style="font-size:1.3775648087257248rem">Container</a>
+        &nbsp;<a href="/tags/conventions" style="font-size:1rem">Conventions</a>
+        &nbsp;<a href="/tags/cucumber" style="font-size:1rem">Cucumber</a>
+        &nbsp;<a href="/tags/data-science" style="font-size:1rem">Data Science</a>
+        &nbsp;<a href="/tags/ddd" style="font-size:1rem">Ddd</a>
+        &nbsp;<a href="/tags/diffplex" style="font-size:1rem">Diffplex</a>
+        &nbsp;<a href="/tags/digital-ocean" style="font-size:1rem">Digital Ocean</a>
+        &nbsp;<a href="/tags/dispatch-proxies" style="font-size:1rem">Dispatch Proxies</a>
+        &nbsp;<a href="/tags/disposable" style="font-size:1rem">Disposable</a>
+        &nbsp;<a href="/tags/dispose" style="font-size:1rem">Dispose</a>
+        &nbsp;<a href="/tags/distributed" style="font-size:1.3775648087257248rem">Distributed</a>
+        &nbsp;<a href="/tags/distributed-systems" style="font-size:1rem">Distributed Systems</a>
+        &nbsp;<a href="/tags/docker-swarm" style="font-size:1rem">Docker Swarm</a>
+        &nbsp;<a href="/tags/docpad" style="font-size:1rem">Docpad</a>
+        &nbsp;<a href="/tags/domain-driven-design" style="font-size:1rem">Domain Driven Design</a>
+        &nbsp;<a href="/tags/dynamic" style="font-size:1rem">Dynamic</a>
+        &nbsp;<a href="/tags/embedded-resources" style="font-size:1rem">Embedded Resources</a>
+        &nbsp;<a href="/tags/encoding" style="font-size:1rem">Encoding</a>
+        &nbsp;<a href="/tags/events" style="font-size:1rem">Events</a>
+        &nbsp;<a href="/tags/extensions" style="font-size:1rem">Extensions</a>
+        &nbsp;<a href="/tags/failure" style="font-size:1rem">Failure</a>
+        &nbsp;<a href="/tags/finalize" style="font-size:1rem">Finalize</a>
+        &nbsp;<a href="/tags/fluent" style="font-size:1rem">Fluent</a>
+        &nbsp;<a href="/tags/framework" style="font-size:1.257728077256096rem">Framework</a>
+        &nbsp;<a href="/tags/gauge" style="font-size:1.1626083122716342rem">Gauge</a>
+        &nbsp;<a href="/tags/gherkin" style="font-size:1.1626083122716342rem">Gherkin</a>
+        &nbsp;<a href="/tags/github" style="font-size:1rem">Github</a>
+        &nbsp;<a href="/tags/gondor" style="font-size:1rem">Gondor</a>
+        &nbsp;<a href="/tags/google-app-engine" style="font-size:1rem">Google App Engine</a>
+        &nbsp;<a href="/tags/google-compute-engine" style="font-size:1rem">Google Compute Engine</a>
+        &nbsp;<a href="/tags/graphics" style="font-size:1rem">Graphics</a>
+        &nbsp;<a href="/tags/heroku" style="font-size:1rem">Heroku</a>
+        &nbsp;<a href="/tags/hosting" style="font-size:1rem">Hosting</a>
+        &nbsp;<a href="/tags/hugo" style="font-size:1rem">Hugo</a>
+        &nbsp;<a href="/tags/image-optimisation" style="font-size:1rem">Image Optimisation</a>
+        &nbsp;<a href="/tags/injected" style="font-size:1rem">Injected</a>
+        &nbsp;<a href="/tags/integration" style="font-size:1.1626083122716342rem">Integration</a>
+        &nbsp;<a href="/tags/intellisense" style="font-size:1.257728077256096rem">Intellisense</a>
+        &nbsp;<a href="/tags/ioc" style="font-size:1.1626083122716342rem">Ioc</a>
+        &nbsp;<a href="/tags/javascript" style="font-size:1rem">Javascript</a>
+        &nbsp;<a href="/tags/jpeg" style="font-size:1rem">Jpeg</a>
+        &nbsp;<a href="/tags/jquery" style="font-size:1rem">Jquery</a>
+        &nbsp;<a href="/tags/kestrel" style="font-size:1rem">Kestrel</a>
+        &nbsp;<a href="/tags/kubernetes" style="font-size:1rem">Kubernetes</a>
+        &nbsp;<a href="/tags/languages" style="font-size:1rem">Languages</a>
+        &nbsp;<a href="/tags/library" style="font-size:1.5154561545121918rem">Library</a>
+        &nbsp;<a href="/tags/linux" style="font-size:1.257728077256096rem">Linux</a>
+        &nbsp;<a href="/tags/loaded" style="font-size:1rem">Loaded</a>
+        &nbsp;<a href="/tags/logging" style="font-size:1.1626083122716342rem">Logging</a>
+        &nbsp;<a href="/tags/logic-apps" style="font-size:1.3252166245432684rem">Logic Apps</a>
+        &nbsp;<a href="/tags/machine-learning" style="font-size:1rem">Machine Learning</a>
+        &nbsp;<a href="/tags/mapping" style="font-size:1.1626083122716342rem">Mapping</a>
+        &nbsp;<a href="/tags/maps" style="font-size:1.257728077256096rem">Maps</a>
+        &nbsp;<a href="/tags/mesosphere-dc/os" style="font-size:1rem">Mesosphere Dc/Os</a>
+        &nbsp;<a href="/tags/messaging" style="font-size:1.1626083122716342rem">Messaging</a>
+        &nbsp;<a href="/tags/methodology" style="font-size:1rem">Methodology</a>
+        &nbsp;<a href="/tags/microservices" style="font-size:1rem">Microservices</a>
+        &nbsp;<a href="/tags/microsoft" style="font-size:1.3252166245432684rem">Microsoft</a>
+        &nbsp;<a href="/tags/microsoft-azure" style="font-size:1.3775648087257248rem">Microsoft Azure</a>
+        &nbsp;<a href="/tags/mock4net" style="font-size:1rem">Mock4net</a>
+        &nbsp;<a href="/tags/moq" style="font-size:1.1626083122716342rem">Moq</a>
+        &nbsp;<a href="/tags/msbuild" style="font-size:1.257728077256096rem">Msbuild</a>
+        &nbsp;<a href="/tags/mstest" style="font-size:1.257728077256096rem">Mstest</a>
+        &nbsp;<a href="/tags/mstest-v2" style="font-size:1rem">Mstest V2</a>
+        &nbsp;<a href="/tags/named-parameters" style="font-size:1rem">Named Parameters</a>
+        &nbsp;<a href="/tags/naming" style="font-size:1.1626083122716342rem">Naming</a>
+        &nbsp;<a href="/tags/nancy" style="font-size:1.3775648087257248rem">Nancy</a>
+        &nbsp;<a href="/tags/notebooks" style="font-size:1.3252166245432684rem">Notebooks</a>
+        &nbsp;<a href="/tags/nunit" style="font-size:1.1626083122716342rem">Nunit</a>
+        &nbsp;<a href="/tags/nvidia" style="font-size:1.1626083122716342rem">Nvidia</a>
+        &nbsp;<a href="/tags/open-source" style="font-size:1.1626083122716342rem">Open Source</a>
+        &nbsp;<a href="/tags/operations" style="font-size:1rem">Operations</a>
+        &nbsp;<a href="/tags/optimisation" style="font-size:1rem">Optimisation</a>
+        &nbsp;<a href="/tags/optional-parameters" style="font-size:1rem">Optional Parameters</a>
+        &nbsp;<a href="/tags/orchestration" style="font-size:1.3775648087257248rem">Orchestration</a>
+        &nbsp;<a href="/tags/paas" style="font-size:1rem">Paas</a>
+        &nbsp;<a href="/tags/partial-views" style="font-size:1rem">Partial Views</a>
+        &nbsp;<a href="/tags/pattern" style="font-size:1.3775648087257248rem">Pattern</a>
+        &nbsp;<a href="/tags/patterns" style="font-size:1rem">Patterns</a>
+        &nbsp;<a href="/tags/pci-dss" style="font-size:1rem">Pci Dss</a>
+        &nbsp;<a href="/tags/png" style="font-size:1rem">Png</a>
+        &nbsp;<a href="/tags/power" style="font-size:1.1626083122716342rem">Power</a>
+        &nbsp;<a href="/tags/powershell" style="font-size:1.6017222572298446rem">Powershell</a>
+        &nbsp;<a href="/tags/principles" style="font-size:1rem">Principles</a>
+        &nbsp;<a href="/tags/probing-privatepath" style="font-size:1rem">Probing Privatepath</a>
+        &nbsp;<a href="/tags/productivity" style="font-size:1rem">Productivity</a>
+        &nbsp;<a href="/tags/program-specification" style="font-size:1rem">Program Specification</a>
+        &nbsp;<a href="/tags/programming" style="font-size:1.1626083122716342rem">Programming</a>
+        &nbsp;<a href="/tags/python" style="font-size:1rem">Python</a>
+        &nbsp;<a href="/tags/r" style="font-size:1rem">R</a>
+        &nbsp;<a href="/tags/razor" style="font-size:1.1626083122716342rem">Razor</a>
+        &nbsp;<a href="/tags/real-proxies" style="font-size:1rem">Real Proxies</a>
+        &nbsp;<a href="/tags/redhat-openshift" style="font-size:1rem">Redhat Openshift</a>
+        &nbsp;<a href="/tags/reflection" style="font-size:1rem">Reflection</a>
+        &nbsp;<a href="/tags/retry" style="font-size:1rem">Retry</a>
+        &nbsp;<a href="/tags/reversible" style="font-size:1.1626083122716342rem">Reversible</a>
+        &nbsp;<a href="/tags/scale" style="font-size:1.3775648087257248rem">Scale</a>
+        &nbsp;<a href="/tags/scenarios" style="font-size:1.9719554003354438rem">Scenarios</a>
+        &nbsp;<a href="/tags/script" style="font-size:1rem">Script</a>
+        &nbsp;<a href="/tags/security" style="font-size:1rem">Security</a>
+        &nbsp;<a href="/tags/self" style="font-size:1rem">Self</a>
+        &nbsp;<a href="/tags/serialization" style="font-size:1rem">Serialization</a>
+        &nbsp;<a href="/tags/service" style="font-size:1rem">Service</a>
+        &nbsp;<a href="/tags/service-bus" style="font-size:1rem">Service Bus</a>
+        &nbsp;<a href="/tags/service-bus-connector" style="font-size:1rem">Service Bus Connector</a>
+        &nbsp;<a href="/tags/service-fabric" style="font-size:1.257728077256096rem">Service Fabric</a>
+        &nbsp;<a href="/tags/serviceconsumer" style="font-size:1.1626083122716342rem">Serviceconsumer</a>
+        &nbsp;<a href="/tags/services" style="font-size:1.3775648087257248rem">Services</a>
+        &nbsp;<a href="/tags/single-responsibility-principle" style="font-size:1rem">Single Responsibility Principle</a>
+        &nbsp;<a href="/tags/singleton" style="font-size:1rem">Singleton</a>
+        &nbsp;<a href="/tags/soa" style="font-size:1rem">Soa</a>
+        &nbsp;<a href="/tags/soap-1.1" style="font-size:1.3252166245432684rem">Soap 1.1</a>
+        &nbsp;<a href="/tags/soap-1.2" style="font-size:1.3252166245432684rem">Soap 1.2</a>
+        &nbsp;<a href="/tags/solid" style="font-size:1.257728077256096rem">Solid</a>
+        &nbsp;<a href="/tags/specflow" style="font-size:1.1626083122716342rem">Specflow</a>
+        &nbsp;<a href="/tags/srp" style="font-size:1rem">Srp</a>
+        &nbsp;<a href="/tags/standards" style="font-size:1rem">Standards</a>
+        &nbsp;<a href="/tags/static-site-generator" style="font-size:1rem">Static Site Generator</a>
+        &nbsp;<a href="/tags/teamreview" style="font-size:1rem">Teamreview</a>
+        &nbsp;<a href="/tags/test-driven-development" style="font-size:1rem">Test Driven Development</a>
+        &nbsp;<a href="/tags/test-framework" style="font-size:1.4878249368149024rem">Test Framework</a>
+        &nbsp;<a href="/tags/testing" style="font-size:1.996672366820611rem">Testing</a>
+        &nbsp;<a href="/tags/text" style="font-size:1rem">Text</a>
+        &nbsp;<a href="/tags/tfs" style="font-size:1.1626083122716342rem">Tfs</a>
+        &nbsp;<a href="/tags/thread-safe" style="font-size:1rem">Thread Safe</a>
+        &nbsp;<a href="/tags/transient-fault-handling" style="font-size:1rem">Transient Fault Handling</a>
+        &nbsp;<a href="/tags/validation" style="font-size:1rem">Validation</a>
+        &nbsp;<a href="/tags/vb.net" style="font-size:1rem">Vb.net</a>
+        &nbsp;<a href="/tags/visual-studio" style="font-size:1.456499245823252rem">Visual Studio</a>
+        &nbsp;<a href="/tags/visual-studio-2010" style="font-size:1.3252166245432684rem">Visual Studio 2010</a>
+        &nbsp;<a href="/tags/waterfall" style="font-size:1rem">Waterfall</a>
+        &nbsp;<a href="/tags/wcf" style="font-size:1.7142273230793479rem">Wcf</a>
+        &nbsp;<a href="/tags/weak" style="font-size:1rem">Weak</a>
+        &nbsp;<a href="/tags/weak-events" style="font-size:1rem">Weak Events</a>
+        &nbsp;<a href="/tags/web" style="font-size:1.3252166245432684rem">Web</a>
+        &nbsp;<a href="/tags/web-apps" style="font-size:1.1626083122716342rem">Web Apps</a>
+        &nbsp;<a href="/tags/web-development" style="font-size:1.3252166245432684rem">Web Development</a>
+        &nbsp;<a href="/tags/windows" style="font-size:1.6017222572298446rem">Windows</a>
+        &nbsp;<a href="/tags/windows-communication-foundation" style="font-size:1.678064466783826rem">Windows Communication Foundation</a>
+        &nbsp;<a href="/tags/windows-communication-framework" style="font-size:1.257728077256096rem">Windows Communication Framework</a>
+        &nbsp;<a href="/tags/work-items" style="font-size:1rem">Work Items</a>
+        &nbsp;<a href="/tags/xml" style="font-size:1.257728077256096rem">Xml</a>
+        &nbsp;<a href="/tags/xmlunit" style="font-size:1rem">Xmlunit</a>
+        &nbsp;</div>
+
+    </div>
+</div>
+
+
+
+
+    </aside>
+</div>
+
+    <footer>
+    <div class="page-width mx-auto flex flex-wrap items-center justify-around">
+        <small>
+            Copyright &copy; 2009-2020 by Adam Craven. All rights reserved.
+            <br/><br/>
+        </small>
+
+        <small class="center">
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">
+                <img alt="Creative Commons Licence" src="https://licensebuttons.net/l/by/4.0/88x31.png" style="border-width: 0;" /></a>
+            <br />
+            This work is licensed under a
+            <br />
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+        </small>
+    </div>
+</footer>
+        </div>
+</div>
+    <script>
+    //================================================================
+// Twitter widgets - e.g. follow button
+!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+        js = d.createElement(s); js.id = id; js.async = true; js.defer = true;
+        js.src = 'https://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');
+    (function () {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.defer = true;
+    po.src = 'https://platform.linkedin.com/in.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script>
+window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+    return t;
+}(document, "script", "twitter-wjs"));
+</script>
+<script>
+function _dmBootstrap(file) {
+	var _dma = document.createElement('script');
+	_dma.type = 'text/javascript';
+	_dma.async = true; _dma.defer = true;
+	_dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+}
+function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+(function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+
+  </body>
+</html>

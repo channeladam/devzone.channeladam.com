@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MSBuild on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/msbuild/</link>
+    <description>Recent contentin MSBuild on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Mon, 24 Aug 2009 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/msbuild/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Lessons in MSBuild - Applying the Single Responsibility Principle</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-applying-srp/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-applying-srp/</guid>
+      <description>Applying the Single Responsibility Principle to MSBuild projects.</description>
+    </item><item>
+      <title>Lessons In MSBuild - Targets Are Called Only Once</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-targets-called-only-once/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-msbuild-targets-called-only-once/</guid>
+      <description>Understanding that MSBuild targets are only called once.</description>
+    </item><item>
+      <title>Lessons in MSBuild - Introduction</title>
+      <link>https://devzone.channeladam.com/articles/2009/07/lessons-in-msbuild-introduction/</link>
+      <pubDate>Mon, 27 Jul 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/07/lessons-in-msbuild-introduction/</guid>
+      <description>An introduction to this blog series on MSBuild.</description>
+    </item></channel>
+</rss>

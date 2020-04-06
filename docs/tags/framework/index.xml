@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Framework on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/framework/</link>
+    <description>Recent contentin Framework on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 20 Nov 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/framework/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>The ChannelAdam Nancy Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy/</guid>
+      <description>About the ChannelAdam Nancy Library.</description>
+    </item><item>
+      <title>The ChannelAdam Nancy Self-Hosting Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy-hosting-self/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy-hosting-self/</guid>
+      <description>About the ChannelAdam Nancy Self-Hosting Library.</description>
+    </item><item>
+      <title>The ChannelAdam Nancy SOAP Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-nancy-soap/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-nancy-soap/</guid>
+      <description>Usage of the ChannelAdam Nancy SOAP Library.</description>
+    </item></channel>
+</rss>

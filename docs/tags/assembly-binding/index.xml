@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assembly Binding on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/assembly-binding/</link>
+    <description>Recent contentin Assembly Binding on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Wed, 04 May 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/assembly-binding/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Intellisense in Razor for Custom Types and Helpers</title>
+      <link>https://devzone.channeladam.com/articles/2011/05/intellisense-razor-custom-types-helpers/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2011/05/intellisense-razor-custom-types-helpers/</guid>
+      <description>Intellisense for your Razor custom types and helpers.</description>
+    </item><item>
+      <title>Lessons In .NET - Assembly Binding Configuration</title>
+      <link>https://devzone.channeladam.com/articles/2009/08/lessons-in-dot-net-assembly-binding-configuration/</link>
+      <pubDate>Tue, 04 Aug 2009 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2009/08/lessons-in-dot-net-assembly-binding-configuration/</guid>
+      <description>Tricks with assembly binding configurations in .NET Framework.</description>
+    </item></channel>
+</rss>

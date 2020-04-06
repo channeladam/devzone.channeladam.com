@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChannelAdam WCF Library on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/library/channeladam-wcf/</link>
+    <description>Recent contentin ChannelAdam WCF Library on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 14 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/library/channeladam-wcf/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Version 1 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v1/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v1/</guid>
+      <description>Version 1 documentation for a .NET code library that handles the subtleties of consuming services using Microsoft&#39;s Windows Communication Foundation (WCF) library - including correctly performing the Close/Abort pattern and preventing memory and server connection leaks.</description>
+    </item><item>
+      <title>Version 2 Documentation | ChannelAdam WCF Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-wcf/v2/</link>
+      <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-wcf/v2/</guid>
+      <description>Version 2 documentation for a .NET code library that handles the subtleties of consuming services using Microsoft&#39;s Windows Communication Foundation (WCF) library - including correctly performing the Close/Abort pattern and preventing memory and server connection leaks.</description>
+    </item></channel>
+</rss>
