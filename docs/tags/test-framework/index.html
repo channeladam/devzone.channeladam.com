@@ -38,7 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://devzone.channeladam.com/tags/test-framework/" />
 <meta property="og:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
-<meta property="og:updated_time" content="2018-06-24T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
+<meta property="og:updated_time" content="2021-01-03T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
@@ -124,6 +124,85 @@
     
     
 
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/library/channeladam-testframework-xunit/">
+            <h2 class="post-title">The ChannelAdam Test Framework xUnit Library</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="overview">Overview</h1>
+<p>This is an <a href="https://github.com/channeladam/ChannelAdam.TestFramework.Xunit" target="_blank">open source</a>, .NET library that provides helpers for using xUnit (and Moq) on top of the <a href="/library/channeladam-testframework">ChannelAdam Test Framework Library</a>.</p>
+<p>Below are the main features of the library. See the linked code for details.</p>
+<p>Please contact me if you have any questions.</p>
+<h1 id="getting-started">Getting Started</h1>
+<h2 id="nuget-package-installation">NuGet Package Installation</h2>
+<p>To install the <a href="https://www.nuget.org/packages/ChannelAdam.TestFramework.Xunit" target="_blank">ChannelAdam.TestFramework.Xunit NuGet package</a>
+run the following command in the Package Manager Console:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>PM&gt; Install-Package ChannelAdam.TestFramework.Xunit
+</code></pre></div><h2 id="usage">Usage</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#66d9ef">using</span> ChannelAdam.TestFramework.Xunit.Abstractions;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>...
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#a6e22e">    [TestFixture]</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyUnitTests</span> : MoqTestFixture
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>    {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>        Mock&lt;IMyService&gt; _mockMyService;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#a6e22e">
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#a6e22e">        [Test]</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> MyTestMethodWithMockObjects()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>            <span style="color:#75715e">// ARRANGE
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#75715e"></span>            _mockMyService = <span style="color:#66d9ef">base</span>.MyMockRepository.Create&lt;IMyService&gt;();
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>            _mockMyService.Setup(...)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>                .Returns(...);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>            <span style="color:#75715e">// ACT
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#75715e"></span>            ...
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>            <span style="color:#75715e">// ASSERT
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span style="color:#75715e"></span>            LogAssert...
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>            Logger.Log(<span style="color:#e6db74">&#34;Verifying all mock expectations were met&#34;</span>);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span>            MyMockRepository.VerifyAll();
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>        }
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span style="color:#a6e22e">
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span style="color:#a6e22e">        [Test]</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> MyTestMethod()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span>        {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span>            <span style="color:#75715e">// ARRANGE
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">bool</span> isOrderLateExpected = <span style="color:#66d9ef">false</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span>            <span style="color:#75715e">// ACT
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span style="color:#75715e"></span>            Logger.Log(<span style="color:#e6db74">&#34;About to do the ACT part of blah blah... so the test output reads like a story&#34;</span>);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span>            <span style="color:#66d9ef">bool</span> isOrderLateActual = <span style="color:#66d9ef">true</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span>            <span style="color:#75715e">// ASSERT
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span><span style="color:#75715e"></span>            LogAssert.AreEqual(<span style="color:#e6db74">&#34;isOrderLate&#34;</span>, isOrderLateExpected, isOrderLateActual);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span>            <span style="color:#75715e">// Test Output: &#34;Asserting isOrderLate is equal to: false&#34;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span><span style="color:#75715e"></span>        }
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span>    }
+</code></pre></div><p>See <a href="https://github.com/channeladam/ChannelAdam.Soap/blob/master/src/BehaviourSpecs/MakingSoap12UnitSteps.cs" target="_blank">MakingSoap12UnitSteps.cs</a> for an MSTest V2 example of using the <code>TestEasy</code> base class directly without Moq.</p>
+<h1 id="reference">Reference</h1>
+<p><a href="https://github.com/channeladam/ChannelAdam.TestFramework.Xunit/blob/master/src/ChannelAdam.TestFramework.Xunit/Abstractions/MoqTestFixture.cs" target="_blank">MoqTestFixture</a> inherits from the <a href="/library/channeladam-testframework-moq">ChannelAdam Test Framework Moq Library</a> <code>MoqTestFixture</code> class to provide Moq <code>MockRepository</code> functionality on top of its own extension of <a href="https://github.com/channeladam/ChannelAdam.TestFramework.Xunit/blob/master/src/ChannelAdam.TestFramework.Xunit/Abstractions/TestEasy.cs" target="_blank">TestEasy</a>.</p>
+<p>Please see the <a href="/library/channeladam-testframework">ChannelAdam Test Framework Library documentation</a> for more information about <code>TestEasy</code>.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/xunit/">xUnit</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/test-framework/">Test Framework</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/channeladam-.net-libraries/">ChannelAdam .NET Libraries</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
     
     <article class="content-page-preview">
         <a href="https://devzone.channeladam.com/library/channeladam-testframework/">
@@ -1096,32 +1175,29 @@ to whether or not the actual output is similar enough to the expected output.</p
             <li><a href="/library/channeladam-logging">ChannelAdam Logging Library</a></li>
             <li><a href="/library/channeladam-primitiveextensions">ChannelAdam Primitive Extensions Library</a></li>
             <li><a href="/library/channeladam-reflection">ChannelAdam Reflection Library</a></li>
+            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
             <li><a href="/library/channeladam-xml">ChannelAdam XML Library</a></li>
         </ul>
    
-        <div class="h2">Web Services</div>
-        <ul>
-            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
-            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
-            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
-            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
-            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
-        </ul>
-
         <div class="h2">Testing</div>
         <ul>
             <li><a href="/library/channeladam-testframework">ChannelAdam Test Framework Library</a></li>
             <li><a href="/library/channeladam-testframework-moq">ChannelAdam Test Framework Moq Library</a></li>
-            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
             <li><a href="/library/channeladam-testframework-mstestv2">ChannelAdam Test Framework MSTestV2 Library</a></li>
             <li><a href="/library/channeladam-testframework-nunit">ChannelAdam Test Framework NUnit Library</a></li>
             <li><a href="/library/channeladam-testframework-text">ChannelAdam Test Framework Text Library</a></li>
             <li><a href="/library/channeladam-testframework-xml">ChannelAdam Test Framework XML Library</a></li>
+            <li><a href="/library/channeladam-testframework-xunit">ChannelAdam Test Framework XUnit Library</a></li>
             <li><a href="/library/channeladam-testframework-biztalk">ChannelAdam Test Framework Library for BizTalk</a></li>
         </ul>
 
         <div class="h2">DEPRECATED LIBRARIES</div>
         <ul>
+            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
+            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
+            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
+            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
             <li><a href="/library/channeladam-core">ChannelAdam Core Library</a></li>
             <li><a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries (V1)</a></li>
         </ul>
@@ -1170,7 +1246,7 @@ to whether or not the actual output is similar enough to the expected output.</p
     <div class="widget card">
         <div class="h1">Recent Blog Posts</div>
 
-        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2017/11/announcing-dotnet-notebook/">Announcing the ChannelAdam .NET Notebook</a></li></ul>
+        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li></ul>
     </div>
 </div>
 
@@ -1220,7 +1296,7 @@ to whether or not the actual output is similar enough to the expected output.</p
         &nbsp;<a href="/tags/build" style="font-size:1.3252166245432684rem">Build</a>
         &nbsp;<a href="/tags/business" style="font-size:1rem">Business</a>
         &nbsp;<a href="/tags/c" style="font-size:1rem">C#</a>
-        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8340640545489768rem">Channeladam .Net Libraries</a>
+        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8406727790554602rem">Channeladam .Net Libraries</a>
         &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
         &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
         &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
@@ -1350,7 +1426,7 @@ to whether or not the actual output is similar enough to the expected output.</p
         &nbsp;<a href="/tags/static-site-generator" style="font-size:1rem">Static Site Generator</a>
         &nbsp;<a href="/tags/teamreview" style="font-size:1rem">Teamreview</a>
         &nbsp;<a href="/tags/test-driven-development" style="font-size:1rem">Test Driven Development</a>
-        &nbsp;<a href="/tags/test-framework" style="font-size:1.4878249368149024rem">Test Framework</a>
+        &nbsp;<a href="/tags/test-framework" style="font-size:1.5154561545121918rem">Test Framework</a>
         &nbsp;<a href="/tags/testing" style="font-size:1.996672366820611rem">Testing</a>
         &nbsp;<a href="/tags/text" style="font-size:1rem">Text</a>
         &nbsp;<a href="/tags/tfs" style="font-size:1.1626083122716342rem">Tfs</a>
@@ -1373,6 +1449,7 @@ to whether or not the actual output is similar enough to the expected output.</p
         &nbsp;<a href="/tags/work-items" style="font-size:1rem">Work Items</a>
         &nbsp;<a href="/tags/xml" style="font-size:1.257728077256096rem">Xml</a>
         &nbsp;<a href="/tags/xmlunit" style="font-size:1rem">Xmlunit</a>
+        &nbsp;<a href="/tags/xunit" style="font-size:1rem">Xunit</a>
         &nbsp;</div>
 
     </div>

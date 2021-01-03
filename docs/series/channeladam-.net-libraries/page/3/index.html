@@ -38,7 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://devzone.channeladam.com/series/channeladam-.net-libraries/" />
 <meta property="og:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
-<meta property="og:updated_time" content="2018-07-16T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
+<meta property="og:updated_time" content="2021-01-03T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
@@ -124,6 +124,208 @@
     
     
 
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/library/channeladam-soap/">
+            <h2 class="post-title">The ChannelAdam SOAP Library</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="overview">Overview</h1>
+<p>This is an <a href="https://github.com/channeladam/ChannelAdam.Soap" target="_blank">open source</a> (Apache License 2.0) .NET Standard 2.0 code library that provides a fluent API to make it as easy as possible to create a SOAP 1.1 or SOAP 1.2 message.</p>
+<p>Among other things, it is perfect for building SOAP envelopes to use in lightweight web frameworks such as <a href="http://nancyfx.org/" target="_blank">Nancy</a>.</p>
+<h1 id="getting-started">Getting Started</h1>
+<h2 id="nuget-package-installation">NuGet Package Installation</h2>
+<p>To install the <a href="https://www.nuget.org/packages/ChannelAdam.Soap" target="_blank">ChannelAdam.Soap NuGet package</a>
+run the following command in the Package Manager Console:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>PM&gt; Install-Package ChannelAdam.Soap
+</code></pre></div><h2 id="usage">Usage</h2>
+<p>There are plenty of overloads and other methods for more advanced usage - see the reference in the next section.</p>
+<h3 id="soap-envelope-with-a-header-action-and-body">SOAP Envelope with a Header Action and Body</h3>
+<p>Here is a simple example of creating a SOAP 1.1 envelope with a header action and body payload.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#66d9ef">string</span> envelopeXml = SoapBuilder.CreateSoap11Envelope()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    .WithHeader.AddAction(<span style="color:#e6db74">&#34;http://my.action/here&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    .WithBody.AddEntry(<span style="color:#e6db74">&#34;&lt;myXml&gt;hello from the body&lt;/myXml&gt;&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    .Build()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>    .ToString();
+</code></pre></div><p>And for SOAP 1.2:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#66d9ef">string</span> envelopeXml = SoapBuilder.CreateSoap12Envelope()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    .WithHeader.AddAction(<span style="color:#e6db74">&#34;http://my.action/here&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    .WithBody.AddEntry(<span style="color:#e6db74">&#34;&lt;myXml&gt;hello from the body&lt;/myXml&gt;&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    .Build()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>    .ToString();
+</code></pre></div><p>There is even an overload to create the body entry from .NET objects.
+For instance:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyModel</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>{
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Value { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; } 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>...
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#66d9ef">var</span> model = <span style="color:#66d9ef">new</span> MyModel { Value = <span style="color:#e6db74">&#34;hello!&#34;</span> };
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#66d9ef">string</span> envelopeXml = SoapBuilder.CreateSoap12Envelope()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>    .WithHeader.AddAction(<span style="color:#e6db74">&#34;http://my.action/here&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>    .WithBody.AddEntry(model)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>    .Build()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>    .ToString();
+</code></pre></div><p>Easy!</p>
+<h3 id="soap-faults">SOAP Faults</h3>
+<p>To create a SOAP 1.1 fault:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#66d9ef">string</span> envelopeXml = SoapBuilder.CreateSoap11Envelope()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    .WithBody.SetFault(Soap11FaultCode.Client, <span style="color:#e6db74">&#34;SOAP 1.1 fault string here&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    .Build()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    .ToString();
+</code></pre></div><p>And for a SOAP 1.2 fault:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#66d9ef">string</span> envelopeXml = SoapBuilder.CreateSoap11Envelope()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    .WithBody.SetFault(Soap12FaultCode.Sender, <span style="color:#e6db74">&#34;SOAP 1.2 fault reason here&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    .Build()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    .ToString();
+</code></pre></div><p>There are overloads to set other SOAP fault value properties as well.</p>
+<h1 id="reference">Reference</h1>
+<p>This reference assumes that the reader is familiar with SOAP terminology.
+For more information see the following SOAP specifications:</p>
+<ul>
+<li><a href="https://www.w3.org/TR/soap/" target="_blank">SOAP 1.1 Specification</a></li>
+<li><a href="https://www.w3.org/TR/soap12-part1/" target="_blank">SOAP 1.2 Specification</a></li>
+</ul>
+<h2 id="soapbuilder">SoapBuilder</h2>
+<p>The <a href="https://github.com/channeladam/ChannelAdam.Soap/blob/master/src/ChannelAdam.Soap/SoapBuilder.cs" target="_blank">SoapBuilder static class</a> is the fluent starting point for building a SOAP 1.1 or SOAP 1.2 envelope.</p>
+<p>The <code>SoapBuilder</code> static class has two methods:</p>
+<ul>
+<li>
+<p><code>ISoap11EnvelopeBuilder CreateSoap11Envelope()</code> - to start the process of creating a SOAP 1.1 envelope</p>
+</li>
+<li>
+<p><code>ISoap12EnvelopeBuilder CreateSoap12Envelope()</code> - to start the process of creating a SOAP 1.2 envelope</p>
+</li>
+</ul>
+<p>The <code>ISoap11EnvelopeBuilder</code> interface has two properties and one method:</p>
+<ul>
+<li>
+<p><code>ISoap11BodyBuilder WithBody { get; }</code> - to specify the SOAP body or a fault</p>
+</li>
+<li>
+<p><code>ISoap11HeaderBuilder WithHeader { get; }</code> - to specify the SOAP header</p>
+</li>
+<li>
+<p><code>XContainer Build()</code> - to finally build the SOAP envelope as specified</p>
+</li>
+</ul>
+<p>The <code>ISoap12EnvelopeBuilder</code> interface is similar:</p>
+<ul>
+<li>
+<p><code>ISoap12BodyBuilder WithBody { get; }</code></p>
+</li>
+<li>
+<p><code>ISoap12HeaderBuilder WithHeader { get; }</code></p>
+</li>
+<li>
+<p><code>XContainer Build()</code></p>
+</li>
+</ul>
+<h3 id="usage-of-soapbuilder">Usage of SoapBuilder</h3>
+<p>The general procedure for usage is:</p>
+<ol>
+<li>
+<p>Call one of the <code>SoapBuilder.CreateSoap??Envelope()</code> methods.</p>
+</li>
+<li>
+<p>If necessary, add a header via the <code>WithHeader</code> property.</p>
+</li>
+<li>
+<p>Add a body or fault message via the <code>WithBody</code> property.</p>
+</li>
+<li>
+<p>Once all the details have been specified, simply call the <code>Build()</code> method which will return an <code>XContainer</code>.</p>
+</li>
+<li>
+<p>If there is something that you need to do to the contents of the SOAP envelope that is not currently allowed by the API,
+then you can always directly modify the elements in the <code>XContainer</code> and do magical things with LINQ.</p>
+</li>
+<li>
+<p>A simple <code>.ToString()</code> on the <code>XContainer</code> returned from <code>Build()</code> will then give you the XML string of the SOAP envelope/payload - by default formatted with indentation. There is also the overload <code>.ToString(System.Xml.Linq.SaveOptions options)</code> that allows you to change the formatting of whitespace and indentation.</p>
+</li>
+</ol>
+<h2 id="specify-the-soap-header">Specify the SOAP Header</h2>
+<p>The SOAP header can be specified via the <code>WithHeader</code> property.</p>
+<p>For SOAP 1.1, <code>WithHeader</code> chains the following methods:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>ISoap11EnvelopeBuilder AddAction(<span style="color:#66d9ef">string</span> action);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>ISoap11EnvelopeBuilder AddBlock(<span style="color:#66d9ef">string</span> headerXml);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>ISoap11EnvelopeBuilder AddBlock(XContainer headerBlock);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>ISoap11EnvelopeBuilder AddBlock(<span style="color:#66d9ef">object</span> toSerialise);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>ISoap11EnvelopeBuilder AddBlock(<span style="color:#66d9ef">object</span> toSerialise, <span style="color:#66d9ef">string</span> toElementName, <span style="color:#66d9ef">string</span> toElementNamespace);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span>ISoap11EnvelopeBuilder SetStandardSoapEncoding();
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span>ISoap11EnvelopeBuilder SetCustomSoapEncoding(<span style="color:#66d9ef">string</span> soapEncodingNamespace);
+</code></pre></div><p>Notes:</p>
+<ul>
+<li><code>AddAction(string action)</code> adds an action header block with the specified action.</li>
+<li><code>AddBlock(XContainer headerBlock)</code> adds any arbitrary header block - e.g. from a <code>System.Xml.Linq.XElement</code>.</li>
+<li><code>AddBlock(object toSerialise, string toElementName, string toElementNamespace)</code> serialises the given object and during serialisation overrides the XML element name and namespace with those specified.</li>
+<li><code>ISoap11EnvelopeBuilder SetStandardSoapEncoding()</code> sets the SoapEncoding attribute to the standard encoding namespace</li>
+<li><code>ISoap11EnvelopeBuilder SetCustomSoapEncoding(string soapEncodingNamespace)</code> sets the SoapEncoding attribute to your custom namespace</li>
+</ul>
+<p>For SOAP 1.2, <code>WithHeader</code> is nearly identical to SOAP 1.1, except an <code>ISoap12EnvelopeBuilder</code> is returned instead of a <code>ISoap11EnvelopeBuilder</code>.</p>
+<h2 id="specify-the-soap-body-payload-or-fault">Specify the SOAP Body Payload or Fault</h2>
+<p>The SOAP body payload or fault can be specified via the <code>WithBody</code> property which provides the following methods.</p>
+<h3 id="for-soap-11">For SOAP 1.1</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>ISoap11EnvelopeBuilder AddEntry(<span style="color:#66d9ef">string</span> bodyXml);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>ISoap11EnvelopeBuilder AddEntry(XContainer fromNode);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>ISoap11EnvelopeBuilder AddEntry(<span style="color:#66d9ef">object</span> toSerialise);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>ISoap11EnvelopeBuilder AddEntry(<span style="color:#66d9ef">object</span> toSerialise, <span style="color:#66d9ef">string</span> toElementName, <span style="color:#66d9ef">string</span> toElementNamespace);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>ISoap11EnvelopeBuilder SetFault(Soap11FaultCode code, <span style="color:#66d9ef">string</span> faultString);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>ISoap11EnvelopeBuilder SetFault(Soap11FaultCode code, <span style="color:#66d9ef">string</span> faultString, <span style="color:#66d9ef">string</span> faultActor);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>ISoap11EnvelopeBuilder SetFault(Soap11FaultCode code, <span style="color:#66d9ef">string</span> faultString, <span style="color:#66d9ef">string</span> faultActor, IEnumerable&lt;XContainer&gt; detailEntries);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>ISoap11EnvelopeBuilder SetStandardSoapEncoding();
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>ISoap11EnvelopeBuilder SetCustomSoapEncoding(<span style="color:#66d9ef">string</span> soapEncodingNamespace);
+</code></pre></div><p>Notes:</p>
+<ul>
+<li><code>AddEntry(object toSerialise, string toElementName, string toElementNamespace)</code> serialises the given object and during serialisation overrides the XML element name and namespace with those specified.</li>
+</ul>
+<p>SOAP 1.2 Faults are more descriptive than SOAP 1.1, hence the overloads of <code>SetFault</code> with more parameters.</p>
+<h3 id="for-soap-12">For SOAP 1.2</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>ISoap12EnvelopeBuilder AddEntry(<span style="color:#66d9ef">string</span> bodyXml);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>ISoap12EnvelopeBuilder AddEntry(XContainer fromNode);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>ISoap12EnvelopeBuilder AddEntry(<span style="color:#66d9ef">object</span> toSerialise);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>ISoap12EnvelopeBuilder AddEntry(<span style="color:#66d9ef">object</span> toSerialise, <span style="color:#66d9ef">string</span> toElementName, <span style="color:#66d9ef">string</span> toElementNamespace);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>ISoap12EnvelopeBuilder SetFault(Soap12FaultCode code, <span style="color:#66d9ef">string</span> reason);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>ISoap12EnvelopeBuilder SetFault(Soap12FaultCode code, <span style="color:#66d9ef">string</span> subCode, <span style="color:#66d9ef">string</span> reason);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>ISoap12EnvelopeBuilder SetFault(Soap12FaultCode code, XNamespace subCodeNamespace, <span style="color:#66d9ef">string</span> subCode, <span style="color:#66d9ef">string</span> reason);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>ISoap12EnvelopeBuilder SetFault(Soap12FaultCode code, XNamespace subCodeNamespace, <span style="color:#66d9ef">string</span> subCode, <span style="color:#66d9ef">string</span> reason, <span style="color:#66d9ef">string</span> reasonXmlLanguage);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>ISoap12EnvelopeBuilder SetFault(Soap12FaultCode code, XNamespace subCodeNamespace, <span style="color:#66d9ef">string</span> subCode, <span style="color:#66d9ef">string</span> reason, <span style="color:#66d9ef">string</span> reasonXmlLanguage, <span style="color:#66d9ef">string</span> node);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>ISoap12EnvelopeBuilder SetFault(Soap12FaultCode code, XNamespace subCodeNamespace, <span style="color:#66d9ef">string</span> subCode, <span style="color:#66d9ef">string</span> reason, <span style="color:#66d9ef">string</span> reasonXmlLanguage, <span style="color:#66d9ef">string</span> node, <span style="color:#66d9ef">string</span> role);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>ISoap12EnvelopeBuilder SetFault(Soap12FaultCode code, XNamespace subCodeNamespace, <span style="color:#66d9ef">string</span> subCode, <span style="color:#66d9ef">string</span> reason, IEnumerable&lt;XContainer&gt; detailEntries);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>ISoap12EnvelopeBuilder SetFault(Soap12FaultCode code, XNamespace subCodeNamespace, <span style="color:#66d9ef">string</span> subCode, <span style="color:#66d9ef">string</span> reason, <span style="color:#66d9ef">string</span> reasonXmlLanguage, IEnumerable&lt;XContainer&gt; detailEntries);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>ISoap12EnvelopeBuilder SetFault(Soap12FaultCode code, XNamespace subCodeNamespace, <span style="color:#66d9ef">string</span> subCode, <span style="color:#66d9ef">string</span> reason, <span style="color:#66d9ef">string</span> reasonXmlLanguage, <span style="color:#66d9ef">string</span> node, <span style="color:#66d9ef">string</span> role, IEnumerable&lt;XContainer&gt; detailEntries);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>ISoap12EnvelopeBuilder SetStandardSoapEncoding();
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>ISoap12EnvelopeBuilder SetCustomSoapEncoding(<span style="color:#66d9ef">string</span> soapEncodingNamespace);
+</code></pre></div>
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/soap-1.1/">SOAP 1.1</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/soap-1.2/">SOAP 1.2</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/fluent/">Fluent</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/library/">Library</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
     
     <article class="content-page-preview">
         <a href="https://devzone.channeladam.com/library/channeladam-core/">
@@ -1650,51 +1852,6 @@ The service channel will automatically be correctly disposed and closed or abort
 
     </article>
     
-    <article class="content-page-preview">
-        <a href="https://devzone.channeladam.com/library/channeladam-wcf/">
-            <h2 class="post-title">ChannelAdam WCF Library</h2>
-        </a>
-
-        <div class="content-page-entry">
-        
-            <h1 id="overview">Overview</h1>
-<p>The <a href="https://www.nuget.org/packages/ChannelAdam.Wcf/" target="_blank">ChannelAdam WCF Library</a> is an <a href="https://github.com/channeladam/ChannelAdam.Wcf" target="_blank">open source</a> (Apache License 2.0) full .NET Framework code library that handles the subtleties of consuming services using Microsoft&rsquo;s Windows Communication Foundation (WCF) library - including correctly performing the Close/Abort pattern and preventing memory and server connection leaks.</p>
-<p>The issues faced by .NET developers are explained in depth in the article <a href="/articles/2014/07/how-to-call-wcf-service-properly">How To Call WCF Services Properly</a>, where I researched and highlighted the typical problems with using WCF clients (such as memory and connection leaks), and concluded that the most correct solution for consuming WCF services would:</p>
-<ul>
-<li>Perform the Close/Abort pattern without a race condition;</li>
-<li>Handle the situation when the service operation throws exceptions;</li>
-<li>Handle the situations when both the <code>Close</code> and <code>Abort</code> methods throw exceptions; and</li>
-<li>Handle asynchronous exceptions such as the <code>ThreadAbortException</code>.</li>
-</ul>
-<p>The ChannelAdam WCF Library is designed to make your life as a developer easier when consuming WCF services, by abstracting away the complexities of service channel state transitions and the odd behaviour of the Microsoft WCF libraries that do not comply with even their own design guidelines.</p>
-<p>In doing this, the ChannelAdam WCF <code>ServiceConsumer</code> once and for all prevents memory and connection leaks, gives developers the ability to plug in their own strategies for handling different situations (such as logging exceptions), and provides a built-in mechanism to retry service operation calls when transient faults occur.</p>
-<h1 id="documentation">Documentation</h1>
-<h2 id="current-version">Current Version</h2>
-<ul>
-<li><a href="/library/channeladam-wcf/v2">Version 2</a></li>
-</ul>
-<h2 id="old-versions">Old Versions</h2>
-<ul>
-<li><a href="/library/channeladam-wcf/v1">Version 1</a></li>
-</ul>
-
-        
-        </div>
-
-        
-        <div class="content-page-tags">
-            
-            <a href="https://devzone.channeladam.com/tags/wcf/">WCF</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/windows-communication-foundation/">Windows Communication Foundation</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/channeladam-.net-libraries/">ChannelAdam .NET Libraries</a>&nbsp;
-            
-        </div>
-        
-
-    </article>
-    
 
     
     <ul class="pager main-pager">
@@ -1763,32 +1920,29 @@ The service channel will automatically be correctly disposed and closed or abort
             <li><a href="/library/channeladam-logging">ChannelAdam Logging Library</a></li>
             <li><a href="/library/channeladam-primitiveextensions">ChannelAdam Primitive Extensions Library</a></li>
             <li><a href="/library/channeladam-reflection">ChannelAdam Reflection Library</a></li>
+            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
             <li><a href="/library/channeladam-xml">ChannelAdam XML Library</a></li>
         </ul>
    
-        <div class="h2">Web Services</div>
-        <ul>
-            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
-            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
-            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
-            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
-            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
-        </ul>
-
         <div class="h2">Testing</div>
         <ul>
             <li><a href="/library/channeladam-testframework">ChannelAdam Test Framework Library</a></li>
             <li><a href="/library/channeladam-testframework-moq">ChannelAdam Test Framework Moq Library</a></li>
-            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
             <li><a href="/library/channeladam-testframework-mstestv2">ChannelAdam Test Framework MSTestV2 Library</a></li>
             <li><a href="/library/channeladam-testframework-nunit">ChannelAdam Test Framework NUnit Library</a></li>
             <li><a href="/library/channeladam-testframework-text">ChannelAdam Test Framework Text Library</a></li>
             <li><a href="/library/channeladam-testframework-xml">ChannelAdam Test Framework XML Library</a></li>
+            <li><a href="/library/channeladam-testframework-xunit">ChannelAdam Test Framework XUnit Library</a></li>
             <li><a href="/library/channeladam-testframework-biztalk">ChannelAdam Test Framework Library for BizTalk</a></li>
         </ul>
 
         <div class="h2">DEPRECATED LIBRARIES</div>
         <ul>
+            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
+            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
+            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
+            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
             <li><a href="/library/channeladam-core">ChannelAdam Core Library</a></li>
             <li><a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries (V1)</a></li>
         </ul>
@@ -1837,7 +1991,7 @@ The service channel will automatically be correctly disposed and closed or abort
     <div class="widget card">
         <div class="h1">Recent Blog Posts</div>
 
-        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2017/11/announcing-dotnet-notebook/">Announcing the ChannelAdam .NET Notebook</a></li></ul>
+        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li></ul>
     </div>
 </div>
 
@@ -1887,7 +2041,7 @@ The service channel will automatically be correctly disposed and closed or abort
         &nbsp;<a href="/tags/build" style="font-size:1.3252166245432684rem">Build</a>
         &nbsp;<a href="/tags/business" style="font-size:1rem">Business</a>
         &nbsp;<a href="/tags/c" style="font-size:1rem">C#</a>
-        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8340640545489768rem">Channeladam .Net Libraries</a>
+        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8406727790554602rem">Channeladam .Net Libraries</a>
         &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
         &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
         &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
@@ -2017,7 +2171,7 @@ The service channel will automatically be correctly disposed and closed or abort
         &nbsp;<a href="/tags/static-site-generator" style="font-size:1rem">Static Site Generator</a>
         &nbsp;<a href="/tags/teamreview" style="font-size:1rem">Teamreview</a>
         &nbsp;<a href="/tags/test-driven-development" style="font-size:1rem">Test Driven Development</a>
-        &nbsp;<a href="/tags/test-framework" style="font-size:1.4878249368149024rem">Test Framework</a>
+        &nbsp;<a href="/tags/test-framework" style="font-size:1.5154561545121918rem">Test Framework</a>
         &nbsp;<a href="/tags/testing" style="font-size:1.996672366820611rem">Testing</a>
         &nbsp;<a href="/tags/text" style="font-size:1rem">Text</a>
         &nbsp;<a href="/tags/tfs" style="font-size:1.1626083122716342rem">Tfs</a>
@@ -2040,6 +2194,7 @@ The service channel will automatically be correctly disposed and closed or abort
         &nbsp;<a href="/tags/work-items" style="font-size:1rem">Work Items</a>
         &nbsp;<a href="/tags/xml" style="font-size:1.257728077256096rem">Xml</a>
         &nbsp;<a href="/tags/xmlunit" style="font-size:1rem">Xmlunit</a>
+        &nbsp;<a href="/tags/xunit" style="font-size:1rem">Xunit</a>
         &nbsp;</div>
 
     </div>

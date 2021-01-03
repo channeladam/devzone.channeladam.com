@@ -2,7 +2,12 @@
   <channel>
     <title>Software Development Zone Library on DevZone.ChannelAdam.com</title>
     <link>https://devzone.channeladam.com/library/</link>
-    <description>Recent contentin Software Development Zone Library on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/library/index.xml" rel="self" type="application/rss+xml" /><item>
+    <description>Recent contentin Software Development Zone Library on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/library/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>The ChannelAdam Test Framework xUnit Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-xunit/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-xunit/</guid>
+      <description>About the ChannelAdam Test Framework xUnit Library.</description>
+    </item><item>
       <title>The ChannelAdam XML Library</title>
       <link>https://devzone.channeladam.com/library/channeladam-xml/</link>
       <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-xml/</guid>

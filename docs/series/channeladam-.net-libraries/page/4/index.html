@@ -38,7 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://devzone.channeladam.com/series/channeladam-.net-libraries/" />
 <meta property="og:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
-<meta property="og:updated_time" content="2018-07-16T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
+<meta property="og:updated_time" content="2021-01-03T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
@@ -124,6 +124,51 @@
     
     
 
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/library/channeladam-wcf/">
+            <h2 class="post-title">ChannelAdam WCF Library</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="overview">Overview</h1>
+<p>The <a href="https://www.nuget.org/packages/ChannelAdam.Wcf/" target="_blank">ChannelAdam WCF Library</a> is an <a href="https://github.com/channeladam/ChannelAdam.Wcf" target="_blank">open source</a> (Apache License 2.0) full .NET Framework code library that handles the subtleties of consuming services using Microsoft&rsquo;s Windows Communication Foundation (WCF) library - including correctly performing the Close/Abort pattern and preventing memory and server connection leaks.</p>
+<p>The issues faced by .NET developers are explained in depth in the article <a href="/articles/2014/07/how-to-call-wcf-service-properly">How To Call WCF Services Properly</a>, where I researched and highlighted the typical problems with using WCF clients (such as memory and connection leaks), and concluded that the most correct solution for consuming WCF services would:</p>
+<ul>
+<li>Perform the Close/Abort pattern without a race condition;</li>
+<li>Handle the situation when the service operation throws exceptions;</li>
+<li>Handle the situations when both the <code>Close</code> and <code>Abort</code> methods throw exceptions; and</li>
+<li>Handle asynchronous exceptions such as the <code>ThreadAbortException</code>.</li>
+</ul>
+<p>The ChannelAdam WCF Library is designed to make your life as a developer easier when consuming WCF services, by abstracting away the complexities of service channel state transitions and the odd behaviour of the Microsoft WCF libraries that do not comply with even their own design guidelines.</p>
+<p>In doing this, the ChannelAdam WCF <code>ServiceConsumer</code> once and for all prevents memory and connection leaks, gives developers the ability to plug in their own strategies for handling different situations (such as logging exceptions), and provides a built-in mechanism to retry service operation calls when transient faults occur.</p>
+<h1 id="documentation">Documentation</h1>
+<h2 id="current-version">Current Version</h2>
+<ul>
+<li><a href="/library/channeladam-wcf/v2">Version 2</a></li>
+</ul>
+<h2 id="old-versions">Old Versions</h2>
+<ul>
+<li><a href="/library/channeladam-wcf/v1">Version 1</a></li>
+</ul>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/wcf/">WCF</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/windows-communication-foundation/">Windows Communication Foundation</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/channeladam-.net-libraries/">ChannelAdam .NET Libraries</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
     
     <article class="content-page-preview">
         <a href="https://devzone.channeladam.com/library/channeladam-wcf/v1/exception-behaviours/">
@@ -888,43 +933,6 @@ When called, this method provides you with the count of the current retry attemp
 
     </article>
     
-    <article class="content-page-preview">
-        <a href="https://devzone.channeladam.com/library/channeladam-wcf/v1/">
-            <h2 class="post-title">Channel Adam WCF Library - Version 1 Documentation</h2>
-        </a>
-
-        <div class="content-page-entry">
-        
-            <p><strong>Please note: Version 1 is NOT the latest version.</strong>
-<strong>Please see the <a href="/library/channeladam-wcf/v2">Version 2 documentation</a>.</strong></p>
-<h1 id="contents">Contents</h1>
-<ol>
-<li><a href="/library/channeladam-wcf/v1/quick-start">Quick Start</a></li>
-<li><a href="/library/channeladam-wcf/v1/background">Background</a></li>
-<li><a href="/library/channeladam-wcf/v1/basic-usage">Basic Usage</a></li>
-<li><a href="/library/channeladam-wcf/v1/ioc">Usage With Inversion of Control (IoC) Containers</a></li>
-<li><a href="/library/channeladam-wcf/v1/close-triggers">Channel Close Trigger Strategies</a></li>
-<li><a href="/library/channeladam-wcf/v1/exception-behaviours">Exception Behaviour Strategies</a></li>
-<li><a href="/library/channeladam-wcf/v1/retry">Retry for Transient Fault Handling</a></li>
-</ol>
-
-        
-        </div>
-
-        
-        <div class="content-page-tags">
-            
-            <a href="https://devzone.channeladam.com/tags/wcf/">WCF</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/windows-communication-foundation/">Windows Communication Foundation</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/channeladam-.net-libraries/">ChannelAdam .NET Libraries</a>&nbsp;
-            
-        </div>
-        
-
-    </article>
-    
 
     
     <ul class="pager main-pager">
@@ -993,32 +1001,29 @@ When called, this method provides you with the count of the current retry attemp
             <li><a href="/library/channeladam-logging">ChannelAdam Logging Library</a></li>
             <li><a href="/library/channeladam-primitiveextensions">ChannelAdam Primitive Extensions Library</a></li>
             <li><a href="/library/channeladam-reflection">ChannelAdam Reflection Library</a></li>
+            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
             <li><a href="/library/channeladam-xml">ChannelAdam XML Library</a></li>
         </ul>
    
-        <div class="h2">Web Services</div>
-        <ul>
-            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
-            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
-            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
-            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
-            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
-        </ul>
-
         <div class="h2">Testing</div>
         <ul>
             <li><a href="/library/channeladam-testframework">ChannelAdam Test Framework Library</a></li>
             <li><a href="/library/channeladam-testframework-moq">ChannelAdam Test Framework Moq Library</a></li>
-            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
             <li><a href="/library/channeladam-testframework-mstestv2">ChannelAdam Test Framework MSTestV2 Library</a></li>
             <li><a href="/library/channeladam-testframework-nunit">ChannelAdam Test Framework NUnit Library</a></li>
             <li><a href="/library/channeladam-testframework-text">ChannelAdam Test Framework Text Library</a></li>
             <li><a href="/library/channeladam-testframework-xml">ChannelAdam Test Framework XML Library</a></li>
+            <li><a href="/library/channeladam-testframework-xunit">ChannelAdam Test Framework XUnit Library</a></li>
             <li><a href="/library/channeladam-testframework-biztalk">ChannelAdam Test Framework Library for BizTalk</a></li>
         </ul>
 
         <div class="h2">DEPRECATED LIBRARIES</div>
         <ul>
+            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
+            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
+            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
+            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
             <li><a href="/library/channeladam-core">ChannelAdam Core Library</a></li>
             <li><a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries (V1)</a></li>
         </ul>
@@ -1067,7 +1072,7 @@ When called, this method provides you with the count of the current retry attemp
     <div class="widget card">
         <div class="h1">Recent Blog Posts</div>
 
-        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2017/11/announcing-dotnet-notebook/">Announcing the ChannelAdam .NET Notebook</a></li></ul>
+        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li></ul>
     </div>
 </div>
 
@@ -1117,7 +1122,7 @@ When called, this method provides you with the count of the current retry attemp
         &nbsp;<a href="/tags/build" style="font-size:1.3252166245432684rem">Build</a>
         &nbsp;<a href="/tags/business" style="font-size:1rem">Business</a>
         &nbsp;<a href="/tags/c" style="font-size:1rem">C#</a>
-        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8340640545489768rem">Channeladam .Net Libraries</a>
+        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8406727790554602rem">Channeladam .Net Libraries</a>
         &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
         &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
         &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
@@ -1247,7 +1252,7 @@ When called, this method provides you with the count of the current retry attemp
         &nbsp;<a href="/tags/static-site-generator" style="font-size:1rem">Static Site Generator</a>
         &nbsp;<a href="/tags/teamreview" style="font-size:1rem">Teamreview</a>
         &nbsp;<a href="/tags/test-driven-development" style="font-size:1rem">Test Driven Development</a>
-        &nbsp;<a href="/tags/test-framework" style="font-size:1.4878249368149024rem">Test Framework</a>
+        &nbsp;<a href="/tags/test-framework" style="font-size:1.5154561545121918rem">Test Framework</a>
         &nbsp;<a href="/tags/testing" style="font-size:1.996672366820611rem">Testing</a>
         &nbsp;<a href="/tags/text" style="font-size:1rem">Text</a>
         &nbsp;<a href="/tags/tfs" style="font-size:1.1626083122716342rem">Tfs</a>
@@ -1270,6 +1275,7 @@ When called, this method provides you with the count of the current retry attemp
         &nbsp;<a href="/tags/work-items" style="font-size:1rem">Work Items</a>
         &nbsp;<a href="/tags/xml" style="font-size:1.257728077256096rem">Xml</a>
         &nbsp;<a href="/tags/xmlunit" style="font-size:1rem">Xmlunit</a>
+        &nbsp;<a href="/tags/xunit" style="font-size:1rem">Xunit</a>
         &nbsp;</div>
 
     </div>

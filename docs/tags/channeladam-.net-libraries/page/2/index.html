@@ -126,6 +126,84 @@
 
     
     <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/library/channeladam-commands/">
+            <h2 class="post-title">The ChannelAdam Commands Library</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <h1 id="overview">Overview</h1>
+<p>An <a href="https://github.com/channeladam/ChannelAdam.Commands" target="_blank">open source</a>, .NET Standard 1.1 library implementation of the <a href="http://www.oodesign.com/command-pattern.html" target="_blank">Command Pattern</a> - including reversible commands.</p>
+<p>Below are the main features of the library. See the linked code for details.</p>
+<p>Please contact me if you have any questions.</p>
+<h1 id="getting-started">Getting Started</h1>
+<h2 id="nuget-package-installation">NuGet Package Installation</h2>
+<p>To install the <a href="https://www.nuget.org/packages/ChannelAdam.Commands" target="_blank">ChannelAdam.Commands NuGet package</a>
+run the following command in the Package Manager Console:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>PM&gt; Install-Package ChannelAdam.Commands
+</code></pre></div><h2 id="usage">Usage</h2>
+<p>An example of the <code>ReversibleCommandManager</code>, using the <code>ExecuteSetPropertyCommand</code> and <code>UndoPreviousCommand</code> methods:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#66d9ef">var</span> testObject = <span style="color:#66d9ef">new</span> ClassWithProperty
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>{
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    MyProperty = <span style="color:#ae81ff">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>};
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#66d9ef">var</span> commandManager = <span style="color:#66d9ef">new</span> ReversibleCommandManager();
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>commandManager.ExecuteSetPropertyCommand(testObject, p =&gt; p.MyProperty, <span style="color:#ae81ff">100</span>);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>commandManager.ExecuteSetPropertyCommand(testObject, p =&gt; p.MyProperty, <span style="color:#ae81ff">200</span>);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>commandManager.UndoPreviousCommand();
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#75715e">// MyProperty is now back to 100
+</span></code></pre></div><h1 id="reference">Reference</h1>
+<h2 id="command-action">Command Action</h2>
+<p>A Command Action has an <code>Execute</code> method with a <code>void</code> return parameter.</p>
+<ul>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/Abstractions/ICommand.cs" target="_blank">Command Action interface</a></li>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/Abstractions/CommandBase.cs" target="_blank">Command Action base class</a></li>
+</ul>
+<h2 id="command-function">Command Function</h2>
+<p>A Command Function has an <code>Execute</code> method with a specified return parameter.</p>
+<ul>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/Abstractions/ICommandFunction.cs" target="_blank">Command Function interface</a></li>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/Abstractions/CommandFunctionBase.cs" target="_blank">Command Function base class</a></li>
+</ul>
+<h2 id="reversible-commands">Reversible Commands</h2>
+<p>Need to execute some commands and be able to undo them? This Reversible Command implementation is for you!</p>
+<p>Use the <a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/ReversibleCommandManager.cs" target="_blank">Reversible Command Manager</a> to manage the stack of commands that can be reversed.</p>
+<ul>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/Abstractions/IReversibleCommand.cs" target="_blank">Reversible Command Action interface</a></li>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/Abstractions/ReversibleCommandBase.cs" target="_blank">Reversible Command Action base class</a></li>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/Abstractions/IReversibleCommandFunction.cs" target="_blank">Reversible Command Function interface</a></li>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/Abstractions/ReversibleCommandFunctionBase.cs" target="_blank">Reversible Command Function base class</a></li>
+</ul>
+<h2 id="set-property---command-implementation">Set Property - Command Implementation</h2>
+<p>A command implementation for setting a property on an object.</p>
+<ul>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/SetPropertyCommand.cs" target="_blank">Set Property Command</a></li>
+<li><a href="https://github.com/channeladam/ChannelAdam.Commands/blob/master/src/ChannelAdam.Commands/ReversibleSetPropertyCommand.cs" target="_blank">Reversible Set Property Command</a></li>
+</ul>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/command/">Command</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/pattern/">Pattern</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/reversible/">Reversible</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/channeladam-.net-libraries/">ChannelAdam .NET Libraries</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
         <a href="https://devzone.channeladam.com/library/channeladam-dispatchproxies/">
             <h2 class="post-title">The ChannelAdam Dispatch Proxies Library</h2>
         </a>
@@ -795,158 +873,6 @@ The next time a request is made through the <code>ServiceConsumer</code>, a new 
 
     </article>
     
-    <article class="content-page-preview">
-        <a href="https://devzone.channeladam.com/library/channeladam-wcf/v1/basic-usage/">
-            <h2 class="post-title">Basic Usage</h2>
-        </a>
-
-        <div class="content-page-entry">
-        
-            <h1 id="channeladam-wcf-library-mdash-version-1-documentationlibrarychanneladam-wcfv1"><a href="/library/channeladam-wcf/v1">ChannelAdam WCF Library — Version 1 Documentation</a></h1>
-<h2 id="basic-usage">Basic Usage</h2>
-<h3 id="create-a-serviceconsumer-with-the-serviceconsumerfactory">Create a ServiceConsumer with the ServiceConsumerFactory</h3>
-<p>The first thing you need to understand is that you consume your service operations through the usage of the <code>ChannelAdam.ServiceModel.ServiceConsumer</code> class.</p>
-<p>The second thing you need to understand is that the best way to create the <code>ServiceConsumer</code> is by using the <code>Create</code> method on the <code>ChannelAdam.ServiceModel.ServiceConsumerFactory</code>.</p>
-<p>In order to use the <code>ServiceConsumerFactory.Create</code> method, simply pass in as a parameter a factory method for creating the service client.</p>
-<p>For example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>IServiceConsumer&lt;IFakeService&gt; service = ServiceConsumerFactory.Create&lt;IFakeService&gt;(() =&gt; <span style="color:#66d9ef">new</span> FakeServiceClient()));
-</code></pre></div><p>The <code>ServiceConsumerFactory.Create</code> method returns a <code>IServiceConsumer&lt;TServiceInterface&gt;</code> type.
-In all further examples, I will use the <code>var</code> keyword instead - such as:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#66d9ef">var</span> service = ServiceConsumerFactory.Create&lt;IFakeService&gt;(() =&gt; <span style="color:#66d9ef">new</span> FakeServiceClient()));
-</code></pre></div><p>Alternatively, you can pass in as a string parameter the endpoint configuration name from the service client section of your application&rsquo;s .config file. For example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#66d9ef">var</span> service = ServiceConsumerFactory.Create&lt;IFakeService&gt;(<span style="color:#e6db74">&#34;BasicHttpBinding_IFakeService&#34;</span>)); 
-</code></pre></div><h3 id="four-ways-to-clean-up-the-serviceconsumer">Four Ways to Clean Up the ServiceConsumer</h3>
-<p>There are four ways in which the <code>ServiceConsumer</code> can be cleaned up:</p>
-<ol>
-<li>Implicitly via the Using statement;</li>
-<li>Explicitly with the Close method;</li>
-<li>Explicitly with the Dispose method; or</li>
-<li>Automatically by the Garbage Collector.</li>
-</ol>
-<h4 id="1-the-using-statement">1. The Using Statement</h4>
-<p>The recommended and easiest way to use the ServiceConsumer is with the <code>using</code> statement - because it is a well behaved implementation of <code>IDisposable</code> (unlike Microsoft&rsquo;s service clients!).
-The service channel will automatically be correctly disposed and closed or aborted, no matter what happens.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> service = ServiceConsumerFactory.Create&lt;IFakeService&gt;(() =&gt; <span style="color:#66d9ef">new</span> FakeServiceClient())))
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>{
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    ...
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>}
-</code></pre></div><h4 id="2-the-close-method">2. The Close Method</h4>
-<p>The <code>ServiceConsumer</code> and underlying channel can be closed immediately by calling the <code>Close</code> method on the <code>ServiceConsumer</code> instance.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>service.Close();
-</code></pre></div><p>If you want to, you still can immediately call another service operation via that same <code>ServiceConsumer</code> instance, as under the covers, a new service channel will be created seamlessly and automatically.</p>
-<h4 id="3-the-dispose-method">3. The Dispose Method</h4>
-<p>The <code>ServiceConsumer</code> and underlying channel can be disposed of immediately by calling the <code>Dispose</code> method on the <code>ServiceConsumer</code> instance.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>service.Dispose();
-</code></pre></div><p>As per standard <code>IDisposable</code> concepts, you should not attempt to reuse the <code>ServiceConsumer</code> after disposing it.</p>
-<h4 id="4-garbage-collection">4. Garbage Collection</h4>
-<p>If you happen to accidently forget to wrap your <code>ServiceConsumer</code> instance in a <code>Using</code> statement or call the <code>Close</code> method, rest assured that the <code>ServiceConsumer</code> will still be cleaned up! When the <code>ServiceConsumer</code> instance goes out of scope, the .NET Garbage Collector will [eventually] kick in and call its destructor/finalise method, thus correctly cleaning up the service channel and preventing any leaks.</p>
-<p>Since there is an indeterminate amount of time before the Garbage Collector kicks in, I would recommend the <code>Using</code> statement approach, as it minimises the number of open channels and other resources currently in use, over the lifetime of your application.</p>
-<h3 id="how-to-call-a-service-operation">How To Call a Service Operation</h3>
-<p>There are two ways in which to call a service operation via the <code>ServiceConsumer</code>:</p>
-<ol>
-<li>Via the <code>Operations</code> property; or</li>
-<li>Via the <code>Consume</code> method.</li>
-</ol>
-<h3 id="the-operations-property">The Operations Property</h3>
-<p>The <code>Operations</code> property exposes the interface of your service. It can be used just like the normal service client that you already would be familiar with.</p>
-<p>Below is an example of how to call the <code>AddIntegers</code> operation via the <code>Operations</code> property.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> service = ServiceConsumerFactory.Create&lt;IFakeService&gt;(() =&gt; <span style="color:#66d9ef">new</span> FakeServiceClient())))
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>{
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#66d9ef">try</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>        <span style="color:#66d9ef">int</span> actualValue = service.Operations.AddIntegers(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>); 
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>        ...
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>    }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span>    ...
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span>}
-</code></pre></div><p>And below is an example of how to do some exception handling with it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> service = ServiceConsumerFactory.Create&lt;IFakeService&gt;(() =&gt; <span style="color:#66d9ef">new</span> FakeServiceClient())))
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>{
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#66d9ef">try</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>        <span style="color:#66d9ef">int</span> actualValue = service.Operations.AddIntegers(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>); 
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>        ...
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>    }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    <span style="color:#66d9ef">catch</span> (FaultException&lt;MyCustomException&gt; fe)
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>    {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        Console.WriteLine(<span style="color:#e6db74">&#34;Service operation threw a custom fault: &#34;</span> + fe.ToString());
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>    }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>    <span style="color:#66d9ef">catch</span> (FaultException fe)
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>    {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>        Console.WriteLine(<span style="color:#e6db74">&#34;Service operation threw a fault: &#34;</span> + fe.ToString());
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>    }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>    <span style="color:#66d9ef">catch</span> (Exception ex)
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>    {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>        Console.WriteLine(<span style="color:#e6db74">&#34;An unexpected error occurred while calling the service operation: &#34;</span> + ex.ToString());
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>    }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>}
-</code></pre></div><p>There is no need to catch a <code>CommunicationException</code> or <code>TimeOutException</code> and try to perform the Close/Abort pattern, as the underlying channel is dealt with automatically for you by the <code>ServiceConsumer</code>.</p>
-<h3 id="the-consume-method">The Consume Method</h3>
-<p>As an alternative to the <code>Operations</code> property, you can call a service operation via the <code>Consume</code> method on the <code>ServiceConsumer</code> instance.</p>
-<p>The <code>Consume</code> method returns an instance of <code>IOperationResult&lt;TReturnTypeOfYourOperation&gt;</code> which wraps the result of the operation. This interface has the following helpful properties:</p>
-<ul>
-<li><code>TReturnTypeOfYourOperation Value</code> - which gives you access to the return value from the operation;</li>
-<li><code>bool HasException</code> - whether there was an exception thrown by the service operation;</li>
-<li><code>bool HasNoException</code> - whether there was not an exception thrown by the service operation;</li>
-<li><code>bool HasFaultException</code> - whether an exception of type <code>FaultException</code> was thrown by the service operation;</li>
-<li><code>bool HasFaultException&lt;OfThisType&gt;</code> - whether an exception of <code>FaultException&lt;OfThisType&gt;</code> was thrown by the service operation; and</li>
-<li><code>Exception Exception</code> - the exception that was thrown by the service operation.</li>
-</ul>
-<p>Below is an example of how to call the <code>AddIntegers</code> operation via the <code>Consume</code> method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> service = ServiceConsumerFactory.Create&lt;IFakeService&gt;(() =&gt; <span style="color:#66d9ef">new</span> FakeServiceClient())))
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>{
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>	IOperationResult&lt;<span style="color:#66d9ef">int</span>&gt; result = service.Consume(operation =&gt; operation.AddIntegers(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>));
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>    <span style="color:#66d9ef">if</span> (result.HasNoException)
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>    {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>        Console.WriteLine(<span style="color:#e6db74">&#34;Result was: &#34;</span> + result.Value);
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>        ...
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>    }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>    ...
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>}
-</code></pre></div><p>And below is an example of how to do some exception handling with <code>IOperationResult</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> service = ServiceConsumerFactory.Create&lt;IFakeService&gt;(() =&gt; <span style="color:#66d9ef">new</span> FakeServiceClient())))
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>{
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#66d9ef">var</span> result = service.Consume(operation =&gt; operation.AddIntegers(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>));
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>    <span style="color:#66d9ef">if</span> (result.HasNoException)
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>    {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>        Console.WriteLine(<span style="color:#e6db74">&#34;Result was: &#34;</span> + result.Value);
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>    <span style="color:#66d9ef">else</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>    {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>        <span style="color:#66d9ef">if</span> (result.HasFaultExceptionOfType&lt;MyCustomException&gt;())
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>        {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>            Console.WriteLine(<span style="color:#e6db74">&#34;Service operation threw a custom fault: &#34;</span> + result.Exception.ToString());
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>        }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>        <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (result.HasFaultException)
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>        {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>            Console.WriteLine(<span style="color:#e6db74">&#34;Service operation threw a fault: &#34;</span> + result.Exception.ToString());
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>        }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>        <span style="color:#66d9ef">else</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>        {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>            Console.WriteLine(<span style="color:#e6db74">&#34;An unexpected error occurred while calling the service operation: &#34;</span> + result.Exception.ToString());
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>        }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span>    }
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>}
-</code></pre></div>
-        
-        </div>
-
-        
-        <div class="content-page-tags">
-            
-            <a href="https://devzone.channeladam.com/tags/wcf/">WCF</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/windows-communication-foundation/">Windows Communication Foundation</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/channeladam-.net-libraries/">ChannelAdam .NET Libraries</a>&nbsp;
-            
-        </div>
-        
-
-    </article>
-    
 
     
     <ul class="pager main-pager">
@@ -1015,32 +941,29 @@ The service channel will automatically be correctly disposed and closed or abort
             <li><a href="/library/channeladam-logging">ChannelAdam Logging Library</a></li>
             <li><a href="/library/channeladam-primitiveextensions">ChannelAdam Primitive Extensions Library</a></li>
             <li><a href="/library/channeladam-reflection">ChannelAdam Reflection Library</a></li>
+            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
             <li><a href="/library/channeladam-xml">ChannelAdam XML Library</a></li>
         </ul>
    
-        <div class="h2">Web Services</div>
-        <ul>
-            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
-            <li><a href="/library/channeladam-soap">ChannelAdam SOAP 1.1 / 1.2 Library</a></li>
-            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
-            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
-            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
-        </ul>
-
         <div class="h2">Testing</div>
         <ul>
             <li><a href="/library/channeladam-testframework">ChannelAdam Test Framework Library</a></li>
             <li><a href="/library/channeladam-testframework-moq">ChannelAdam Test Framework Moq Library</a></li>
-            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
             <li><a href="/library/channeladam-testframework-mstestv2">ChannelAdam Test Framework MSTestV2 Library</a></li>
             <li><a href="/library/channeladam-testframework-nunit">ChannelAdam Test Framework NUnit Library</a></li>
             <li><a href="/library/channeladam-testframework-text">ChannelAdam Test Framework Text Library</a></li>
             <li><a href="/library/channeladam-testframework-xml">ChannelAdam Test Framework XML Library</a></li>
+            <li><a href="/library/channeladam-testframework-xunit">ChannelAdam Test Framework XUnit Library</a></li>
             <li><a href="/library/channeladam-testframework-biztalk">ChannelAdam Test Framework Library for BizTalk</a></li>
         </ul>
 
         <div class="h2">DEPRECATED LIBRARIES</div>
         <ul>
+            <li><a href="/library/channeladam-wcf">ChannelAdam WCF Library</a></li>
+            <li><a href="/library/channeladam-nancy">ChannelAdam Nancy Library</a></li>
+            <li><a href="/library/channeladam-nancy-hosting-self">ChannelAdam Nancy Self-Hosting Library</a></li>
+            <li><a href="/library/channeladam-nancy-soap">ChannelAdam Nancy SOAP Library</a></li>
+            <li><a href="/library/channeladam-testframework-mstest">ChannelAdam Test Framework MSTest Library</a></li>
             <li><a href="/library/channeladam-core">ChannelAdam Core Library</a></li>
             <li><a href="/library/channeladam-testframeworks">ChannelAdam Test Framework Libraries (V1)</a></li>
         </ul>
@@ -1089,7 +1012,7 @@ The service channel will automatically be correctly disposed and closed or abort
     <div class="widget card">
         <div class="h1">Recent Blog Posts</div>
 
-        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2017/11/announcing-dotnet-notebook/">Announcing the ChannelAdam .NET Notebook</a></li></ul>
+        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li><li><a href="/notebooks/linux/">Linux Notebook</a></li></ul>
     </div>
 </div>
 
@@ -1139,7 +1062,7 @@ The service channel will automatically be correctly disposed and closed or abort
         &nbsp;<a href="/tags/build" style="font-size:1.3252166245432684rem">Build</a>
         &nbsp;<a href="/tags/business" style="font-size:1rem">Business</a>
         &nbsp;<a href="/tags/c" style="font-size:1rem">C#</a>
-        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8340640545489768rem">Channeladam .Net Libraries</a>
+        &nbsp;<a href="/tags/channeladam-.net-libraries" style="font-size:1.8406727790554602rem">Channeladam .Net Libraries</a>
         &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
         &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
         &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
@@ -1269,7 +1192,7 @@ The service channel will automatically be correctly disposed and closed or abort
         &nbsp;<a href="/tags/static-site-generator" style="font-size:1rem">Static Site Generator</a>
         &nbsp;<a href="/tags/teamreview" style="font-size:1rem">Teamreview</a>
         &nbsp;<a href="/tags/test-driven-development" style="font-size:1rem">Test Driven Development</a>
-        &nbsp;<a href="/tags/test-framework" style="font-size:1.4878249368149024rem">Test Framework</a>
+        &nbsp;<a href="/tags/test-framework" style="font-size:1.5154561545121918rem">Test Framework</a>
         &nbsp;<a href="/tags/testing" style="font-size:1.996672366820611rem">Testing</a>
         &nbsp;<a href="/tags/text" style="font-size:1rem">Text</a>
         &nbsp;<a href="/tags/tfs" style="font-size:1.1626083122716342rem">Tfs</a>
@@ -1292,6 +1215,7 @@ The service channel will automatically be correctly disposed and closed or abort
         &nbsp;<a href="/tags/work-items" style="font-size:1rem">Work Items</a>
         &nbsp;<a href="/tags/xml" style="font-size:1.257728077256096rem">Xml</a>
         &nbsp;<a href="/tags/xmlunit" style="font-size:1rem">Xmlunit</a>
+        &nbsp;<a href="/tags/xunit" style="font-size:1rem">Xunit</a>
         &nbsp;</div>
 
     </div>

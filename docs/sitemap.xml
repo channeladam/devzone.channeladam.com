@@ -8,22 +8,28 @@
     <loc>https://devzone.channeladam.com/tags/.net-standard-2.0/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/.net-standard-2.1/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/channeladam-.net-libraries/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/series/channeladam-.net-libraries/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/articles/2021/01/channeladam-dotnet-library-updates/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/notebooks/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/deprecated/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/languages/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/notebooks/languages/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/notebooks/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/nullable-reference-types/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/series/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/library/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/test-framework/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/library/channeladam-testframework-xunit/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/xunit/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/articles/2020/04/changed-to-hugo/</loc><lastmod>2020-04-07T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/docpad/</loc><lastmod>2020-04-07T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/hugo/</loc><lastmod>2020-04-07T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/library/</loc><lastmod>2020-04-07T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/static-site-generator/</loc><lastmod>2020-04-07T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/</loc><lastmod>2020-02-10T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/series/channeladam-.net-libraries/</loc><lastmod>2018-07-16T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/series/</loc><lastmod>2018-07-16T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/library/channeladam-xml/</loc><lastmod>2018-07-16T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/xml/</loc><lastmod>2018-07-16T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/test-framework/</loc><lastmod>2018-06-24T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/library/channeladam-testframework/</loc><lastmod>2018-06-24T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/library/channeladam-testframework-xml/</loc><lastmod>2018-06-24T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/xmlunit/</loc><lastmod>2018-06-24T00:00:00+00:00</lastmod></url><url>
@@ -70,7 +76,6 @@
     <loc>https://devzone.channeladam.com/tags/services/</loc><lastmod>2018-05-01T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/azure/</loc><lastmod>2018-04-07T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/distributed-systems/azure-container-service/</loc><lastmod>2018-04-07T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/notebooks/</loc><lastmod>2018-04-07T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/distributed-systems/</loc><lastmod>2018-04-07T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/distributed-systems/</loc><lastmod>2018-04-07T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/microservices/</loc><lastmod>2018-04-07T00:00:00+00:00</lastmod></url><url>
@@ -97,13 +102,10 @@
     <loc>https://devzone.channeladam.com/tags/machine-learning/</loc><lastmod>2018-03-18T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/python/</loc><lastmod>2018-03-18T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/graphics/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/languages/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/notebooks/languages/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/linux/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/security/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/security/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/articles/2017/11/announcing-dotnet-notebook/</loc><lastmod>2017-11-10T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/</loc><lastmod>2017-11-10T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/tips-upgrading-to-net-standard-2/</loc><lastmod>2017-11-10T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/articles/2017/11/announcing-notebooks/</loc><lastmod>2017-11-05T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/docker-swarm/</loc><lastmod>2017-11-04T00:00:00+00:00</lastmod></url><url>

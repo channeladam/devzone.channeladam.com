@@ -20,18 +20,18 @@
     </item><item>
       <title>Languages Notebook</title>
       <link>https://devzone.channeladam.com/notebooks/languages/</link>
-      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/</guid>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/</guid>
       <description>Notes about computer programming languages.</description>
+    </item><item>
+      <title>Microsoft .NET Notebook</title>
+      <link>https://devzone.channeladam.com/notebooks/languages/dotnet/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/</guid>
+      <description>Notes about Microsoft .NET.</description>
     </item><item>
       <title>Announcing the ChannelAdam .NET Notebook</title>
       <link>https://devzone.channeladam.com/articles/2017/11/announcing-dotnet-notebook/</link>
       <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2017/11/announcing-dotnet-notebook/</guid>
       <description>Announcing the ChannelAdam .NET Notebook.</description>
-    </item><item>
-      <title>Microsoft .NET Notebook</title>
-      <link>https://devzone.channeladam.com/notebooks/languages/dotnet/</link>
-      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/</guid>
-      <description>Notes about Microsoft .NET.</description>
     </item><item>
       <title>Tips for Upgrading to .NET Standard 2.0</title>
       <link>https://devzone.channeladam.com/notebooks/languages/dotnet/tips-upgrading-to-net-standard-2/</link>

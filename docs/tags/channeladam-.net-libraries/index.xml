@@ -8,6 +8,11 @@
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2021/01/channeladam-dotnet-library-updates/</guid>
       <description>The ChannelAdam .NET libraries have been updated to target .NET 5.0, enable nullable reference types and some have been deprecated.</description>
     </item><item>
+      <title>The ChannelAdam Test Framework xUnit Library</title>
+      <link>https://devzone.channeladam.com/library/channeladam-testframework-xunit/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-testframework-xunit/</guid>
+      <description>About the ChannelAdam Test Framework xUnit Library.</description>
+    </item><item>
       <title>The ChannelAdam XML Library</title>
       <link>https://devzone.channeladam.com/library/channeladam-xml/</link>
       <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/library/channeladam-xml/</guid>
