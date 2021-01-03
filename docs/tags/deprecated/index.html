@@ -134,10 +134,14 @@
         
             <h1 id="overview">Overview</h1>
 <p>The <a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0/" target="_blank">release of .NET 5.0 in November 2020</a> marked a significant milestone for the .NET ecosystem.</p>
-<p>As such, I needed to upgrade the ChannelAdam .NET libraries to follow <a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">my guidance on .NET 5.0 for library developers</a>.</p>
-<p>In addition to most of the ChannelAdam libraries being updated to additionally multi-target both .NET 5.0 and .NET Standard 2.0 (as per the guidance), some of the libraries have been deprecated. See below for details!</p>
+<p>As such, I have updated the ChannelAdam .NET libraries to:</p>
+<ol>
+<li>multi-target both .NET 5.0 and .NET Standard 2.0 - as per <a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">my guidance on .NET 5.0 for library developers</a>;</li>
+<li>enable <a href="https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references" target="_blank">Nullable Reference Types</a> and update the code base accordingly to be semantically correct in that regard; and</li>
+<li>deprecate libraries that have features that are no longer supported by Microsoft or the library dependencies.</li>
+</ol>
 <h1 id="updated-libraries">Updated Libraries</h1>
-<p>The following 18 ChannelAdam .NET libraries now have been updated to multi-target .NET 5.0, .NET Standard 2.x and if any, their previously supported .NET Standard 1.x versions.</p>
+<p>The following 18 ChannelAdam .NET libraries now have been updated to multi-target .NET 5.0, .NET Standard 2.x (and if any, their previously supported .NET Standard 1.x versions) and enable Nullable Reference Types.</p>
 <ul>
 <li><a href="https://github.com/channeladam/ChannelAdam.Commands" target="_blank">ChannelAdam.Commands</a> - targeting 5.0, 2.0, 1.1</li>
 <li><a href="https://github.com/channeladam/ChannelAdam.DispatchProxies" target="_blank">ChannelAdam.DispatchProxies</a> - targeting 5.0, 2.1, 2.0, 1.0</li>
