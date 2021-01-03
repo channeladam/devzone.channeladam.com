@@ -2,7 +2,57 @@
   <channel>
     <title>Tags on DevZone.ChannelAdam.com</title>
     <link>https://devzone.channeladam.com/tags/</link>
-    <description>Recent contentin Tags on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+    <description>Recent contentin Tags on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>.NET</title>
+      <link>https://devzone.channeladam.com/tags/.net/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net/</guid>
+      <description></description>
+    </item><item>
+      <title>.NET 5.0</title>
+      <link>https://devzone.channeladam.com/tags/.net-5.0/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net-5.0/</guid>
+      <description></description>
+    </item><item>
+      <title>.NET Core</title>
+      <link>https://devzone.channeladam.com/tags/.net-core/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net-core/</guid>
+      <description></description>
+    </item><item>
+      <title>.NET Standard</title>
+      <link>https://devzone.channeladam.com/tags/.net-standard/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net-standard/</guid>
+      <description></description>
+    </item><item>
+      <title>.NET Standard 2.0</title>
+      <link>https://devzone.channeladam.com/tags/.net-standard-2.0/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net-standard-2.0/</guid>
+      <description></description>
+    </item><item>
+      <title>.NET Standard 2.1</title>
+      <link>https://devzone.channeladam.com/tags/.net-standard-2.1/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net-standard-2.1/</guid>
+      <description></description>
+    </item><item>
+      <title>ChannelAdam .NET Libraries</title>
+      <link>https://devzone.channeladam.com/tags/channeladam-.net-libraries/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/channeladam-.net-libraries/</guid>
+      <description></description>
+    </item><item>
+      <title>Deprecated</title>
+      <link>https://devzone.channeladam.com/tags/deprecated/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/deprecated/</guid>
+      <description></description>
+    </item><item>
+      <title>Notebooks</title>
+      <link>https://devzone.channeladam.com/tags/notebooks/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/notebooks/</guid>
+      <description></description>
+    </item><item>
+      <title>Nullable Reference Types</title>
+      <link>https://devzone.channeladam.com/tags/nullable-reference-types/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/nullable-reference-types/</guid>
+      <description></description>
+    </item><item>
       <title>DocPad</title>
       <link>https://devzone.channeladam.com/tags/docpad/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/docpad/</guid>
@@ -16,11 +66,6 @@
       <title>Static Site Generator</title>
       <link>https://devzone.channeladam.com/tags/static-site-generator/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/static-site-generator/</guid>
-      <description></description>
-    </item><item>
-      <title>ChannelAdam .NET Libraries</title>
-      <link>https://devzone.channeladam.com/tags/channeladam-.net-libraries/</link>
-      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/channeladam-.net-libraries/</guid>
       <description></description>
     </item><item>
       <title>XML</title>
@@ -143,11 +188,6 @@
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/kestrel/</guid>
       <description></description>
     </item><item>
-      <title>Notebooks</title>
-      <link>https://devzone.channeladam.com/tags/notebooks/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/notebooks/</guid>
-      <description></description>
-    </item><item>
       <title>Orchestration</title>
       <link>https://devzone.channeladam.com/tags/orchestration/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/orchestration/</guid>
@@ -266,11 +306,6 @@
       <title>Python</title>
       <link>https://devzone.channeladam.com/tags/python/</link>
       <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/python/</guid>
-      <description></description>
-    </item><item>
-      <title>.NET</title>
-      <link>https://devzone.channeladam.com/tags/.net/</link>
-      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net/</guid>
       <description></description>
     </item><item>
       <title>Graphics</title>

@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft .NET Notebook on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/notebooks/languages/dotnet/</link>
+    <description>Recent contentin Microsoft .NET Notebook on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Fri, 10 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/notebooks/languages/dotnet/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>.NET 5.0 and Guidance for Library Developers</title>
+      <link>https://devzone.channeladam.com/notebooks/languages/dotnet/net-5-guidance-for-library-developers/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/net-5-guidance-for-library-developers/</guid>
+      <description>Guidance regarding the targeting of .NET 5.0 and .NET Standard in reusable libraries.</description>
+    </item><item>
+      <title>Tips for Upgrading to .NET Standard 2.0</title>
+      <link>https://devzone.channeladam.com/notebooks/languages/dotnet/tips-upgrading-to-net-standard-2/</link>
+      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/tips-upgrading-to-net-standard-2/</guid>
+      <description>Tips for upgrading to .NET Standard 2.0.</description>
+    </item></channel>
+</rss>
