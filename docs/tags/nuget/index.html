@@ -38,7 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://devzone.channeladam.com/tags/nuget/" />
 <meta property="og:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
-<meta property="og:updated_time" content="2021-01-03T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
+<meta property="og:updated_time" content="2021-01-24T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
@@ -126,8 +126,47 @@
 
     
     <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2021/01/editorconfig-distribution/">
+            <h2 class="post-title">.NET Notebook Update - Distribution of a Common EditorConfig File to Multiple .NET Projects</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p>The .NET Notebook has been updated to answer the frequently-asked question about how to distribute a common or centralised EditorConfig file, with Code Style and Analysis Rules, to multiple .NET Projects or Solutions without duplication.</p>
+<p>See the new notebook page <a href="/notebooks/languages/dotnet/editorconfig-distribution">Distribution of a Common EditorConfig File to Multiple .NET Projects</a>, or <a href="/notebooks/languages/dotnet">the full .NET Notebook</a>.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/.net-5.0/">.NET 5.0</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/.net-standard/">.NET Standard</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/.net-core/">.NET Core</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/.net/">.NET</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/editorconfig/">EditorConfig</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/analyzerconfig/">AnalyzerConfig</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/nuget/">NuGet</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/code-analysis/">Code Analysis</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/code-style/">Code Style</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
         <a href="https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/">
-            <h2 class="post-title">Distribution of a common EditorConfig file to Multiple .NET Projects</h2>
+            <h2 class="post-title">Distribution of a Common EditorConfig File to Multiple .NET Projects</h2>
         </a>
 
         <div class="content-page-entry">
@@ -193,8 +232,9 @@
 <li>they do not support the concept of including parent EditorConfig files.</li>
 </ol>
 <p>EditorConfig files (named <code>.editorconfig</code>) are intended to reside within the folder structure of your source code. It relies upon the hierarchical nature of the file system, where configuration in EditorConfig files in a child folder take precedence over those in parent or ancestor folders.</p>
-<p>Within an EditorConfig file, the <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#set-rule-severity-in-an-editorconfig-file" target="_blank">severity of a rule is specified with the syntax</a>: <code>dotnet_diagnostic.&lt;rule ID&gt;.severity = &lt;severity&gt;</code>.
-The <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#configure-severity-levels" target="_blank">valid values for severity</a> are:</p>
+<p>Within an EditorConfig file, the <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#set-rule-severity-in-an-editorconfig-file" target="_blank">severity of a rule is specified with the syntax</a>:</p>
+<pre><code>dotnet_diagnostic.&lt;rule ID&gt;.severity = &lt;severity&gt;
+</code></pre><p>The <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#configure-severity-levels" target="_blank">valid values for severity</a> are:</p>
 <ul>
 <li>error</li>
 <li>warning</li>
@@ -235,7 +275,7 @@ This immediately makes one concerned about the duplication of rules that overlap
 </ol>
 <p>However, if one chooses any <code>AnalysisMode</code> other than <code>Default</code>, the severity rules provided within the .NET SDK are specified, and if you have your own Global AnalyzerConfig file, the rules will likely conflict and therefore be ignored!</p>
 <p>This is the situation (as of January 2021) - until Microsoft releases an update to the AnalyzerConfig mechanism to allow a <code>global_level</code> setting to be specified to <a href="https://github.com/dotnet/roslyn/issues/48634" target="_blank">allow for a hierarchy of rule precedence among AnalyzerConfig files</a>.</p>
-<p>Until then, if you are like me and you want to use <code>&lt;AnalysisMode&gt;AllEnabledByDefault&lt;/AnalysisMode&gt;</code>, then your only option to override those default settings individually is within an EditorConfig file.</p>
+<p>Until then, if you are like me and you want to use <code>&lt;AnalysisMode&gt;AllEnabledByDefault&lt;/AnalysisMode&gt;</code>, then your only option to override some of those default settings individually is within an EditorConfig file.</p>
 <p>And so now we come full circle - back to asking the question of how we can distribute an EditorConfig file via a NuGet package.</p>
 <h1 id="approach">Approach</h1>
 <p>I searched far and wide on the Internet for how to distribute a common EditorConfig file via a NuGet package so that it could be used by a team in multiple projects and solutions. In the end, all of the answers I saw said the same thing - you cannot, and that is not the intended purpose of such a file as the source code folder location is critical.</p>
@@ -256,10 +296,10 @@ This immediately makes one concerned about the duplication of rules that overlap
 <li>
 <p>Given the EditorConfig file is always copied to the Project folder, the developer cannot make persistent changes to that file - but:</p>
 <p>(a) they could add their own EditorConfig file to the parent folder of the Project folder; or</p>
-<p>(b) you or your team could change the destination location specified in your NuGet package to  instead coy the EditorConfig file to the parent of the Project folder, and thus allow your developers to override settings just for that Project. This may be useful to allow the specification of project-specific rules or suppressions, but depending on how you use your power, may defeat some of the general purpose of having a central or common standard rule file.</p>
+<p>(b) you or your team could change the destination location specified in your NuGet package to instead copy the EditorConfig file to the parent of the Project folder, and thus allow your developers to override settings just for that Project. This may be useful to allow the specification of project-specific rules or source code rule suppressions, but depending on how you or your team uses this power, it may defeat some of the general purpose of having a central or common standard rule file.</p>
 </li>
 <li>
-<p>One should add the EditorConfig file that is copied to the Project file to the <code>.gitignore</code> so it is not committed in source control and duplicated that way.</p>
+<p>One should add the EditorConfig file that is copied to the Project file to your <code>.gitignore</code> file so it is not committed in source control and duplicated that way.</p>
 </li>
 </ul>
 <h1 id="solution">Solution</h1>
@@ -268,7 +308,7 @@ This immediately makes one concerned about the duplication of rules that overlap
 <p>Below is an explanation of how it works.</p>
 <p>Don&rsquo;t forget to customise the <a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/blob/main/.NET%20Code%20Analysis/My.EditorConfig.NuGet.Package.Internal/Templates/editorconfig.base" target="_blank">rules in the EditorConfig file</a> for the purposes of your team/project! The rules I prefer may not be the rules you prefer!</p>
 <h2 id="nuget-msbuild-props-file">NuGet MSBuild .props File</h2>
-<p>The following information relates to the <code>.props</code> file distributed within the NuGet package.</p>
+<p>The following information relates to <a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/blob/main/.NET%20Code%20Analysis/My.EditorConfig.NuGet.Package.Internal/build/My.EditorConfig.NuGet.Package.Internal.props" target="_blank">my example .props file</a> distributed within the NuGet package.</p>
 <p>A <a href="https://docs.microsoft.com/en-au/nuget/create-packages/creating-a-package#include-msbuild-props-and-targets-in-a-package" target="_blank">NuGet package can include a MSBuild .props file</a> of the same name that can contain Properties, Package References and Targets that execute when a build is performed and are applied to the project that references the NuGet package.</p>
 <p>In this .props file, I specify:</p>
 <ul>
@@ -303,7 +343,7 @@ This immediately makes one concerned about the duplication of rules that overlap
 <li>I do <em>not</em> want warnings to be treated as errors, because I presumably have meticulously and consciously determined and customised the rules in my EditorConfig file to distinguish between rules that must be adhered to, versus rules that really should be attended to and resolved but do not matter as much.</li>
 <li><code>Nullable</code> is enabled because the newish <a href="https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references" target="_blank">Nullable Reference Types</a> feature is fantastic and all developers should think more about appropriately handling null and avoiding costly null reference issues in production;</li>
 <li><code>WarningsAsErrors</code> set to <code>nullable</code> is <a href="https://github.com/dotnet/roslyn/issues/41605#issuecomment-585256448" target="_blank">short-hand</a> for listing a number of <code>CS86??</code> nullable rules to be treated as errors (because we want to enforce the avoidance of obvious potential null reference issues); and</li>
-<li><code>LangVersion</code> of <code>latest</code> allows one to use the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version" target="_blank">latest C# language features and syntax goodness</a> - as long as you don&rsquo;t try to use features that won&rsquo;t compile - e.g. using the .NET 5.0 <code>record</code> type from .NET Core code.</li>
+<li><code>LangVersion</code> of <code>latest</code> allows us to use the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version" target="_blank">latest C# language features and syntax goodness</a> - as long as we don&rsquo;t try to use features that won&rsquo;t compile - e.g. using the .NET 5.0 <code>record</code> type from .NET Core code.</li>
 </ul>
 <h3 id="properties-to-specify-desired-rules">Properties to Specify Desired Rules</h3>
 <p>As mentioned earlier, rule CA1014 has a Location.None and cannot be specified in an EditorConfig file. And since this approach currently cannot use Global AnalyzerConfig files, I need to disable this rule in the .props file.</p>
@@ -352,7 +392,7 @@ This immediately makes one concerned about the duplication of rules that overlap
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>  <span style="color:#f92672">&lt;/PackageReference&gt;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#f92672">&lt;/ItemGroup&gt;</span>
 </code></pre></div><h2 id="nuget-project-file">NuGet Project File</h2>
-<p>The following information relates to the <code>.csproj</code> file for the NuGet package.</p>
+<p>The following information relates to <a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/blob/main/.NET%20Code%20Analysis/My.EditorConfig.NuGet.Package/My.EditorConfig.NuGet.Package.csproj" target="_blank">my example .csproj file</a> for the NuGet package.</p>
 <h3 id="packing">Packing</h3>
 <p>When packing, NuGet by default ignores files that begin with a period.</p>
 <p>The following property overcomes that and allows our <code>.editorconfig</code> file to be packed.</p>
@@ -395,7 +435,7 @@ This immediately makes one concerned about the duplication of rules that overlap
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>      <span style="color:#a6e22e">UseHardlinksIfPossible=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#f92672">/&gt;</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#f92672">&lt;/Target&gt;</span>
 </code></pre></div><h1 id="conclusion">Conclusion</h1>
-<p>This approach is relatively simple to implement, very simple to use (just by installing a NuGet package), and achieves the purpose of distributing a common EditorConfig file to multiple .NET Projects and Solutions in order help developers in a team achieve consistently styled code.</p>
+<p>This approach is relatively simple to implement (with a template like I have provided), very simple to use (just by installing you own NuGet package), and achieves the purpose of distributing a common EditorConfig file to multiple .NET Projects and Solutions in order help developers in a team achieve consistently styled code with your own tailored standards.</p>
 
         
         </div>
@@ -552,7 +592,7 @@ This immediately makes one concerned about the duplication of rules that overlap
     <div class="widget card">
         <div class="h1">Recent Blog Posts</div>
 
-        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/editorconfig-distribution/">Distribution of a common EditorConfig file to Multiple .NET Projects</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li></ul>
+        <ul><li><a href="/notebooks/languages/dotnet/editorconfig-distribution/">Distribution of a Common EditorConfig File to Multiple .NET Projects</a></li><li><a href="/articles/2021/01/editorconfig-distribution/">.NET Notebook Update - Distribution of a Common EditorConfig File to Multiple .NET Projects</a></li><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li></ul>
     </div>
 </div>
 
@@ -567,18 +607,18 @@ This immediately makes one concerned about the duplication of rules that overlap
         <div class="h1">Tag Cloud</div>
 
         
-    <div class="tag-cloud"><a href="/tags/.net" style="font-size:1.4878249368149024rem">.Net</a>
+    <div class="tag-cloud"><a href="/tags/.net" style="font-size:1.5154561545121918rem">.Net</a>
         &nbsp;<a href="/tags/.net-4.0" style="font-size:1.1626083122716342rem">.Net 4.0</a>
-        &nbsp;<a href="/tags/.net-5.0" style="font-size:1.3775648087257248rem">.Net 5.0</a>
-        &nbsp;<a href="/tags/.net-core" style="font-size:1.3775648087257248rem">.Net Core</a>
+        &nbsp;<a href="/tags/.net-5.0" style="font-size:1.4203363895277301rem">.Net 5.0</a>
+        &nbsp;<a href="/tags/.net-core" style="font-size:1.4203363895277301rem">.Net Core</a>
         &nbsp;<a href="/tags/.net-framework" style="font-size:1.257728077256096rem">.Net Framework</a>
-        &nbsp;<a href="/tags/.net-standard" style="font-size:1.3775648087257248rem">.Net Standard</a>
+        &nbsp;<a href="/tags/.net-standard" style="font-size:1.4203363895277301rem">.Net Standard</a>
         &nbsp;<a href="/tags/.net-standard-2.0" style="font-size:1.257728077256096rem">.Net Standard 2.0</a>
         &nbsp;<a href="/tags/.net-standard-2.1" style="font-size:1.1626083122716342rem">.Net Standard 2.1</a>
         &nbsp;<a href="/tags/agile" style="font-size:1rem">Agile</a>
         &nbsp;<a href="/tags/ajax" style="font-size:1rem">Ajax</a>
         &nbsp;<a href="/tags/amazon-s3" style="font-size:1rem">Amazon S3</a>
-        &nbsp;<a href="/tags/analyzerconfig" style="font-size:1rem">Analyzerconfig</a>
+        &nbsp;<a href="/tags/analyzerconfig" style="font-size:1.1626083122716342rem">Analyzerconfig</a>
         &nbsp;<a href="/tags/api-apps" style="font-size:1.3252166245432684rem">Api Apps</a>
         &nbsp;<a href="/tags/api-management" style="font-size:1rem">Api Management</a>
         &nbsp;<a href="/tags/app-service" style="font-size:1.3252166245432684rem">App Service</a>
@@ -607,10 +647,10 @@ This immediately makes one concerned about the duplication of rules that overlap
         &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
         &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
         &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
-        &nbsp;<a href="/tags/code-analysis" style="font-size:1rem">Code Analysis</a>
+        &nbsp;<a href="/tags/code-analysis" style="font-size:1.1626083122716342rem">Code Analysis</a>
         &nbsp;<a href="/tags/code-quality" style="font-size:1rem">Code Quality</a>
         &nbsp;<a href="/tags/code-reviews" style="font-size:1rem">Code Reviews</a>
-        &nbsp;<a href="/tags/code-style" style="font-size:1rem">Code Style</a>
+        &nbsp;<a href="/tags/code-style" style="font-size:1.1626083122716342rem">Code Style</a>
         &nbsp;<a href="/tags/coding-practices" style="font-size:1.257728077256096rem">Coding Practices</a>
         &nbsp;<a href="/tags/command" style="font-size:1.1626083122716342rem">Command</a>
         &nbsp;<a href="/tags/container" style="font-size:1.3775648087257248rem">Container</a>
@@ -630,7 +670,7 @@ This immediately makes one concerned about the duplication of rules that overlap
         &nbsp;<a href="/tags/docpad" style="font-size:1rem">Docpad</a>
         &nbsp;<a href="/tags/domain-driven-design" style="font-size:1rem">Domain Driven Design</a>
         &nbsp;<a href="/tags/dynamic" style="font-size:1rem">Dynamic</a>
-        &nbsp;<a href="/tags/editorconfig" style="font-size:1rem">Editorconfig</a>
+        &nbsp;<a href="/tags/editorconfig" style="font-size:1.1626083122716342rem">Editorconfig</a>
         &nbsp;<a href="/tags/embedded-resources" style="font-size:1rem">Embedded Resources</a>
         &nbsp;<a href="/tags/encoding" style="font-size:1rem">Encoding</a>
         &nbsp;<a href="/tags/events" style="font-size:1rem">Events</a>
@@ -683,7 +723,7 @@ This immediately makes one concerned about the duplication of rules that overlap
         &nbsp;<a href="/tags/naming" style="font-size:1.1626083122716342rem">Naming</a>
         &nbsp;<a href="/tags/nancy" style="font-size:1.3775648087257248rem">Nancy</a>
         &nbsp;<a href="/tags/notebooks" style="font-size:1.3775648087257248rem">Notebooks</a>
-        &nbsp;<a href="/tags/nuget" style="font-size:1rem">Nuget</a>
+        &nbsp;<a href="/tags/nuget" style="font-size:1.1626083122716342rem">Nuget</a>
         &nbsp;<a href="/tags/nullable-reference-types" style="font-size:1rem">Nullable Reference Types</a>
         &nbsp;<a href="/tags/nunit" style="font-size:1.1626083122716342rem">Nunit</a>
         &nbsp;<a href="/tags/nvidia" style="font-size:1.1626083122716342rem">Nvidia</a>

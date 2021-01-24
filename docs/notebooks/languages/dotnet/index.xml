@@ -3,15 +3,15 @@
     <title>Microsoft .NET Notebook on DevZone.ChannelAdam.com</title>
     <link>https://devzone.channeladam.com/notebooks/languages/dotnet/</link>
     <description>Recent contentin Microsoft .NET Notebook on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/notebooks/languages/dotnet/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Distribution of a Common EditorConfig File to Multiple .NET Projects</title>
+      <link>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</guid>
+      <description>Answers the frequently-asked question about how to distribute a common or centralised EditorConfig file, with Code Style and Analysis Rules, to multiple .NET Projects or Solutions without duplication.</description>
+    </item><item>
       <title>.NET 5.0 and Guidance for Library Developers</title>
       <link>https://devzone.channeladam.com/notebooks/languages/dotnet/net-5-guidance-for-library-developers/</link>
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/net-5-guidance-for-library-developers/</guid>
       <description>Guidance regarding the targeting of .NET 5.0 and .NET Standard in reusable libraries.</description>
-    </item><item>
-      <title>Distribution of a common EditorConfig file to Multiple .NET Projects</title>
-      <link>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</guid>
-      <description>Answers the frequently-asked question about how to distribute a common or centralised EditorConfig file, with Code Style and Analysis Rules, to multiple .NET Projects or Solutions without duplication.</description>
     </item><item>
       <title>Tips for Upgrading to .NET Standard 2.0</title>
       <link>https://devzone.channeladam.com/notebooks/languages/dotnet/tips-upgrading-to-net-standard-2/</link>

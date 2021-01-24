@@ -2,10 +2,15 @@
   <channel>
     <title>AnalyzerConfig on DevZone.ChannelAdam.com</title>
     <link>https://devzone.channeladam.com/tags/analyzerconfig/</link>
-    <description>Recent contentin AnalyzerConfig on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/analyzerconfig/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Distribution of a common EditorConfig file to Multiple .NET Projects</title>
+    <description>Recent contentin AnalyzerConfig on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/analyzerconfig/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>.NET Notebook Update - Distribution of a Common EditorConfig File to Multiple .NET Projects</title>
+      <link>https://devzone.channeladam.com/articles/2021/01/editorconfig-distribution/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2021/01/editorconfig-distribution/</guid>
+      <description>The .NET Notebook has been updated to answer the frequently-asked question about how to distribute a common or centralised EditorConfig file, with Code Style and Analysis Rules, to multiple .NET Projects or Solutions without duplication.</description>
+    </item><item>
+      <title>Distribution of a Common EditorConfig File to Multiple .NET Projects</title>
       <link>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</guid>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</guid>
       <description>Answers the frequently-asked question about how to distribute a common or centralised EditorConfig file, with Code Style and Analysis Rules, to multiple .NET Projects or Solutions without duplication.</description>
     </item></channel>
 </rss>

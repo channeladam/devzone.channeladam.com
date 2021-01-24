@@ -1,31 +1,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://devzone.channeladam.com/tags/.net/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/.net-5.0/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/.net/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/.net-5.0/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/.net-core/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/articles/2021/01/editorconfig-distribution/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/.net-standard/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/analyzerconfig/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/code-analysis/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/code-style/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/editorconfig/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/nuget/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/net-5-guidance-for-library-developers/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/.net-core/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/articles/2021/01/net-5-guidance-notes/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/.net-standard/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/.net-standard-2.0/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/.net-standard-2.1/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/analyzerconfig/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/channeladam-.net-libraries/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/series/channeladam-.net-libraries/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/articles/2021/01/channeladam-dotnet-library-updates/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/code-analysis/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/code-style/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/deprecated/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/editorconfig/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/languages/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/languages/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/notebooks/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/nuget/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/nullable-reference-types/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/series/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/library/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/test-framework/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/library/channeladam-testframework-xunit/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/xunit/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>

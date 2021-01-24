@@ -38,7 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://devzone.channeladam.com/tags/.net/" />
 <meta property="og:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
-<meta property="og:updated_time" content="2021-01-03T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
+<meta property="og:updated_time" content="2021-01-24T00:00:00+00:00" /><meta property="og:site_name" content="ChannelAdam Software Development Zone" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://devzone.channeladam.com/img/channeladam/channeladam-default-share-1.png"/>
@@ -124,6 +124,347 @@
     
     
 
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/articles/2021/01/editorconfig-distribution/">
+            <h2 class="post-title">.NET Notebook Update - Distribution of a Common EditorConfig File to Multiple .NET Projects</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <p>The .NET Notebook has been updated to answer the frequently-asked question about how to distribute a common or centralised EditorConfig file, with Code Style and Analysis Rules, to multiple .NET Projects or Solutions without duplication.</p>
+<p>See the new notebook page <a href="/notebooks/languages/dotnet/editorconfig-distribution">Distribution of a Common EditorConfig File to Multiple .NET Projects</a>, or <a href="/notebooks/languages/dotnet">the full .NET Notebook</a>.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/.net-5.0/">.NET 5.0</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/.net-standard/">.NET Standard</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/.net-core/">.NET Core</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/.net/">.NET</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/editorconfig/">EditorConfig</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/analyzerconfig/">AnalyzerConfig</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/nuget/">NuGet</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/code-analysis/">Code Analysis</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/code-style/">Code Style</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
+    
+    <article class="content-page-preview">
+        <a href="https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/">
+            <h2 class="post-title">Distribution of a Common EditorConfig File to Multiple .NET Projects</h2>
+        </a>
+
+        <div class="content-page-entry">
+        
+            <div class="page-image-toc-container">
+<div>
+<img alt="" title="" src="/notebooks/languages/dotnet/editorconfig-distribution.jpg"/>
+</div>
+<div class="table-contents-container">
+    <div class="table-contents">
+        <div class="h2 center">Table of Contents</div>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#editorconfig">EditorConfig</a>
+      <ul>
+        <li><a href="#limitations">Limitations</a></li>
+      </ul>
+    </li>
+    <li><a href="#global-analyzerconfig-files-to-the-rescue-but-not-quite-yet">Global AnalyzerConfig Files to the Rescue (But Not Quite Yet!)</a></li>
+    <li><a href="#current-state-of-play">Current State of Play</a></li>
+    <li><a href="#approach">Approach</a>
+      <ul>
+        <li><a href="#caveats-and-assumptions">Caveats and Assumptions</a></li>
+      </ul>
+    </li>
+    <li><a href="#solution">Solution</a>
+      <ul>
+        <li><a href="#nuget-msbuild-props-file">NuGet MSBuild .props File</a>
+          <ul>
+            <li><a href="#properties-to-enable-code-analysis">Properties to Enable Code Analysis</a></li>
+            <li><a href="#properties-to-specify-desired-rules">Properties to Specify Desired Rules</a></li>
+            <li><a href="#target-to-copy-the-editorconfig-file-to-the-project">Target to Copy the EditorConfig File to the Project</a></li>
+            <li><a href="#package-references-for-code-analysis-tools">Package References for Code Analysis Tools</a></li>
+          </ul>
+        </li>
+        <li><a href="#nuget-project-file">NuGet Project File</a>
+          <ul>
+            <li><a href="#packing">Packing</a></li>
+          </ul>
+        </li>
+        <li><a href="#bonus-points">Bonus Points</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+</div>
+<h1 id="overview">Overview</h1>
+<p>This information answers the frequently-asked question about how to distribute a common or centralised <em>EditorConfig</em> file, with Code Style and Analysis Rules, to multiple .NET Projects or Solutions without duplication.</p>
+<h1 id="background">Background</h1>
+<p>In the past, Code Analysis and Code Style could be enforced in your .NET code bases through the usage of <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/rule-set-reference?view=vs-2019" target="_blank">Rule Set</a> files.</p>
+<p>These <em>Rule Set</em> files supported the concept of including parent Rule Set files (to allow different mixtures of rules to be created more easily), and they could be included easily in and distributed through your own NuGet package to all of your .NET Projects.</p>
+<p>During 2020 however, and starting in Visual Studio 2019 version 16.5, <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#convert-an-existing-ruleset-file-to-editorconfig-file" target="_blank">Rule Set files were deprecated in favour of the EditorConfig file</a>.</p>
+<h1 id="editorconfig">EditorConfig</h1>
+<p><a href="https://editorconfig.org" target="_blank">EditorConfig</a> helps to maintain consistent coding styles across various Text Editors and IDEs. EditorConfig is supported in many tools, including Visual Studio 2019, Visual Studio Code, and many other editors.</p>
+<p>These configuration files work differently from Rule Set files, in that:</p>
+<ol>
+<li>they are meant only for IDEs or Text Editors; and</li>
+<li>they do not support the concept of including parent EditorConfig files.</li>
+</ol>
+<p>EditorConfig files (named <code>.editorconfig</code>) are intended to reside within the folder structure of your source code. It relies upon the hierarchical nature of the file system, where configuration in EditorConfig files in a child folder take precedence over those in parent or ancestor folders.</p>
+<p>Within an EditorConfig file, the <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#set-rule-severity-in-an-editorconfig-file" target="_blank">severity of a rule is specified with the syntax</a>:</p>
+<pre><code>dotnet_diagnostic.&lt;rule ID&gt;.severity = &lt;severity&gt;
+</code></pre><p>The <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#configure-severity-levels" target="_blank">valid values for severity</a> are:</p>
+<ul>
+<li>error</li>
+<li>warning</li>
+<li>suggestion</li>
+<li>silent</li>
+<li>none</li>
+<li>default</li>
+</ul>
+<h2 id="limitations">Limitations</h2>
+<p>There are a number of limitations with regards to the use of EditorConfig files in the .NET world.</p>
+<p>Unfortunately, EditorConfig files <a href="https://github.com/dotnet/roslyn/issues/37876#issuecomment-520617383" target="_blank">are not a one-for-one functional replacement of Rule Set files</a>.
+For example, rules that apply globally, or have <code>Location.None</code> cannot be specified in an EditorConfig file.
+One of these rules is <a href="https://github.com/dotnet/roslyn/issues/37876#issuecomment-738042719" target="_blank">CA1014: Mark assemblies with CLSCompliantAttribute</a>. Currently <a href="https://github.com/dotnet/roslyn/issues/37876#issuecomment-738042719" target="_blank">this NoWarn workaround</a> is required for <code>CA1014</code> and similar.</p>
+<p>Given that EditorConfig files are intended for Text Editing tools, and their rules are defined and applied in a hierarchical fashion within the source code folder structure, EditorConfig files cannot be referenced from within the contents or file location of a NuGet Package.</p>
+<h1 id="global-analyzerconfig-files-to-the-rescue-but-not-quite-yet">Global AnalyzerConfig Files to the Rescue (But Not Quite Yet!)</h1>
+<p>To address the limitations of EditorConfig, Microsoft introduced the concept of a <a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/configuration-files#global-analyzerconfig" target="_blank">Global AnalyzerConfig</a>, starting from Visual Studio 2019 16.8 and the .NET 5 SDK.</p>
+<p>These files provide options that apply to all the source files in a .NET Project, regardless of their file names or file paths - which means that AnalyzerConfig files can be specified in and distributed through NuGet packages.</p>
+<p>In a MSBuild project file, they are specified:</p>
+<ul>
+<li>with the <code>GlobalAnalyzerConfigFiles</code> property within an <code>ItemGroup</code> property; or</li>
+<li>the file simply can be named <code>.globalconfig</code> and automatically included for use.</li>
+</ul>
+<p>Unlike EditorConfig files, Global AnalyzerConfig files cannot be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project-level analyser configuration options.</p>
+<p>AnalyzerConfig files are used only during the compilation of the source code, and are not used in the Text Editors or IDEs.
+This immediately makes one concerned about the duplication of rules that overlap between the editor and those for compilation.</p>
+<p>The rules specified in EditorConfig files in the source hierarchy take precedence over those specified in the AnalyzerConfig files.</p>
+<h1 id="current-state-of-play">Current State of Play</h1>
+<p>So here is the current state of play (as of January 2021):</p>
+<ol>
+<li>EditorConfig files <em>cannot</em> be referenced from the folder structure of a NuGet package;</li>
+<li>AnalyzerConfig files <em>can</em> be referenced from the folder structure of a NuGet package; and</li>
+<li>EditorConfig file settings take precedence over AnalyzerConfig file settings.</li>
+</ol>
+<p>All of this sounds great until one realises that:</p>
+<ol>
+<li>If there are conflicting entries in two global AnalyzerConfig files, a compiler warning is reported and both entries are ignored; and</li>
+<li>It is desirable to set the <a href="https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#analysismode" target="_blank">AnalysisMode</a> to <code>AllEnabledByDefault</code> so that all rules are automatically enabled by default as build warnings, and from there you opt to change the severity of individual rules.</li>
+</ol>
+<p>However, if one chooses any <code>AnalysisMode</code> other than <code>Default</code>, the severity rules provided within the .NET SDK are specified, and if you have your own Global AnalyzerConfig file, the rules will likely conflict and therefore be ignored!</p>
+<p>This is the situation (as of January 2021) - until Microsoft releases an update to the AnalyzerConfig mechanism to allow a <code>global_level</code> setting to be specified to <a href="https://github.com/dotnet/roslyn/issues/48634" target="_blank">allow for a hierarchy of rule precedence among AnalyzerConfig files</a>.</p>
+<p>Until then, if you are like me and you want to use <code>&lt;AnalysisMode&gt;AllEnabledByDefault&lt;/AnalysisMode&gt;</code>, then your only option to override some of those default settings individually is within an EditorConfig file.</p>
+<p>And so now we come full circle - back to asking the question of how we can distribute an EditorConfig file via a NuGet package.</p>
+<h1 id="approach">Approach</h1>
+<p>I searched far and wide on the Internet for how to distribute a common EditorConfig file via a NuGet package so that it could be used by a team in multiple projects and solutions. In the end, all of the answers I saw said the same thing - you cannot, and that is not the intended purpose of such a file as the source code folder location is critical.</p>
+<p>An EditorConfig file cannot be used or referenced from within the contents of a NuGet package.</p>
+<p>After a little creative thought however, I realised that it <em>is possible to distribute</em> an EditorConfig file to a .NET Project via a NuGet package. Note the subtle difference - <em>distribution</em> versus <em>referencing</em> the file.</p>
+<p>My approach is simply to:</p>
+<ul>
+<li>include a common EditorConfig file within the contents of the NuGet package; and</li>
+<li>hook into the MSBuild <code>BeforeBuild</code> Target in order to copy the EditorConfig file from the NuGet package&rsquo;s contents into the .NET Project&rsquo;s folder structure (if it has changed).</li>
+</ul>
+<p>Thus, when a .NET Project is built for the first time (and subsequently), the EditorConfig file will always exist in the source code hierarchy. Thereafter, the file exists for:</p>
+<ul>
+<li>when the Code Analysis mechanism executes; and</li>
+<li>the Text Editor or IDE to perform live analysis at design time.</li>
+</ul>
+<h2 id="caveats-and-assumptions">Caveats and Assumptions</h2>
+<ul>
+<li>
+<p>Given the EditorConfig file is always copied to the Project folder, the developer cannot make persistent changes to that file - but:</p>
+<p>(a) they could add their own EditorConfig file to the parent folder of the Project folder; or</p>
+<p>(b) you or your team could change the destination location specified in your NuGet package to instead copy the EditorConfig file to the parent of the Project folder, and thus allow your developers to override settings just for that Project. This may be useful to allow the specification of project-specific rules or source code rule suppressions, but depending on how you or your team uses this power, it may defeat some of the general purpose of having a central or common standard rule file.</p>
+</li>
+<li>
+<p>One should add the EditorConfig file that is copied to the Project file to your <code>.gitignore</code> file so it is not committed in source control and duplicated that way.</p>
+</li>
+</ul>
+<h1 id="solution">Solution</h1>
+<p>Show me the code!</p>
+<p>I have created template for some NuGet EditorConfig distribution libraries on <a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/tree/main/.NET%20Code%20Analysis" target="_blank">GitHub in my ChannelAdam.CSharp.Snippets repository</a>.</p>
+<p>Below is an explanation of how it works.</p>
+<p>Don&rsquo;t forget to customise the <a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/blob/main/.NET%20Code%20Analysis/My.EditorConfig.NuGet.Package.Internal/Templates/editorconfig.base" target="_blank">rules in the EditorConfig file</a> for the purposes of your team/project! The rules I prefer may not be the rules you prefer!</p>
+<h2 id="nuget-msbuild-props-file">NuGet MSBuild .props File</h2>
+<p>The following information relates to <a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/blob/main/.NET%20Code%20Analysis/My.EditorConfig.NuGet.Package.Internal/build/My.EditorConfig.NuGet.Package.Internal.props" target="_blank">my example .props file</a> distributed within the NuGet package.</p>
+<p>A <a href="https://docs.microsoft.com/en-au/nuget/create-packages/creating-a-package#include-msbuild-props-and-targets-in-a-package" target="_blank">NuGet package can include a MSBuild .props file</a> of the same name that can contain Properties, Package References and Targets that execute when a build is performed and are applied to the project that references the NuGet package.</p>
+<p>In this .props file, I specify:</p>
+<ul>
+<li>Properties to enable Code Analysis;</li>
+<li>Properties to specify some desired rules;</li>
+<li>A Target to copy the EditorConfig file to the Project; and</li>
+<li>Package references for Code Analysis tools.</li>
+</ul>
+<h3 id="properties-to-enable-code-analysis">Properties to Enable Code Analysis</h3>
+<p>Here are the properties I set in the <code>.props</code> file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">&lt;PropertyGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  <span style="color:#f92672">&lt;EnforceCodeStyleInBuild&gt;</span>true<span style="color:#f92672">&lt;/EnforceCodeStyleInBuild&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>  <span style="color:#f92672">&lt;EnableNETAnalyzers&gt;</span>true<span style="color:#f92672">&lt;/EnableNETAnalyzers&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>  <span style="color:#f92672">&lt;AnalysisMode&gt;</span>AllEnabledByDefault<span style="color:#f92672">&lt;/AnalysisMode&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>  <span style="color:#f92672">&lt;AnalysisLevel&gt;</span>latest<span style="color:#f92672">&lt;/AnalysisLevel&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>  <span style="color:#f92672">&lt;RunAnalyzersDuringBuild&gt;</span>true<span style="color:#f92672">&lt;/RunAnalyzersDuringBuild&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>  <span style="color:#f92672">&lt;RunAnalyzersDuringLiveAnalysis&gt;</span>true<span style="color:#f92672">&lt;/RunAnalyzersDuringLiveAnalysis&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>  <span style="color:#f92672">&lt;CodeAnalysisTreatWarningsAsErrors&gt;</span>false<span style="color:#f92672">&lt;/CodeAnalysisTreatWarningsAsErrors&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>  <span style="color:#f92672">&lt;TreatWarningsAsErrors&gt;</span>false<span style="color:#f92672">&lt;/TreatWarningsAsErrors&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>  <span style="color:#f92672">&lt;GenerateDocumentationFile&gt;</span>true<span style="color:#f92672">&lt;/GenerateDocumentationFile&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>  <span style="color:#f92672">&lt;Nullable&gt;</span>enable<span style="color:#f92672">&lt;/Nullable&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>  <span style="color:#f92672">&lt;WarningsAsErrors&gt;</span>nullable<span style="color:#f92672">&lt;/WarningsAsErrors&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>  <span style="color:#f92672">&lt;LangVersion&gt;</span>latest<span style="color:#f92672">&lt;/LangVersion&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#f92672">&lt;/PropertyGroup&gt;</span>
+</code></pre></div><p>Of note:</p>
+<ul>
+<li><code>EnforceCodeStyleInBuild</code> is a new feature that allows <a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview#enable-on-build" target="_blank">code style rules</a> specified in the EditorConfig file to be checked as part of the build;</li>
+<li><code>EnableNETAnalyzers</code> is <a href="https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers" target="_blank">true by default for .NET 5.0</a>, but I am setting it to true to support earlier versions of .NET;</li>
+<li><code>AnalysisMode</code> of <code>AllEnabledByDefault</code> turns on all the rules that ship with the .NET SDK - set to the severity level of <code>warning</code></li>
+<li><code>AnalysisLevel</code> of <code>latest</code> so that the <a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview#latest-updates" target="_blank">latest set of rules</a> for your .NET SDK will be applied;</li>
+<li><code>RunAnalyzersDuringBuild</code> and <code>RunAnalyzersDuringLiveAnalysis</code> <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/disable-code-analysis?view=vs-2019#net-framework-projects" target="_blank">controls when the analyser executes</a>;</li>
+<li>I do <em>not</em> want warnings to be treated as errors, because I presumably have meticulously and consciously determined and customised the rules in my EditorConfig file to distinguish between rules that must be adhered to, versus rules that really should be attended to and resolved but do not matter as much.</li>
+<li><code>Nullable</code> is enabled because the newish <a href="https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references" target="_blank">Nullable Reference Types</a> feature is fantastic and all developers should think more about appropriately handling null and avoiding costly null reference issues in production;</li>
+<li><code>WarningsAsErrors</code> set to <code>nullable</code> is <a href="https://github.com/dotnet/roslyn/issues/41605#issuecomment-585256448" target="_blank">short-hand</a> for listing a number of <code>CS86??</code> nullable rules to be treated as errors (because we want to enforce the avoidance of obvious potential null reference issues); and</li>
+<li><code>LangVersion</code> of <code>latest</code> allows us to use the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version" target="_blank">latest C# language features and syntax goodness</a> - as long as we don&rsquo;t try to use features that won&rsquo;t compile - e.g. using the .NET 5.0 <code>record</code> type from .NET Core code.</li>
+</ul>
+<h3 id="properties-to-specify-desired-rules">Properties to Specify Desired Rules</h3>
+<p>As mentioned earlier, rule CA1014 has a Location.None and cannot be specified in an EditorConfig file. And since this approach currently cannot use Global AnalyzerConfig files, I need to disable this rule in the .props file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">&lt;PropertyGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  <span style="color:#75715e">&lt;!-- 
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#75715e">    Workaround for changing severity of rules with Location.None - e.g. CA1014
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#75715e">      - see https://github.com/dotnet/roslyn/issues/37876#issuecomment-738042719
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#75715e">    Needed until those types of rules can be disabled in a Global Analyzer Config 
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#75715e">      - when https://github.com/dotnet/roslyn/issues/48634 is implemented.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#75715e">    # CA1014: Mark assemblies with CLSCompliantAttribute
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#75715e">  --&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>  <span style="color:#f92672">&lt;NoWarn&gt;</span>$(NoWarn);CA1014<span style="color:#f92672">&lt;/NoWarn&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#f92672">&lt;/PropertyGroup&gt;</span>
+</code></pre></div><h3 id="target-to-copy-the-editorconfig-file-to-the-project">Target to Copy the EditorConfig File to the Project</h3>
+<p>First we need to specify the location of the EditorConfig file to copy from within the NuGet package folder structure.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;ItemGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>  <span style="color:#f92672">&lt;EditorConfigFilesToCopy</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;$(MSBuildThisFileDirectory)..\content\Rules\.editorconfig&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#f92672">&lt;/ItemGroup&gt;</span>
+</code></pre></div><p>Then we can use the MSBuild <code>Copy</code> Task to copy the file to the folder of the .NET Project that is being built. This Target is defined to execute before the MSBuild <code>BeforeBuild</code> Target.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;Target</span> <span style="color:#a6e22e">Name=</span><span style="color:#e6db74">&#34;CopyEditorConfig&#34;</span> <span style="color:#a6e22e">BeforeTargets=</span><span style="color:#e6db74">&#34;BeforeBuild&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    <span style="color:#f92672">&lt;Message</span> <span style="color:#a6e22e">Text=</span><span style="color:#e6db74">&#34;Copying the .editorconfig file from &#39;@(EditorConfigFilesToCopy)&#39; to &#39;$(MSBuildProjectDirectory)&#39;&#34;</span><span style="color:#f92672">&gt;&lt;/Message&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#f92672">&lt;Copy</span> 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>      <span style="color:#a6e22e">SourceFiles=</span><span style="color:#e6db74">&#34;@(EditorConfigFilesToCopy)&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>      <span style="color:#a6e22e">DestinationFolder=</span><span style="color:#e6db74">&#34;$(MSBuildProjectDirectory)&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>      <span style="color:#a6e22e">SkipUnchangedFiles=</span><span style="color:#e6db74">&#34;true&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>      <span style="color:#a6e22e">UseHardlinksIfPossible=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#f92672">&lt;/Target&gt;</span>
+</code></pre></div><h3 id="package-references-for-code-analysis-tools">Package References for Code Analysis Tools</h3>
+<p>The new <code>Microsoft.CodeAnalysis.NetAnalyzers</code> NuGet package and also the <code>Roslynator.Analyzers</code> packages that will perform the actual Code Analysis also are specified in the <code>.props</code> file.</p>
+<p>BTW, I&rsquo;m a <em>huge</em> fan of the <a href="https://github.com/JosefPihrt/Roslynator" target="_blank">Roslynator</a> extensions for both Visual Studio Code and Visual Studio - and you should be too!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">&lt;ItemGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Microsoft.CodeAnalysis.NetAnalyzers&#34;</span> <span style="color:#a6e22e">Version=</span><span style="color:#e6db74">&#34;5.0.3&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#f92672">&lt;IncludeAssets&gt;</span>runtime; build; native; contentfiles; analyzers; buildtransitive<span style="color:#f92672">&lt;/IncludeAssets&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#f92672">&lt;PrivateAssets&gt;</span>all<span style="color:#f92672">&lt;/PrivateAssets&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>  <span style="color:#f92672">&lt;/PackageReference&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>  <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Roslynator.Analyzers&#34;</span> <span style="color:#a6e22e">Version=</span><span style="color:#e6db74">&#34;3.0.0&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>    <span style="color:#f92672">&lt;PrivateAssets&gt;</span>none<span style="color:#f92672">&lt;/PrivateAssets&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>  <span style="color:#f92672">&lt;/PackageReference&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>  <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Roslynator.CodeAnalysis.Analyzers&#34;</span> <span style="color:#a6e22e">Version=</span><span style="color:#e6db74">&#34;1.0.0&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>    <span style="color:#f92672">&lt;PrivateAssets&gt;</span>all<span style="color:#f92672">&lt;/PrivateAssets&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>    <span style="color:#f92672">&lt;IncludeAssets&gt;</span>runtime; build; native; contentfiles; analyzers; buildtransitive<span style="color:#f92672">&lt;/IncludeAssets&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>  <span style="color:#f92672">&lt;/PackageReference&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>  <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Roslynator.Formatting.Analyzers&#34;</span> <span style="color:#a6e22e">Version=</span><span style="color:#e6db74">&#34;1.0.0&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>    <span style="color:#f92672">&lt;PrivateAssets&gt;</span>all<span style="color:#f92672">&lt;/PrivateAssets&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>    <span style="color:#f92672">&lt;IncludeAssets&gt;</span>runtime; build; native; contentfiles; analyzers; buildtransitive<span style="color:#f92672">&lt;/IncludeAssets&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>  <span style="color:#f92672">&lt;/PackageReference&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#f92672">&lt;/ItemGroup&gt;</span>
+</code></pre></div><h2 id="nuget-project-file">NuGet Project File</h2>
+<p>The following information relates to <a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/blob/main/.NET%20Code%20Analysis/My.EditorConfig.NuGet.Package/My.EditorConfig.NuGet.Package.csproj" target="_blank">my example .csproj file</a> for the NuGet package.</p>
+<h3 id="packing">Packing</h3>
+<p>When packing, NuGet by default ignores files that begin with a period.</p>
+<p>The following property overcomes that and allows our <code>.editorconfig</code> file to be packed.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;PropertyGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>  <span style="color:#f92672">&lt;NoDefaultExcludes&gt;</span>true<span style="color:#f92672">&lt;/NoDefaultExcludes&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#f92672">&lt;/PropertyGroup&gt;</span>
+</code></pre></div><p>The following configuration specifies:</p>
+<ul>
+<li>the <code>.props</code> file in the <code>build</code> folder should be packed; and</li>
+<li>the <code>.editorconfig</code> file in the <code>Rules</code> folder should be packed.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#75715e">&lt;!-- Select the MSBuild props and composed .editorconfig files to pack --&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#f92672">&lt;ItemGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>  <span style="color:#f92672">&lt;None</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;build\*&#34;</span> <span style="color:#a6e22e">Pack=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">PackagePath=</span><span style="color:#e6db74">&#34;build\&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>  <span style="color:#f92672">&lt;Content</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Rules\.editorconfig&#34;</span> <span style="color:#a6e22e">Pack=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">PackagePath=</span><span style="color:#e6db74">&#34;content\Rules&#34;</span><span style="color:#f92672">&gt;&lt;/Content&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span style="color:#f92672">&lt;/ItemGroup&gt;</span>
+</code></pre></div><h2 id="bonus-points">Bonus Points</h2>
+<p>As indicated earlier, Rule Sets can have different base Rule Sets to allow multiple types of Rule Set files to be mixed depending on the need.</p>
+<p>A similar thing can be done by composing different EditorConfig files in different NuGet packages.</p>
+<p>I have allowed for this by creating a common Template folder that contains a common base file for the EditorConfig (<a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/blob/main/.NET%20Code%20Analysis/My.EditorConfig.NuGet.Package.Internal/Templates/editorconfig.base" target="_blank">editorconfig.base</a>) and I compose the final <code>Rules\.editorconfig</code> file through file concatenation that takes place in an MSBuild Target.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#75715e">&lt;!-- Compose the .editorconfig file from the templates --&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#f92672">&lt;Target</span> <span style="color:#a6e22e">Name=</span><span style="color:#e6db74">&#34;CreateEditorConfig&#34;</span> <span style="color:#a6e22e">BeforeTargets=</span><span style="color:#e6db74">&#34;BeforeBuild&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>  <span style="color:#f92672">&lt;ItemGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#f92672">&lt;EditorConfigFilesToJoin</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#e6db74">        ..\My.EditorConfig.NuGet.Package.Internal\Templates\editorconfig.base;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#e6db74">        ..\My.EditorConfig.NuGet.Package.Internal\Templates\require-configureawait.rules&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>  <span style="color:#f92672">&lt;/ItemGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>  <span style="color:#f92672">&lt;ItemGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>    <span style="color:#f92672">&lt;EditorConfigFileContents</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;$([System.IO.File]::ReadAllText(%(EditorConfigFilesToJoin.Identity)))&#34;</span><span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>  <span style="color:#f92672">&lt;/ItemGroup&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>  <span style="color:#f92672">&lt;WriteLinesToFile</span> <span style="color:#a6e22e">File=</span><span style="color:#e6db74">&#34;Rules\.editorconfig&#34;</span> <span style="color:#a6e22e">Lines=</span><span style="color:#e6db74">&#34;@(EditorConfigFileContents)&#34;</span> <span style="color:#a6e22e">Overwrite=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#f92672">&lt;/Target&gt;</span>
+</code></pre></div><p>Similarly, the <code>.props</code> file itself is shared (as is) between all the NuGet packages, so I have stored it in a common <code>build</code> folder and have a Target to copy it as the NuGet package is being created.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#75715e">&lt;!-- Copy the common .props file --&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#f92672">&lt;Target</span> <span style="color:#a6e22e">Name=</span><span style="color:#e6db74">&#34;CopyPropsFile&#34;</span> <span style="color:#a6e22e">BeforeTargets=</span><span style="color:#e6db74">&#34;BeforeBuild&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#f92672">&lt;Copy</span> 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>      <span style="color:#a6e22e">SourceFiles=</span><span style="color:#e6db74">&#34;..\My.EditorConfig.NuGet.Package.Internal\build\My.EditorConfig.NuGet.Package.Internal.props&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>      <span style="color:#a6e22e">DestinationFiles=</span><span style="color:#e6db74">&#34;build\My.EditorConfig.NuGet.Package.props&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>      <span style="color:#a6e22e">SkipUnchangedFiles=</span><span style="color:#e6db74">&#34;true&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>      <span style="color:#a6e22e">UseHardlinksIfPossible=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#f92672">&lt;/Target&gt;</span>
+</code></pre></div><h1 id="conclusion">Conclusion</h1>
+<p>This approach is relatively simple to implement (with a template like I have provided), very simple to use (just by installing you own NuGet package), and achieves the purpose of distributing a common EditorConfig file to multiple .NET Projects and Solutions in order help developers in a team achieve consistently styled code with your own tailored standards.</p>
+
+        
+        </div>
+
+        
+        <div class="content-page-tags">
+            
+            <a href="https://devzone.channeladam.com/tags/.net-5.0/">.NET 5.0</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/.net-standard/">.NET Standard</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/.net-core/">.NET Core</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/.net/">.NET</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/editorconfig/">EditorConfig</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/analyzerconfig/">AnalyzerConfig</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/nuget/">NuGet</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/code-analysis/">Code Analysis</a>&nbsp;
+            
+            <a href="https://devzone.channeladam.com/tags/code-style/">Code Style</a>&nbsp;
+            
+        </div>
+        
+
+    </article>
     
     <article class="content-page-preview">
         <a href="https://devzone.channeladam.com/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">
@@ -338,307 +679,6 @@ It combines and replaces the  <code>netcoreapp</code> and <code>netstandard</cod
             <a href="https://devzone.channeladam.com/tags/nullable-reference-types/">Nullable Reference Types</a>&nbsp;
             
             <a href="https://devzone.channeladam.com/tags/deprecated/">Deprecated</a>&nbsp;
-            
-        </div>
-        
-
-    </article>
-    
-    <article class="content-page-preview">
-        <a href="https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/">
-            <h2 class="post-title">Distribution of a common EditorConfig file to Multiple .NET Projects</h2>
-        </a>
-
-        <div class="content-page-entry">
-        
-            <div class="page-image-toc-container">
-<div>
-<img alt="" title="" src="/notebooks/languages/dotnet/editorconfig-distribution.jpg"/>
-</div>
-<div class="table-contents-container">
-    <div class="table-contents">
-        <div class="h2 center">Table of Contents</div>
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#background">Background</a></li>
-    <li><a href="#editorconfig">EditorConfig</a>
-      <ul>
-        <li><a href="#limitations">Limitations</a></li>
-      </ul>
-    </li>
-    <li><a href="#global-analyzerconfig-files-to-the-rescue-but-not-quite-yet">Global AnalyzerConfig Files to the Rescue (But Not Quite Yet!)</a></li>
-    <li><a href="#current-state-of-play">Current State of Play</a></li>
-    <li><a href="#approach">Approach</a>
-      <ul>
-        <li><a href="#caveats-and-assumptions">Caveats and Assumptions</a></li>
-      </ul>
-    </li>
-    <li><a href="#solution">Solution</a>
-      <ul>
-        <li><a href="#nuget-msbuild-props-file">NuGet MSBuild .props File</a>
-          <ul>
-            <li><a href="#properties-to-enable-code-analysis">Properties to Enable Code Analysis</a></li>
-            <li><a href="#properties-to-specify-desired-rules">Properties to Specify Desired Rules</a></li>
-            <li><a href="#target-to-copy-the-editorconfig-file-to-the-project">Target to Copy the EditorConfig File to the Project</a></li>
-            <li><a href="#package-references-for-code-analysis-tools">Package References for Code Analysis Tools</a></li>
-          </ul>
-        </li>
-        <li><a href="#nuget-project-file">NuGet Project File</a>
-          <ul>
-            <li><a href="#packing">Packing</a></li>
-          </ul>
-        </li>
-        <li><a href="#bonus-points">Bonus Points</a></li>
-      </ul>
-    </li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-    </div>
-</div>
-</div>
-<h1 id="overview">Overview</h1>
-<p>This information answers the frequently-asked question about how to distribute a common or centralised <em>EditorConfig</em> file, with Code Style and Analysis Rules, to multiple .NET Projects or Solutions without duplication.</p>
-<h1 id="background">Background</h1>
-<p>In the past, Code Analysis and Code Style could be enforced in your .NET code bases through the usage of <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/rule-set-reference?view=vs-2019" target="_blank">Rule Set</a> files.</p>
-<p>These <em>Rule Set</em> files supported the concept of including parent Rule Set files (to allow different mixtures of rules to be created more easily), and they could be included easily in and distributed through your own NuGet package to all of your .NET Projects.</p>
-<p>During 2020 however, and starting in Visual Studio 2019 version 16.5, <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#convert-an-existing-ruleset-file-to-editorconfig-file" target="_blank">Rule Set files were deprecated in favour of the EditorConfig file</a>.</p>
-<h1 id="editorconfig">EditorConfig</h1>
-<p><a href="https://editorconfig.org" target="_blank">EditorConfig</a> helps to maintain consistent coding styles across various Text Editors and IDEs. EditorConfig is supported in many tools, including Visual Studio 2019, Visual Studio Code, and many other editors.</p>
-<p>These configuration files work differently from Rule Set files, in that:</p>
-<ol>
-<li>they are meant only for IDEs or Text Editors; and</li>
-<li>they do not support the concept of including parent EditorConfig files.</li>
-</ol>
-<p>EditorConfig files (named <code>.editorconfig</code>) are intended to reside within the folder structure of your source code. It relies upon the hierarchical nature of the file system, where configuration in EditorConfig files in a child folder take precedence over those in parent or ancestor folders.</p>
-<p>Within an EditorConfig file, the <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#set-rule-severity-in-an-editorconfig-file" target="_blank">severity of a rule is specified with the syntax</a>: <code>dotnet_diagnostic.&lt;rule ID&gt;.severity = &lt;severity&gt;</code>.
-The <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#configure-severity-levels" target="_blank">valid values for severity</a> are:</p>
-<ul>
-<li>error</li>
-<li>warning</li>
-<li>suggestion</li>
-<li>silent</li>
-<li>none</li>
-<li>default</li>
-</ul>
-<h2 id="limitations">Limitations</h2>
-<p>There are a number of limitations with regards to the use of EditorConfig files in the .NET world.</p>
-<p>Unfortunately, EditorConfig files <a href="https://github.com/dotnet/roslyn/issues/37876#issuecomment-520617383" target="_blank">are not a one-for-one functional replacement of Rule Set files</a>.
-For example, rules that apply globally, or have <code>Location.None</code> cannot be specified in an EditorConfig file.
-One of these rules is <a href="https://github.com/dotnet/roslyn/issues/37876#issuecomment-738042719" target="_blank">CA1014: Mark assemblies with CLSCompliantAttribute</a>. Currently <a href="https://github.com/dotnet/roslyn/issues/37876#issuecomment-738042719" target="_blank">this NoWarn workaround</a> is required for <code>CA1014</code> and similar.</p>
-<p>Given that EditorConfig files are intended for Text Editing tools, and their rules are defined and applied in a hierarchical fashion within the source code folder structure, EditorConfig files cannot be referenced from within the contents or file location of a NuGet Package.</p>
-<h1 id="global-analyzerconfig-files-to-the-rescue-but-not-quite-yet">Global AnalyzerConfig Files to the Rescue (But Not Quite Yet!)</h1>
-<p>To address the limitations of EditorConfig, Microsoft introduced the concept of a <a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/configuration-files#global-analyzerconfig" target="_blank">Global AnalyzerConfig</a>, starting from Visual Studio 2019 16.8 and the .NET 5 SDK.</p>
-<p>These files provide options that apply to all the source files in a .NET Project, regardless of their file names or file paths - which means that AnalyzerConfig files can be specified in and distributed through NuGet packages.</p>
-<p>In a MSBuild project file, they are specified:</p>
-<ul>
-<li>with the <code>GlobalAnalyzerConfigFiles</code> property within an <code>ItemGroup</code> property; or</li>
-<li>the file simply can be named <code>.globalconfig</code> and automatically included for use.</li>
-</ul>
-<p>Unlike EditorConfig files, Global AnalyzerConfig files cannot be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project-level analyser configuration options.</p>
-<p>AnalyzerConfig files are used only during the compilation of the source code, and are not used in the Text Editors or IDEs.
-This immediately makes one concerned about the duplication of rules that overlap between the editor and those for compilation.</p>
-<p>The rules specified in EditorConfig files in the source hierarchy take precedence over those specified in the AnalyzerConfig files.</p>
-<h1 id="current-state-of-play">Current State of Play</h1>
-<p>So here is the current state of play (as of January 2021):</p>
-<ol>
-<li>EditorConfig files <em>cannot</em> be referenced from the folder structure of a NuGet package;</li>
-<li>AnalyzerConfig files <em>can</em> be referenced from the folder structure of a NuGet package; and</li>
-<li>EditorConfig file settings take precedence over AnalyzerConfig file settings.</li>
-</ol>
-<p>All of this sounds great until one realises that:</p>
-<ol>
-<li>If there are conflicting entries in two global AnalyzerConfig files, a compiler warning is reported and both entries are ignored; and</li>
-<li>It is desirable to set the <a href="https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#analysismode" target="_blank">AnalysisMode</a> to <code>AllEnabledByDefault</code> so that all rules are automatically enabled by default as build warnings, and from there you opt to change the severity of individual rules.</li>
-</ol>
-<p>However, if one chooses any <code>AnalysisMode</code> other than <code>Default</code>, the severity rules provided within the .NET SDK are specified, and if you have your own Global AnalyzerConfig file, the rules will likely conflict and therefore be ignored!</p>
-<p>This is the situation (as of January 2021) - until Microsoft releases an update to the AnalyzerConfig mechanism to allow a <code>global_level</code> setting to be specified to <a href="https://github.com/dotnet/roslyn/issues/48634" target="_blank">allow for a hierarchy of rule precedence among AnalyzerConfig files</a>.</p>
-<p>Until then, if you are like me and you want to use <code>&lt;AnalysisMode&gt;AllEnabledByDefault&lt;/AnalysisMode&gt;</code>, then your only option to override those default settings individually is within an EditorConfig file.</p>
-<p>And so now we come full circle - back to asking the question of how we can distribute an EditorConfig file via a NuGet package.</p>
-<h1 id="approach">Approach</h1>
-<p>I searched far and wide on the Internet for how to distribute a common EditorConfig file via a NuGet package so that it could be used by a team in multiple projects and solutions. In the end, all of the answers I saw said the same thing - you cannot, and that is not the intended purpose of such a file as the source code folder location is critical.</p>
-<p>An EditorConfig file cannot be used or referenced from within the contents of a NuGet package.</p>
-<p>After a little creative thought however, I realised that it <em>is possible to distribute</em> an EditorConfig file to a .NET Project via a NuGet package. Note the subtle difference - <em>distribution</em> versus <em>referencing</em> the file.</p>
-<p>My approach is simply to:</p>
-<ul>
-<li>include a common EditorConfig file within the contents of the NuGet package; and</li>
-<li>hook into the MSBuild <code>BeforeBuild</code> Target in order to copy the EditorConfig file from the NuGet package&rsquo;s contents into the .NET Project&rsquo;s folder structure (if it has changed).</li>
-</ul>
-<p>Thus, when a .NET Project is built for the first time (and subsequently), the EditorConfig file will always exist in the source code hierarchy. Thereafter, the file exists for:</p>
-<ul>
-<li>when the Code Analysis mechanism executes; and</li>
-<li>the Text Editor or IDE to perform live analysis at design time.</li>
-</ul>
-<h2 id="caveats-and-assumptions">Caveats and Assumptions</h2>
-<ul>
-<li>
-<p>Given the EditorConfig file is always copied to the Project folder, the developer cannot make persistent changes to that file - but:</p>
-<p>(a) they could add their own EditorConfig file to the parent folder of the Project folder; or</p>
-<p>(b) you or your team could change the destination location specified in your NuGet package to  instead coy the EditorConfig file to the parent of the Project folder, and thus allow your developers to override settings just for that Project. This may be useful to allow the specification of project-specific rules or suppressions, but depending on how you use your power, may defeat some of the general purpose of having a central or common standard rule file.</p>
-</li>
-<li>
-<p>One should add the EditorConfig file that is copied to the Project file to the <code>.gitignore</code> so it is not committed in source control and duplicated that way.</p>
-</li>
-</ul>
-<h1 id="solution">Solution</h1>
-<p>Show me the code!</p>
-<p>I have created template for some NuGet EditorConfig distribution libraries on <a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/tree/main/.NET%20Code%20Analysis" target="_blank">GitHub in my ChannelAdam.CSharp.Snippets repository</a>.</p>
-<p>Below is an explanation of how it works.</p>
-<p>Don&rsquo;t forget to customise the <a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/blob/main/.NET%20Code%20Analysis/My.EditorConfig.NuGet.Package.Internal/Templates/editorconfig.base" target="_blank">rules in the EditorConfig file</a> for the purposes of your team/project! The rules I prefer may not be the rules you prefer!</p>
-<h2 id="nuget-msbuild-props-file">NuGet MSBuild .props File</h2>
-<p>The following information relates to the <code>.props</code> file distributed within the NuGet package.</p>
-<p>A <a href="https://docs.microsoft.com/en-au/nuget/create-packages/creating-a-package#include-msbuild-props-and-targets-in-a-package" target="_blank">NuGet package can include a MSBuild .props file</a> of the same name that can contain Properties, Package References and Targets that execute when a build is performed and are applied to the project that references the NuGet package.</p>
-<p>In this .props file, I specify:</p>
-<ul>
-<li>Properties to enable Code Analysis;</li>
-<li>Properties to specify some desired rules;</li>
-<li>A Target to copy the EditorConfig file to the Project; and</li>
-<li>Package references for Code Analysis tools.</li>
-</ul>
-<h3 id="properties-to-enable-code-analysis">Properties to Enable Code Analysis</h3>
-<p>Here are the properties I set in the <code>.props</code> file.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">&lt;PropertyGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  <span style="color:#f92672">&lt;EnforceCodeStyleInBuild&gt;</span>true<span style="color:#f92672">&lt;/EnforceCodeStyleInBuild&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>  <span style="color:#f92672">&lt;EnableNETAnalyzers&gt;</span>true<span style="color:#f92672">&lt;/EnableNETAnalyzers&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>  <span style="color:#f92672">&lt;AnalysisMode&gt;</span>AllEnabledByDefault<span style="color:#f92672">&lt;/AnalysisMode&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>  <span style="color:#f92672">&lt;AnalysisLevel&gt;</span>latest<span style="color:#f92672">&lt;/AnalysisLevel&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>  <span style="color:#f92672">&lt;RunAnalyzersDuringBuild&gt;</span>true<span style="color:#f92672">&lt;/RunAnalyzersDuringBuild&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>  <span style="color:#f92672">&lt;RunAnalyzersDuringLiveAnalysis&gt;</span>true<span style="color:#f92672">&lt;/RunAnalyzersDuringLiveAnalysis&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>  <span style="color:#f92672">&lt;CodeAnalysisTreatWarningsAsErrors&gt;</span>false<span style="color:#f92672">&lt;/CodeAnalysisTreatWarningsAsErrors&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>  <span style="color:#f92672">&lt;TreatWarningsAsErrors&gt;</span>false<span style="color:#f92672">&lt;/TreatWarningsAsErrors&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>  <span style="color:#f92672">&lt;GenerateDocumentationFile&gt;</span>true<span style="color:#f92672">&lt;/GenerateDocumentationFile&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>  <span style="color:#f92672">&lt;Nullable&gt;</span>enable<span style="color:#f92672">&lt;/Nullable&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>  <span style="color:#f92672">&lt;WarningsAsErrors&gt;</span>nullable<span style="color:#f92672">&lt;/WarningsAsErrors&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>  <span style="color:#f92672">&lt;LangVersion&gt;</span>latest<span style="color:#f92672">&lt;/LangVersion&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#f92672">&lt;/PropertyGroup&gt;</span>
-</code></pre></div><p>Of note:</p>
-<ul>
-<li><code>EnforceCodeStyleInBuild</code> is a new feature that allows <a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview#enable-on-build" target="_blank">code style rules</a> specified in the EditorConfig file to be checked as part of the build;</li>
-<li><code>EnableNETAnalyzers</code> is <a href="https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers" target="_blank">true by default for .NET 5.0</a>, but I am setting it to true to support earlier versions of .NET;</li>
-<li><code>AnalysisMode</code> of <code>AllEnabledByDefault</code> turns on all the rules that ship with the .NET SDK - set to the severity level of <code>warning</code></li>
-<li><code>AnalysisLevel</code> of <code>latest</code> so that the <a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview#latest-updates" target="_blank">latest set of rules</a> for your .NET SDK will be applied;</li>
-<li><code>RunAnalyzersDuringBuild</code> and <code>RunAnalyzersDuringLiveAnalysis</code> <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/disable-code-analysis?view=vs-2019#net-framework-projects" target="_blank">controls when the analyser executes</a>;</li>
-<li>I do <em>not</em> want warnings to be treated as errors, because I presumably have meticulously and consciously determined and customised the rules in my EditorConfig file to distinguish between rules that must be adhered to, versus rules that really should be attended to and resolved but do not matter as much.</li>
-<li><code>Nullable</code> is enabled because the newish <a href="https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references" target="_blank">Nullable Reference Types</a> feature is fantastic and all developers should think more about appropriately handling null and avoiding costly null reference issues in production;</li>
-<li><code>WarningsAsErrors</code> set to <code>nullable</code> is <a href="https://github.com/dotnet/roslyn/issues/41605#issuecomment-585256448" target="_blank">short-hand</a> for listing a number of <code>CS86??</code> nullable rules to be treated as errors (because we want to enforce the avoidance of obvious potential null reference issues); and</li>
-<li><code>LangVersion</code> of <code>latest</code> allows one to use the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version" target="_blank">latest C# language features and syntax goodness</a> - as long as you don&rsquo;t try to use features that won&rsquo;t compile - e.g. using the .NET 5.0 <code>record</code> type from .NET Core code.</li>
-</ul>
-<h3 id="properties-to-specify-desired-rules">Properties to Specify Desired Rules</h3>
-<p>As mentioned earlier, rule CA1014 has a Location.None and cannot be specified in an EditorConfig file. And since this approach currently cannot use Global AnalyzerConfig files, I need to disable this rule in the .props file.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">&lt;PropertyGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  <span style="color:#75715e">&lt;!-- 
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#75715e">    Workaround for changing severity of rules with Location.None - e.g. CA1014
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#75715e">      - see https://github.com/dotnet/roslyn/issues/37876#issuecomment-738042719
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#75715e">    Needed until those types of rules can be disabled in a Global Analyzer Config 
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#75715e">      - when https://github.com/dotnet/roslyn/issues/48634 is implemented.
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#75715e">    # CA1014: Mark assemblies with CLSCompliantAttribute
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#75715e">  --&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>  <span style="color:#f92672">&lt;NoWarn&gt;</span>$(NoWarn);CA1014<span style="color:#f92672">&lt;/NoWarn&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#f92672">&lt;/PropertyGroup&gt;</span>
-</code></pre></div><h3 id="target-to-copy-the-editorconfig-file-to-the-project">Target to Copy the EditorConfig File to the Project</h3>
-<p>First we need to specify the location of the EditorConfig file to copy from within the NuGet package folder structure.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;ItemGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>  <span style="color:#f92672">&lt;EditorConfigFilesToCopy</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;$(MSBuildThisFileDirectory)..\content\Rules\.editorconfig&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#f92672">&lt;/ItemGroup&gt;</span>
-</code></pre></div><p>Then we can use the MSBuild <code>Copy</code> Task to copy the file to the folder of the .NET Project that is being built. This Target is defined to execute before the MSBuild <code>BeforeBuild</code> Target.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;Target</span> <span style="color:#a6e22e">Name=</span><span style="color:#e6db74">&#34;CopyEditorConfig&#34;</span> <span style="color:#a6e22e">BeforeTargets=</span><span style="color:#e6db74">&#34;BeforeBuild&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    <span style="color:#f92672">&lt;Message</span> <span style="color:#a6e22e">Text=</span><span style="color:#e6db74">&#34;Copying the .editorconfig file from &#39;@(EditorConfigFilesToCopy)&#39; to &#39;$(MSBuildProjectDirectory)&#39;&#34;</span><span style="color:#f92672">&gt;&lt;/Message&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#f92672">&lt;Copy</span> 
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>      <span style="color:#a6e22e">SourceFiles=</span><span style="color:#e6db74">&#34;@(EditorConfigFilesToCopy)&#34;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>      <span style="color:#a6e22e">DestinationFolder=</span><span style="color:#e6db74">&#34;$(MSBuildProjectDirectory)&#34;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>      <span style="color:#a6e22e">SkipUnchangedFiles=</span><span style="color:#e6db74">&#34;true&#34;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>      <span style="color:#a6e22e">UseHardlinksIfPossible=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#f92672">&lt;/Target&gt;</span>
-</code></pre></div><h3 id="package-references-for-code-analysis-tools">Package References for Code Analysis Tools</h3>
-<p>The new <code>Microsoft.CodeAnalysis.NetAnalyzers</code> NuGet package and also the <code>Roslynator.Analyzers</code> packages that will perform the actual Code Analysis also are specified in the <code>.props</code> file.</p>
-<p>BTW, I&rsquo;m a <em>huge</em> fan of the <a href="https://github.com/JosefPihrt/Roslynator" target="_blank">Roslynator</a> extensions for both Visual Studio Code and Visual Studio - and you should be too!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#f92672">&lt;ItemGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Microsoft.CodeAnalysis.NetAnalyzers&#34;</span> <span style="color:#a6e22e">Version=</span><span style="color:#e6db74">&#34;5.0.3&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    <span style="color:#f92672">&lt;IncludeAssets&gt;</span>runtime; build; native; contentfiles; analyzers; buildtransitive<span style="color:#f92672">&lt;/IncludeAssets&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#f92672">&lt;PrivateAssets&gt;</span>all<span style="color:#f92672">&lt;/PrivateAssets&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>  <span style="color:#f92672">&lt;/PackageReference&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>  <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Roslynator.Analyzers&#34;</span> <span style="color:#a6e22e">Version=</span><span style="color:#e6db74">&#34;3.0.0&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>    <span style="color:#f92672">&lt;PrivateAssets&gt;</span>none<span style="color:#f92672">&lt;/PrivateAssets&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>  <span style="color:#f92672">&lt;/PackageReference&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>  <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Roslynator.CodeAnalysis.Analyzers&#34;</span> <span style="color:#a6e22e">Version=</span><span style="color:#e6db74">&#34;1.0.0&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>    <span style="color:#f92672">&lt;PrivateAssets&gt;</span>all<span style="color:#f92672">&lt;/PrivateAssets&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>    <span style="color:#f92672">&lt;IncludeAssets&gt;</span>runtime; build; native; contentfiles; analyzers; buildtransitive<span style="color:#f92672">&lt;/IncludeAssets&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>  <span style="color:#f92672">&lt;/PackageReference&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>  <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Roslynator.Formatting.Analyzers&#34;</span> <span style="color:#a6e22e">Version=</span><span style="color:#e6db74">&#34;1.0.0&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>    <span style="color:#f92672">&lt;PrivateAssets&gt;</span>all<span style="color:#f92672">&lt;/PrivateAssets&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>    <span style="color:#f92672">&lt;IncludeAssets&gt;</span>runtime; build; native; contentfiles; analyzers; buildtransitive<span style="color:#f92672">&lt;/IncludeAssets&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>  <span style="color:#f92672">&lt;/PackageReference&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#f92672">&lt;/ItemGroup&gt;</span>
-</code></pre></div><h2 id="nuget-project-file">NuGet Project File</h2>
-<p>The following information relates to the <code>.csproj</code> file for the NuGet package.</p>
-<h3 id="packing">Packing</h3>
-<p>When packing, NuGet by default ignores files that begin with a period.</p>
-<p>The following property overcomes that and allows our <code>.editorconfig</code> file to be packed.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#f92672">&lt;PropertyGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>  <span style="color:#f92672">&lt;NoDefaultExcludes&gt;</span>true<span style="color:#f92672">&lt;/NoDefaultExcludes&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#f92672">&lt;/PropertyGroup&gt;</span>
-</code></pre></div><p>The following configuration specifies:</p>
-<ul>
-<li>the <code>.props</code> file in the <code>build</code> folder should be packed; and</li>
-<li>the <code>.editorconfig</code> file in the <code>Rules</code> folder should be packed.</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#75715e">&lt;!-- Select the MSBuild props and composed .editorconfig files to pack --&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#f92672">&lt;ItemGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>  <span style="color:#f92672">&lt;None</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;build\*&#34;</span> <span style="color:#a6e22e">Pack=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">PackagePath=</span><span style="color:#e6db74">&#34;build\&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>  <span style="color:#f92672">&lt;Content</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Rules\.editorconfig&#34;</span> <span style="color:#a6e22e">Pack=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">PackagePath=</span><span style="color:#e6db74">&#34;content\Rules&#34;</span><span style="color:#f92672">&gt;&lt;/Content&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span style="color:#f92672">&lt;/ItemGroup&gt;</span>
-</code></pre></div><h2 id="bonus-points">Bonus Points</h2>
-<p>As indicated earlier, Rule Sets can have different base Rule Sets to allow multiple types of Rule Set files to be mixed depending on the need.</p>
-<p>A similar thing can be done by composing different EditorConfig files in different NuGet packages.</p>
-<p>I have allowed for this by creating a common Template folder that contains a common base file for the EditorConfig (<a href="https://github.com/channeladam/ChannelAdam.CSharp.Snippets/blob/main/.NET%20Code%20Analysis/My.EditorConfig.NuGet.Package.Internal/Templates/editorconfig.base" target="_blank">editorconfig.base</a>) and I compose the final <code>Rules\.editorconfig</code> file through file concatenation that takes place in an MSBuild Target.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#75715e">&lt;!-- Compose the .editorconfig file from the templates --&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#f92672">&lt;Target</span> <span style="color:#a6e22e">Name=</span><span style="color:#e6db74">&#34;CreateEditorConfig&#34;</span> <span style="color:#a6e22e">BeforeTargets=</span><span style="color:#e6db74">&#34;BeforeBuild&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>  <span style="color:#f92672">&lt;ItemGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>    <span style="color:#f92672">&lt;EditorConfigFilesToJoin</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#e6db74">        ..\My.EditorConfig.NuGet.Package.Internal\Templates\editorconfig.base;
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#e6db74">        ..\My.EditorConfig.NuGet.Package.Internal\Templates\require-configureawait.rules&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>  <span style="color:#f92672">&lt;/ItemGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>  <span style="color:#f92672">&lt;ItemGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>    <span style="color:#f92672">&lt;EditorConfigFileContents</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;$([System.IO.File]::ReadAllText(%(EditorConfigFilesToJoin.Identity)))&#34;</span><span style="color:#f92672">/&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>  <span style="color:#f92672">&lt;/ItemGroup&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>  <span style="color:#f92672">&lt;WriteLinesToFile</span> <span style="color:#a6e22e">File=</span><span style="color:#e6db74">&#34;Rules\.editorconfig&#34;</span> <span style="color:#a6e22e">Lines=</span><span style="color:#e6db74">&#34;@(EditorConfigFileContents)&#34;</span> <span style="color:#a6e22e">Overwrite=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#f92672">&lt;/Target&gt;</span>
-</code></pre></div><p>Similarly, the <code>.props</code> file itself is shared (as is) between all the NuGet packages, so I have stored it in a common <code>build</code> folder and have a Target to copy it as the NuGet package is being created.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#75715e">&lt;!-- Copy the common .props file --&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#f92672">&lt;Target</span> <span style="color:#a6e22e">Name=</span><span style="color:#e6db74">&#34;CopyPropsFile&#34;</span> <span style="color:#a6e22e">BeforeTargets=</span><span style="color:#e6db74">&#34;BeforeBuild&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    <span style="color:#f92672">&lt;Copy</span> 
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>      <span style="color:#a6e22e">SourceFiles=</span><span style="color:#e6db74">&#34;..\My.EditorConfig.NuGet.Package.Internal\build\My.EditorConfig.NuGet.Package.Internal.props&#34;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>      <span style="color:#a6e22e">DestinationFiles=</span><span style="color:#e6db74">&#34;build\My.EditorConfig.NuGet.Package.props&#34;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>      <span style="color:#a6e22e">SkipUnchangedFiles=</span><span style="color:#e6db74">&#34;true&#34;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>      <span style="color:#a6e22e">UseHardlinksIfPossible=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#f92672">&lt;/Target&gt;</span>
-</code></pre></div><h1 id="conclusion">Conclusion</h1>
-<p>This approach is relatively simple to implement, very simple to use (just by installing a NuGet package), and achieves the purpose of distributing a common EditorConfig file to multiple .NET Projects and Solutions in order help developers in a team achieve consistently styled code.</p>
-
-        
-        </div>
-
-        
-        <div class="content-page-tags">
-            
-            <a href="https://devzone.channeladam.com/tags/.net-5.0/">.NET 5.0</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/.net-standard/">.NET Standard</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/.net-core/">.NET Core</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/.net/">.NET</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/editorconfig/">EditorConfig</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/analyzerconfig/">AnalyzerConfig</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/nuget/">NuGet</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/code-analysis/">Code Analysis</a>&nbsp;
-            
-            <a href="https://devzone.channeladam.com/tags/code-style/">Code Style</a>&nbsp;
             
         </div>
         
@@ -958,7 +998,7 @@ The <a href="https://github.com/Microsoft/dotnet/blob/master/releases/net471/Kno
     <div class="widget card">
         <div class="h1">Recent Blog Posts</div>
 
-        <ul><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/editorconfig-distribution/">Distribution of a common EditorConfig file to Multiple .NET Projects</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li><li><a href="/notebooks/security/">Security Notebook</a></li></ul>
+        <ul><li><a href="/notebooks/languages/dotnet/editorconfig-distribution/">Distribution of a Common EditorConfig File to Multiple .NET Projects</a></li><li><a href="/articles/2021/01/editorconfig-distribution/">.NET Notebook Update - Distribution of a Common EditorConfig File to Multiple .NET Projects</a></li><li><a href="/articles/2021/01/channeladam-dotnet-library-updates/">ChannelAdam .NET Library Updates &amp; Deprecations</a></li><li><a href="/articles/2021/01/net-5-guidance-notes/">.NET Notebook Update - Guidance on .NET 5.0 for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/net-5-guidance-for-library-developers/">.NET 5.0 and Guidance for Library Developers</a></li><li><a href="/notebooks/languages/dotnet/">Microsoft .NET Notebook</a></li><li><a href="/notebooks/languages/">Languages Notebook</a></li><li><a href="/notebooks/">Notebooks</a></li><li><a href="/articles/2020/04/changed-to-hugo/">Changed to Hugo Static Site Generator</a></li><li><a href="/articles/2018/05/service-fabric-notes-update/">Service Fabric Notebook Update</a></li><li><a href="/notebooks/distributed-systems/service-fabric/">Microsoft Service Fabric Notebook</a></li><li><a href="/notebooks/distributed-systems/">Distributed Systems Notebook</a></li><li><a href="/notebooks/distributed-systems/azure-container-service/">Azure Container Service Notebook</a></li><li><a href="/notebooks/web-development/">Web Development Notebook</a></li><li><a href="/notebooks/web-development/image-optimisation/">Image Optimisation Notebook</a></li><li><a href="/notebooks/security/pci-dss-compliance/">PCI DSS Compliance Notebook</a></li><li><a href="/articles/2018/03/announcing-new-notebooks/">Announcing New ChannelAdam Notebooks</a></li><li><a href="/notebooks/linux/nvidia-power-usage/">Linux, Nvidia Graphics Cards &amp; Power Usage Notebook</a></li><li><a href="/notebooks/data-science/">Data Science Notebook</a></li></ul>
     </div>
 </div>
 
@@ -973,18 +1013,18 @@ The <a href="https://github.com/Microsoft/dotnet/blob/master/releases/net471/Kno
         <div class="h1">Tag Cloud</div>
 
         
-    <div class="tag-cloud"><a href="/tags/.net" style="font-size:1.4878249368149024rem">.Net</a>
+    <div class="tag-cloud"><a href="/tags/.net" style="font-size:1.5154561545121918rem">.Net</a>
         &nbsp;<a href="/tags/.net-4.0" style="font-size:1.1626083122716342rem">.Net 4.0</a>
-        &nbsp;<a href="/tags/.net-5.0" style="font-size:1.3775648087257248rem">.Net 5.0</a>
-        &nbsp;<a href="/tags/.net-core" style="font-size:1.3775648087257248rem">.Net Core</a>
+        &nbsp;<a href="/tags/.net-5.0" style="font-size:1.4203363895277301rem">.Net 5.0</a>
+        &nbsp;<a href="/tags/.net-core" style="font-size:1.4203363895277301rem">.Net Core</a>
         &nbsp;<a href="/tags/.net-framework" style="font-size:1.257728077256096rem">.Net Framework</a>
-        &nbsp;<a href="/tags/.net-standard" style="font-size:1.3775648087257248rem">.Net Standard</a>
+        &nbsp;<a href="/tags/.net-standard" style="font-size:1.4203363895277301rem">.Net Standard</a>
         &nbsp;<a href="/tags/.net-standard-2.0" style="font-size:1.257728077256096rem">.Net Standard 2.0</a>
         &nbsp;<a href="/tags/.net-standard-2.1" style="font-size:1.1626083122716342rem">.Net Standard 2.1</a>
         &nbsp;<a href="/tags/agile" style="font-size:1rem">Agile</a>
         &nbsp;<a href="/tags/ajax" style="font-size:1rem">Ajax</a>
         &nbsp;<a href="/tags/amazon-s3" style="font-size:1rem">Amazon S3</a>
-        &nbsp;<a href="/tags/analyzerconfig" style="font-size:1rem">Analyzerconfig</a>
+        &nbsp;<a href="/tags/analyzerconfig" style="font-size:1.1626083122716342rem">Analyzerconfig</a>
         &nbsp;<a href="/tags/api-apps" style="font-size:1.3252166245432684rem">Api Apps</a>
         &nbsp;<a href="/tags/api-management" style="font-size:1rem">Api Management</a>
         &nbsp;<a href="/tags/app-service" style="font-size:1.3252166245432684rem">App Service</a>
@@ -1013,10 +1053,10 @@ The <a href="https://github.com/Microsoft/dotnet/blob/master/releases/net471/Kno
         &nbsp;<a href="/tags/channeladam.wcf" style="font-size:1.1626083122716342rem">Channeladam.wcf</a>
         &nbsp;<a href="/tags/clean-code" style="font-size:1rem">Clean Code</a>
         &nbsp;<a href="/tags/client-validation" style="font-size:1rem">Client Validation</a>
-        &nbsp;<a href="/tags/code-analysis" style="font-size:1rem">Code Analysis</a>
+        &nbsp;<a href="/tags/code-analysis" style="font-size:1.1626083122716342rem">Code Analysis</a>
         &nbsp;<a href="/tags/code-quality" style="font-size:1rem">Code Quality</a>
         &nbsp;<a href="/tags/code-reviews" style="font-size:1rem">Code Reviews</a>
-        &nbsp;<a href="/tags/code-style" style="font-size:1rem">Code Style</a>
+        &nbsp;<a href="/tags/code-style" style="font-size:1.1626083122716342rem">Code Style</a>
         &nbsp;<a href="/tags/coding-practices" style="font-size:1.257728077256096rem">Coding Practices</a>
         &nbsp;<a href="/tags/command" style="font-size:1.1626083122716342rem">Command</a>
         &nbsp;<a href="/tags/container" style="font-size:1.3775648087257248rem">Container</a>
@@ -1036,7 +1076,7 @@ The <a href="https://github.com/Microsoft/dotnet/blob/master/releases/net471/Kno
         &nbsp;<a href="/tags/docpad" style="font-size:1rem">Docpad</a>
         &nbsp;<a href="/tags/domain-driven-design" style="font-size:1rem">Domain Driven Design</a>
         &nbsp;<a href="/tags/dynamic" style="font-size:1rem">Dynamic</a>
-        &nbsp;<a href="/tags/editorconfig" style="font-size:1rem">Editorconfig</a>
+        &nbsp;<a href="/tags/editorconfig" style="font-size:1.1626083122716342rem">Editorconfig</a>
         &nbsp;<a href="/tags/embedded-resources" style="font-size:1rem">Embedded Resources</a>
         &nbsp;<a href="/tags/encoding" style="font-size:1rem">Encoding</a>
         &nbsp;<a href="/tags/events" style="font-size:1rem">Events</a>
@@ -1089,7 +1129,7 @@ The <a href="https://github.com/Microsoft/dotnet/blob/master/releases/net471/Kno
         &nbsp;<a href="/tags/naming" style="font-size:1.1626083122716342rem">Naming</a>
         &nbsp;<a href="/tags/nancy" style="font-size:1.3775648087257248rem">Nancy</a>
         &nbsp;<a href="/tags/notebooks" style="font-size:1.3775648087257248rem">Notebooks</a>
-        &nbsp;<a href="/tags/nuget" style="font-size:1rem">Nuget</a>
+        &nbsp;<a href="/tags/nuget" style="font-size:1.1626083122716342rem">Nuget</a>
         &nbsp;<a href="/tags/nullable-reference-types" style="font-size:1rem">Nullable Reference Types</a>
         &nbsp;<a href="/tags/nunit" style="font-size:1.1626083122716342rem">Nunit</a>
         &nbsp;<a href="/tags/nvidia" style="font-size:1.1626083122716342rem">Nvidia</a>
