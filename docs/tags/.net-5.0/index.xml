@@ -18,6 +18,11 @@
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2021/01/channeladam-dotnet-library-updates/</guid>
       <description>The ChannelAdam .NET libraries have been updated to target .NET 5.0, enable nullable reference types and some have been deprecated.</description>
     </item><item>
+      <title>Distribution of a common EditorConfig file to Multiple .NET Projects</title>
+      <link>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</guid>
+      <description>Answers the frequently-asked question about how to distribute a common or centralised EditorConfig file, with Code Style and Analysis Rules, to multiple .NET Projects or Solutions without duplication.</description>
+    </item><item>
       <title>Microsoft .NET Notebook</title>
       <link>https://devzone.channeladam.com/notebooks/languages/dotnet/</link>
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/languages/dotnet/</guid>
