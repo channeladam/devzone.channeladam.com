@@ -2,7 +2,42 @@
   <channel>
     <title>Tags on DevZone.ChannelAdam.com</title>
     <link>https://devzone.channeladam.com/tags/</link>
-    <description>Recent contentin Tags on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+    <description>Recent contentin Tags on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>JavaScript</title>
+      <link>https://devzone.channeladam.com/tags/javascript/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/javascript/</guid>
+      <description></description>
+    </item><item>
+      <title>JSON Web Token</title>
+      <link>https://devzone.channeladam.com/tags/json-web-token/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/json-web-token/</guid>
+      <description></description>
+    </item><item>
+      <title>JWT</title>
+      <link>https://devzone.channeladam.com/tags/jwt/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/jwt/</guid>
+      <description></description>
+    </item><item>
+      <title>OWASP</title>
+      <link>https://devzone.channeladam.com/tags/owasp/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/owasp/</guid>
+      <description></description>
+    </item><item>
+      <title>Security</title>
+      <link>https://devzone.channeladam.com/tags/security/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/security/</guid>
+      <description></description>
+    </item><item>
+      <title>Web</title>
+      <link>https://devzone.channeladam.com/tags/web/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/web/</guid>
+      <description></description>
+    </item><item>
+      <title>Web Application</title>
+      <link>https://devzone.channeladam.com/tags/web-application/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/web-application/</guid>
+      <description></description>
+    </item><item>
       <title>.NET</title>
       <link>https://devzone.channeladam.com/tags/.net/</link>
       <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/.net/</guid>
@@ -293,11 +328,6 @@
       <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/png/</guid>
       <description></description>
     </item><item>
-      <title>Web</title>
-      <link>https://devzone.channeladam.com/tags/web/</link>
-      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/web/</guid>
-      <description></description>
-    </item><item>
       <title>PCI DSS</title>
       <link>https://devzone.channeladam.com/tags/pci-dss/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/pci-dss/</guid>
@@ -346,11 +376,6 @@
       <title>Graphics</title>
       <link>https://devzone.channeladam.com/tags/graphics/</link>
       <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/graphics/</guid>
-      <description></description>
-    </item><item>
-      <title>Security</title>
-      <link>https://devzone.channeladam.com/tags/security/</link>
-      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/security/</guid>
       <description></description>
     </item><item>
       <title>Docker Swarm</title>
@@ -831,11 +856,6 @@
       <title>Injected</title>
       <link>https://devzone.channeladam.com/tags/injected/</link>
       <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/injected/</guid>
-      <description></description>
-    </item><item>
-      <title>JavaScript</title>
-      <link>https://devzone.channeladam.com/tags/javascript/</link>
-      <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/tags/javascript/</guid>
       <description></description>
     </item><item>
       <title>jQuery</title>

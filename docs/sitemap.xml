@@ -1,4 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
+    <loc>https://devzone.channeladam.com/tags/javascript/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/notebooks/web-development/javascript-web-apps-jwt-security/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/json-web-token/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/jwt/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/owasp/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/security/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/web/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/tags/web-application/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
+    <loc>https://devzone.channeladam.com/articles/2021/01/javascript-web-apps-jwt-security/</loc><lastmod>2021-01-30T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/.net/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/.net-5.0/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/.net-core/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
@@ -10,7 +20,6 @@
     <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/editorconfig-distribution/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/editorconfig/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/nuget/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/net-5-guidance-for-library-developers/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/articles/2021/01/net-5-guidance-notes/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/.net-standard-2.0/</loc><lastmod>2021-01-03T00:00:00+00:00</lastmod></url><url>
@@ -93,7 +102,6 @@
     <loc>https://devzone.channeladam.com/tags/jpeg/</loc><lastmod>2018-04-04T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/optimisation/</loc><lastmod>2018-04-04T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/png/</loc><lastmod>2018-04-04T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/web/</loc><lastmod>2018-04-04T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/web-development/</loc><lastmod>2018-04-04T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/pci-dss/</loc><lastmod>2018-03-30T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/security/pci-dss-compliance/</loc><lastmod>2018-03-30T00:00:00+00:00</lastmod></url><url>
@@ -110,7 +118,6 @@
     <loc>https://devzone.channeladam.com/tags/python/</loc><lastmod>2018-03-18T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/graphics/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/linux/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/security/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/security/</loc><lastmod>2018-03-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/articles/2017/11/announcing-dotnet-notebook/</loc><lastmod>2017-11-10T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/notebooks/languages/dotnet/tips-upgrading-to-net-standard-2/</loc><lastmod>2017-11-10T00:00:00+00:00</lastmod></url><url>
@@ -326,7 +333,6 @@
     <loc>https://devzone.channeladam.com/tags/client-validation/</loc><lastmod>2010-06-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/dynamic/</loc><lastmod>2010-06-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/injected/</loc><lastmod>2010-06-11T00:00:00+00:00</lastmod></url><url>
-    <loc>https://devzone.channeladam.com/tags/javascript/</loc><lastmod>2010-06-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/jquery/</loc><lastmod>2010-06-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/loaded/</loc><lastmod>2010-06-11T00:00:00+00:00</lastmod></url><url>
     <loc>https://devzone.channeladam.com/tags/partial-views/</loc><lastmod>2010-06-11T00:00:00+00:00</lastmod></url><url>

@@ -2,7 +2,12 @@
   <channel>
     <title>Articles on DevZone.ChannelAdam.com</title>
     <link>https://devzone.channeladam.com/articles/</link>
-    <description>Recent contentin Articles on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/articles/index.xml" rel="self" type="application/rss+xml" /><item>
+    <description>Recent contentin Articles on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/articles/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Web Development Notebook Update - JavaScript Web Applications and JSON Web Token (JWT) Security</title>
+      <link>https://devzone.channeladam.com/articles/2021/01/javascript-web-apps-jwt-security/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2021/01/javascript-web-apps-jwt-security/</guid>
+      <description>The Web Development Notebook has been updated with a methodology to secure a JavaScript Web Application with JSON Web Token (JWT) security.</description>
+    </item><item>
       <title>.NET Notebook Update - Distribution of a Common EditorConfig File to Multiple .NET Projects</title>
       <link>https://devzone.channeladam.com/articles/2021/01/editorconfig-distribution/</link>
       <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2021/01/editorconfig-distribution/</guid>

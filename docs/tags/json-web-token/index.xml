@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JSON Web Token on DevZone.ChannelAdam.com</title>
+    <link>https://devzone.channeladam.com/tags/json-web-token/</link>
+    <description>Recent contentin JSON Web Token on DevZone.ChannelAdam.com</description><language>en-au</language><lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://devzone.channeladam.com/tags/json-web-token/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>JavaScript Web Applications and JSON Web Token (JWT) Security</title>
+      <link>https://devzone.channeladam.com/notebooks/web-development/javascript-web-apps-jwt-security/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/notebooks/web-development/javascript-web-apps-jwt-security/</guid>
+      <description>Learn how to secure a JavaScript Web Application with JSON Web Token (JWT) security.</description>
+    </item><item>
+      <title>Web Development Notebook Update - JavaScript Web Applications and JSON Web Token (JWT) Security</title>
+      <link>https://devzone.channeladam.com/articles/2021/01/javascript-web-apps-jwt-security/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://devzone.channeladam.com/articles/2021/01/javascript-web-apps-jwt-security/</guid>
+      <description>The Web Development Notebook has been updated with a methodology to secure a JavaScript Web Application with JSON Web Token (JWT) security.</description>
+    </item></channel>
+</rss>
